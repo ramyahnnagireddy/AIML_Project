@@ -39,3 +39,50 @@
 - [x] No unnecessary Python loops used
 - [x] Commit messages are descriptive
 - [x] Ready for submission
+
+# Self-Review Checklist — Pandas for Data Manipulation
+
+## Pandas Implementation
+
+✓ Pandas installed in virtual environment
+✓ Loaded a real Indian CSV dataset
+✓ Created a Pandas DataFrame
+✓ Printed DataFrame shape
+✓ Printed DataFrame dtypes
+✓ Printed first 10 rows
+✓ Implemented filtering
+✓ Implemented groupby
+✓ Implemented merge
+✓ Implemented pivot_table
+✓ Documented each operation with comments
+
+## Data Export
+
+✓ Exported cleaned DataFrame to CSV
+✓ Exported cleaned DataFrame to Parquet
+✓ Compared CSV and Parquet file sizes
+
+## Git
+
+✓ Working code committed
+✓ Required branch used
+✓ Minimum 2 commits completed
+✓ Changes pushed to GitHub
+✓ Pull Request raised
+
+## CIA
+
+✓ Full Stack Mentor Mode code review completed
+✓ Minimum 2 CIA interactions completed
+
+## Evidence
+
+✓ Output evidence captured
+
+## Final Review
+
+✓ Code runs successfully
+✓ Pandas operations produce the expected output
+✓ Comments document the data manipulation operations
+✓ Commit messages are descriptive
+✓ Ready for submission
