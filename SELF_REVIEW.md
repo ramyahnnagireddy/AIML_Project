@@ -63,36 +63,54 @@ Final Review
 ☑️ Commit messages are descriptive
 ☑️ Ready for submission
 
-Self-Review Checklist — Day 3: Data Loading, Cleaning & Inspection
-Implementation
-☑️ Completed assigned Day 3 task
-☑️ Loaded the required dataset
-☑️ Inspected the dataset
-☑️ Performed required data cleaning
-☑️ Checked the cleaned data
-☑️ Wrote clean, commented code
-☑️ Code follows the approved AI/ML 3M stack requirements
-Testing
-☑️ Ran tests successfully
-☑️ Test result: 1 passed
-Git
-☑️ Used required branch: feat/aiml-W1-Ramya
-☑️ Minimum 2 Day 3 commits completed
-☑️ Commit messages are descriptive
+## Self-Review Checklist — W1D4 EDA
+
+### EDA Implementation
+
+☑️ Loaded the real Iris CSV dataset
+☑️ Created a Pandas DataFrame
+☑️ Verified dataset shape
+☑️ Displayed the first 10 rows
+☑️ Checked data types and dataset information
+☑️ Performed exploratory data analysis
+☑️ Analyzed numerical features
+☑️ Analyzed species distribution
+☑️ Generated numerical feature distributions
+☑️ Generated correlation heatmap
+☑️ Generated top-10 species counts visualization
+☑️ Documented EDA observations
+
+### Data Visualization
+
+☑️ Created `numeric_distributions.png`
+☑️ Created `correlation_heatmap.png`
+☑️ Created `top10_species_counts.png`
+☑️ Verified visualization outputs
+
+### Git
+
+☑️ Working code committed
+☑️ Required branch used: `feat/aiml-W1-Ramya`
+☑️ Minimum 2 commits completed
 ☑️ Changes pushed to GitHub
-CIA
+☑️ Pull Request raised against `master`
+
+### CIA
+
 ☑️ Full Stack Mentor Mode code review completed
 ☑️ Minimum 2 CIA interactions completed
-Evidence
+
+### Evidence
+
 ☑️ Output evidence captured
-☑️ Working code committed
-Pull Request
-☑️ Pull Request raised
-☑️ PR #1 is open
-Final Review
+☑️ EDA visualization files generated
+☑️ Git/PR evidence available
+
+### Final Review
+
 ☑️ Code runs successfully
-☑️ Tests passed
-☑️ Code reviewed
-☑️ Git requirements completed
-☑️ Evidence completed
+☑️ EDA outputs generated successfully
+☑️ EDA observations documented
+☑️ Commit messages are descriptive
+☑️ Working tree is clean
 ☑️ Ready for submission
