@@ -61,19 +61,17 @@ def main():
     print(df.isnull().sum())
 
     # ===== FIVE EDA OBSERVATIONS =====
-    print("\n===== FIVE EDA OBSERVATIONS =====")
-
     observations = [
         "1. The dataset contains 150 rows and 5 columns.",
-        "2. There are four numerical features: sepal_length, "
-        "sepal_width, petal_length, and petal_width.",
-        "3. The species column is categorical and contains "
-        "the flower species labels.",
+        "2. There are four numerical features: sepal_length, sepal_width, "
+        "petal_length, and petal_width.",
+        "3. The species column is categorical and contains the flower species labels.",
         "4. There are no missing values in any of the five columns.",
-        "5. The numerical features have different ranges and spreads, "
-        "so their distributions and correlations should be examined."
+        "5. The three species are evenly represented with 50 samples each, "
+        "indicating a balanced target distribution."
     ]
 
+    print("\n===== FIVE EDA OBSERVATIONS =====")
     for observation in observations:
         print(observation)
 
@@ -84,7 +82,7 @@ def main():
     sns.set_style("whitegrid")
 
     # ===== 1. NUMERIC DISTRIBUTIONS =====
-    axes = df[numeric_columns].hist(
+    df[numeric_columns].hist(
         figsize=(10, 8),
         bins=15
     )
@@ -109,6 +107,7 @@ def main():
     )
 
     ax.set_title("Correlation Heatmap")
+
     fig.tight_layout()
     fig.savefig(
         OUTPUT_DIR / "correlation_heatmap.png",
