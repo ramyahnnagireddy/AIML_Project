@@ -63,6 +63,73 @@ Final Review
 ☑️ Commit messages are descriptive
 ☑️ Ready for submission
 
+# Self-Review Checklist — W1D3 Data Loading, Cleaning & Inspection
+
+### Data Loading & Inspection
+
+☑️ Loaded the assigned dataset successfully
+☑️ Created a Pandas DataFrame
+☑️ Verified dataset shape
+☑️ Displayed the first 10 rows
+☑️ Checked column names
+☑️ Checked data types
+☑️ Inspected dataset information
+☑️ Checked for missing values
+☑️ Checked for duplicate records
+☑️ Inspected numerical columns
+☑️ Inspected categorical columns
+
+### Data Cleaning
+
+☑️ Identified missing values
+☑️ Handled missing values where required
+☑️ Identified duplicate records
+☑️ Removed duplicate records where required
+☑️ Verified the cleaned dataset
+☑️ Confirmed the final dataset is ready for analysis
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+☑️ Used Pandas for data loading and inspection
+☑️ Used appropriate data-cleaning operations
+☑️ Ran the code successfully
+☑️ Verified the expected output
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Git
+
+☑️ Working code committed
+☑️ Required branch used: `feat/aiml-W1-Ramya`
+☑️ Minimum 2 commits completed
+☑️ Commit messages are descriptive
+☑️ Changes pushed to GitHub
+☑️ Pull Request raised against `master`
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+☑️ Minimum 2 CIA interactions completed
+☑️ Code improvements applied based on CIA feedback
+
+### Evidence
+
+☑️ Output evidence captured
+☑️ Dataset inspection evidence available
+☑️ Data-cleaning output evidence available
+☑️ Git/PR evidence available
+
+### Final Review
+
+☑️ Code runs successfully
+☑️ Dataset loaded successfully
+☑️ Dataset inspection completed
+☑️ Data cleaning completed successfully
+☑️ Expected outputs verified
+☑️ Commit messages are descriptive
+☑️ Working tree is clean
+☑️ Ready for submission
+
 ## Self-Review Checklist — W1D4 EDA
 
 ### EDA Implementation
@@ -113,4 +180,85 @@ Final Review
 ☑️ EDA observations documented
 ☑️ Commit messages are descriptive
 ☑️ Working tree is clean
+☑️ Ready for submission
+
+# Self-Review Checklist — W1D5 Data Visualisation
+
+### Data Visualisation Implementation
+
+☑️ Loaded the real Iris CSV dataset  
+☑️ Created a Pandas DataFrame  
+☑️ Verified dataset shape  
+☑️ Displayed the dataset head  
+☑️ Checked data types and dataset information  
+☑️ Identified numerical features  
+☑️ Created feature distribution visualisation using Matplotlib and Seaborn  
+☑️ Added KDE curves to feature distributions  
+☑️ Created correlation heatmap using Seaborn  
+☑️ Created petal-length comparison by species using box plot  
+☑️ Added titles, axis labels, legends, and layout adjustments  
+☑️ Applied consistent Seaborn visualisation style  
+☑️ Added visualisation output summary  
+☑️ Added output-file validation tests
+
+### Visualization Outputs
+
+☑️ Created `feature_distributions.png`  
+☑️ Created `visualisation_correlation_heatmap.png`  
+☑️ Created `petal_length_by_species.png`  
+☑️ Verified all visualization outputs  
+☑️ Confirmed output files exist using automated assertions
+
+### Code Quality
+
+☑️ Used clean and commented Python code  
+☑️ Used Pandas for data handling  
+☑️ Used Matplotlib for plotting  
+☑️ Used Seaborn for statistical visualisation  
+☑️ Automatically detected numeric columns  
+☑️ Created the `outputs` directory automatically  
+☑️ Closed figures after visualization  
+☑️ Fixed encoding issue in the script documentation
+
+### Git
+
+☑️ Working code committed  
+☑️ Required branch used: `feat/aiml-W1-Ramya`  
+☑️ Minimum 2 descriptive commits completed  
+☑️ Commit 1: `feat: add W1D5 data visualisation`  
+☑️ Commit 2: `style: improve visualisation consistency`  
+☑️ Changes pushed to GitHub  
+☑️ Pull Request updated against `master`  
+☑️ Working tree verified clean
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed  
+☑️ Minimum 2 CIA interactions completed  
+☑️ Code improvements applied based on CIA feedback  
+☑️ Final code reviewed before committing
+
+### Evidence
+
+☑️ Terminal output evidence captured  
+☑️ Dataset information verified  
+☑️ Visualization output files generated  
+☑️ Output-file tests passed  
+☑️ Git status evidence available  
+☑️ Git push evidence available  
+☑️ Pull Request evidence available
+
+### Final Review
+
+☑️ Code runs successfully  
+☑️ Matplotlib installed and working  
+☑️ Seaborn installed and working  
+☑️ All visualizations generated successfully  
+☑️ Output files verified successfully  
+☑️ Code review completed  
+☑️ Commit messages are descriptive  
+☑️ Minimum 2 commits completed  
+☑️ Changes pushed successfully  
+☑️ Pull Request updated  
+☑️ Working tree is clean  
 ☑️ Ready for submission
