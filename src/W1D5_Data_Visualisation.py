@@ -15,6 +15,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 
+# Set a consistent visual style
+sns.set_style("whitegrid")
+
 # Create output directory if it does not exist
 OUTPUT_DIR = Path("outputs")
 OUTPUT_DIR.mkdir(exist_ok=True)
