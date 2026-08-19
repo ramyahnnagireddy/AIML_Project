@@ -262,3 +262,141 @@ Final Review
 ☑️ Pull Request updated  
 ☑️ Working tree is clean  
 ☑️ Ready for submission
+Self-Review Checklist — W2D1 Feature Engineering & Encoding
+
+### Feature Engineering Implementation
+
+☑️ Loaded the real Iris CSV dataset  
+☑️ Verified dataset shape  
+☑️ Created Pandas DataFrame  
+☑️ Created engineered feature `sepal_area`  
+☑️ Created engineered feature `petal_area`  
+☑️ Created engineered feature `sepal_aspect_ratio`  
+☑️ Created engineered feature `sepal_length_width_difference`  
+☑️ Created engineered features before applying scaling  
+☑️ Preserved the original dataset columns  
+☑️ Verified engineered feature values
+
+### Categorical Encoding
+
+☑️ Applied `LabelEncoder` to the target labels  
+☑️ Applied `OneHotEncoder` to the `species` column  
+☑️ Applied `OrdinalEncoder` to the categorical column  
+☑️ Defined explicit ordinal category order  
+☑️ Verified ordinal encoder categories  
+☑️ Documented LabelEncoder trade-offs  
+☑️ Documented OneHotEncoder trade-offs  
+☑️ Documented OrdinalEncoder trade-offs  
+☑️ Kept categorical encoding approaches logically separate
+
+### Feature Scaling
+
+☑️ Identified all numeric features  
+☑️ Included original and engineered numeric features for scaling  
+☑️ Applied `StandardScaler`  
+☑️ Applied `MinMaxScaler`  
+☑️ Applied `RobustScaler`  
+☑️ Fit each scaler independently  
+☑️ Converted scaled results into Pandas DataFrames  
+☑️ Preserved feature names in scaled outputs
+
+### Scaling Visualisations
+
+☑️ Created distribution plot for original numeric features  
+☑️ Created StandardScaler distribution plot  
+☑️ Created MinMaxScaler distribution plot  
+☑️ Created RobustScaler distribution plot  
+☑️ Added plot titles  
+☑️ Added axis labels  
+☑️ Used multiple feature distributions for comparison  
+☑️ Saved visualization outputs as PNG files  
+☑️ Closed figures after saving  
+☑️ Avoided `plt.show()` in the script
+
+### SelectKBest Feature Selection
+
+☑️ Applied `SelectKBest` with `f_classif`  
+☑️ Selected the top 5 features  
+☑️ Calculated F-scores for features  
+☑️ Printed feature names and F-scores  
+☑️ Selected five distinct features  
+☑️ Selected `petal_length` as a top feature  
+☑️ Selected `petal_width` as a top feature  
+☑️ Selected `petal_area` as a top feature  
+☑️ Selected `sepal_aspect_ratio` as a top feature  
+☑️ Selected `sepal_length_width_difference` as a top feature  
+☑️ Documented why each selected feature matters
+
+### Output Evidence
+
+☑️ Created `scaling_before.png`  
+☑️ Created `scaling_standard.png`  
+☑️ Created `scaling_minmax.png`  
+☑️ Created `scaling_robust.png`  
+☑️ Verified all scaling output files  
+☑️ Verified W2D1 script runs successfully  
+☑️ Verified SelectKBest output  
+☑️ Verified encoding output  
+☑️ Verified scaling output
+
+### Code Quality
+
+☑️ Used clean and commented Python code  
+☑️ Used Pandas for data handling  
+☑️ Used Scikit-learn for encoding and scaling  
+☑️ Used Matplotlib for visualisation  
+☑️ Used portable dataset path  
+☑️ Created required output directory automatically  
+☑️ Added documentation for encoding trade-offs  
+☑️ Added feature-selection rationale  
+☑️ Script executes without errors
+
+### Git
+
+☑️ Created required branch: `feat/aiml-W2-Ramya`  
+☑️ Working code committed  
+☑️ Minimum 2 descriptive commits completed  
+☑️ Commit 1: `feat: add feature engineering and encoding`  
+☑️ Commit 2: `feat: add scaling visualization outputs`  
+☑️ Changes pushed to GitHub  
+☑️ Remote branch tracking verified  
+☑️ Working tree verified clean
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed  
+☑️ Minimum 2 CIA interactions completed  
+☑️ Code improvements applied based on CIA feedback  
+☑️ Encoding implementation reviewed  
+☑️ Scaling implementation reviewed  
+☑️ SelectKBest implementation reviewed  
+☑️ Final code reviewed before committing
+
+### Evidence
+
+☑️ Terminal output evidence captured  
+☑️ Dataset shape verified  
+☑️ Engineered features verified  
+☑️ Encoding results verified  
+☑️ Scaling results verified  
+☑️ SelectKBest top-5 features verified  
+☑️ Scaling visualization files generated  
+☑️ Git status evidence available  
+☑️ Git commit evidence available  
+☑️ Git push evidence available
+
+### Final Review
+
+☑️ Code runs successfully  
+☑️ Scikit-learn installed and working  
+☑️ Matplotlib installed and working  
+☑️ All feature engineering steps completed  
+☑️ All encoding methods completed  
+☑️ All scaling methods completed  
+☑️ SelectKBest completed successfully  
+☑️ Output files verified successfully  
+☑️ Code review completed  
+☑️ Minimum 2 commits completed  
+☑️ Changes pushed successfully  
+☑️ Working tree is clean  
+☑️ Ready for submission
