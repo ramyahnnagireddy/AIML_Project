@@ -262,7 +262,8 @@ Final Review
 ☑️ Pull Request updated  
 ☑️ Working tree is clean  
 ☑️ Ready for submission
-Self-Review Checklist — W2D1 Feature Engineering & Encoding
+
+## Self-Review Checklist — W2D1 Feature Engineering & Encoding
 
 ### Feature Engineering Implementation
 
@@ -400,3 +401,203 @@ Self-Review Checklist — W2D1 Feature Engineering & Encoding
 ☑️ Changes pushed successfully  
 ☑️ Working tree is clean  
 ☑️ Ready for submission
+
+**Self-Review Checklist — W2D2 Feature Engineering**
+
+**### Feature Engineering Implementation**
+
+☑️ Created the sample employee dataset
+
+☑️ Verified dataset shape and contents
+
+☑️ Applied Label Encoding to the Performance feature
+
+☑️ Displayed the Label Encoding mapping
+
+☑️ Applied One-Hot Encoding to the City feature
+
+☑️ Used `handle_unknown="ignore"` for One-Hot Encoding
+
+☑️ Applied Ordinal Encoding to the Education feature
+
+☑️ Defined the correct education order: Graduate < Postgraduate < PhD
+
+☑️ Prepared numerical and encoded features for machine learning
+
+☑️ Created the target variable using Promoted
+
+☑️ Performed train-test split with stratification
+
+☑️ Used a fixed random state for reproducibility
+
+**### Feature Scaling**
+
+☑️ Applied StandardScaler to numerical features
+
+☑️ Applied MinMaxScaler to numerical features
+
+☑️ Applied RobustScaler to numerical features
+
+☑️ Compared salary distributions before and after scaling
+
+☑️ Created scaling distribution visualisation
+
+☑️ Saved the scaling visualisation successfully
+
+**### Feature Selection**
+
+☑️ Identified constant features before feature selection
+
+☑️ Removed the constant feature `City_Delhi` from the training data
+
+☑️ Applied SelectKBest feature selection
+
+☑️ Used ANOVA F-test (`f_classif`) as the scoring method
+
+☑️ Selected the top 5 features using training data only
+
+☑️ Transformed both training and testing data using the selected features
+
+☑️ Calculated and displayed feature scores
+
+☑️ Sorted feature scores in descending order
+
+☑️ Documented why the selected features matter
+
+**### Selected Features**
+
+☑️ Selected `Age`
+
+☑️ Selected `Salary`
+
+☑️ Selected `Experience`
+
+☑️ Selected `Performance_Label`
+
+☑️ Selected `City_Chennai`
+
+**### Visualization Outputs**
+
+☑️ Created `scaling_distributions.png`
+
+☑️ Compared Salary before scaling
+
+☑️ Compared Salary after StandardScaler
+
+☑️ Compared Salary after MinMaxScaler
+
+☑️ Compared Salary after RobustScaler
+
+☑️ Verified the scaling visualization was generated successfully
+
+**### Code Quality**
+
+☑️ Used clean and commented Python code
+
+☑️ Used Pandas for data handling
+
+☑️ Used NumPy for reproducibility
+
+☑️ Used Matplotlib for visualization
+
+☑️ Used Scikit-learn for encoding, scaling, splitting, and feature selection
+
+☑️ Used `Path` for output directory management
+
+☑️ Created the W2D2 output directory automatically
+
+☑️ Used a fixed `RANDOM_STATE` for reproducibility
+
+☑️ Added logging configuration
+
+☑️ Removed duplicate feature-selection logic
+
+☑️ Handled constant features before SelectKBest
+
+☑️ Verified the script runs without errors
+
+**### Git**
+
+☑️ Working code committed
+
+☑️ Required branch used: `feat/aiml-W2-Ramya`
+
+☑️ W2D2 files added to Git
+
+☑️ Commit created with a descriptive message
+
+☑️ Changes pushed to GitHub
+
+☑️ Working tree verified clean
+
+☑️ Local branch confirmed up to date with remote branch
+
+**### CIA**
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ Minimum 2 CIA interactions completed
+
+☑️ Code improvements applied based on review feedback
+
+☑️ Final code reviewed before committing
+
+**### Evidence**
+
+☑️ Terminal output evidence captured
+
+☑️ Original dataset output verified
+
+☑️ Label Encoding output verified
+
+☑️ One-Hot Encoding output verified
+
+☑️ Ordinal Encoding output verified
+
+☑️ Train-test split output verified
+
+☑️ StandardScaler output verified
+
+☑️ MinMaxScaler output verified
+
+☑️ RobustScaler output verified
+
+☑️ SelectKBest output verified
+
+☑️ Constant feature removal verified
+
+☑️ Scaling visualization generated
+
+☑️ Git status evidence available
+
+☑️ Git push evidence available
+
+**### Final Review**
+
+☑️ Code runs successfully
+
+☑️ All required encoding techniques implemented
+
+☑️ All required scaling techniques implemented
+
+☑️ Train-test split completed
+
+☑️ Feature selection completed successfully
+
+☑️ Top 5 features identified
+
+☑️ Constant feature handled correctly
+
+☑️ Scaling visualization generated successfully
+
+☑️ Output files verified
+
+☑️ Code review completed
+
+☑️ Commit created successfully
+
+☑️ Changes pushed successfully
+
+☑️ Working tree is clean
+
+☑️ W2D2 work is ready for review
