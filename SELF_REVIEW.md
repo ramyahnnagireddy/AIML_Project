@@ -602,7 +602,8 @@ Final Review
 
 ☑️ W2D2 work is ready for review
 
-Self-Review Checklist — W2D3 Handling Imbalanced Data with SMOTE
+### Self-Review Checklist — W2D3 Handling Imbalanced Data with SMOTE
+
 SMOTE Implementation
 
 ☑️ Created an imbalanced binary classification dataset
@@ -706,3 +707,157 @@ Final Review
 ☑️ Documentation completed
 
 ☑️ Ready for Git push and Pull Request
+
+### Self-Review Checklist — W2D4 Train/Test Split & Cross-Validation
+
+Train/Test Split & Cross-Validation
+
+☑️ Loaded the Iris dataset using scikit-learn
+
+☑️ Verified the dataset feature and target shapes
+
+☑️ Performed train-test split with 80% training and 20% testing data
+
+☑️ Used a fixed RANDOM_STATE = 42 for reproducibility
+
+☑️ Used explicit shuffle=True during train-test splitting
+
+☑️ Used stratified train-test split for classification
+
+☑️ Verified that stratification preserved class proportions
+
+☑️ Trained Logistic Regression on the training data
+
+☑️ Evaluated the model using the untouched test data
+
+☑️ Implemented 5-Fold K-Fold cross-validation
+
+☑️ Implemented 5-Fold Stratified K-Fold cross-validation
+
+☑️ Used shuffle=True and RANDOM_STATE for reproducible folds
+
+☑️ Calculated fold accuracy scores
+
+☑️ Calculated mean cross-validation accuracy
+
+☑️ Calculated standard deviation of cross-validation accuracy
+
+Testing
+
+☑️ Created automated pytest tests
+
+☑️ Tested train-test split sizes
+
+☑️ Tested stratified class distribution
+
+☑️ Tested K-Fold cross-validation
+
+☑️ Tested Stratified K-Fold cross-validation
+
+☑️ Verified that all cross-validation scores are valid accuracy values
+
+☑️ All 4 pytest tests passed successfully
+
+Code Quality
+
+☑️ Added module-level documentation
+
+☑️ Added function docstring for main()
+
+☑️ Added clear comments for each major section
+
+☑️ Added main() function
+
+☑️ Added if **name** == "**main**": guard
+
+☑️ Used descriptive variable names
+
+☑️ Defined RANDOM_STATE = 42
+
+☑️ Defined TEST_SIZE = 0.2
+
+☑️ Defined N_SPLITS = 5
+
+☑️ Used constants consistently for reproducibility
+
+☑️ Used shuffle=True explicitly
+
+☑️ Used appropriate scikit-learn APIs
+
+CIA
+
+☑️ Full Stack Mentor Mode Review #1 completed
+
+☑️ Full Stack Mentor Mode Review #2 completed
+
+☑️ Code improvements applied based on CIA feedback
+
+☑️ Final implementation reviewed before committing
+
+Evidence / Results
+
+☑️ Captured dataset shape
+
+☑️ Captured training and testing sample counts
+
+☑️ Captured test accuracy
+
+☑️ Captured stratified class distributions
+
+☑️ Captured K-Fold fold scores
+
+☑️ Captured K-Fold mean accuracy and standard deviation
+
+☑️ Captured Stratified K-Fold fold scores
+
+☑️ Captured Stratified K-Fold mean accuracy and standard deviation
+
+☑️ Python program executed successfully
+
+☑️ Pytest output verified with 4 passed tests
+
+Git
+
+☑️ Required branch used: feat/aiml-W2-Ramya
+
+☑️ Commit #1 completed: feat: add W2D4 train test split and cross validation
+
+☑️ Commit #2 completed: docs: add W2D4 train test cross validation documentation
+
+☑️ Minimum 2 descriptive commits completed
+
+☑️ README.md created
+
+☑️ **pycache**/ not committed
+
+☑️ Changes pushed to feat/aiml-W2-Ramya
+
+☑️ Git branch synchronized with remote
+
+Final Review
+
+☑️ Code runs successfully
+
+☑️ Train/test split verified
+
+☑️ Stratified split verified
+
+☑️ K-Fold cross-validation verified
+
+☑️ Stratified K-Fold cross-validation verified
+
+☑️ Reproducibility verified
+
+☑️ Data leakage concerns reviewed
+
+☑️ All tests passed successfully
+
+☑️ CIA reviews completed
+
+☑️ Minimum 2 commits completed
+
+☑️ Documentation completed
+
+☑️ Changes pushed to GitHub
+
+☑️ Ready for Pull Request
