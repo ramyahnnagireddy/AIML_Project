@@ -601,3 +601,108 @@ Final Review
 ☑️ Working tree is clean
 
 ☑️ W2D2 work is ready for review
+
+Self-Review Checklist — W2D3 Handling Imbalanced Data with SMOTE
+SMOTE Implementation
+
+☑️ Created an imbalanced binary classification dataset
+
+☑️ Verified the original class distribution
+
+☑️ Used stratified train-test split
+
+☑️ Applied SMOTE only to the training data
+
+☑️ Verified minority-class balancing after SMOTE
+
+☑️ Kept the test data untouched to prevent data leakage
+
+☑️ Trained Logistic Regression using the SMOTE-resampled training data
+
+☑️ Evaluated the model using the untouched test data
+
+Testing
+
+☑️ Created automated pytest tests
+
+☑️ Tested that the dataset is imbalanced before SMOTE
+
+☑️ Tested that SMOTE balances the training classes
+
+☑️ Tested that SMOTE preserves the number of features
+
+☑️ All 3 pytest tests passed successfully
+
+Code Quality
+
+☑️ Refactored code into reusable functions
+
+☑️ Added clear docstrings and comments
+
+☑️ Added main() function
+
+☑️ Added if **name** == "**main**": guard
+
+☑️ Used fixed random_state=42 for reproducibility
+
+☑️ Used descriptive variable and function names
+
+CIA
+
+☑️ Full Stack Mentor Mode Review #1 completed
+
+☑️ Full Stack Mentor Mode Review #2 completed
+
+☑️ Code improvements applied based on CIA feedback
+
+☑️ Final implementation reviewed before committing
+
+Evidence
+
+☑️ Created smote_output.txt
+
+☑️ Captured original class distribution
+
+☑️ Captured class distribution before SMOTE
+
+☑️ Captured balanced class distribution after SMOTE
+
+☑️ Captured model accuracy and classification report
+
+☑️ Pytest output verified with 3 passed tests
+
+Git
+
+☑️ Required branch used: feat/aiml-W2-Ramya
+
+☑️ Commit #1 completed: feat: add W2D3 SMOTE pipeline and tests
+
+☑️ Commit #2 completed: docs: add W2D3 documentation and requirements
+
+☑️ Minimum 2 descriptive commits completed
+
+☑️ Working tree verified clean before self-review update
+
+☑️ README.md created
+
+☑️ requirements.txt created with installed package versions
+
+Final Review
+
+☑️ Code runs successfully
+
+☑️ SMOTE implementation verified
+
+☑️ Data leakage prevention verified
+
+☑️ All tests passed successfully
+
+☑️ Output evidence generated
+
+☑️ CIA reviews completed
+
+☑️ Minimum 2 commits completed
+
+☑️ Documentation completed
+
+☑️ Ready for Git push and Pull Request
