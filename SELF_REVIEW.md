@@ -861,3 +861,207 @@ Final Review
 ☑️ Changes pushed to GitHub
 
 ☑️ Ready for Pull Request
+
+### Self-Review Checklist — W2D5 End-to-End Preprocessing Pipeline
+
+End-to-End Preprocessing Pipeline
+
+☑️ Loaded the Titanic dataset using pandas
+
+☑️ Verified the dataset shape
+
+☑️ Inspected all dataset column names
+
+☑️ Inspected data types of all columns
+
+☑️ Performed basic exploratory data analysis
+
+☑️ Identified missing values in the dataset
+
+☑️ Identified missing values in `age`
+
+☑️ Identified missing values in `embarked`
+
+☑️ Identified missing values in `embark_town`
+
+☑️ Identified excessive missing values in `deck`
+
+☑️ Removed `deck` because of excessive missing values
+
+☑️ Removed `alive` to prevent target leakage
+
+☑️ Applied median imputation to missing `age` values
+
+☑️ Applied mode imputation to missing `embarked` values
+
+☑️ Applied mode imputation to missing `embark_town` values
+
+☑️ Verified that no missing values remained after preprocessing
+
+☑️ Separated the target variable `survived` from the features
+
+☑️ Identified categorical features for encoding
+
+☑️ Applied One-Hot Encoding to categorical features
+
+☑️ Used `handle_unknown="ignore"` in OneHotEncoder
+
+☑️ Converted Boolean features to integer values
+
+☑️ Verified the encoded feature matrix shape
+
+☑️ Applied StandardScaler to numerical features
+
+☑️ Verified scaled numerical features have approximately zero mean
+
+☑️ Verified scaled numerical features have approximately unit standard deviation
+
+☑️ Kept one-hot encoded features as binary 0/1 values
+
+☑️ Combined processed features with the target variable
+
+☑️ Exported the final ML-ready dataset to CSV
+
+☑️ Verified final dataset contains 891 rows and 22 columns
+
+Testing
+
+☑️ Created automated pytest tests
+
+☑️ Tested that the processed CSV file exists
+
+☑️ Tested the final dataset shape
+
+☑️ Tested that no missing values remain
+
+☑️ Tested that the target column `survived` exists
+
+☑️ Tested that the target contains both classes
+
+☑️ All 5 pytest tests passed successfully
+
+Code Quality
+
+☑️ Added module-level documentation
+
+☑️ Added clear comments for each major preprocessing section
+
+☑️ Used descriptive variable names
+
+☑️ Used separate variables for features and target
+
+☑️ Used appropriate pandas preprocessing operations
+
+☑️ Used appropriate scikit-learn preprocessing APIs
+
+☑️ Used OneHotEncoder for categorical features
+
+☑️ Used StandardScaler for numerical features
+
+☑️ Used `handle_unknown="ignore"` for robust categorical encoding
+
+☑️ Used a clearly defined output file path
+
+☑️ Kept the preprocessing workflow organized and readable
+
+CIA
+
+☑️ Full Stack Mentor Mode Review #1 completed
+
+☑️ Full Stack Mentor Mode Review #2 completed
+
+☑️ Code reviewed using CIA Full Stack Mentor Mode
+
+☑️ Preprocessing logic reviewed
+
+☑️ Missing-value handling reviewed
+
+☑️ Encoding approach reviewed
+
+☑️ Scaling approach reviewed
+
+☑️ Testing and code quality reviewed
+
+☑️ Final implementation reviewed before submission
+
+Evidence / Results
+
+☑️ Captured original dataset shape: 891 × 15
+
+☑️ Captured original column names
+
+☑️ Captured original missing-value counts
+
+☑️ Captured missing-value counts after preprocessing
+
+☑️ Verified zero missing values after preprocessing
+
+☑️ Captured encoded feature matrix shape: 891 × 21
+
+☑️ Captured scaled numerical feature statistics
+
+☑️ Captured final ML-ready dataset shape: 891 × 22
+
+☑️ Verified target distribution
+
+☑️ Verified exported Titanic CSV file
+
+☑️ Python program executed successfully
+
+☑️ Pytest output verified with 5 passed tests
+
+Git
+
+☑️ Required branch used: `feat/aiml-W2-Ramya`
+
+☑️ Commit #1 completed: `feat: add W2D5 Titanic preprocessing pipeline`
+
+☑️ Commit #2 completed: `chore: ignore Python cache files`
+
+☑️ Minimum 2 descriptive commits completed
+
+☑️ README.md created
+
+☑️ `__pycache__/` removed from Git tracking
+
+☑️ `.gitignore` created
+
+☑️ Python cache files excluded from Git
+
+☑️ Changes pushed to `feat/aiml-W2-Ramya`
+
+☑️ Git branch synchronized with remote
+
+Final Review
+
+☑️ Titanic dataset loaded successfully
+
+☑️ EDA completed
+
+☑️ Missing values handled
+
+☑️ Excessively incomplete `deck` column removed
+
+☑️ Target leakage from `alive` reviewed and prevented
+
+☑️ Categorical features encoded
+
+☑️ Numerical features scaled
+
+☑️ ML-ready dataset exported
+
+☑️ Automated tests completed successfully
+
+☑️ All 5 tests passed successfully
+
+☑️ CIA reviews completed
+
+☑️ Minimum 2 commits completed
+
+☑️ Documentation completed
+
+☑️ Python cache files excluded from Git
+
+☑️ Changes pushed to GitHub
+
+☑️ Ready for Pull Request
