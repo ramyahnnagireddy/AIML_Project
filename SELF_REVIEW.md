@@ -1065,3 +1065,187 @@ Final Review
 ☑️ Changes pushed to GitHub
 
 ☑️ Ready for Pull Request
+
+# Self-Review Checklist - W3D1 Linear Regression - Scikit-Learn
+
+### Linear Regression Concepts
+
+☑️ Understood the purpose of Linear Regression
+
+☑️ Understood Ordinary Least Squares (OLS)
+
+☑️ Understood coefficients and intercept
+
+☑️ Understood residuals
+
+☑️ Understood Ridge Regression
+
+☑️ Understood Lasso Regression
+
+☑️ Understood the purpose of regularization
+
+### Dataset & Model Training
+
+☑️ Loaded the Diabetes dataset using Scikit-Learn
+
+☑️ Verified dataset shape
+
+☑️ Verified 442 samples and 10 features
+
+☑️ Performed train/test split
+
+☑️ Verified 353 training samples and 89 testing samples
+
+☑️ Trained Linear Regression successfully
+
+☑️ Printed Linear Regression coefficients
+
+☑️ Trained Ridge Regression successfully
+
+☑️ Trained Lasso Regression successfully
+
+### Model Evaluation
+
+☑️ Calculated Mean Squared Error (MSE)
+
+☑️ Calculated Root Mean Squared Error (RMSE)
+
+☑️ Calculated Mean Absolute Error (MAE)
+
+☑️ Calculated R-squared (R2)
+
+☑️ Compared Linear Regression, Ridge and Lasso
+
+☑️ Created model comparison results table
+
+☑️ Exported comparison results to CSV
+
+### Visualizations
+
+☑️ Created predicted vs actual plot
+
+☑️ Created residual plot
+
+☑️ Saved visualization output files
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for regression models
+
+☑️ Used NumPy for numerical calculations
+
+☑️ Used Pandas for the comparison table
+
+☑️ Used Matplotlib for visualizations
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested dataset dimensions
+
+☑️ Tested train/test split
+
+☑️ Tested Linear Regression training
+
+☑️ Tested regression metrics
+
+☑️ Tested Ridge and Lasso training
+
+☑️ Tested evaluation of all three models
+
+☑️ All 6 pytest tests passed
+
+### Documentation
+
+☑️ Created README.md
+
+☑️ Documented the dataset
+
+☑️ Documented the three regression models
+
+☑️ Documented evaluation metrics
+
+☑️ Documented model comparison results
+
+☑️ Documented Linear Regression coefficients
+
+☑️ Documented visualizations
+
+☑️ Documented key concepts
+
+### Git
+
+☑️ Created required branch: `feat/aiml-W3-Ramya`
+
+☑️ Completed minimum 2 commits
+
+☑️ Used descriptive commit messages
+
+☑️ Changes pushed to GitHub
+
+☑️ Pull Request raised against `master`
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ Minimum 2 CIA interactions completed
+
+☑️ Code improvements applied based on CIA feedback
+
+### Evidence
+
+☑️ Main program output captured
+
+☑️ Model coefficients evidence available
+
+☑️ Evaluation metrics evidence available
+
+☑️ Model comparison evidence available
+
+☑️ Pytest results evidence available
+
+☑️ Predicted vs actual plot generated
+
+☑️ Residual plot generated
+
+☑️ Model comparison CSV generated
+
+☑️ Git/PR evidence available
+
+### Final Review
+
+☑️ Code runs successfully
+
+☑️ Dataset loaded successfully
+
+☑️ Linear Regression trained successfully
+
+☑️ Ridge and Lasso trained successfully
+
+☑️ All required evaluation metrics calculated
+
+☑️ Model comparison completed
+
+☑️ Tests passed successfully
+
+☑️ README completed
+
+☑️ Required Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ Pull Request raised
+
+☑️ CIA requirements completed
+
+☑️ Ready for submission
