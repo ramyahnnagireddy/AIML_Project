@@ -262,3 +262,1684 @@ Final Review
 ☑️ Pull Request updated  
 ☑️ Working tree is clean  
 ☑️ Ready for submission
+
+## Self-Review Checklist — W2D1 Feature Engineering & Encoding
+
+### Feature Engineering Implementation
+
+☑️ Loaded the real Iris CSV dataset  
+☑️ Verified dataset shape  
+☑️ Created Pandas DataFrame  
+☑️ Created engineered feature `sepal_area`  
+☑️ Created engineered feature `petal_area`  
+☑️ Created engineered feature `sepal_aspect_ratio`  
+☑️ Created engineered feature `sepal_length_width_difference`  
+☑️ Created engineered features before applying scaling  
+☑️ Preserved the original dataset columns  
+☑️ Verified engineered feature values
+
+### Categorical Encoding
+
+☑️ Applied `LabelEncoder` to the target labels  
+☑️ Applied `OneHotEncoder` to the `species` column  
+☑️ Applied `OrdinalEncoder` to the categorical column  
+☑️ Defined explicit ordinal category order  
+☑️ Verified ordinal encoder categories  
+☑️ Documented LabelEncoder trade-offs  
+☑️ Documented OneHotEncoder trade-offs  
+☑️ Documented OrdinalEncoder trade-offs  
+☑️ Kept categorical encoding approaches logically separate
+
+### Feature Scaling
+
+☑️ Identified all numeric features  
+☑️ Included original and engineered numeric features for scaling  
+☑️ Applied `StandardScaler`  
+☑️ Applied `MinMaxScaler`  
+☑️ Applied `RobustScaler`  
+☑️ Fit each scaler independently  
+☑️ Converted scaled results into Pandas DataFrames  
+☑️ Preserved feature names in scaled outputs
+
+### Scaling Visualisations
+
+☑️ Created distribution plot for original numeric features  
+☑️ Created StandardScaler distribution plot  
+☑️ Created MinMaxScaler distribution plot  
+☑️ Created RobustScaler distribution plot  
+☑️ Added plot titles  
+☑️ Added axis labels  
+☑️ Used multiple feature distributions for comparison  
+☑️ Saved visualization outputs as PNG files  
+☑️ Closed figures after saving  
+☑️ Avoided `plt.show()` in the script
+
+### SelectKBest Feature Selection
+
+☑️ Applied `SelectKBest` with `f_classif`  
+☑️ Selected the top 5 features  
+☑️ Calculated F-scores for features  
+☑️ Printed feature names and F-scores  
+☑️ Selected five distinct features  
+☑️ Selected `petal_length` as a top feature  
+☑️ Selected `petal_width` as a top feature  
+☑️ Selected `petal_area` as a top feature  
+☑️ Selected `sepal_aspect_ratio` as a top feature  
+☑️ Selected `sepal_length_width_difference` as a top feature  
+☑️ Documented why each selected feature matters
+
+### Output Evidence
+
+☑️ Created `scaling_before.png`  
+☑️ Created `scaling_standard.png`  
+☑️ Created `scaling_minmax.png`  
+☑️ Created `scaling_robust.png`  
+☑️ Verified all scaling output files  
+☑️ Verified W2D1 script runs successfully  
+☑️ Verified SelectKBest output  
+☑️ Verified encoding output  
+☑️ Verified scaling output
+
+### Code Quality
+
+☑️ Used clean and commented Python code  
+☑️ Used Pandas for data handling  
+☑️ Used Scikit-learn for encoding and scaling  
+☑️ Used Matplotlib for visualisation  
+☑️ Used portable dataset path  
+☑️ Created required output directory automatically  
+☑️ Added documentation for encoding trade-offs  
+☑️ Added feature-selection rationale  
+☑️ Script executes without errors
+
+### Git
+
+☑️ Created required branch: `feat/aiml-W2-Ramya`  
+☑️ Working code committed  
+☑️ Minimum 2 descriptive commits completed  
+☑️ Commit 1: `feat: add feature engineering and encoding`  
+☑️ Commit 2: `feat: add scaling visualization outputs`  
+☑️ Changes pushed to GitHub  
+☑️ Remote branch tracking verified  
+☑️ Working tree verified clean
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed  
+☑️ Minimum 2 CIA interactions completed  
+☑️ Code improvements applied based on CIA feedback  
+☑️ Encoding implementation reviewed  
+☑️ Scaling implementation reviewed  
+☑️ SelectKBest implementation reviewed  
+☑️ Final code reviewed before committing
+
+### Evidence
+
+☑️ Terminal output evidence captured  
+☑️ Dataset shape verified  
+☑️ Engineered features verified  
+☑️ Encoding results verified  
+☑️ Scaling results verified  
+☑️ SelectKBest top-5 features verified  
+☑️ Scaling visualization files generated  
+☑️ Git status evidence available  
+☑️ Git commit evidence available  
+☑️ Git push evidence available
+
+### Final Review
+
+☑️ Code runs successfully  
+☑️ Scikit-learn installed and working  
+☑️ Matplotlib installed and working  
+☑️ All feature engineering steps completed  
+☑️ All encoding methods completed  
+☑️ All scaling methods completed  
+☑️ SelectKBest completed successfully  
+☑️ Output files verified successfully  
+☑️ Code review completed  
+☑️ Minimum 2 commits completed  
+☑️ Changes pushed successfully  
+☑️ Working tree is clean  
+☑️ Ready for submission
+
+**Self-Review Checklist — W2D2 Feature Engineering**
+
+**### Feature Engineering Implementation**
+
+☑️ Created the sample employee dataset
+
+☑️ Verified dataset shape and contents
+
+☑️ Applied Label Encoding to the Performance feature
+
+☑️ Displayed the Label Encoding mapping
+
+☑️ Applied One-Hot Encoding to the City feature
+
+☑️ Used `handle_unknown="ignore"` for One-Hot Encoding
+
+☑️ Applied Ordinal Encoding to the Education feature
+
+☑️ Defined the correct education order: Graduate < Postgraduate < PhD
+
+☑️ Prepared numerical and encoded features for machine learning
+
+☑️ Created the target variable using Promoted
+
+☑️ Performed train-test split with stratification
+
+☑️ Used a fixed random state for reproducibility
+
+**### Feature Scaling**
+
+☑️ Applied StandardScaler to numerical features
+
+☑️ Applied MinMaxScaler to numerical features
+
+☑️ Applied RobustScaler to numerical features
+
+☑️ Compared salary distributions before and after scaling
+
+☑️ Created scaling distribution visualisation
+
+☑️ Saved the scaling visualisation successfully
+
+**### Feature Selection**
+
+☑️ Identified constant features before feature selection
+
+☑️ Removed the constant feature `City_Delhi` from the training data
+
+☑️ Applied SelectKBest feature selection
+
+☑️ Used ANOVA F-test (`f_classif`) as the scoring method
+
+☑️ Selected the top 5 features using training data only
+
+☑️ Transformed both training and testing data using the selected features
+
+☑️ Calculated and displayed feature scores
+
+☑️ Sorted feature scores in descending order
+
+☑️ Documented why the selected features matter
+
+**### Selected Features**
+
+☑️ Selected `Age`
+
+☑️ Selected `Salary`
+
+☑️ Selected `Experience`
+
+☑️ Selected `Performance_Label`
+
+☑️ Selected `City_Chennai`
+
+**### Visualization Outputs**
+
+☑️ Created `scaling_distributions.png`
+
+☑️ Compared Salary before scaling
+
+☑️ Compared Salary after StandardScaler
+
+☑️ Compared Salary after MinMaxScaler
+
+☑️ Compared Salary after RobustScaler
+
+☑️ Verified the scaling visualization was generated successfully
+
+**### Code Quality**
+
+☑️ Used clean and commented Python code
+
+☑️ Used Pandas for data handling
+
+☑️ Used NumPy for reproducibility
+
+☑️ Used Matplotlib for visualization
+
+☑️ Used Scikit-learn for encoding, scaling, splitting, and feature selection
+
+☑️ Used `Path` for output directory management
+
+☑️ Created the W2D2 output directory automatically
+
+☑️ Used a fixed `RANDOM_STATE` for reproducibility
+
+☑️ Added logging configuration
+
+☑️ Removed duplicate feature-selection logic
+
+☑️ Handled constant features before SelectKBest
+
+☑️ Verified the script runs without errors
+
+**### Git**
+
+☑️ Working code committed
+
+☑️ Required branch used: `feat/aiml-W2-Ramya`
+
+☑️ W2D2 files added to Git
+
+☑️ Commit created with a descriptive message
+
+☑️ Changes pushed to GitHub
+
+☑️ Working tree verified clean
+
+☑️ Local branch confirmed up to date with remote branch
+
+**### CIA**
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ Minimum 2 CIA interactions completed
+
+☑️ Code improvements applied based on review feedback
+
+☑️ Final code reviewed before committing
+
+**### Evidence**
+
+☑️ Terminal output evidence captured
+
+☑️ Original dataset output verified
+
+☑️ Label Encoding output verified
+
+☑️ One-Hot Encoding output verified
+
+☑️ Ordinal Encoding output verified
+
+☑️ Train-test split output verified
+
+☑️ StandardScaler output verified
+
+☑️ MinMaxScaler output verified
+
+☑️ RobustScaler output verified
+
+☑️ SelectKBest output verified
+
+☑️ Constant feature removal verified
+
+☑️ Scaling visualization generated
+
+☑️ Git status evidence available
+
+☑️ Git push evidence available
+
+**### Final Review**
+
+☑️ Code runs successfully
+
+☑️ All required encoding techniques implemented
+
+☑️ All required scaling techniques implemented
+
+☑️ Train-test split completed
+
+☑️ Feature selection completed successfully
+
+☑️ Top 5 features identified
+
+☑️ Constant feature handled correctly
+
+☑️ Scaling visualization generated successfully
+
+☑️ Output files verified
+
+☑️ Code review completed
+
+☑️ Commit created successfully
+
+☑️ Changes pushed successfully
+
+☑️ Working tree is clean
+
+☑️ W2D2 work is ready for review
+
+### Self-Review Checklist — W2D3 Handling Imbalanced Data with SMOTE
+
+SMOTE Implementation
+
+☑️ Created an imbalanced binary classification dataset
+
+☑️ Verified the original class distribution
+
+☑️ Used stratified train-test split
+
+☑️ Applied SMOTE only to the training data
+
+☑️ Verified minority-class balancing after SMOTE
+
+☑️ Kept the test data untouched to prevent data leakage
+
+☑️ Trained Logistic Regression using the SMOTE-resampled training data
+
+☑️ Evaluated the model using the untouched test data
+
+Testing
+
+☑️ Created automated pytest tests
+
+☑️ Tested that the dataset is imbalanced before SMOTE
+
+☑️ Tested that SMOTE balances the training classes
+
+☑️ Tested that SMOTE preserves the number of features
+
+☑️ All 3 pytest tests passed successfully
+
+Code Quality
+
+☑️ Refactored code into reusable functions
+
+☑️ Added clear docstrings and comments
+
+☑️ Added main() function
+
+☑️ Added if **name** == "**main**": guard
+
+☑️ Used fixed random_state=42 for reproducibility
+
+☑️ Used descriptive variable and function names
+
+CIA
+
+☑️ Full Stack Mentor Mode Review #1 completed
+
+☑️ Full Stack Mentor Mode Review #2 completed
+
+☑️ Code improvements applied based on CIA feedback
+
+☑️ Final implementation reviewed before committing
+
+Evidence
+
+☑️ Created smote_output.txt
+
+☑️ Captured original class distribution
+
+☑️ Captured class distribution before SMOTE
+
+☑️ Captured balanced class distribution after SMOTE
+
+☑️ Captured model accuracy and classification report
+
+☑️ Pytest output verified with 3 passed tests
+
+Git
+
+☑️ Required branch used: feat/aiml-W2-Ramya
+
+☑️ Commit #1 completed: feat: add W2D3 SMOTE pipeline and tests
+
+☑️ Commit #2 completed: docs: add W2D3 documentation and requirements
+
+☑️ Minimum 2 descriptive commits completed
+
+☑️ Working tree verified clean before self-review update
+
+☑️ README.md created
+
+☑️ requirements.txt created with installed package versions
+
+Final Review
+
+☑️ Code runs successfully
+
+☑️ SMOTE implementation verified
+
+☑️ Data leakage prevention verified
+
+☑️ All tests passed successfully
+
+☑️ Output evidence generated
+
+☑️ CIA reviews completed
+
+☑️ Minimum 2 commits completed
+
+☑️ Documentation completed
+
+☑️ Ready for Git push and Pull Request
+
+### Self-Review Checklist — W2D4 Train/Test Split & Cross-Validation
+
+Train/Test Split & Cross-Validation
+
+☑️ Loaded the Iris dataset using scikit-learn
+
+☑️ Verified the dataset feature and target shapes
+
+☑️ Performed train-test split with 80% training and 20% testing data
+
+☑️ Used a fixed RANDOM_STATE = 42 for reproducibility
+
+☑️ Used explicit shuffle=True during train-test splitting
+
+☑️ Used stratified train-test split for classification
+
+☑️ Verified that stratification preserved class proportions
+
+☑️ Trained Logistic Regression on the training data
+
+☑️ Evaluated the model using the untouched test data
+
+☑️ Implemented 5-Fold K-Fold cross-validation
+
+☑️ Implemented 5-Fold Stratified K-Fold cross-validation
+
+☑️ Used shuffle=True and RANDOM_STATE for reproducible folds
+
+☑️ Calculated fold accuracy scores
+
+☑️ Calculated mean cross-validation accuracy
+
+☑️ Calculated standard deviation of cross-validation accuracy
+
+Testing
+
+☑️ Created automated pytest tests
+
+☑️ Tested train-test split sizes
+
+☑️ Tested stratified class distribution
+
+☑️ Tested K-Fold cross-validation
+
+☑️ Tested Stratified K-Fold cross-validation
+
+☑️ Verified that all cross-validation scores are valid accuracy values
+
+☑️ All 4 pytest tests passed successfully
+
+Code Quality
+
+☑️ Added module-level documentation
+
+☑️ Added function docstring for main()
+
+☑️ Added clear comments for each major section
+
+☑️ Added main() function
+
+☑️ Added if **name** == "**main**": guard
+
+☑️ Used descriptive variable names
+
+☑️ Defined RANDOM_STATE = 42
+
+☑️ Defined TEST_SIZE = 0.2
+
+☑️ Defined N_SPLITS = 5
+
+☑️ Used constants consistently for reproducibility
+
+☑️ Used shuffle=True explicitly
+
+☑️ Used appropriate scikit-learn APIs
+
+CIA
+
+☑️ Full Stack Mentor Mode Review #1 completed
+
+☑️ Full Stack Mentor Mode Review #2 completed
+
+☑️ Code improvements applied based on CIA feedback
+
+☑️ Final implementation reviewed before committing
+
+Evidence / Results
+
+☑️ Captured dataset shape
+
+☑️ Captured training and testing sample counts
+
+☑️ Captured test accuracy
+
+☑️ Captured stratified class distributions
+
+☑️ Captured K-Fold fold scores
+
+☑️ Captured K-Fold mean accuracy and standard deviation
+
+☑️ Captured Stratified K-Fold fold scores
+
+☑️ Captured Stratified K-Fold mean accuracy and standard deviation
+
+☑️ Python program executed successfully
+
+☑️ Pytest output verified with 4 passed tests
+
+Git
+
+☑️ Required branch used: feat/aiml-W2-Ramya
+
+☑️ Commit #1 completed: feat: add W2D4 train test split and cross validation
+
+☑️ Commit #2 completed: docs: add W2D4 train test cross validation documentation
+
+☑️ Minimum 2 descriptive commits completed
+
+☑️ README.md created
+
+☑️ **pycache**/ not committed
+
+☑️ Changes pushed to feat/aiml-W2-Ramya
+
+☑️ Git branch synchronized with remote
+
+Final Review
+
+☑️ Code runs successfully
+
+☑️ Train/test split verified
+
+☑️ Stratified split verified
+
+☑️ K-Fold cross-validation verified
+
+☑️ Stratified K-Fold cross-validation verified
+
+☑️ Reproducibility verified
+
+☑️ Data leakage concerns reviewed
+
+☑️ All tests passed successfully
+
+☑️ CIA reviews completed
+
+☑️ Minimum 2 commits completed
+
+☑️ Documentation completed
+
+☑️ Changes pushed to GitHub
+
+☑️ Ready for Pull Request
+
+### Self-Review Checklist — W2D5 End-to-End Preprocessing Pipeline
+
+End-to-End Preprocessing Pipeline
+
+☑️ Loaded the Titanic dataset using pandas
+
+☑️ Verified the dataset shape
+
+☑️ Inspected all dataset column names
+
+☑️ Inspected data types of all columns
+
+☑️ Performed basic exploratory data analysis
+
+☑️ Identified missing values in the dataset
+
+☑️ Identified missing values in `age`
+
+☑️ Identified missing values in `embarked`
+
+☑️ Identified missing values in `embark_town`
+
+☑️ Identified excessive missing values in `deck`
+
+☑️ Removed `deck` because of excessive missing values
+
+☑️ Removed `alive` to prevent target leakage
+
+☑️ Applied median imputation to missing `age` values
+
+☑️ Applied mode imputation to missing `embarked` values
+
+☑️ Applied mode imputation to missing `embark_town` values
+
+☑️ Verified that no missing values remained after preprocessing
+
+☑️ Separated the target variable `survived` from the features
+
+☑️ Identified categorical features for encoding
+
+☑️ Applied One-Hot Encoding to categorical features
+
+☑️ Used `handle_unknown="ignore"` in OneHotEncoder
+
+☑️ Converted Boolean features to integer values
+
+☑️ Verified the encoded feature matrix shape
+
+☑️ Applied StandardScaler to numerical features
+
+☑️ Verified scaled numerical features have approximately zero mean
+
+☑️ Verified scaled numerical features have approximately unit standard deviation
+
+☑️ Kept one-hot encoded features as binary 0/1 values
+
+☑️ Combined processed features with the target variable
+
+☑️ Exported the final ML-ready dataset to CSV
+
+☑️ Verified final dataset contains 891 rows and 22 columns
+
+Testing
+
+☑️ Created automated pytest tests
+
+☑️ Tested that the processed CSV file exists
+
+☑️ Tested the final dataset shape
+
+☑️ Tested that no missing values remain
+
+☑️ Tested that the target column `survived` exists
+
+☑️ Tested that the target contains both classes
+
+☑️ All 5 pytest tests passed successfully
+
+Code Quality
+
+☑️ Added module-level documentation
+
+☑️ Added clear comments for each major preprocessing section
+
+☑️ Used descriptive variable names
+
+☑️ Used separate variables for features and target
+
+☑️ Used appropriate pandas preprocessing operations
+
+☑️ Used appropriate scikit-learn preprocessing APIs
+
+☑️ Used OneHotEncoder for categorical features
+
+☑️ Used StandardScaler for numerical features
+
+☑️ Used `handle_unknown="ignore"` for robust categorical encoding
+
+☑️ Used a clearly defined output file path
+
+☑️ Kept the preprocessing workflow organized and readable
+
+CIA
+
+☑️ Full Stack Mentor Mode Review #1 completed
+
+☑️ Full Stack Mentor Mode Review #2 completed
+
+☑️ Code reviewed using CIA Full Stack Mentor Mode
+
+☑️ Preprocessing logic reviewed
+
+☑️ Missing-value handling reviewed
+
+☑️ Encoding approach reviewed
+
+☑️ Scaling approach reviewed
+
+☑️ Testing and code quality reviewed
+
+☑️ Final implementation reviewed before submission
+
+Evidence / Results
+
+☑️ Captured original dataset shape: 891 × 15
+
+☑️ Captured original column names
+
+☑️ Captured original missing-value counts
+
+☑️ Captured missing-value counts after preprocessing
+
+☑️ Verified zero missing values after preprocessing
+
+☑️ Captured encoded feature matrix shape: 891 × 21
+
+☑️ Captured scaled numerical feature statistics
+
+☑️ Captured final ML-ready dataset shape: 891 × 22
+
+☑️ Verified target distribution
+
+☑️ Verified exported Titanic CSV file
+
+☑️ Python program executed successfully
+
+☑️ Pytest output verified with 5 passed tests
+
+Git
+
+☑️ Required branch used: `feat/aiml-W2-Ramya`
+
+☑️ Commit #1 completed: `feat: add W2D5 Titanic preprocessing pipeline`
+
+☑️ Commit #2 completed: `chore: ignore Python cache files`
+
+☑️ Minimum 2 descriptive commits completed
+
+☑️ README.md created
+
+☑️ `__pycache__/` removed from Git tracking
+
+☑️ `.gitignore` created
+
+☑️ Python cache files excluded from Git
+
+☑️ Changes pushed to `feat/aiml-W2-Ramya`
+
+☑️ Git branch synchronized with remote
+
+Final Review
+
+☑️ Titanic dataset loaded successfully
+
+☑️ EDA completed
+
+☑️ Missing values handled
+
+☑️ Excessively incomplete `deck` column removed
+
+☑️ Target leakage from `alive` reviewed and prevented
+
+☑️ Categorical features encoded
+
+☑️ Numerical features scaled
+
+☑️ ML-ready dataset exported
+
+☑️ Automated tests completed successfully
+
+☑️ All 5 tests passed successfully
+
+☑️ CIA reviews completed
+
+☑️ Minimum 2 commits completed
+
+☑️ Documentation completed
+
+☑️ Python cache files excluded from Git
+
+☑️ Changes pushed to GitHub
+
+☑️ Ready for Pull Request
+
+# Self-Review Checklist - W3D1 Linear Regression - Scikit-Learn
+
+### Linear Regression Concepts
+
+☑️ Understood the purpose of Linear Regression
+
+☑️ Understood Ordinary Least Squares (OLS)
+
+☑️ Understood coefficients and intercept
+
+☑️ Understood residuals
+
+☑️ Understood Ridge Regression
+
+☑️ Understood Lasso Regression
+
+☑️ Understood the purpose of regularization
+
+### Dataset & Model Training
+
+☑️ Loaded the Diabetes dataset using Scikit-Learn
+
+☑️ Verified dataset shape
+
+☑️ Verified 442 samples and 10 features
+
+☑️ Performed train/test split
+
+☑️ Verified 353 training samples and 89 testing samples
+
+☑️ Trained Linear Regression successfully
+
+☑️ Printed Linear Regression coefficients
+
+☑️ Trained Ridge Regression successfully
+
+☑️ Trained Lasso Regression successfully
+
+### Model Evaluation
+
+☑️ Calculated Mean Squared Error (MSE)
+
+☑️ Calculated Root Mean Squared Error (RMSE)
+
+☑️ Calculated Mean Absolute Error (MAE)
+
+☑️ Calculated R-squared (R2)
+
+☑️ Compared Linear Regression, Ridge and Lasso
+
+☑️ Created model comparison results table
+
+☑️ Exported comparison results to CSV
+
+### Visualizations
+
+☑️ Created predicted vs actual plot
+
+☑️ Created residual plot
+
+☑️ Saved visualization output files
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for regression models
+
+☑️ Used NumPy for numerical calculations
+
+☑️ Used Pandas for the comparison table
+
+☑️ Used Matplotlib for visualizations
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested dataset dimensions
+
+☑️ Tested train/test split
+
+☑️ Tested Linear Regression training
+
+☑️ Tested regression metrics
+
+☑️ Tested Ridge and Lasso training
+
+☑️ Tested evaluation of all three models
+
+☑️ All 6 pytest tests passed
+
+### Documentation
+
+☑️ Created README.md
+
+☑️ Documented the dataset
+
+☑️ Documented the three regression models
+
+☑️ Documented evaluation metrics
+
+☑️ Documented model comparison results
+
+☑️ Documented Linear Regression coefficients
+
+☑️ Documented visualizations
+
+☑️ Documented key concepts
+
+### Git
+
+☑️ Created required branch: `feat/aiml-W3-Ramya`
+
+☑️ Completed minimum 2 commits
+
+☑️ Used descriptive commit messages
+
+☑️ Changes pushed to GitHub
+
+☑️ Pull Request raised against `master`
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ Minimum 2 CIA interactions completed
+
+☑️ Code improvements applied based on CIA feedback
+
+### Evidence
+
+☑️ Main program output captured
+
+☑️ Model coefficients evidence available
+
+☑️ Evaluation metrics evidence available
+
+☑️ Model comparison evidence available
+
+☑️ Pytest results evidence available
+
+☑️ Predicted vs actual plot generated
+
+☑️ Residual plot generated
+
+☑️ Model comparison CSV generated
+
+☑️ Git/PR evidence available
+
+### Final Review
+
+☑️ Code runs successfully
+
+☑️ Dataset loaded successfully
+
+☑️ Linear Regression trained successfully
+
+☑️ Ridge and Lasso trained successfully
+
+☑️ All required evaluation metrics calculated
+
+☑️ Model comparison completed
+
+☑️ Tests passed successfully
+
+☑️ README completed
+
+☑️ Required Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ Pull Request raised
+
+☑️ CIA requirements completed
+
+☑️ Ready for submission
+
+# Self-Review Checklist - W3D2 Logistic Regression & Classification
+
+**### Logistic Regression Concepts**
+
+☑️ Understood the difference between regression and classification
+
+☑️ Understood the purpose of Logistic Regression
+
+☑️ Understood the sigmoid function and probability output
+
+☑️ Understood binary and multi-class classification
+
+☑️ Understood classification decision boundaries
+
+☑️ Understood predicted class probabilities
+
+**### Dataset & Model Training**
+
+☑️ Loaded the Iris dataset using Scikit-Learn
+
+☑️ Verified 150 samples and 4 features
+
+☑️ Verified the three target classes: setosa, versicolor and virginica
+
+☑️ Performed stratified train/test split
+
+☑️ Verified 120 training samples and 30 testing samples
+
+☑️ Trained Logistic Regression successfully
+
+☑️ Generated class predictions
+
+☑️ Generated class probabilities
+
+☑️ Printed model coefficients
+
+☑️ Printed model intercepts
+
+**### Model Evaluation**
+
+☑️ Calculated classification accuracy
+
+☑️ Achieved 96.67% test accuracy
+
+☑️ Generated confusion matrix
+
+☑️ Generated classification report
+
+☑️ Evaluated precision, recall and F1-score
+
+☑️ Verified multi-class classification performance
+
+**### Code Quality**
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for Logistic Regression and evaluation
+
+☑️ Used NumPy for probability validation in tests
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Used stratification during train/test splitting
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+**### Testing**
+
+☑️ Created pytest test cases
+
+☑️ Tested Logistic Regression model training
+
+☑️ Tested prediction output shape
+
+☑️ Tested model accuracy
+
+☑️ Tested probability output
+
+☑️ Verified class probabilities sum to 1
+
+☑️ All 4 pytest tests passed
+
+**### Output Evidence**
+
+☑️ Main program output captured
+
+☑️ Dataset information evidence available
+
+☑️ Prediction evidence available
+
+☑️ Probability output evidence available
+
+☑️ Accuracy evidence available
+
+☑️ Confusion matrix evidence available
+
+☑️ Classification report evidence available
+
+☑️ Model coefficients evidence available
+
+☑️ Model intercept evidence available
+
+**### CIA**
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ Minimum 2 CIA interactions completed
+
+☑️ No additional code changes required after CIA review
+
+**### Git**
+
+☑️ Used required branch: `feat/aiml-W3-Ramya`
+
+☑️ Created descriptive Commit #1
+
+☑️ Created descriptive Commit #2
+
+☑️ Completed minimum 2 commits
+
+☑️ Changes pushed to GitHub
+
+☑️ Pull Request raised against `master`
+
+**### Final Review**
+
+☑️ Logistic Regression code runs successfully
+
+☑️ Iris dataset loaded successfully
+
+☑️ Multi-class classification implemented
+
+☑️ Model evaluation completed
+
+☑️ Confusion matrix generated
+
+☑️ Classification report generated
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Required Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ Pull Request raised
+
+☑️ Ready for submission
+
+# Self-Review Checklist - W3D3 Decision Trees & Random Forests
+
+### Decision Tree & Random Forest Concepts
+
+☑️ Understood the purpose of Decision Tree classification
+
+☑️ Understood how Decision Trees split data using feature values
+
+☑️ Understood the concept of tree depth
+
+☑️ Understood how excessive tree depth can cause overfitting
+
+☑️ Understood the purpose of Random Forest
+
+☑️ Understood how Random Forest combines multiple Decision Trees
+
+☑️ Understood why Random Forest is generally more robust than a single Decision Tree
+
+### Dataset & Model Training
+
+☑️ Loaded the dataset successfully
+
+☑️ Prepared features and target variables
+
+☑️ Performed train/test splitting
+
+☑️ Trained a Decision Tree classifier successfully
+
+☑️ Trained a Random Forest classifier successfully
+
+☑️ Generated predictions from both models
+
+☑️ Compared Decision Tree and Random Forest performance
+
+☑️ Used a fixed random state for reproducibility
+
+### Model Evaluation
+
+☑️ Evaluated Decision Tree model performance
+
+☑️ Evaluated Random Forest model performance
+
+☑️ Compared model accuracy
+
+☑️ Generated model comparison results
+
+☑️ Verified model predictions
+
+☑️ Generated Decision Tree visualization
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for Decision Tree and Random Forest models
+
+☑️ Used appropriate evaluation methods
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested Decision Tree model functionality
+
+☑️ Tested Random Forest model functionality
+
+☑️ Tested prediction output
+
+☑️ Tested model evaluation
+
+☑️ All pytest tests passed
+
+### Output Evidence
+
+☑️ Main program output captured
+
+☑️ Decision Tree visualization generated
+
+☑️ Model comparison results generated
+
+☑️ `decision_tree.png` saved in the output folder
+
+☑️ `model_comparison.csv` saved in the output folder
+
+☑️ Model performance comparison evidence available
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ CIA Interaction 1 completed
+
+☑️ CIA Interaction 2 completed
+
+☑️ No additional code changes required after CIA review
+
+### Git
+
+☑️ Used required branch: `feat/aiml-W3-Ramya`
+
+☑️ Created descriptive commit
+
+☑️ Commit created: `feat: decision trees and random forests`
+
+☑️ Changes pushed to GitHub
+
+☑️ Verified commit on remote branch
+
+### Final Review
+
+☑️ Decision Tree code runs successfully
+
+☑️ Random Forest code runs successfully
+
+☑️ Model comparison completed
+
+☑️ Decision Tree visualization generated
+
+☑️ Model comparison CSV generated
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Required Git commit completed
+
+☑️ Changes pushed to GitHub
+
+☑️ W3D3 work completed successfully
+
+☑️ Ready for submission
+
+# Self-Review Checklist - W3D4 SVM & KNN
+
+### SVM & KNN Concepts
+
+☑️ Understood the purpose of Support Vector Machine (SVM)
+
+☑️ Understood the purpose of K-Nearest Neighbors (KNN)
+
+☑️ Understood how SVM finds a suitable decision boundary
+
+☑️ Understood the concept of SVM kernels
+
+☑️ Understood the purpose of the RBF kernel
+
+☑️ Understood the importance of the SVM `C` parameter
+
+☑️ Understood how KNN makes predictions using nearest neighbors
+
+☑️ Understood the importance of the `n_neighbors` parameter in KNN
+
+☑️ Understood why feature scaling is important for SVM and KNN
+
+☑️ Understood when SVM may be preferred over KNN and vice versa
+
+### Dataset & Model Training
+
+☑️ Loaded the Iris dataset successfully
+
+☑️ Prepared features and target variables
+
+☑️ Performed train/test splitting
+
+☑️ Used stratified splitting to preserve class distribution
+
+☑️ Applied StandardScaler to the features
+
+☑️ Trained an SVM classifier successfully
+
+☑️ Trained a KNN classifier successfully
+
+☑️ Generated predictions from both models
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Compared SVM and KNN performance
+
+### Model Evaluation
+
+☑️ Evaluated SVM model performance
+
+☑️ Evaluated KNN model performance
+
+☑️ Calculated accuracy
+
+☑️ Calculated precision
+
+☑️ Calculated recall
+
+☑️ Calculated F1-score
+
+☑️ Compared model accuracy
+
+☑️ Generated model comparison results
+
+☑️ Identified SVM as the better-performing model based on accuracy
+
+### Results
+
+☑️ SVM achieved 96.67% accuracy
+
+☑️ KNN achieved 93.33% accuracy
+
+☑️ SVM achieved higher accuracy than KNN on the test dataset
+
+☑️ Model comparison output was verified successfully
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for SVM and KNN
+
+☑️ Used appropriate preprocessing methods
+
+☑️ Used appropriate evaluation metrics
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Used separate functions for data preparation and model evaluation
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested train/test data splitting
+
+☑️ Tested SVM model functionality
+
+☑️ Tested KNN model functionality
+
+☑️ Tested model evaluation metrics
+
+☑️ All pytest tests passed
+
+☑️ Verified test result: 3 passed
+
+### Output Evidence
+
+☑️ Main program output captured
+
+☑️ SVM results captured
+
+☑️ KNN results captured
+
+☑️ Model comparison results captured
+
+☑️ `svm_knn_output.txt` saved as output evidence
+
+☑️ Model performance comparison evidence available
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ CIA Interaction 1 completed
+
+☑️ CIA Interaction 2 completed
+
+☑️ Code reviewed before final submission
+
+☑️ No additional code changes required after CIA review
+
+### Git
+
+☑️ Used required branch: `feat/aiml-W3-Ramya`
+
+☑️ Created descriptive commits
+
+☑️ Created Commit 1: `feat: implement SVM and KNN comparison`
+
+☑️ Created Commit 2: `docs: add SVM and KNN output evidence`
+
+☑️ Changes pushed to GitHub
+
+☑️ Verified branch was pushed successfully
+
+☑️ Working tree was clean before push
+
+### Final Review
+
+☑️ SVM code runs successfully
+
+☑️ KNN code runs successfully
+
+☑️ Model comparison completed
+
+☑️ Evaluation metrics generated successfully
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Minimum 2 Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ W3D4 work completed successfully
+
+☑️ Ready for submission
+
+# Self-Review Checklist - W3D5 Hyperparameter Tuning
+
+### Hyperparameter Tuning Concepts
+
+☑️ Understood the purpose of hyperparameter tuning
+
+☑️ Understood the purpose of GridSearchCV
+
+☑️ Understood the purpose of RandomizedSearchCV
+
+☑️ Understood the difference between GridSearchCV and RandomizedSearchCV
+
+☑️ Understood how GridSearchCV systematically tests parameter combinations
+
+☑️ Understood how RandomizedSearchCV randomly selects parameter combinations
+
+☑️ Understood the importance of the SVM `C` parameter
+
+☑️ Understood the purpose of the SVM `kernel` parameter
+
+☑️ Understood the purpose of the SVM `gamma` parameter
+
+☑️ Understood the importance of cross-validation during hyperparameter tuning
+
+### Dataset & Model Training
+
+☑️ Loaded the Iris dataset successfully
+
+☑️ Prepared features and target variables
+
+☑️ Performed train/test splitting
+
+☑️ Used stratified splitting to preserve class distribution
+
+☑️ Applied StandardScaler using a Scikit-Learn Pipeline
+
+☑️ Created an SVM classifier successfully
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Applied GridSearchCV for SVM hyperparameter tuning
+
+☑️ Applied RandomizedSearchCV for SVM hyperparameter tuning
+
+☑️ Generated the best model and best parameters from both search methods
+
+### GridSearchCV Results
+
+☑️ GridSearchCV completed successfully
+
+☑️ Best parameters identified successfully
+
+☑️ Best `C` value: 0.1
+
+☑️ Best `kernel`: linear
+
+☑️ Best `gamma`: scale
+
+☑️ Best CV accuracy: 97.5%
+
+☑️ Test accuracy: 93.33%
+
+### RandomizedSearchCV Results
+
+☑️ RandomizedSearchCV completed successfully
+
+☑️ Best parameters identified successfully
+
+☑️ Best `C` value: 0.1
+
+☑️ Best `kernel`: linear
+
+☑️ Best `gamma`: auto
+
+☑️ Best CV accuracy: 97.5%
+
+☑️ Test accuracy: 93.33%
+
+### Model Comparison
+
+☑️ Compared GridSearchCV and RandomizedSearchCV
+
+☑️ GridSearchCV achieved 97.5% CV accuracy
+
+☑️ RandomizedSearchCV achieved 97.5% CV accuracy
+
+☑️ Both methods achieved 93.33% test accuracy
+
+☑️ Verified that both methods selected a linear SVM with `C=0.1`
+
+☑️ Verified the comparison output successfully
+
+### MLflow
+
+☑️ Installed MLflow successfully
+
+☑️ Used MLflow for experiment tracking
+
+☑️ Logged the model type
+
+☑️ Logged the search method
+
+☑️ Logged best hyperparameters
+
+☑️ Logged CV accuracy
+
+☑️ Logged test accuracy
+
+☑️ Logged the best trained model
+
+☑️ MLflow runs completed successfully
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for model training and hyperparameter tuning
+
+☑️ Used an appropriate preprocessing pipeline
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Used separate functions for data loading, pipeline creation, GridSearchCV, RandomizedSearchCV, and MLflow logging
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested train/test data splitting
+
+☑️ Tested pipeline creation
+
+☑️ Tested GridSearchCV functionality
+
+☑️ Tested RandomizedSearchCV functionality
+
+☑️ All pytest tests passed
+
+☑️ Verified test result: 4 passed
+
+### Output Evidence
+
+☑️ Main program output captured
+
+☑️ GridSearchCV results captured
+
+☑️ RandomizedSearchCV results captured
+
+☑️ Model comparison results captured
+
+☑️ Best hyperparameters verified
+
+☑️ CV accuracy and test accuracy verified
+
+☑️ Output evidence screenshot available
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ CIA Interaction 1 completed
+
+☑️ CIA Interaction 2 completed
+
+☑️ Code reviewed before final submission
+
+☑️ Final implementation reviewed successfully
+
+### Git
+
+☑️ Used required branch: `feat/aiml-W3-Ramya`
+
+☑️ Created descriptive commits
+
+☑️ Created Commit 1: `feat: add hyperparameter tuning with grid and random search`
+
+☑️ Created Commit 2: `docs: add W3D5 tuning results`
+
+☑️ Changes pushed to GitHub
+
+☑️ Verified branch was pushed successfully
+
+☑️ Working tree was clean after push
+
+### Final Review
+
+☑️ Hyperparameter tuning code runs successfully
+
+☑️ GridSearchCV runs successfully
+
+☑️ RandomizedSearchCV runs successfully
+
+☑️ SVM hyperparameters tuned successfully
+
+☑️ Model comparison completed
+
+☑️ MLflow tracking completed
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Minimum 2 Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ W3D5 work completed successfully
+
+☑️ Ready for submission
