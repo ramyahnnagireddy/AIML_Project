@@ -1725,3 +1725,221 @@ Final Review
 ☑️ W3D4 work completed successfully
 
 ☑️ Ready for submission
+
+# Self-Review Checklist - W3D5 Hyperparameter Tuning
+
+### Hyperparameter Tuning Concepts
+
+☑️ Understood the purpose of hyperparameter tuning
+
+☑️ Understood the purpose of GridSearchCV
+
+☑️ Understood the purpose of RandomizedSearchCV
+
+☑️ Understood the difference between GridSearchCV and RandomizedSearchCV
+
+☑️ Understood how GridSearchCV systematically tests parameter combinations
+
+☑️ Understood how RandomizedSearchCV randomly selects parameter combinations
+
+☑️ Understood the importance of the SVM `C` parameter
+
+☑️ Understood the purpose of the SVM `kernel` parameter
+
+☑️ Understood the purpose of the SVM `gamma` parameter
+
+☑️ Understood the importance of cross-validation during hyperparameter tuning
+
+### Dataset & Model Training
+
+☑️ Loaded the Iris dataset successfully
+
+☑️ Prepared features and target variables
+
+☑️ Performed train/test splitting
+
+☑️ Used stratified splitting to preserve class distribution
+
+☑️ Applied StandardScaler using a Scikit-Learn Pipeline
+
+☑️ Created an SVM classifier successfully
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Applied GridSearchCV for SVM hyperparameter tuning
+
+☑️ Applied RandomizedSearchCV for SVM hyperparameter tuning
+
+☑️ Generated the best model and best parameters from both search methods
+
+### GridSearchCV Results
+
+☑️ GridSearchCV completed successfully
+
+☑️ Best parameters identified successfully
+
+☑️ Best `C` value: 0.1
+
+☑️ Best `kernel`: linear
+
+☑️ Best `gamma`: scale
+
+☑️ Best CV accuracy: 97.5%
+
+☑️ Test accuracy: 93.33%
+
+### RandomizedSearchCV Results
+
+☑️ RandomizedSearchCV completed successfully
+
+☑️ Best parameters identified successfully
+
+☑️ Best `C` value: 0.1
+
+☑️ Best `kernel`: linear
+
+☑️ Best `gamma`: auto
+
+☑️ Best CV accuracy: 97.5%
+
+☑️ Test accuracy: 93.33%
+
+### Model Comparison
+
+☑️ Compared GridSearchCV and RandomizedSearchCV
+
+☑️ GridSearchCV achieved 97.5% CV accuracy
+
+☑️ RandomizedSearchCV achieved 97.5% CV accuracy
+
+☑️ Both methods achieved 93.33% test accuracy
+
+☑️ Verified that both methods selected a linear SVM with `C=0.1`
+
+☑️ Verified the comparison output successfully
+
+### MLflow
+
+☑️ Installed MLflow successfully
+
+☑️ Used MLflow for experiment tracking
+
+☑️ Logged the model type
+
+☑️ Logged the search method
+
+☑️ Logged best hyperparameters
+
+☑️ Logged CV accuracy
+
+☑️ Logged test accuracy
+
+☑️ Logged the best trained model
+
+☑️ MLflow runs completed successfully
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for model training and hyperparameter tuning
+
+☑️ Used an appropriate preprocessing pipeline
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Used separate functions for data loading, pipeline creation, GridSearchCV, RandomizedSearchCV, and MLflow logging
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested train/test data splitting
+
+☑️ Tested pipeline creation
+
+☑️ Tested GridSearchCV functionality
+
+☑️ Tested RandomizedSearchCV functionality
+
+☑️ All pytest tests passed
+
+☑️ Verified test result: 4 passed
+
+### Output Evidence
+
+☑️ Main program output captured
+
+☑️ GridSearchCV results captured
+
+☑️ RandomizedSearchCV results captured
+
+☑️ Model comparison results captured
+
+☑️ Best hyperparameters verified
+
+☑️ CV accuracy and test accuracy verified
+
+☑️ Output evidence screenshot available
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ CIA Interaction 1 completed
+
+☑️ CIA Interaction 2 completed
+
+☑️ Code reviewed before final submission
+
+☑️ Final implementation reviewed successfully
+
+### Git
+
+☑️ Used required branch: `feat/aiml-W3-Ramya`
+
+☑️ Created descriptive commits
+
+☑️ Created Commit 1: `feat: add hyperparameter tuning with grid and random search`
+
+☑️ Created Commit 2: `docs: add W3D5 tuning results`
+
+☑️ Changes pushed to GitHub
+
+☑️ Verified branch was pushed successfully
+
+☑️ Working tree was clean after push
+
+### Final Review
+
+☑️ Hyperparameter tuning code runs successfully
+
+☑️ GridSearchCV runs successfully
+
+☑️ RandomizedSearchCV runs successfully
+
+☑️ SVM hyperparameters tuned successfully
+
+☑️ Model comparison completed
+
+☑️ MLflow tracking completed
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Minimum 2 Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ W3D5 work completed successfully
+
+☑️ Ready for submission
