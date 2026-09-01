@@ -1249,3 +1249,159 @@ Final Review
 ☑️ CIA requirements completed
 
 ☑️ Ready for submission
+
+# Self-Review Checklist - W3D2 Logistic Regression & Classification
+
+**### Logistic Regression Concepts**
+
+☑️ Understood the difference between regression and classification
+
+☑️ Understood the purpose of Logistic Regression
+
+☑️ Understood the sigmoid function and probability output
+
+☑️ Understood binary and multi-class classification
+
+☑️ Understood classification decision boundaries
+
+☑️ Understood predicted class probabilities
+
+**### Dataset & Model Training**
+
+☑️ Loaded the Iris dataset using Scikit-Learn
+
+☑️ Verified 150 samples and 4 features
+
+☑️ Verified the three target classes: setosa, versicolor and virginica
+
+☑️ Performed stratified train/test split
+
+☑️ Verified 120 training samples and 30 testing samples
+
+☑️ Trained Logistic Regression successfully
+
+☑️ Generated class predictions
+
+☑️ Generated class probabilities
+
+☑️ Printed model coefficients
+
+☑️ Printed model intercepts
+
+**### Model Evaluation**
+
+☑️ Calculated classification accuracy
+
+☑️ Achieved 96.67% test accuracy
+
+☑️ Generated confusion matrix
+
+☑️ Generated classification report
+
+☑️ Evaluated precision, recall and F1-score
+
+☑️ Verified multi-class classification performance
+
+**### Code Quality**
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for Logistic Regression and evaluation
+
+☑️ Used NumPy for probability validation in tests
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Used stratification during train/test splitting
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+**### Testing**
+
+☑️ Created pytest test cases
+
+☑️ Tested Logistic Regression model training
+
+☑️ Tested prediction output shape
+
+☑️ Tested model accuracy
+
+☑️ Tested probability output
+
+☑️ Verified class probabilities sum to 1
+
+☑️ All 4 pytest tests passed
+
+**### Output Evidence**
+
+☑️ Main program output captured
+
+☑️ Dataset information evidence available
+
+☑️ Prediction evidence available
+
+☑️ Probability output evidence available
+
+☑️ Accuracy evidence available
+
+☑️ Confusion matrix evidence available
+
+☑️ Classification report evidence available
+
+☑️ Model coefficients evidence available
+
+☑️ Model intercept evidence available
+
+**### CIA**
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ Minimum 2 CIA interactions completed
+
+☑️ No additional code changes required after CIA review
+
+**### Git**
+
+☑️ Used required branch: `feat/aiml-W3-Ramya`
+
+☑️ Created descriptive Commit #1
+
+☑️ Created descriptive Commit #2
+
+☑️ Completed minimum 2 commits
+
+☑️ Changes pushed to GitHub
+
+☑️ Pull Request raised against `master`
+
+**### Final Review**
+
+☑️ Logistic Regression code runs successfully
+
+☑️ Iris dataset loaded successfully
+
+☑️ Multi-class classification implemented
+
+☑️ Model evaluation completed
+
+☑️ Confusion matrix generated
+
+☑️ Classification report generated
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Required Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ Pull Request raised
+
+☑️ Ready for submission
