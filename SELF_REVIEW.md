@@ -1405,3 +1405,145 @@ Final Review
 ☑️ Pull Request raised
 
 ☑️ Ready for submission
+
+# Self-Review Checklist - W3D3 Decision Trees & Random Forests
+
+### Decision Tree & Random Forest Concepts
+
+☑️ Understood the purpose of Decision Tree classification
+
+☑️ Understood how Decision Trees split data using feature values
+
+☑️ Understood the concept of tree depth
+
+☑️ Understood how excessive tree depth can cause overfitting
+
+☑️ Understood the purpose of Random Forest
+
+☑️ Understood how Random Forest combines multiple Decision Trees
+
+☑️ Understood why Random Forest is generally more robust than a single Decision Tree
+
+### Dataset & Model Training
+
+☑️ Loaded the dataset successfully
+
+☑️ Prepared features and target variables
+
+☑️ Performed train/test splitting
+
+☑️ Trained a Decision Tree classifier successfully
+
+☑️ Trained a Random Forest classifier successfully
+
+☑️ Generated predictions from both models
+
+☑️ Compared Decision Tree and Random Forest performance
+
+☑️ Used a fixed random state for reproducibility
+
+### Model Evaluation
+
+☑️ Evaluated Decision Tree model performance
+
+☑️ Evaluated Random Forest model performance
+
+☑️ Compared model accuracy
+
+☑️ Generated model comparison results
+
+☑️ Verified model predictions
+
+☑️ Generated Decision Tree visualization
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for Decision Tree and Random Forest models
+
+☑️ Used appropriate evaluation methods
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested Decision Tree model functionality
+
+☑️ Tested Random Forest model functionality
+
+☑️ Tested prediction output
+
+☑️ Tested model evaluation
+
+☑️ All pytest tests passed
+
+### Output Evidence
+
+☑️ Main program output captured
+
+☑️ Decision Tree visualization generated
+
+☑️ Model comparison results generated
+
+☑️ `decision_tree.png` saved in the output folder
+
+☑️ `model_comparison.csv` saved in the output folder
+
+☑️ Model performance comparison evidence available
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ CIA Interaction 1 completed
+
+☑️ CIA Interaction 2 completed
+
+☑️ No additional code changes required after CIA review
+
+### Git
+
+☑️ Used required branch: `feat/aiml-W3-Ramya`
+
+☑️ Created descriptive commit
+
+☑️ Commit created: `feat: decision trees and random forests`
+
+☑️ Changes pushed to GitHub
+
+☑️ Verified commit on remote branch
+
+### Final Review
+
+☑️ Decision Tree code runs successfully
+
+☑️ Random Forest code runs successfully
+
+☑️ Model comparison completed
+
+☑️ Decision Tree visualization generated
+
+☑️ Model comparison CSV generated
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Required Git commit completed
+
+☑️ Changes pushed to GitHub
+
+☑️ W3D3 work completed successfully
+
+☑️ Ready for submission
