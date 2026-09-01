@@ -1547,3 +1547,181 @@ Final Review
 ☑️ W3D3 work completed successfully
 
 ☑️ Ready for submission
+
+# Self-Review Checklist - W3D4 SVM & KNN
+
+### SVM & KNN Concepts
+
+☑️ Understood the purpose of Support Vector Machine (SVM)
+
+☑️ Understood the purpose of K-Nearest Neighbors (KNN)
+
+☑️ Understood how SVM finds a suitable decision boundary
+
+☑️ Understood the concept of SVM kernels
+
+☑️ Understood the purpose of the RBF kernel
+
+☑️ Understood the importance of the SVM `C` parameter
+
+☑️ Understood how KNN makes predictions using nearest neighbors
+
+☑️ Understood the importance of the `n_neighbors` parameter in KNN
+
+☑️ Understood why feature scaling is important for SVM and KNN
+
+☑️ Understood when SVM may be preferred over KNN and vice versa
+
+### Dataset & Model Training
+
+☑️ Loaded the Iris dataset successfully
+
+☑️ Prepared features and target variables
+
+☑️ Performed train/test splitting
+
+☑️ Used stratified splitting to preserve class distribution
+
+☑️ Applied StandardScaler to the features
+
+☑️ Trained an SVM classifier successfully
+
+☑️ Trained a KNN classifier successfully
+
+☑️ Generated predictions from both models
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Compared SVM and KNN performance
+
+### Model Evaluation
+
+☑️ Evaluated SVM model performance
+
+☑️ Evaluated KNN model performance
+
+☑️ Calculated accuracy
+
+☑️ Calculated precision
+
+☑️ Calculated recall
+
+☑️ Calculated F1-score
+
+☑️ Compared model accuracy
+
+☑️ Generated model comparison results
+
+☑️ Identified SVM as the better-performing model based on accuracy
+
+### Results
+
+☑️ SVM achieved 96.67% accuracy
+
+☑️ KNN achieved 93.33% accuracy
+
+☑️ SVM achieved higher accuracy than KNN on the test dataset
+
+☑️ Model comparison output was verified successfully
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for SVM and KNN
+
+☑️ Used appropriate preprocessing methods
+
+☑️ Used appropriate evaluation metrics
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Used separate functions for data preparation and model evaluation
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested train/test data splitting
+
+☑️ Tested SVM model functionality
+
+☑️ Tested KNN model functionality
+
+☑️ Tested model evaluation metrics
+
+☑️ All pytest tests passed
+
+☑️ Verified test result: 3 passed
+
+### Output Evidence
+
+☑️ Main program output captured
+
+☑️ SVM results captured
+
+☑️ KNN results captured
+
+☑️ Model comparison results captured
+
+☑️ `svm_knn_output.txt` saved as output evidence
+
+☑️ Model performance comparison evidence available
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ CIA Interaction 1 completed
+
+☑️ CIA Interaction 2 completed
+
+☑️ Code reviewed before final submission
+
+☑️ No additional code changes required after CIA review
+
+### Git
+
+☑️ Used required branch: `feat/aiml-W3-Ramya`
+
+☑️ Created descriptive commits
+
+☑️ Created Commit 1: `feat: implement SVM and KNN comparison`
+
+☑️ Created Commit 2: `docs: add SVM and KNN output evidence`
+
+☑️ Changes pushed to GitHub
+
+☑️ Verified branch was pushed successfully
+
+☑️ Working tree was clean before push
+
+### Final Review
+
+☑️ SVM code runs successfully
+
+☑️ KNN code runs successfully
+
+☑️ Model comparison completed
+
+☑️ Evaluation metrics generated successfully
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Minimum 2 Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ W3D4 work completed successfully
+
+☑️ Ready for submission
