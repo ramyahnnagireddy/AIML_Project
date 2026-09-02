@@ -1943,3 +1943,233 @@ Final Review
 ☑️ W3D5 work completed successfully
 
 ☑️ Ready for submission
+
+# Self-Review Checklist - W4D1 Model Evaluation Metrics
+
+### Model Evaluation Concepts
+
+☑️ Understood why train/test split is used for model evaluation
+
+☑️ Understood the purpose of Accuracy
+
+☑️ Understood the purpose of Precision
+
+☑️ Understood the purpose of Recall
+
+☑️ Understood the purpose of F1-Score
+
+☑️ Understood the purpose of ROC-AUC
+
+☑️ Understood the purpose of a Confusion Matrix
+
+☑️ Understood the difference between Precision and Recall
+
+☑️ Understood why multiple evaluation metrics are useful
+
+☑️ Understood the importance of cross-validation for reliable model evaluation
+
+### Dataset & Model Training
+
+☑️ Loaded the Breast Cancer Wisconsin dataset successfully
+
+☑️ Prepared features and target variables
+
+☑️ Verified dataset shape: 569 samples and 30 features
+
+☑️ Verified that the dataset contains 2 classes
+
+☑️ Performed train/test splitting
+
+☑️ Used stratified splitting to preserve class distribution
+
+☑️ Applied StandardScaler using a Scikit-Learn Pipeline
+
+☑️ Created a Logistic Regression classifier successfully
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Trained the model successfully
+
+### Test Set Evaluation
+
+☑️ Calculated Accuracy successfully
+
+☑️ Calculated Precision successfully
+
+☑️ Calculated Recall successfully
+
+☑️ Calculated F1-Score successfully
+
+☑️ Calculated ROC-AUC successfully
+
+☑️ Generated the Confusion Matrix successfully
+
+☑️ Verified test Accuracy: 98.25%
+
+☑️ Verified test Precision: 98.61%
+
+☑️ Verified test Recall: 98.61%
+
+☑️ Verified test F1-Score: 98.61%
+
+☑️ Verified test ROC-AUC: 99.54%
+
+### Stratified K-Fold Cross-Validation
+
+☑️ Understood the purpose of K-Fold Cross-Validation
+
+☑️ Understood the purpose of Stratified K-Fold Cross-Validation
+
+☑️ Applied Stratified 5-Fold Cross-Validation
+
+☑️ Evaluated Accuracy using cross-validation
+
+☑️ Evaluated Precision using cross-validation
+
+☑️ Evaluated Recall using cross-validation
+
+☑️ Evaluated ROC-AUC using cross-validation
+
+☑️ Verified mean CV Accuracy: 97.37%
+
+☑️ Verified mean CV Precision: 96.83%
+
+☑️ Verified mean CV Recall: 99.16%
+
+☑️ Verified mean CV ROC-AUC: 99.53%
+
+### Learning Curve
+
+☑️ Understood the purpose of a learning curve
+
+☑️ Generated the learning curve successfully
+
+☑️ Compared training and validation accuracy
+
+☑️ Saved the learning curve as `learning_curve.png`
+
+☑️ Verified final training accuracy: 98.81%
+
+☑️ Verified final validation accuracy: 97.37%
+
+☑️ Used the learning curve to assess model fitting behavior
+
+☑️ Observed a small gap between training and validation performance
+
+☑️ Identified good model generalization with no major signs of overfitting
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for model training and evaluation
+
+☑️ Used a preprocessing pipeline with StandardScaler
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Used separate functions for data loading, model training, metric calculation, cross-validation, and learning curve generation
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested dataset loading
+
+☑️ Tested model training
+
+☑️ Tested evaluation metric calculation
+
+☑️ Tested confusion matrix generation
+
+☑️ Tested Stratified K-Fold Cross-Validation
+
+☑️ Verified that metric values are within the expected range
+
+☑️ All pytest tests passed
+
+☑️ Verified test result: 4 passed
+
+### Output Evidence
+
+☑️ Main program output captured
+
+☑️ Test-set evaluation results captured
+
+☑️ Confusion Matrix output captured
+
+☑️ Stratified 5-Fold CV results captured
+
+☑️ Learning curve generated successfully
+
+☑️ Learning curve output saved as `learning_curve.png`
+
+☑️ Evaluation results documented in `W4D1_RESULTS.txt`
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ CIA Interaction 1 completed
+
+☑️ CIA Interaction 2 completed
+
+☑️ Code reviewed before final submission
+
+☑️ Testing and implementation reviewed successfully
+
+### Git
+
+☑️ Used required branch: `feat/aiml-W4-Ramya`
+
+☑️ Created descriptive commits
+
+☑️ Created Commit 1: `feat: add W4D1 model evaluation metrics`
+
+☑️ Created Commit 2: `docs: add W4D1 evaluation results`
+
+☑️ Changes pushed to GitHub
+
+☑️ Verified branch was pushed successfully
+
+☑️ Working tree was clean after push
+
+### Final Review
+
+☑️ Model evaluation code runs successfully
+
+☑️ Precision calculated successfully
+
+☑️ Recall calculated successfully
+
+☑️ F1-Score calculated successfully
+
+☑️ ROC-AUC calculated successfully
+
+☑️ Confusion Matrix generated successfully
+
+☑️ Stratified K-Fold Cross-Validation completed
+
+☑️ Learning curve generated successfully
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Minimum 2 Git commits completed
+
+☑️ Changes pushed to GitHub
+
+☑️ Working tree verified clean
+
+☑️ W4D1 work completed successfully
+
+☑️ Ready for submission
