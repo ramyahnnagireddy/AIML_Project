@@ -2173,3 +2173,265 @@ Final Review
 ☑️ W4D1 work completed successfully
 
 ☑️ Ready for submission
+
+# Self-Review Checklist - W4D2 Bias-Variance Tradeoff & Regularisation
+
+### Bias-Variance Tradeoff Concepts
+
+☑️ Understood the bias-variance tradeoff
+
+☑️ Understood the meaning of bias in machine learning
+
+☑️ Understood the meaning of variance in machine learning
+
+☑️ Understood that high bias generally indicates underfitting
+
+☑️ Understood that high variance generally indicates overfitting
+
+☑️ Understood the relationship between model complexity and overfitting
+
+☑️ Understood why regularisation helps control model complexity
+
+### Regularisation
+
+☑️ Understood the purpose of regularisation
+
+☑️ Understood Ridge Regression
+
+☑️ Understood that Ridge uses L2 regularisation
+
+☑️ Understood Lasso Regression
+
+☑️ Understood that Lasso uses L1 regularisation
+
+☑️ Understood the role of the `alpha` hyperparameter
+
+☑️ Understood that increasing regularisation can reduce model complexity
+
+☑️ Compared Linear Regression, Ridge, and Lasso
+
+☑️ Evaluated models using MSE, RMSE, and R²
+
+### Dataset & Model Training
+
+☑️ Created a synthetic regression dataset successfully
+
+☑️ Verified dataset shape: 300 samples and 10 features
+
+☑️ Prepared features and target variables
+
+☑️ Performed train/test splitting
+
+☑️ Used 240 training samples and 60 testing samples
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Created a Linear Regression model successfully
+
+☑️ Created a Ridge Regression model successfully
+
+☑️ Created a Lasso Regression model successfully
+
+☑️ Applied StandardScaler using Scikit-Learn Pipeline
+
+☑️ Trained all models successfully
+
+### Model Comparison
+
+☑️ Compared Linear Regression with Ridge and Lasso
+
+☑️ Calculated MSE for all models
+
+☑️ Calculated RMSE for all models
+
+☑️ Calculated R² for all models
+
+☑️ Verified Linear Regression R²: 0.986666
+
+☑️ Verified Ridge R²: 0.986683
+
+☑️ Verified Lasso R²: 0.986655
+
+☑️ Observed that the three models achieved very similar performance
+
+### Grid Search
+
+☑️ Understood the purpose of GridSearchCV
+
+☑️ Used GridSearchCV for Ridge Regression
+
+☑️ Defined multiple Ridge `alpha` values
+
+☑️ Used 5-fold cross-validation
+
+☑️ Selected the best Ridge hyperparameter systematically
+
+☑️ Verified best Ridge `alpha`: 0.1
+
+☑️ Verified best Ridge CV R²: 0.9864
+
+☑️ Verified Ridge test RMSE: 20.5978
+
+☑️ Verified Ridge test R²: 0.9867
+
+### Randomized Search
+
+☑️ Understood the purpose of RandomizedSearchCV
+
+☑️ Used RandomizedSearchCV for Lasso Regression
+
+☑️ Defined a distribution of possible `alpha` values
+
+☑️ Used 10 random hyperparameter combinations
+
+☑️ Used 5-fold cross-validation
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Selected the best Lasso hyperparameter systematically
+
+☑️ Verified best Lasso `alpha`: 0.001
+
+☑️ Verified best Lasso CV R²: 0.9864
+
+☑️ Verified Lasso test RMSE: 20.6001
+
+☑️ Verified Lasso test R²: 0.9867
+
+### Grid Search vs Randomized Search
+
+☑️ Understood that GridSearchCV evaluates every specified combination
+
+☑️ Understood that RandomizedSearchCV evaluates randomly selected combinations
+
+☑️ Understood when GridSearchCV is appropriate
+
+☑️ Understood when RandomizedSearchCV is appropriate
+
+☑️ Understood why systematic hyperparameter search is better than manually guessing values
+
+### Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used Scikit-Learn for model training and hyperparameter tuning
+
+☑️ Used Scikit-Learn Pipelines for preprocessing and regularisation
+
+☑️ Used fixed random state for reproducibility
+
+☑️ Used separate functions for dataset creation, model evaluation, model comparison, Grid Search, and Randomized Search
+
+☑️ Used a `main()` function to organize program execution
+
+☑️ Ran the main Python script successfully
+
+☑️ Verified the expected output
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+### Testing
+
+☑️ Created pytest test cases
+
+☑️ Tested dataset creation
+
+☑️ Tested model comparison
+
+☑️ Tested Ridge GridSearchCV
+
+☑️ Tested Lasso RandomizedSearchCV
+
+☑️ Tested regularisation models
+
+☑️ Tested random state configuration
+
+☑️ Verified all expected test conditions
+
+☑️ All pytest tests passed
+
+☑️ Verified test result: 6 passed
+
+### Output Evidence
+
+☑️ Main program output captured
+
+☑️ Dataset shape output captured
+
+☑️ Train/test split output captured
+
+☑️ Model comparison results captured
+
+☑️ Ridge Grid Search results captured
+
+☑️ Lasso Randomized Search results captured
+
+☑️ Best hyperparameters documented
+
+☑️ Evaluation metrics documented
+
+☑️ W4D2 evaluation results saved in `W4D2_results.txt`
+
+### CIA
+
+☑️ Full Stack Mentor Mode code review completed
+
+☑️ CIA Interaction 1 completed
+
+☑️ CIA Interaction 2 completed
+
+☑️ Code reviewed before final submission
+
+☑️ Testing and implementation reviewed successfully
+
+### Git
+
+☑️ Used required branch: `feat/aiml-W4-Ramya`
+
+☑️ Created descriptive commits
+
+☑️ Created Commit 1: `feat: add W4D2 bias variance regularisation`
+
+☑️ Created Commit 2: `docs: add W4D2 evaluation results`
+
+☑️ Verified W4D2 changes locally
+
+☑️ Working tree verified clean
+
+☐ Changes pushed to GitHub
+
+☐ Pull Request raised
+
+### Final Review
+
+☑️ Bias-variance concepts understood
+
+☑️ Regularisation concepts understood
+
+☑️ Ridge Regression implemented successfully
+
+☑️ Lasso Regression implemented successfully
+
+☑️ GridSearchCV implemented successfully
+
+☑️ RandomizedSearchCV implemented successfully
+
+☑️ Hyperparameters selected systematically
+
+☑️ Models compared successfully
+
+☑️ Tests passed successfully
+
+☑️ Output evidence captured
+
+☑️ CIA requirements completed
+
+☑️ Minimum 2 Git commits completed
+
+☐ Changes pushed to GitHub
+
+☐ Pull Request raised
+
+☑️ W4D2 implementation completed successfully
+
+☐ W4D2 ready for final submission after push and PR
