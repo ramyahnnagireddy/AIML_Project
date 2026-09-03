@@ -2593,3 +2593,233 @@ Final Review
 ☐ Pull Request raised
 ☑️ W4D2 implementation completed successfully
 ☐ W4D2 ready for final submission after PR
+
+# Self-Review Checklist - W4D4 FastAPI Model Serving
+
+## FastAPI Concepts
+
+☑️ Understood the purpose of FastAPI for serving machine learning models
+
+☑️ Understood how FastAPI exposes ML predictions through API endpoints
+
+☑️ Understood the purpose of the `/predict` endpoint
+
+☑️ Understood the purpose of the health-check `/` endpoint
+
+☑️ Understood how HTTP POST requests are used for predictions
+
+☑️ Understood how JSON input is passed to the prediction endpoint
+
+☑️ Understood how JSON prediction responses are returned
+
+☑️ Understood the role of FastAPI application configuration
+
+## Model Loading & Serving
+
+☑️ Loaded the trained ML model using Joblib
+
+☑️ Used `Path` to locate the saved model file
+
+☑️ Verified the `model.joblib` file loads successfully
+
+☑️ Integrated the trained model into the FastAPI application
+
+☑️ Used the trained model to generate predictions
+
+☑️ Converted input features into a NumPy array
+
+☑️ Reshaped input features into the required model format
+
+☑️ Returned the prediction as an integer
+
+☑️ Verified the model prediction output
+
+## Pydantic Request & Response Models
+
+☑️ Created a `PredictionRequest` Pydantic model
+
+☑️ Defined the `features` field as a list of floating-point values
+
+☑️ Created a `PredictionResponse` Pydantic model
+
+☑️ Defined the `prediction` response field
+
+☑️ Used Pydantic for request validation
+
+☑️ Used `response_model` for structured API responses
+
+## API Endpoints
+
+☑️ Created the `/` health-check endpoint
+
+☑️ Verified the health-check endpoint returns successfully
+
+☑️ Created the `/predict` POST endpoint
+
+☑️ Tested the `/predict` endpoint successfully
+
+☑️ Received HTTP `200 OK` from `/predict`
+
+☑️ Verified prediction response successfully
+
+☑️ Verified multiple prediction requests successfully
+
+## Swagger / API Documentation
+
+☑️ Started the FastAPI application using Uvicorn
+
+☑️ Used `python -m uvicorn app:app --reload`
+
+☑️ Verified the server started successfully
+
+☑️ Verified the API is available at `127.0.0.1:8000`
+
+☑️ Opened the FastAPI Swagger documentation
+
+☑️ Verified `/docs` returned HTTP `200 OK`
+
+☑️ Verified `/openapi.json` returned HTTP `200 OK`
+
+☑️ Tested the API through Swagger UI
+
+## Testing
+
+☑️ Created `test_app.py`
+
+☑️ Created a test for the health-check endpoint
+
+☑️ Created a test for the prediction endpoint
+
+☑️ Used FastAPI `TestClient`
+
+☑️ Installed the required `httpx2` testing dependency
+
+☑️ Verified the test environment
+
+☑️ Ran pytest successfully
+
+☑️ Verified `test_home` passed
+
+☑️ Verified `test_predict` passed
+
+☑️ Verified final test result: **2 passed**
+
+☑️ Confirmed there were no test failures
+
+## Test Results
+
+☑️ Test collection completed successfully
+
+☑️ 2 tests collected
+
+☑️ 2 tests passed
+
+☑️ Verified `test_app.py::test_home PASSED`
+
+☑️ Verified `test_app.py::test_predict PASSED`
+
+☑️ Verified final result: **2 passed in 5.92s**
+
+☑️ Reviewed the Joblib/NumPy warnings
+
+☑️ Confirmed warnings did not affect test success
+
+## Code Quality
+
+☑️ Written clean and commented Python code
+
+☑️ Used FastAPI for API development
+
+☑️ Used Pydantic for data validation
+
+☑️ Used NumPy for input preparation
+
+☑️ Used Joblib for model loading
+
+☑️ Used `Path` for reliable model file location
+
+☑️ Added documentation strings to the application and functions
+
+☑️ Used separate request and response models
+
+☑️ Used appropriate HTTP methods
+
+☑️ Used `response_model` for structured responses
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+## CIA
+
+☑️ Full Stack Mentor Mode / code review completed
+
+☑️ CIA interaction completed
+
+☑️ Code reviewed before final submission
+
+☑️ API implementation reviewed successfully
+
+☑️ Testing and implementation reviewed successfully
+
+## Git
+
+☑️ Used required branch: `feat/aiml-W4-Ramya`
+
+☑️ Checked Git status before committing
+
+☑️ Verified only required W4D4 files were added
+
+☑️ Added `app.py`
+
+☑️ Added `model.joblib`
+
+☑️ Added `model_training.py`
+
+☑️ Added `test_app.py`
+
+☑️ Created descriptive commit
+
+☑️ Created Commit: `feat: add W4D4 FastAPI model serving`
+
+☑️ Verified commit hash: `3a32882`
+
+☑️ Verified working tree was clean
+
+☑️ Verified changes were pushed to GitHub
+
+☐ Pull Request raised
+
+## Final Review
+
+☑️ FastAPI concepts understood
+
+☑️ ML model successfully served through an API
+
+☑️ Prediction endpoint implemented successfully
+
+☑️ Health-check endpoint implemented successfully
+
+☑️ Pydantic request validation implemented
+
+☑️ Pydantic response model implemented
+
+☑️ Swagger documentation verified
+
+☑️ `/predict` tested successfully
+
+☑️ Automated tests created
+
+☑️ **2 pytest tests passed**
+
+☑️ CIA interaction completed
+
+☑️ Required W4D4 files committed
+
+☑️ Changes pushed to GitHub
+
+☑️ Working tree verified clean
+
+☐ Pull Request raised
+
+☑️ **W4D4 implementation completed successfully**
+
+☐ **W4D4 ready for final submission after PR**
