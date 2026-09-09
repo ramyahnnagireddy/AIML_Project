@@ -2823,3 +2823,279 @@ Final Review
 ☑️ **W4D4 implementation completed successfully**
 
 ☐ **W4D4 ready for final submission after PR**
+
+# Self-Review Checklist - W4D5 Classification Model Comparison
+
+## Classification Concepts
+
+☑️ Understood the purpose of binary classification
+
+☑️ Understood how Logistic Regression is used for binary classification
+
+☑️ Understood how Random Forest Classifier is used for classification
+
+☑️ Understood the difference between Logistic Regression and Random Forest
+
+☑️ Understood the purpose of training and testing datasets
+
+☑️ Understood stratified train-test splitting
+
+☑️ Understood the importance of `random_state` for reproducibility
+
+## Logistic Regression
+
+☑️ Loaded the Breast Cancer Wisconsin binary classification dataset
+
+☑️ Split the dataset into training and testing sets
+
+☑️ Used `StandardScaler` for feature scaling
+
+☑️ Created a Logistic Regression model
+
+☑️ Used a Scikit-learn `Pipeline`
+
+☑️ Trained the Logistic Regression model successfully
+
+☑️ Generated predictions using Logistic Regression
+
+☑️ Calculated Logistic Regression accuracy
+
+☑️ Generated classification metrics for Logistic Regression
+
+## Classification Report & Metrics
+
+☑️ Understood classification report
+
+☑️ Understood accuracy
+
+☑️ Understood precision
+
+☑️ Understood recall
+
+☑️ Understood F1-score
+
+☑️ Calculated precision for the Logistic Regression model
+
+☑️ Calculated recall for the Logistic Regression model
+
+☑️ Calculated ROC-AUC for the Logistic Regression model
+
+☑️ Used `predict_proba()` to obtain prediction probabilities
+
+☑️ Verified the ROC-AUC score successfully
+
+## Confusion Matrix
+
+☑️ Understood the purpose of a confusion matrix
+
+☑️ Understood True Positive (TP)
+
+☑️ Understood True Negative (TN)
+
+☑️ Understood False Positive (FP)
+
+☑️ Understood False Negative (FN)
+
+☑️ Generated the Logistic Regression confusion matrix
+
+☑️ Saved the Logistic Regression confusion matrix plot
+
+☑️ Generated the Random Forest confusion matrix
+
+☑️ Saved the Random Forest confusion matrix plot
+
+## ROC-AUC Curve
+
+☑️ Understood the purpose of the ROC curve
+
+☑️ Understood ROC-AUC
+
+☑️ Generated the Logistic Regression ROC-AUC curve
+
+☑️ Generated ROC-AUC comparison output
+
+☑️ Saved the ROC-AUC visualization
+
+☑️ Verified ROC-AUC results successfully
+
+## Random Forest
+
+☑️ Created a `RandomForestClassifier`
+
+☑️ Configured `n_estimators`
+
+☑️ Used `random_state=42`
+
+☑️ Trained the Random Forest model successfully
+
+☑️ Generated Random Forest predictions
+
+☑️ Calculated Random Forest accuracy
+
+☑️ Calculated Random Forest precision
+
+☑️ Calculated Random Forest recall
+
+☑️ Compared Random Forest performance with Logistic Regression
+
+## Model Comparison
+
+☑️ Compared Logistic Regression accuracy with Random Forest accuracy
+
+☑️ Compared Logistic Regression precision with Random Forest precision
+
+☑️ Compared Logistic Regression recall with Random Forest recall
+
+☑️ Compared model performance using evaluation metrics
+
+☑️ Understood that different models can produce different classification results
+
+☑️ Generated model comparison visualizations
+
+## Testing
+
+☑️ Created `test_model.py`
+
+☑️ Created a test for Logistic Regression training
+
+☑️ Created a test for Random Forest training
+
+☑️ Created a test for Logistic Regression ROC-AUC
+
+☑️ Created a test for binary predictions
+
+☑️ Added Logistic Regression precision and recall validation
+
+☑️ Added Random Forest precision and recall validation
+
+☑️ Ran the complete pytest test suite
+
+☑️ Verified test collection completed successfully
+
+☑️ Verified 6 tests collected
+
+☑️ Verified 6 tests passed
+
+☑️ Confirmed there were no test failures
+
+☑️ Verified final result: **6 passed in 22.10s**
+
+## Output Files
+
+☑️ Generated `logistic_confusion_matrix.png`
+
+☑️ Generated `logistic_roc_auc.png`
+
+☑️ Generated `random_forest_confusion_matrix.png`
+
+☑️ Generated `roc_auc_comparison.png`
+
+☑️ Verified required output files were generated successfully
+
+## Code Quality
+
+☑️ Used clean Python code
+
+☑️ Used Scikit-learn for machine learning
+
+☑️ Used NumPy for prediction validation
+
+☑️ Used a Pipeline for Logistic Regression preprocessing
+
+☑️ Used reproducible `random_state=42`
+
+☑️ Added automated tests for model functionality
+
+☑️ Added automated tests for evaluation metrics
+
+☑️ Followed the approved AI/ML 3M stack requirements
+
+## CIA
+
+☑️ Full Stack Mentor Mode / code review completed
+
+☑️ CIA interaction completed
+
+☑️ Code reviewed before final submission
+
+☑️ Classification implementation reviewed successfully
+
+☑️ Model comparison reviewed successfully
+
+☑️ Testing and implementation reviewed successfully
+
+## Git
+
+☑️ Used required branch: `feat/aiml-W4-Ramya`
+
+☑️ Checked Git status before committing
+
+☑️ Verified required W4D5 files
+
+☑️ Added `train_model.py`
+
+☑️ Added `test_model.py`
+
+☑️ Added Logistic Regression confusion matrix
+
+☑️ Added Logistic Regression ROC-AUC plot
+
+☑️ Added Random Forest confusion matrix
+
+☑️ Added ROC-AUC comparison plot
+
+☑️ Created first descriptive commit
+
+☑️ Created Commit: `feat: classification — logistic vs random forest comparison`
+
+☑️ Verified first commit hash: `ded44f2`
+
+☑️ Created second descriptive commit
+
+☑️ Created Commit: `test: add precision and recall validation`
+
+☑️ Verified second commit hash: `5e4cdd1`
+
+☑️ Verified both commits were pushed to GitHub
+
+☑️ Verified branch is up to date with origin
+
+☑️ Verified working tree is clean
+
+☐ Pull Request raised
+
+## Final Review
+
+☑️ Binary classification concepts understood
+
+☑️ Logistic Regression implemented successfully
+
+☑️ Random Forest implemented successfully
+
+☑️ Classification metrics evaluated
+
+☑️ Confusion matrices generated
+
+☑️ ROC-AUC evaluated
+
+☑️ Logistic Regression and Random Forest compared
+
+☑️ Automated tests created
+
+☑️ **6 pytest tests passed**
+
+☑️ CIA interaction completed
+
+☑️ Required W4D5 files committed
+
+☑️ **2 commits completed for today**
+
+☑️ Changes pushed to GitHub
+
+☑️ Working tree verified clean
+
+☐ Pull Request raised
+
+☑️ **W4D5 implementation completed successfully**
+
+☐ **W4D5 ready for final submission after PR**
