@@ -1,0 +1,58 @@
+W4D2: Bias-Variance Tradeoff & Regularisation
+==============================================
+
+Dataset
+-------
+Samples: 300
+Features: 10
+
+Train/Test Split
+----------------
+Training samples: 240
+Testing samples: 60
+
+Model Comparison
+----------------
+Linear Regression
+MSE: 424.375321
+RMSE: 20.600372
+R2: 0.986666
+
+Ridge
+MSE: 423.843765
+RMSE: 20.587466
+R2: 0.986683
+
+Lasso
+MSE: 424.723422
+RMSE: 20.608819
+R2: 0.986655
+
+Ridge Grid Search
+-----------------
+Best alpha: 0.1
+Best CV R2: 0.9864
+Test RMSE: 20.5978
+Test R2: 0.9867
+
+Lasso Randomized Search
+-----------------------
+Best alpha: 0.001
+Best CV R2: 0.9864
+Test RMSE: 20.6001
+Test R2: 0.9867
+
+Pytest
+------
+6 tests passed
+1 warning
+
+Concepts Covered
+----------------
+Linear Regression: No regularisation.
+Ridge: L2 regularisation.
+Lasso: L1 regularisation.
+GridSearchCV: Tests every specified combination.
+RandomizedSearchCV: Tests randomly selected combinations.
+High bias: Usually indicates underfitting.
+High variance: Usually indicates overfitting.
