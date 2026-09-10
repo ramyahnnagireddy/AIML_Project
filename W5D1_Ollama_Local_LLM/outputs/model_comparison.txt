@@ -1,0 +1,106 @@
+W5D1 - Llama 3.2 vs Qwen 2.5 Comparison
+
+Models tested:
+- llama3.2:3b
+- qwen2.5:3b
+
+System prompt: AI/ML mentor for beginners
+Number of questions: 3
+
+----------------------------------------------------------------------
+QUESTION 1
+----------------------------------------------------------------------
+Question: What is supervised learning? Give one simple example.
+
+[llama3.2:3b]
+**Supervised Learning: A Simple Explanation**
+
+Supervised learning is a type of machine learning where a computer algorithm learns to make predictions or decisions based on labeled data. In other words, the algorithm is trained on data that already has the correct answers or labels associated with it.
+
+Think of it like this: Imagine you're trying to teach a child to recognize different types of animals. You show them pictures of dogs, cats, and birds, and you label each picture with the correct animal name. Over time, the child learns to recognize the animals based on the labels you provided.
+
+In supervised learning, the algorithm (like the child) learns to recognize patterns in the data (like the animal pictures) and make predictions or decisions based on those patterns. The key difference is that the algorithm is trained on labeled data, which helps it learn the correct relationships between the inputs and outputs.
+
+**Simple Example:**
+
+Supervised Learning Example: **Handwritten Digit Recognition**
+
+Imagine you have a dataset of images of
+
+[qwen2.5:3b]
+Supervised learning is a type of machine learning where a model is trained using a dataset that has both input data and corresponding output data. The model learns to predict the output based on the input. It's like teaching a student to recognize cats by showing them many pictures of cats and telling them what each picture is.
+
+A simple example of supervised learning is training a model to predict whether an email is spam or not spam. Here, the input data could be features of the email like the sender's email address, the number of exclamation points, or the presence of certain words. The output data would be whether the email is spam (yes or no). The model learns from a dataset where each email is labeled as spam or not spam, and it tries to predict the correct label for new, unseen emails.
+
+----------------------------------------------------------------------
+QUESTION 2
+----------------------------------------------------------------------
+Question: Explain the difference between classification and regression.
+
+[llama3.2:3b]
+Classification and regression are two fundamental concepts in machine learning (ML) and statistics.
+
+**Classification**
+
+Classification is a type of supervised learning where the goal is to predict a categorical label or class that an instance belongs to. In other words, you're trying to assign a label or category to a piece of data.
+
+Example: Spam vs. Not Spam emails
+
+* You have a dataset of emails, and you want to train a model to predict whether each email is spam or not spam.
+* The model will learn to recognize patterns in the data and assign a label (0 for spam, 1 for not spam) to each email.
+
+**Regression**
+
+Regression, on the other hand, is a type of supervised learning where the goal is to predict a continuous value or output. In other words, you're trying to predict a numerical value that is related to the input data.
+
+Example: House Prices
+
+* You have a dataset of houses with their prices, and you want to train a model to predict
+
+[qwen2.5:3b]
+Sure, let's break it down with simple examples.
+
+### Classification
+Classification is about predicting a category or a label for a given input. Think of it like sorting items into different boxes based on their characteristics.
+
+**Example:**
+Imagine you have a dataset of emails, and you want to classify them as either "spam" or "not spam." You might look at things like the words in the email, the sender's address, or the time of day the email was sent. Based on these features, you decide whether an email is spam or not spam.
+
+### Regression
+Regression, on the other hand, is about predicting a continuous value or a number. It's like estimating a quantity based on some inputs.
+
+**Example:**
+Let's say you have a dataset of houses, and you want to predict the price of a house based on features like the number of rooms, the size of the house, and the location. You would use regression to predict a continuous value, such as the
+
+----------------------------------------------------------------------
+QUESTION 3
+----------------------------------------------------------------------
+Question: What is overfitting and how can it be reduced?
+
+[llama3.2:3b]
+**What is Overfitting?**
+
+Overfitting is a common problem in machine learning and artificial intelligence. It occurs when a model is too complex and learns the noise in the training data, rather than the underlying patterns. As a result, the model performs well on the training data but poorly on new, unseen data.
+
+Think of it like trying to fit a square peg into a round hole. The model is trying to fit the training data too closely, rather than finding a general solution that works well on a variety of data.
+
+**Example:**
+
+Imagine you're trying to predict house prices based on features like number of bedrooms, square footage, and location. If you create a model that's too complex, with too many features and interactions, it might fit the training data perfectly, but it will likely perform poorly on new data that doesn't have those exact features.
+
+**How to Reduce Overfitting:**
+
+There are several ways to reduce overfitting:
+
+1. **Regularization**:
+
+[qwen2.5:3b]
+Overfitting is a situation in machine learning where a model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new, unseen data. Essentially, an overfit model captures the noise in the training data, not just the underlying pattern, which means it doesn't generalize well to other data.
+
+### How it happens:
+Imagine you're trying to teach a model to recognize cats in pictures. If you show the model only pictures of cats with lots of details (like specific cat breeds, backgrounds, lighting conditions, etc.), the model might start to memorize these details instead of learning to recognize cats in general. This means the model will perform well on the training data but poorly on new, unseen data.
+
+### How to reduce overfitting:
+
+1. **Increase the Complexity of the Model:**
+   - If your model is simple (like a linear model), it might not capture the complexity of the data. Increasing its complexity (like adding
