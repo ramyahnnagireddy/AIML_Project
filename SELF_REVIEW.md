@@ -262,3 +262,89 @@ Final Review
 ☑️ Pull Request updated  
 ☑️ Working tree is clean  
 ☑️ Ready for submission
+
+# Self-Review Checklist — W5D2 Prompt Engineering & System Prompts with Ollama
+
+### Prompt Engineering Implementation
+
+☑️ Installed and verified Ollama locally
+
+☑️ Verified `llama3.2:3b` model is available
+
+☑️ Verified `qwen2.5:3b` model is available
+
+☑️ Installed the Ollama Python package
+
+☑️ Created Python script for Ollama API calls
+
+☑️ Implemented a custom system prompt
+
+☑️ Defined an AI/ML mentor role for beginner engineering students
+
+☑️ Tested 5 different prompts using `llama3.2:3b`
+
+☑️ Generated responses successfully for all 5 prompts
+
+☑️ Saved prompt testing results to an output file
+
+### Model Comparison
+
+☑️ Compared `llama3.2:3b` and `qwen2.5:3b`
+
+☑️ Used the same system prompt for both models
+
+☑️ Used the same 3 questions for both models
+
+☑️ Generated responses locally using Ollama
+
+☑️ Compared response quality between both models
+
+☑️ Observed differences in explanation detail and response style
+
+☑️ Documented model comparison results
+
+☑️ Documented the comparison methodology
+
+### Output Evidence
+
+☑️ Created `prompt_test_output.txt`
+
+☑️ Created `model_comparison.txt`
+
+☑️ Verified prompt responses were saved successfully
+
+☑️ Verified model comparison responses were saved successfully
+
+☑️ Confirmed output files contain actual generated responses
+
+### Code Quality
+
+☑️ Used clean and structured Python code
+
+☑️ Used the Ollama Python API
+
+☑️ Used functions for model interaction
+
+☑️ Used `pathlib` for output file handling
+
+☑️ Created the `outputs` directory automatically
+
+☑️ Used descriptive variable and function names
+
+☑️ Added docstrings and comments
+
+☑️ Used the same implementation approach for model comparison
+
+☑️ Added `requirements.txt`
+
+☑️ Pinned `ollama` dependency to version `0.6.2`
+
+### Git
+
+☑️ Working code committed
+
+☑️ Required branch used: `feat/aiml-W5-Ramya`
+
+☑️ Minimum 2 descriptive commits completed
+
+☑️ Commit 1: `feat: add W5D2 prompt engineering with Ollama
