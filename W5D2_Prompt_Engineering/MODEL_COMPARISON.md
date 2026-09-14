@@ -93,3 +93,15 @@ Both local models successfully answered the same three AI/ML questions using the
 For beginner-oriented learning, both models produced useful explanations. Llama 3.2:3b generally provided more detailed and structured responses, while Qwen 2.5:3b tended to provide concise explanations with practical examples.
 
 The comparison demonstrates that different local LLMs can produce different response styles even when they receive the same prompts and system instructions.
+
+## Comparison Method
+
+The comparison was performed locally using Ollama.
+
+Both models received:
+
+- The same system prompt
+- The same three questions
+- The same Python API implementation
+
+The observations in this document are based on the actual generated responses saved in `outputs/model_comparison.txt`.
