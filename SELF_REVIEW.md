@@ -458,3 +458,141 @@ Final Review
 ☑️ Excluded the generated `chroma_db/` database from Git tracking
 
 ☑️ Completed CIA Full Stack Mentor Mode review
+
+# Self-Review Checklist — W5D5 Local Q&A Bot — Ollama + ChromaDB
+
+### Local Q&A Bot Setup
+
+☑️ Created the `W5D5_Local_QA_Bot` project folder
+
+☑️ Created the `outputs/` directory for output evidence
+
+☑️ Configured Ollama for local LLM inference
+
+☑️ Used `llama3.2:3b` as the local LLM
+
+☑️ Verified Ollama inference successfully
+
+☑️ Configured a persistent ChromaDB client
+
+☑️ Created the `w5d5_qa_documents` ChromaDB collection
+
+☑️ Added AI/ML reference knowledge to the ChromaDB collection
+
+☑️ Verified the ChromaDB collection contains the knowledge document
+
+### Similarity Search & Retrieval
+
+☑️ Implemented question-based similarity retrieval using ChromaDB
+
+☑️ Used ChromaDB `query()` for semantic document retrieval
+
+☑️ Retrieved relevant context based on the user's question
+
+☑️ Verified retrieved context is passed to the LLM
+
+☑️ Tested retrieval with multiple AI/ML questions
+
+☑️ Verified that the retrieved context supports the generated answers
+
+### ChromaDB + Ollama RAG
+
+☑️ Integrated ChromaDB retrieval with Ollama
+
+☑️ Implemented the flow: User Question → ChromaDB Retrieval → Context → Ollama → Answer
+
+☑️ Used `llama3.2:3b` for local answer generation
+
+☑️ Added a system prompt defining Ollama as an AI/ML mentor for beginners
+
+☑️ Instructed the model to answer using the supplied context
+
+☑️ Added grounding instructions to avoid unsupported information
+
+☑️ Tested the complete RAG workflow successfully
+
+☑️ Verified generated answers for 5 questions
+
+### Questions Tested
+
+☑️ Tested: `What is Machine Learning?`
+
+☑️ Tested: `What is Retrieval-Augmented Generation?`
+
+☑️ Tested: `What is ChromaDB?`
+
+☑️ Tested: `What is Ollama used for?`
+
+☑️ Tested: `What is the difference between AI and Machine Learning?`
+
+### Output Evidence
+
+☑️ Created `outputs/local_qa_output.txt`
+
+☑️ Saved all 5 questions in the output evidence
+
+☑️ Saved retrieved context for each question
+
+☑️ Saved Ollama-generated answers for each question
+
+☑️ Verified successful local Q&A responses
+
+☑️ Verified output evidence was generated successfully
+
+### Code & Reproducibility
+
+☑️ Created `local_qa_bot.py`
+
+☑️ Created `requirements.txt`
+
+☑️ Added `chromadb` dependency
+
+☑️ Added `ollama` dependency
+
+☑️ Created `.gitignore`
+
+☑️ Excluded the generated `chroma_db/` database from Git tracking
+
+☑️ Excluded Python cache directories from Git tracking
+
+☑️ Verified the project can recreate the ChromaDB knowledge base when required
+
+### Git & CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode review before committing
+
+☑️ Completed the first W5D5 implementation commit
+
+☑️ Completed second CIA Full Stack Mentor Mode review after implementation
+
+☑️ Verified only W5D5 files were staged for the implementation commit
+
+☑️ Kept unrelated untracked W3/W4 folders out of the W5D5 commit
+
+☑️ First commit created:
+
+`4b53564 feat: build local q&a bot with chromadb and ollama`
+
+### Final Status
+
+☑️ W5D5 Local Q&A Bot implementation completed successfully
+
+☑️ Ollama local inference verified successfully
+
+☑️ ChromaDB retrieval verified successfully
+
+☑️ ChromaDB + Ollama RAG workflow verified successfully
+
+☑️ Five test questions completed successfully
+
+☑️ Output evidence generated successfully
+
+☑️ CIA Full Stack Mentor Mode reviews completed
+
+☑️ First W5D5 commit completed
+
+☐ Final documentation commit
+
+☐ Final push to remote branch
+
+☐ Pull Request updated/completed
