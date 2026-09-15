@@ -263,88 +263,88 @@ Final Review
 ☑️ Working tree is clean  
 ☑️ Ready for submission
 
-# Self-Review Checklist — W5D2 Prompt Engineering & System Prompts with Ollama
+# Self-Review Checklist — W5D3 ChromaDB Vector Store & Retrieval
 
-### Prompt Engineering Implementation
+### ChromaDB Setup
 
-☑️ Installed and verified Ollama locally
+☑️ Installed and verified ChromaDB locally
 
-☑️ Verified `llama3.2:3b` model is available
+☑️ Created a persistent ChromaDB client
 
-☑️ Verified `qwen2.5:3b` model is available
+☑️ Created the `aiml_documents` collection
 
-☑️ Installed the Ollama Python package
+☑️ Configured cosine similarity for the collection
 
-☑️ Created Python script for Ollama API calls
+☑️ Created 20 AI/ML documents
 
-☑️ Implemented a custom system prompt
+☑️ Added metadata to the documents
 
-☑️ Defined an AI/ML mentor role for beginner engineering students
+☑️ Generated and stored embeddings for all 20 documents
 
-☑️ Tested 5 different prompts using `llama3.2:3b`
+☑️ Verified the collection contains 20 documents
 
-☑️ Generated responses successfully for all 5 prompts
+☑️ Added `chroma_db/` to `.gitignore`
 
-☑️ Saved prompt testing results to an output file
+### Similarity Search
 
-### Model Comparison
+☑️ Implemented similarity search using ChromaDB
 
-☑️ Compared `llama3.2:3b` and `qwen2.5:3b`
+☑️ Used cosine similarity for document retrieval
 
-☑️ Used the same system prompt for both models
+☑️ Tested a machine learning related query
 
-☑️ Used the same 3 questions for both models
+☑️ Retrieved the top 3 similar documents
 
-☑️ Generated responses locally using Ollama
+☑️ Verified similarity distances for retrieved documents
 
-☑️ Compared response quality between both models
+☑️ Implemented metadata filtering
 
-☑️ Observed differences in explanation detail and response style
+☑️ Tested filtering using the `category` metadata field
 
-☑️ Documented model comparison results
+☑️ Combined similarity search with metadata filtering
 
-☑️ Documented the comparison methodology
+☑️ Verified retrieval results manually
+
+### PDF Document Processing
+
+☑️ Created an AI/ML reference PDF document
+
+☑️ Implemented PDF text extraction using `pypdf`
+
+☑️ Split extracted PDF text into smaller chunks
+
+☑️ Created a separate ChromaDB collection for PDF chunks
+
+☑️ Stored PDF chunks and metadata in ChromaDB
+
+☑️ Used cosine similarity for PDF chunk retrieval
+
+☑️ Retrieved the top 3 relevant PDF chunks
+
+☑️ Verified retrieved chunk content and metadata
+
+### ChromaDB + Ollama RAG
+
+☑️ Integrated ChromaDB retrieval with Ollama
+
+☑️ Used `llama3.2:3b` as the local LLM
+
+☑️ Retrieved relevant context from the PDF using ChromaDB
+
+☑️ Passed the retrieved top-3 chunks to the Ollama model
+
+☑️ Generated an answer using the retrieved context
+
+☑️ Verified the generated response successfully
+
+☑️ Saved the complete retrieval and Ollama response as output evidence
 
 ### Output Evidence
 
-☑️ Created `prompt_test_output.txt`
+☑️ Created `documents/ai_ml_reference.pdf`
 
-☑️ Created `model_comparison.txt`
+☑️ Created `outputs/pdf_ollama_rag_output.txt`
 
-☑️ Verified prompt responses were saved successfully
+☑️ Verified the output file contains retrieved PDF chunks
 
-☑️ Verified model comparison responses were saved successfully
-
-☑️ Confirmed output files contain actual generated responses
-
-### Code Quality
-
-☑️ Used clean and structured Python code
-
-☑️ Used the Ollama Python API
-
-☑️ Used functions for model interaction
-
-☑️ Used `pathlib` for output file handling
-
-☑️ Created the `outputs` directory automatically
-
-☑️ Used descriptive variable and function names
-
-☑️ Added docstrings and comments
-
-☑️ Used the same implementation approach for model comparison
-
-☑️ Added `requirements.txt`
-
-☑️ Pinned `ollama` dependency to version `0.6.2`
-
-### Git
-
-☑️ Working code committed
-
-☑️ Required branch used: `feat/aiml-W5-Ramya`
-
-☑️ Minimum 2 descriptive commits completed
-
-☑️ Commit 1: `feat: add W5D2 prompt engineering with Ollama
+☑️ Verified the output file contains similarity distanc
