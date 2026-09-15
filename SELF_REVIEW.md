@@ -262,3 +262,89 @@ Final Review
 ☑️ Pull Request updated  
 ☑️ Working tree is clean  
 ☑️ Ready for submission
+
+# Self-Review Checklist — W5D3 ChromaDB Vector Store & Retrieval
+
+### ChromaDB Setup
+
+☑️ Installed and verified ChromaDB locally
+
+☑️ Created a persistent ChromaDB client
+
+☑️ Created the `aiml_documents` collection
+
+☑️ Configured cosine similarity for the collection
+
+☑️ Created 20 AI/ML documents
+
+☑️ Added metadata to the documents
+
+☑️ Generated and stored embeddings for all 20 documents
+
+☑️ Verified the collection contains 20 documents
+
+☑️ Added `chroma_db/` to `.gitignore`
+
+### Similarity Search
+
+☑️ Implemented similarity search using ChromaDB
+
+☑️ Used cosine similarity for document retrieval
+
+☑️ Tested a machine learning related query
+
+☑️ Retrieved the top 3 similar documents
+
+☑️ Verified similarity distances for retrieved documents
+
+☑️ Implemented metadata filtering
+
+☑️ Tested filtering using the `category` metadata field
+
+☑️ Combined similarity search with metadata filtering
+
+☑️ Verified retrieval results manually
+
+### PDF Document Processing
+
+☑️ Created an AI/ML reference PDF document
+
+☑️ Implemented PDF text extraction using `pypdf`
+
+☑️ Split extracted PDF text into smaller chunks
+
+☑️ Created a separate ChromaDB collection for PDF chunks
+
+☑️ Stored PDF chunks and metadata in ChromaDB
+
+☑️ Used cosine similarity for PDF chunk retrieval
+
+☑️ Retrieved the top 3 relevant PDF chunks
+
+☑️ Verified retrieved chunk content and metadata
+
+### ChromaDB + Ollama RAG
+
+☑️ Integrated ChromaDB retrieval with Ollama
+
+☑️ Used `llama3.2:3b` as the local LLM
+
+☑️ Retrieved relevant context from the PDF using ChromaDB
+
+☑️ Passed the retrieved top-3 chunks to the Ollama model
+
+☑️ Generated an answer using the retrieved context
+
+☑️ Verified the generated response successfully
+
+☑️ Saved the complete retrieval and Ollama response as output evidence
+
+### Output Evidence
+
+☑️ Created `documents/ai_ml_reference.pdf`
+
+☑️ Created `outputs/pdf_ollama_rag_output.txt`
+
+☑️ Verified the output file contains retrieved PDF chunks
+
+☑️ Verified the output file contains similarity distanc
