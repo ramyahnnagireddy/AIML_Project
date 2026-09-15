@@ -348,3 +348,113 @@ Final Review
 ☑️ Verified the output file contains retrieved PDF chunks
 
 ☑️ Verified the output file contains similarity distanc
+
+# Self-Review Checklist — W5D4 ChromaDB Semantic Search & RAG
+
+### ChromaDB Setup
+
+☑️ Installed and verified ChromaDB locally
+
+☑️ Created a persistent ChromaDB client
+
+☑️ Created the `w5d4_semantic_search` collection
+
+☑️ Configured cosine similarity for the collection
+
+☑️ Created 20 AI/ML documents
+
+☑️ Added metadata to the documents
+
+☑️ Generated and stored 768-dimensional embeddings using `nomic-embed-text:latest`
+
+☑️ Verified the collection contains 20 documents
+
+☑️ Added `chroma_db/` to `.gitignore`
+
+### Similarity Search
+
+☑️ Implemented semantic similarity search using ChromaDB
+
+☑️ Used cosine distance for document retrieval
+
+☑️ Tested a semantic-search query
+
+☑️ Retrieved the top 5 similar documents
+
+☑️ Verified similarity distances for retrieved documents
+
+☑️ Implemented metadata filtering
+
+☑️ Tested filtering using the `category` metadata field
+
+☑️ Verified filtered retrieval results manually
+
+### PDF Document Processing
+
+☑️ Created an AI/ML reference PDF document
+
+☑️ Implemented PDF text extraction using `pypdf`
+
+☑️ Split extracted PDF text into smaller chunks
+
+☑️ Created a separate ChromaDB collection for PDF chunks
+
+☑️ Generated embeddings for PDF chunks using Ollama
+
+☑️ Stored PDF chunks and metadata in ChromaDB
+
+☑️ Used cosine similarity for PDF chunk retrieval
+
+☑️ Retrieved the top 3 relevant PDF chunks
+
+☑️ Verified retrieved chunk content and metadata
+
+### ChromaDB + Ollama RAG
+
+☑️ Integrated ChromaDB retrieval with Ollama
+
+☑️ Used `nomic-embed-text:latest` for embeddings
+
+☑️ Used `llama3.2:3b` as the local LLM
+
+☑️ Retrieved relevant context from the PDF using ChromaDB
+
+☑️ Passed the retrieved top-3 chunks to the Ollama model
+
+☑️ Generated an answer using the retrieved context
+
+☑️ Verified the generated response successfully
+
+☑️ Saved the retrieval and Ollama response as output evidence
+
+### Output Evidence
+
+☑️ Created `sample_document.pdf`
+
+☑️ Created `outputs/chromadb_search_output.txt`
+
+☑️ Created `outputs/pdf_rag_output.txt`
+
+☑️ Verified the semantic-search output contains retrieved documents and similarity distances
+
+☑️ Verified the metadata-filtering output contains the expected category
+
+☑️ Verified the PDF RAG output contains the top-3 retrieved chunks
+
+☑️ Verified the PDF RAG output contains the generated Ollama answer
+
+☑️ Verified the final output reports `STATUS: SUCCESS`
+
+### Code & Reproducibility
+
+☑️ Created `chromadb_search.py`
+
+☑️ Created `pdf_rag.py`
+
+☑️ Created `create_sample_pdf.py`
+
+☑️ Created `requirements.txt`
+
+☑️ Excluded the generated `chroma_db/` database from Git tracking
+
+☑️ Completed CIA Full Stack Mentor Mode review
