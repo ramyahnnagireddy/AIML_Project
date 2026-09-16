@@ -596,3 +596,143 @@ Final Review
 ☐ Final push to remote branch
 
 ☐ Pull Request updated/completed
+
+# Self-Review Checklist — W6D1 LangChain Fundamentals — Chains, Memory & Agent
+
+### LangChain Chain
+
+☑️ Installed and verified LangChain packages
+
+☑️ Configured `ChatOllama` with `llama3.2:3b`
+
+☑️ Created a `PromptTemplate`
+
+☑️ Connected `PromptTemplate` to Ollama LLM
+
+☑️ Added `StrOutputParser`
+
+☑️ Implemented the chain flow: `PromptTemplate → ChatOllama → StrOutputParser`
+
+☑️ Tested the chain with 5 different inputs
+
+☑️ Verified all 5 chain executions completed successfully
+
+### Conversation Memory
+
+☑️ Implemented conversation history using LangChain message history
+
+☑️ Configured `ChatOllama` for conversation responses
+
+☑️ Tested conversation across 5 turns
+
+☑️ Maintained previous user and assistant messages
+
+☑️ Verified history increased from 2 to 10 messages
+
+☑️ Verified the model remembered information from earlier turns
+
+☑️ Verified the conversation completed without errors
+
+### LangChain Agent
+
+☑️ Created a LangChain agent using `create_agent`
+
+☑️ Configured `ChatOllama` as the agent model
+
+☑️ Created two tools: `web_search_stub` and `calculator`
+
+☑️ Implemented a web-search stub for demonstration
+
+☑️ Implemented a safe calculator using Python AST parsing
+
+☑️ Restricted calculator operations to allowed arithmetic operators
+
+☑️ Tested the agent with 3 tasks
+
+☑️ Verified `125 * 8 + 50 = 1050`
+
+☑️ Verified `(250 / 5) + 30 = 80.0`
+
+☑️ Verified the web-search stub task completed successfully
+
+☑️ Verified all 3 agent tasks completed without errors
+
+### Output Evidence
+
+☑️ Created `outputs/chain_output.txt`
+
+☑️ Created `outputs/memory_output.txt`
+
+☑️ Created `outputs/agent_output.txt`
+
+☑️ Verified chain output contains all 5 test inputs and responses
+
+☑️ Verified memory output contains all 5 conversation turns
+
+☑️ Verified memory history reached 10 stored messages
+
+☑️ Verified agent output contains all 3 test tasks
+
+☑️ Verified calculator results in agent output
+
+### Code & Reproducibility
+
+☑️ Created `langchain_chain.py`
+
+☑️ Created `conversation_memory.py`
+
+☑️ Created `langchain_agent.py`
+
+☑️ Used the current LangChain agent API
+
+☑️ Used `ChatOllama` for local LLM inference
+
+☑️ Kept output evidence files with the implementation
+
+☑️ Verified the three Python programs execute successfully
+
+### Git & CIA Review
+
+☑️ Completed first CIA Full Stack Mentor Mode code review
+
+☑️ Completed second CIA Full Stack Mentor Mode final review
+
+☑️ Verified only W6D1 files were staged for the implementation commit
+
+☑️ Kept unrelated W3/W4 folders out of the W6D1 commit
+
+☑️ Completed first W6D1 implementation commit
+
+☑️ First commit created:
+
+`ade2614 feat: langchain — chain, memory, agent`
+
+☐ Completed final documentation/self-review commit
+
+☐ Final push to remote branch
+
+☐ Pull Request created/updated
+
+### Final Status
+
+☑️ W6D1 LangChain chain implementation completed successfully
+
+☑️ Five chain inputs tested successfully
+
+☑️ Five-turn conversation memory tested successfully
+
+☑️ LangChain agent with two tools implemented successfully
+
+☑️ Three agent tasks tested successfully
+
+☑️ Output evidence generated successfully
+
+☑️ Two CIA Full Stack Mentor Mode interactions completed
+
+☑️ First W6D1 implementation commit completed
+
+☐ Final documentation commit
+
+☐ Final push to remote branch
+
+☐ Pull Request updated/completed
