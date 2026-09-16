@@ -736,3 +736,137 @@ Final Review
 ☐ Final push to remote branch
 
 ☐ Pull Request updated/completed
+
+# Self-Review Checklist — W6D2 LangChain Memory & Conversation History
+
+### LangChain Chain
+
+☑️ Installed and verified required LangChain packages
+
+☑️ Configured `OllamaLLM` with `llama3.2:3b`
+
+☑️ Created a `PromptTemplate`
+
+☑️ Connected `PromptTemplate` to Ollama LLM
+
+☑️ Added `StrOutputParser`
+
+☑️ Implemented the chain flow: `PromptTemplate → OllamaLLM → StrOutputParser`
+
+☑️ Tested the chain with 5 different inputs
+
+☑️ Verified all 5 chain executions completed successfully
+
+### Conversation Memory
+
+☑️ Implemented `ConversationBufferMemory`
+
+☑️ Configured conversation history using LangChain memory
+
+☑️ Tested conversation across 5 turns
+
+☑️ Maintained previous user and assistant messages
+
+☑️ Verified memory was retained after each turn
+
+☑️ Verified the model recalled information from earlier turns
+
+☑️ Verified the conversation completed without errors
+
+☑️ Verified the final conversation history contained all 5 exchanges
+
+### LangChain Agent & Tools
+
+☑️ Created a simple two-tool agent workflow
+
+☑️ Created `web_search_stub` tool
+
+☑️ Created `calculator` tool
+
+☑️ Implemented the web-search stub for demonstration
+
+☑️ Implemented a calculator with restricted arithmetic characters
+
+☑️ Tested the tool workflow with 3 tasks
+
+☑️ Verified `125 * 8 + 50 = 1050`
+
+☑️ Verified `250 / 5 = 50.0`
+
+☑️ Verified the combined web-search and calculator task completed successfully
+
+☑️ Verified all 3 tasks completed without execution errors
+
+### Output Evidence
+
+☑️ Created `outputs/chain_memory_output.txt`
+
+☑️ Created `outputs/agent_tools_output.txt`
+
+☑️ Verified chain output contains all 5 test inputs and responses
+
+☑️ Verified memory output contains all 5 conversation turns
+
+☑️ Verified memory history was retained across the conversation
+
+☑️ Verified agent output contains all 3 test tasks
+
+☑️ Verified calculator results are present in the agent output
+
+### Code & Reproducibility
+
+☑️ Created `chain_memory.py`
+
+☑️ Created `agent_tools.py`
+
+☑️ Used LangChain components for the chain implementation
+
+☑️ Used Ollama for local LLM inference
+
+☑️ Kept output evidence files with the implementation
+
+☑️ Verified both Python programs execute successfully
+
+☑️ Kept the required `ConversationBufferMemory` implementation for the practical task
+
+### Git & CIA Review
+
+☑️ Completed first CIA Full Stack Mentor Mode code review
+
+☑️ Completed second CIA Full Stack Mentor Mode final review
+
+☑️ Verified only W6D2 files were staged for the implementation commit
+
+☑️ Kept unrelated W3/W4 folders out of the W6D2 commit
+
+☑️ Completed first W6D2 implementation commit
+
+☑️ Completed second W6D2 documentation/self-review commit
+
+☑️ Used descriptive Git commit messages
+
+☐ Final push to remote branch
+
+☐ Pull Request created/updated
+
+### Final Status
+
+☑️ W6D2 LangChain chain implementation completed successfully
+
+☑️ Five chain inputs tested successfully
+
+☑️ Five-turn conversation memory tested successfully
+
+☑️ LangChain two-tool workflow implemented successfully
+
+☑️ Three tool tasks tested successfully
+
+☑️ Output evidence generated successfully
+
+☑️ Two CIA Full Stack Mentor Mode interactions completed
+
+☑️ Minimum two Git commits completed
+
+☐ Final push to remote branch
+
+☐ Pull Request updated/completed
