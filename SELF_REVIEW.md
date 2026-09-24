@@ -1020,3 +1020,195 @@ Final Review
 ☐ Final push to remote branch
 
 ☐ Pull Request created/updated
+
+# Self-Review Checklist — W6D4 LangChain + ChromaDB RAG
+
+## ChromaDB Setup
+
+☑️ Installed and verified ChromaDB
+
+☑️ Verified the required LangChain packages
+
+☑️ Verified `langchain-ollama` integration
+
+☑️ Verified `pypdf` installation
+
+☑️ Verified all required W6D4 Python imports successfully
+
+☑️ Configured persistent ChromaDB storage
+
+☑️ Created the `w6d4_rag_documents` collection
+
+☑️ Configured `nomic-embed-text:latest` as the embedding model
+
+☑️ Created persistent ChromaDB database storage
+
+☑️ Added 5 sample documents to the vector store
+
+☑️ Generated embeddings for all 5 documents
+
+☑️ Verified the ChromaDB collection contains 5 documents
+
+☑️ Verified ChromaDB setup completed without errors
+
+## Similarity Search
+
+☑️ Created `similarity_search.py`
+
+☑️ Connected the application to the persistent ChromaDB collection
+
+☑️ Used the same `nomic-embed-text:latest` embedding model for queries
+
+☑️ Converted the user query into an embedding
+
+☑️ Implemented ChromaDB semantic similarity search
+
+☑️ Configured the search to retrieve the top 3 relevant documents
+
+☑️ Tested the search with the query `How does retrieval augmented generation work?`
+
+☑️ Verified the RAG document was returned as the closest semantic match
+
+☑️ Verified the top result distance was `0.3526`
+
+☑️ Verified all 3 similarity-search results were returned successfully
+
+☑️ Verified similarity search completed without errors
+
+## RAG Pipeline
+
+☑️ Created `rag_pipeline.py`
+
+☑️ Connected ChromaDB retrieval with LangChain
+
+☑️ Configured `OllamaEmbeddings`
+
+☑️ Configured `ChatOllama` with `llama3.2:3b`
+
+☑️ Set the LLM temperature to `0`
+
+☑️ Implemented document retrieval using semantic similarity
+
+☑️ Retrieved the top 3 relevant documents
+
+☑️ Passed retrieved documents as context to the LLM
+
+☑️ Implemented context-grounded answer generation
+
+☑️ Tested the RAG pipeline with the question `What is retrieval augmented generation?`
+
+☑️ Verified the RAG document was the closest retrieved source
+
+☑️ Verified the closest document distance was `0.3290`
+
+☑️ Verified the generated answer was grounded in the retrieved context
+
+☑️ Verified the RAG pipeline completed successfully without errors
+
+## Output Evidence
+
+☑️ Created `outputs/rag_pipeline_output.txt`
+
+☑️ Saved the embedding model information
+
+☑️ Saved the LLM model information
+
+☑️ Saved the ChromaDB collection information
+
+☑️ Saved the number of documents in the collection
+
+☑️ Saved the test query
+
+☑️ Saved the retrieved documents
+
+☑️ Saved similarity distances
+
+☑️ Saved the generated answer
+
+☑️ Saved successful RAG pipeline execution evidence
+
+## Code & Reproducibility
+
+☑️ Created `chromadb_setup.py`
+
+☑️ Created `similarity_search.py`
+
+☑️ Created `rag_pipeline.py`
+
+☑️ Used ChromaDB for persistent vector storage
+
+☑️ Used Ollama embeddings for semantic representation
+
+☑️ Used LangChain Ollama integration
+
+☑️ Used `llama3.2:3b` for local LLM inference
+
+☑️ Kept implementation files and output evidence together in `W6D4_RAG_LangChain_ChromaDB`
+
+☑️ Verified all W6D4 Python programs execute successfully
+
+☑️ Verified the complete RAG workflow from query to generated answer
+
+☑️ Excluded generated `chroma_db` runtime files from the Git commit
+
+## Git & CIA Review
+
+☑️ Completed required CIA Full Stack Mentor Mode review(s)
+
+☑️ Verified the active branch is `feat/aiml-W6-Ramya`
+
+☑️ Verified only W6D4 implementation files were staged
+
+☑️ Kept unrelated W3/W4 folders out of the W6D4 commit
+
+☑️ Added the generated ChromaDB directory to `.gitignore`
+
+☑️ Completed the first W6D4 implementation commit
+
+☑️ Used a descriptive Git commit message
+
+☑️ Verified W6D4 files are tracked separately from unrelated folders
+
+☑️ Completed second W6D4 documentation/self-review commit
+
+☑️ Final push to remote W6 branch completed
+
+☑️ Pull Request updated/created
+
+## Final Status
+
+☑️ W6D4 ChromaDB vector store implementation completed successfully
+
+☑️ Five documents embedded and stored successfully
+
+☑️ ChromaDB persistent storage verified successfully
+
+☑️ Similarity search implemented successfully
+
+☑️ Top 3 semantic results verified successfully
+
+☑️ LangChain + ChromaDB RAG pipeline implemented successfully
+
+☑️ Ollama `nomic-embed-text:latest` embeddings verified
+
+☑️ Ollama `llama3.2:3b` generation verified
+
+☑️ Retrieved context successfully passed to the LLM
+
+☑️ Grounded answer generated successfully
+
+☑️ Output evidence generated successfully
+
+☑️ W6D4 implementation files kept together
+
+☑️ Generated ChromaDB files excluded from Git tracking
+
+☑️ Git implementation commit completed
+
+☑️ Documentation/self-review commit completed
+
+☑️ Remote branch updated
+
+☑️ Pull Request created/updated
+
+# W6D4 Status: COMPLETED
