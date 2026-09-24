@@ -1,0 +1,232 @@
+[
+  {
+    "question": "What is supervised learning?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "machine_learning.pdf",
+        "content": "Machine Learning\nSupervised Learning\nSupervised learning uses labeled training data to learn a relationship between input features and\ntarget outputs. Classification predicts categories, while regression predicts continuous numerical\nvalues.\nUnsupervised Learning\nUnsupervised learning works with data without labeled target values. Clustering groups similar\nobservations, while dimensionality reduction represents data using fewer features.\nModel Evaluation\nCommon classification metrics include accuracy, precision, recall, and F1 score. Regression can be\nevaluated using mean squared error, mean absolute error, and R-squared.\n",
+        "score": 0.6266582126282341
+      },
+      {
+        "rank": 2,
+        "source_file": "computer_vision.pdf",
+        "content": "Computer Vision\nImage Classification\nImage classification assigns an image to one or more predefined categories. Neural networks can\nlearn visual features automatically from labeled images.\nObject Detection\nObject detection identifies objects in an image and estimates their locations. Detection systems\ncommonly produce bounding boxes and class labels.\nImage Segmentation\nImage segmentation divides an image into meaningful regions. Semantic segmentation assigns a\nclass to pixels, while instance segmentation separates individual objects.\n",
+        "score": 0.4548336065727361
+      },
+      {
+        "rank": 3,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.4271751760754372
+      }
+    ]
+  },
+  {
+    "question": "Which metrics are used for classification evaluation?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "machine_learning.pdf",
+        "content": "Machine Learning\nSupervised Learning\nSupervised learning uses labeled training data to learn a relationship between input features and\ntarget outputs. Classification predicts categories, while regression predicts continuous numerical\nvalues.\nUnsupervised Learning\nUnsupervised learning works with data without labeled target values. Clustering groups similar\nobservations, while dimensionality reduction represents data using fewer features.\nModel Evaluation\nCommon classification metrics include accuracy, precision, recall, and F1 score. Regression can be\nevaluated using mean squared error, mean absolute error, and R-squared.\n",
+        "score": 0.48035330522527014
+      },
+      {
+        "rank": 2,
+        "source_file": "computer_vision.pdf",
+        "content": "Computer Vision\nImage Classification\nImage classification assigns an image to one or more predefined categories. Neural networks can\nlearn visual features automatically from labeled images.\nObject Detection\nObject detection identifies objects in an image and estimates their locations. Detection systems\ncommonly produce bounding boxes and class labels.\nImage Segmentation\nImage segmentation divides an image into meaningful regions. Semantic segmentation assigns a\nclass to pixels, while instance segmentation separates individual objects.\n",
+        "score": 0.2780542695907234
+      },
+      {
+        "rank": 3,
+        "source_file": "mlops.pdf",
+        "content": "MLOps\nMachine Learning Operations\nMLOps applies software engineering and operations practices to machine learning systems. It\nhelps teams develop, test, deploy, monitor, and maintain machine learning models.\nExperiment Tracking\nExperiment tracking records parameters, metrics, artifacts, and model information from machine\nlearning experiments. MLflow is a commonly used platform for experiment tracking and model\nlifecycle management.\nDeployment and Monitoring\nMachine learning deployment makes a trained model available for applications or users. Monitoring\ncan track prediction quality, latency, data changes, and model performance after deployment.\n",
+        "score": 0.215821293451122
+      }
+    ]
+  },
+  {
+    "question": "What are convolutional neural networks commonly used for?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.6725787521142772
+      },
+      {
+        "rank": 2,
+        "source_file": "computer_vision.pdf",
+        "content": "Computer Vision\nImage Classification\nImage classification assigns an image to one or more predefined categories. Neural networks can\nlearn visual features automatically from labeled images.\nObject Detection\nObject detection identifies objects in an image and estimates their locations. Detection systems\ncommonly produce bounding boxes and class labels.\nImage Segmentation\nImage segmentation divides an image into meaningful regions. Semantic segmentation assigns a\nclass to pixels, while instance segmentation separates individual objects.\n",
+        "score": 0.37587902956312025
+      },
+      {
+        "rank": 3,
+        "source_file": "natural_language_processing.pdf",
+        "content": "Natural Language Processing\nText Processing\nNatural language processing, or NLP, enables computers to work with human language. Common\npreprocessing operations include tokenization, normalization, and removing unnecessary text.\nEmbeddings\nText embeddings represent words, sentences, or documents as numerical vectors. Similar\nmeanings can be represented by vectors that are close to one another in an embedding space.\nLanguage Applications\nNLP is used for sentiment analysis, text classification, information retrieval, question answering,\nsummarization, and conversational systems.\n",
+        "score": 0.3497094581649648
+      }
+    ]
+  },
+  {
+    "question": "How are weights updated during neural network training?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.5251834621497751
+      },
+      {
+        "rank": 2,
+        "source_file": "computer_vision.pdf",
+        "content": "Computer Vision\nImage Classification\nImage classification assigns an image to one or more predefined categories. Neural networks can\nlearn visual features automatically from labeled images.\nObject Detection\nObject detection identifies objects in an image and estimates their locations. Detection systems\ncommonly produce bounding boxes and class labels.\nImage Segmentation\nImage segmentation divides an image into meaningful regions. Semantic segmentation assigns a\nclass to pixels, while instance segmentation separates individual objects.\n",
+        "score": 0.2652561080290465
+      },
+      {
+        "rank": 3,
+        "source_file": "mlops.pdf",
+        "content": "MLOps\nMachine Learning Operations\nMLOps applies software engineering and operations practices to machine learning systems. It\nhelps teams develop, test, deploy, monitor, and maintain machine learning models.\nExperiment Tracking\nExperiment tracking records parameters, metrics, artifacts, and model information from machine\nlearning experiments. MLflow is a commonly used platform for experiment tracking and model\nlifecycle management.\nDeployment and Monitoring\nMachine learning deployment makes a trained model available for applications or users. Monitoring\ncan track prediction quality, latency, data changes, and model performance after deployment.\n",
+        "score": 0.25279341498234736
+      }
+    ]
+  },
+  {
+    "question": "What are text embeddings?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "natural_language_processing.pdf",
+        "content": "Natural Language Processing\nText Processing\nNatural language processing, or NLP, enables computers to work with human language. Common\npreprocessing operations include tokenization, normalization, and removing unnecessary text.\nEmbeddings\nText embeddings represent words, sentences, or documents as numerical vectors. Similar\nmeanings can be represented by vectors that are close to one another in an embedding space.\nLanguage Applications\nNLP is used for sentiment analysis, text classification, information retrieval, question answering,\nsummarization, and conversational systems.\n",
+        "score": 0.5795559908003687
+      },
+      {
+        "rank": 2,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.26944019921214735
+      },
+      {
+        "rank": 3,
+        "source_file": "machine_learning.pdf",
+        "content": "Machine Learning\nSupervised Learning\nSupervised learning uses labeled training data to learn a relationship between input features and\ntarget outputs. Classification predicts categories, while regression predicts continuous numerical\nvalues.\nUnsupervised Learning\nUnsupervised learning works with data without labeled target values. Clustering groups similar\nobservations, while dimensionality reduction represents data using fewer features.\nModel Evaluation\nCommon classification metrics include accuracy, precision, recall, and F1 score. Regression can be\nevaluated using mean squared error, mean absolute error, and R-squared.\n",
+        "score": 0.17921078821116443
+      }
+    ]
+  },
+  {
+    "question": "What applications use natural language processing?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "natural_language_processing.pdf",
+        "content": "Natural Language Processing\nText Processing\nNatural language processing, or NLP, enables computers to work with human language. Common\npreprocessing operations include tokenization, normalization, and removing unnecessary text.\nEmbeddings\nText embeddings represent words, sentences, or documents as numerical vectors. Similar\nmeanings can be represented by vectors that are close to one another in an embedding space.\nLanguage Applications\nNLP is used for sentiment analysis, text classification, information retrieval, question answering,\nsummarization, and conversational systems.\n",
+        "score": 0.7219600511449429
+      },
+      {
+        "rank": 2,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.3029454319795079
+      },
+      {
+        "rank": 3,
+        "source_file": "computer_vision.pdf",
+        "content": "Computer Vision\nImage Classification\nImage classification assigns an image to one or more predefined categories. Neural networks can\nlearn visual features automatically from labeled images.\nObject Detection\nObject detection identifies objects in an image and estimates their locations. Detection systems\ncommonly produce bounding boxes and class labels.\nImage Segmentation\nImage segmentation divides an image into meaningful regions. Semantic segmentation assigns a\nclass to pixels, while instance segmentation separates individual objects.\n",
+        "score": 0.27669211761790435
+      }
+    ]
+  },
+  {
+    "question": "What does object detection identify?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "computer_vision.pdf",
+        "content": "Computer Vision\nImage Classification\nImage classification assigns an image to one or more predefined categories. Neural networks can\nlearn visual features automatically from labeled images.\nObject Detection\nObject detection identifies objects in an image and estimates their locations. Detection systems\ncommonly produce bounding boxes and class labels.\nImage Segmentation\nImage segmentation divides an image into meaningful regions. Semantic segmentation assigns a\nclass to pixels, while instance segmentation separates individual objects.\n",
+        "score": 0.6685215939348681
+      },
+      {
+        "rank": 2,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.3767679903185442
+      },
+      {
+        "rank": 3,
+        "source_file": "machine_learning.pdf",
+        "content": "Machine Learning\nSupervised Learning\nSupervised learning uses labeled training data to learn a relationship between input features and\ntarget outputs. Classification predicts categories, while regression predicts continuous numerical\nvalues.\nUnsupervised Learning\nUnsupervised learning works with data without labeled target values. Clustering groups similar\nobservations, while dimensionality reduction represents data using fewer features.\nModel Evaluation\nCommon classification metrics include accuracy, precision, recall, and F1 score. Regression can be\nevaluated using mean squared error, mean absolute error, and R-squared.\n",
+        "score": 0.3725366453086759
+      }
+    ]
+  },
+  {
+    "question": "What is image segmentation?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "computer_vision.pdf",
+        "content": "Computer Vision\nImage Classification\nImage classification assigns an image to one or more predefined categories. Neural networks can\nlearn visual features automatically from labeled images.\nObject Detection\nObject detection identifies objects in an image and estimates their locations. Detection systems\ncommonly produce bounding boxes and class labels.\nImage Segmentation\nImage segmentation divides an image into meaningful regions. Semantic segmentation assigns a\nclass to pixels, while instance segmentation separates individual objects.\n",
+        "score": 0.6110707294577222
+      },
+      {
+        "rank": 2,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.4340322179577549
+      },
+      {
+        "rank": 3,
+        "source_file": "machine_learning.pdf",
+        "content": "Machine Learning\nSupervised Learning\nSupervised learning uses labeled training data to learn a relationship between input features and\ntarget outputs. Classification predicts categories, while regression predicts continuous numerical\nvalues.\nUnsupervised Learning\nUnsupervised learning works with data without labeled target values. Clustering groups similar\nobservations, while dimensionality reduction represents data using fewer features.\nModel Evaluation\nCommon classification metrics include accuracy, precision, recall, and F1 score. Regression can be\nevaluated using mean squared error, mean absolute error, and R-squared.\n",
+        "score": 0.28308876741848144
+      }
+    ]
+  },
+  {
+    "question": "What is MLOps used for?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "mlops.pdf",
+        "content": "MLOps\nMachine Learning Operations\nMLOps applies software engineering and operations practices to machine learning systems. It\nhelps teams develop, test, deploy, monitor, and maintain machine learning models.\nExperiment Tracking\nExperiment tracking records parameters, metrics, artifacts, and model information from machine\nlearning experiments. MLflow is a commonly used platform for experiment tracking and model\nlifecycle management.\nDeployment and Monitoring\nMachine learning deployment makes a trained model available for applications or users. Monitoring\ncan track prediction quality, latency, data changes, and model performance after deployment.\n",
+        "score": 0.5959035156420258
+      },
+      {
+        "rank": 2,
+        "source_file": "natural_language_processing.pdf",
+        "content": "Natural Language Processing\nText Processing\nNatural language processing, or NLP, enables computers to work with human language. Common\npreprocessing operations include tokenization, normalization, and removing unnecessary text.\nEmbeddings\nText embeddings represent words, sentences, or documents as numerical vectors. Similar\nmeanings can be represented by vectors that are close to one another in an embedding space.\nLanguage Applications\nNLP is used for sentiment analysis, text classification, information retrieval, question answering,\nsummarization, and conversational systems.\n",
+        "score": 0.23231257694408172
+      },
+      {
+        "rank": 3,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.2062768628386174
+      }
+    ]
+  },
+  {
+    "question": "What information can MLflow track?",
+    "retrieved_documents": [
+      {
+        "rank": 1,
+        "source_file": "mlops.pdf",
+        "content": "MLOps\nMachine Learning Operations\nMLOps applies software engineering and operations practices to machine learning systems. It\nhelps teams develop, test, deploy, monitor, and maintain machine learning models.\nExperiment Tracking\nExperiment tracking records parameters, metrics, artifacts, and model information from machine\nlearning experiments. MLflow is a commonly used platform for experiment tracking and model\nlifecycle management.\nDeployment and Monitoring\nMachine learning deployment makes a trained model available for applications or users. Monitoring\ncan track prediction quality, latency, data changes, and model performance after deployment.\n",
+        "score": 0.6211578655609721
+      },
+      {
+        "rank": 2,
+        "source_file": "deep_learning.pdf",
+        "content": "Deep Learning\nNeural Networks\nA neural network contains layers of interconnected neurons. Weights are adjusted during training\nso that the network can learn patterns from input data.\nConvolutional Neural Networks\nConvolutional neural networks, or CNNs, are commonly used for image tasks. Convolution filters\nlearn spatial patterns such as edges, textures, and shapes.\nTraining\nDeep learning models are trained using an optimization algorithm such as gradient descent.\nBackpropagation calculates gradients that are used to update model parameters.\n",
+        "score": 0.2859077645819996
+      },
+      {
+        "rank": 3,
+        "source_file": "machine_learning.pdf",
+        "content": "Machine Learning\nSupervised Learning\nSupervised learning uses labeled training data to learn a relationship between input features and\ntarget outputs. Classification predicts categories, while regression predicts continuous numerical\nvalues.\nUnsupervised Learning\nUnsupervised learning works with data without labeled target values. Clustering groups similar\nobservations, while dimensionality reduction represents data using fewer features.\nModel Evaluation\nCommon classification metrics include accuracy, precision, recall, and F1 score. Regression can be\nevaluated using mean squared error, mean absolute error, and R-squared.\n",
+        "score": 0.2803843415127888
+      }
+    ]
+  }
+]

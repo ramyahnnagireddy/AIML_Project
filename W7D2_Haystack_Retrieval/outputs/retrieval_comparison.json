@@ -1,0 +1,205 @@
+{
+  "evaluation_method": "Manual relevance mapping against the expected source PDF for the same 10 questions.",
+  "bm25": {
+    "metrics": {
+      "total_questions": 10,
+      "top1_hits": 9,
+      "top1_precision": 0.9,
+      "top3_hits": 10,
+      "top3_hit_rate": 1.0
+    },
+    "questions": [
+      {
+        "question_number": 1,
+        "question": "What is supervised learning?",
+        "expected_source": "machine_learning.pdf",
+        "top1_source": "machine_learning.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 2,
+        "question": "Which metrics are used for classification evaluation?",
+        "expected_source": "machine_learning.pdf",
+        "top1_source": "deep_learning.pdf",
+        "top1_hit": false,
+        "expected_rank": 2,
+        "top3_hit": true
+      },
+      {
+        "question_number": 3,
+        "question": "What are convolutional neural networks commonly used for?",
+        "expected_source": "deep_learning.pdf",
+        "top1_source": "deep_learning.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 4,
+        "question": "How are weights updated during neural network training?",
+        "expected_source": "deep_learning.pdf",
+        "top1_source": "deep_learning.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 5,
+        "question": "What are text embeddings?",
+        "expected_source": "natural_language_processing.pdf",
+        "top1_source": "natural_language_processing.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 6,
+        "question": "What applications use natural language processing?",
+        "expected_source": "natural_language_processing.pdf",
+        "top1_source": "natural_language_processing.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 7,
+        "question": "What does object detection identify?",
+        "expected_source": "computer_vision.pdf",
+        "top1_source": "computer_vision.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 8,
+        "question": "What is image segmentation?",
+        "expected_source": "computer_vision.pdf",
+        "top1_source": "computer_vision.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 9,
+        "question": "What is MLOps used for?",
+        "expected_source": "mlops.pdf",
+        "top1_source": "mlops.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 10,
+        "question": "What information can MLflow track?",
+        "expected_source": "mlops.pdf",
+        "top1_source": "mlops.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      }
+    ]
+  },
+  "dense": {
+    "metrics": {
+      "total_questions": 10,
+      "top1_hits": 10,
+      "top1_precision": 1.0,
+      "top3_hits": 10,
+      "top3_hit_rate": 1.0
+    },
+    "questions": [
+      {
+        "question_number": 1,
+        "question": "What is supervised learning?",
+        "expected_source": "machine_learning.pdf",
+        "top1_source": "machine_learning.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 2,
+        "question": "Which metrics are used for classification evaluation?",
+        "expected_source": "machine_learning.pdf",
+        "top1_source": "machine_learning.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 3,
+        "question": "What are convolutional neural networks commonly used for?",
+        "expected_source": "deep_learning.pdf",
+        "top1_source": "deep_learning.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 4,
+        "question": "How are weights updated during neural network training?",
+        "expected_source": "deep_learning.pdf",
+        "top1_source": "deep_learning.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 5,
+        "question": "What are text embeddings?",
+        "expected_source": "natural_language_processing.pdf",
+        "top1_source": "natural_language_processing.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 6,
+        "question": "What applications use natural language processing?",
+        "expected_source": "natural_language_processing.pdf",
+        "top1_source": "natural_language_processing.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 7,
+        "question": "What does object detection identify?",
+        "expected_source": "computer_vision.pdf",
+        "top1_source": "computer_vision.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 8,
+        "question": "What is image segmentation?",
+        "expected_source": "computer_vision.pdf",
+        "top1_source": "computer_vision.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 9,
+        "question": "What is MLOps used for?",
+        "expected_source": "mlops.pdf",
+        "top1_source": "mlops.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      },
+      {
+        "question_number": 10,
+        "question": "What information can MLflow track?",
+        "expected_source": "mlops.pdf",
+        "top1_source": "mlops.pdf",
+        "top1_hit": true,
+        "expected_rank": 1,
+        "top3_hit": true
+      }
+    ]
+  }
+}

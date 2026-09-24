@@ -1666,3 +1666,251 @@ Final Review
 ☑️ Unrelated W3/W4 folders kept out of W7D1 commits
 
 # W7D1 Status: COMPLETED — PUSHED & PULL REQUEST CREATED
+
+# Self-Review Checklist — W7D2 Haystack Retrieval — BM25 & Dense Retrieval
+
+## Haystack Retrieval Setup
+
+☑️ Created `W7D2_Haystack_Retrieval`
+
+☑️ Created `documents` directory
+
+☑️ Created `outputs` directory
+
+☑️ Verified `haystack-ai` installation
+
+☑️ Verified `pypdf` installation
+
+☑️ Verified `sentence-transformers-haystack` installation
+
+☑️ Verified Haystack imports successfully
+
+☑️ Verified `PyPDFToDocument` import successfully
+
+☑️ Verified `InMemoryDocumentStore` import successfully
+
+☑️ Verified `InMemoryBM25Retriever` import successfully
+
+☑️ Verified `InMemoryEmbeddingRetriever` import successfully
+
+☑️ Verified Sentence Transformers integration successfully
+
+## PDF Documents & Indexing
+
+☑️ Created exactly 5 PDF documents for retrieval evaluation
+
+☑️ Added the 5 PDF documents to the `documents` directory
+
+☑️ Used `PyPDFToDocument` for PDF conversion
+
+☑️ Created an in-memory Haystack document store
+
+☑️ Converted PDF content into Haystack documents
+
+☑️ Stored source PDF filenames as document metadata
+
+☑️ Indexed all 5 PDF documents successfully
+
+☑️ Verified the document store contains 5 documents
+
+## BM25 Retrieval
+
+☑️ Implemented BM25 retrieval using `InMemoryBM25Retriever`
+
+☑️ Configured BM25 retrieval with `top_k=3`
+
+☑️ Created 10 fixed evaluation questions
+
+☑️ Executed all 10 questions using BM25 retrieval
+
+☑️ Verified BM25 returned results for all 10 questions
+
+☑️ Saved BM25 retrieval results to `outputs/bm25_results.json`
+
+☑️ Evaluated BM25 retrieval rankings manually
+
+## Dense Retrieval
+
+☑️ Implemented dense retrieval using `InMemoryEmbeddingRetriever`
+
+☑️ Configured Sentence Transformers document embeddings
+
+☑️ Used `sentence-transformers/all-MiniLM-L6-v2`
+
+☑️ Generated embeddings for all 5 indexed documents
+
+☑️ Configured Sentence Transformers text embeddings for queries
+
+☑️ Used the same 10 questions for dense retrieval
+
+☑️ Verified dense retrieval returned results for all 10 questions
+
+☑️ Saved dense retrieval results to `outputs/dense_results.json`
+
+## BM25 vs Dense Evaluation
+
+☑️ Used the same 10 questions for both retrieval methods
+
+☑️ Defined the expected relevant PDF for each question
+
+☑️ Recorded the expected document rank for each retrieval method
+
+☑️ Calculated BM25 Top-1 precision
+
+☑️ Calculated BM25 Top-3 hit rate
+
+☑️ Calculated Dense Top-1 precision
+
+☑️ Calculated Dense Top-3 hit rate
+
+☑️ Created `outputs/retrieval_comparison.json`
+
+☑️ Created `outputs/manual_evaluation.md`
+
+☑️ Verified BM25 Top-1 precision of 90% (9/10)
+
+☑️ Verified BM25 Top-3 hit rate of 100% (10/10)
+
+☑️ Verified Dense Top-1 precision of 100% (10/10)
+
+☑️ Verified Dense Top-3 hit rate of 100% (10/10)
+
+☑️ Identified the BM25 Top-1 miss for Question 2
+
+☑️ Verified the expected document was within the BM25 Top-3 results for all 10 questions
+
+☑️ Verified the expected document was ranked first by dense retrieval for all 10 questions
+
+☑️ Documented the retrieval observations
+
+## Code & Reproducibility
+
+☑️ Created `create_documents.py`
+
+☑️ Created `bm25_retrieval.py`
+
+☑️ Created `dense_retrieval.py`
+
+☑️ Created `retrieval_comparison.py`
+
+☑️ Created `create_manual_evaluation.py`
+
+☑️ Used Haystack pipeline components for retrieval
+
+☑️ Used `InMemoryDocumentStore`
+
+☑️ Used BM25 retrieval
+
+☑️ Used dense retrieval
+
+☑️ Used Sentence Transformers embeddings
+
+☑️ Used the same evaluation questions for both retrieval approaches
+
+☑️ Saved experiment results in JSON format
+
+☑️ Generated Markdown evaluation evidence
+
+☑️ Verified the complete retrieval workflow executes successfully
+
+☑️ Verified implementation using the project `.venv`
+
+☑️ Confirmed successful execution without application errors
+
+## Output Evidence
+
+☑️ Created `outputs/bm25_results.json`
+
+☑️ Created `outputs/dense_results.json`
+
+☑️ Created `outputs/retrieval_comparison.json`
+
+☑️ Created `outputs/manual_evaluation.md`
+
+☑️ Saved BM25 results for all 10 questions
+
+☑️ Saved dense retrieval results for all 10 questions
+
+☑️ Saved BM25 versus dense comparison results
+
+☑️ Saved manual evaluation observations
+
+☑️ Verified output evidence files are readable and available for evaluation
+
+## CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode review for W7D2
+
+☑️ Completed the required second CIA Full Stack Mentor Mode interaction
+
+☑️ Reviewed the implementation and evaluation methodology with CIA
+
+☑️ Verified W7D2 implementation is ready for submission
+
+☑️ Completed the minimum 2 required CIA interactions
+
+## Git & Version Control
+
+☑️ Verified the active branch is `feat/aiml-W7-Ramya`
+
+☑️ Kept unrelated W3/W4 folders out of the W7D2 commits
+
+☑️ Staged only W7D2 implementation and evidence files
+
+☑️ Completed the first W7D2 implementation commit
+
+☑️ Completed the second W7D2 retrieval comparison commit
+
+☑️ Maintained the required minimum 2 commits for W7D2
+
+☑️ Used descriptive Git commit messages
+
+☐ Complete W7D2 self-review documentation commit
+
+☐ Push `feat/aiml-W7-Ramya` to the remote repository
+
+☐ Verify the remote W7 branch is updated successfully
+
+☐ Create/Update Pull Request from `feat/aiml-W7-Ramya` to `master`
+
+## W7D2 Commits
+
+☑️ Completed W7D2 implementation commit
+
+☑️ `feat: add dense retrieval and bm25 comparison`
+
+☐ W7D2 self-review documentation commit
+
+## Final Status
+
+☑️ W7D2 Haystack retrieval implementation completed successfully
+
+☑️ Five PDF documents indexed successfully
+
+☑️ Ten retrieval questions tested successfully
+
+☑️ BM25 retrieval tested successfully
+
+☑️ Dense retrieval tested successfully
+
+☑️ BM25 versus dense retrieval comparison completed
+
+☑️ Manual retrieval evaluation completed
+
+☑️ BM25 Top-1 precision measured at 90%
+
+☑️ Dense Top-1 precision measured at 100%
+
+☑️ Retrieval evidence generated successfully
+
+☑️ CIA Full Stack Mentor interactions completed
+
+☑️ Minimum 2 Git implementation commits completed
+
+☐ Self-review documentation committed
+
+☐ W7D2 branch pushed to GitHub after final commit
+
+☐ Pull Request updated/created to `master`
+
+# W7D2 Status: IMPLEMENTATION COMPLETED — SELF-REVIEW & FINAL PUSH PENDING
