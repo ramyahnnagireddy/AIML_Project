@@ -1212,3 +1212,239 @@ Final Review
 ☑️ Pull Request created/updated
 
 # W6D4 Status: COMPLETED
+
+# Self-Review Checklist — W6D5 Document Chatbot with LangChain
+
+## LangChain Chain Setup
+
+☑️ Created `W6D5_Document_Chatbot_LangChain`
+
+☑️ Created `chain_memory.py`
+
+☑️ Verified the required LangChain packages
+
+☑️ Verified `langchain` installation
+
+☑️ Verified `langchain-core` installation
+
+☑️ Verified `langchain-ollama` integration
+
+☑️ Verified `ChatOllama` import successfully
+
+☑️ Verified `PromptTemplate` import successfully
+
+☑️ Verified `StrOutputParser` import successfully
+
+☑️ Configured `llama3.2:3b` as the local Ollama LLM
+
+☑️ Configured LLM temperature to `0`
+
+☑️ Implemented `PromptTemplate`
+
+☑️ Connected `PromptTemplate` to `ChatOllama`
+
+☑️ Connected `ChatOllama` to `StrOutputParser`
+
+☑️ Built the complete LangChain chain
+
+☑️ Verified the chain executes successfully
+
+☑️ Tested the chain with 5 different inputs
+
+☑️ Verified all 5 inputs produced responses successfully
+
+## Conversation Memory
+
+☑️ Implemented conversation history management
+
+☑️ Created a conversation-history buffer
+
+☑️ Maintained previous user and assistant messages
+
+☑️ Passed previous conversation history to the LLM
+
+☑️ Tested conversation memory across 5 turns
+
+☑️ Verified Turn 1 stored the user's name
+
+☑️ Verified Turn 2 stored the user's education information
+
+☑️ Verified Turn 3 used information from previous turns
+
+☑️ Verified Turn 4 continued using the conversation context
+
+☑️ Verified Turn 5 summarized information from previous turns
+
+☑️ Verified conversation history was maintained successfully across all 5 turns
+
+☑️ Verified the memory demonstration completed without errors
+
+## Two-Tool Agent
+
+☑️ Created `agent_tools.py`
+
+☑️ Configured `ChatOllama` with `llama3.2:3b`
+
+☑️ Created a simple LangChain agent
+
+☑️ Implemented the `web_search_stub` tool
+
+☑️ Implemented the `calculator` tool
+
+☑️ Registered both tools with the agent
+
+☑️ Configured the agent to use the web-search stub for search requests
+
+☑️ Configured the agent to use the calculator for arithmetic requests
+
+☑️ Tested the web-search stub independently
+
+☑️ Verified the web-search stub returned a simulated search result
+
+☑️ Tested the calculator independently
+
+☑️ Verified `125 * 8 + 50 = 1050`
+
+☑️ Tested the two-tool agent successfully
+
+☑️ Ran 3 agent tasks
+
+☑️ Verified Task 1 completed using the web-search functionality
+
+☑️ Verified Task 2 calculated `125 * 24 = 3000`
+
+☑️ Verified Task 3 calculated `48 / 6 = 8`
+
+☑️ Verified all 3 agent tasks returned responses successfully
+
+☑️ Verified the agent execution completed without errors
+
+## Output Evidence
+
+☑️ Created `outputs/chain_output.txt`
+
+☑️ Created `outputs/memory_output.txt`
+
+☑️ Created `outputs/agent_output.txt`
+
+☑️ Saved the 5 chain test inputs and outputs
+
+☑️ Saved the 5 conversation-memory turns
+
+☑️ Saved the two-tool agent test results
+
+☑️ Saved web-search stub execution evidence
+
+☑️ Saved calculator execution evidence
+
+☑️ Saved the 3 agent task results
+
+☑️ Saved successful W6D5 execution evidence
+
+☑️ Verified output evidence files are readable and available for evaluation
+
+## Code & Reproducibility
+
+☑️ Created `chain_memory.py`
+
+☑️ Created `agent_tools.py`
+
+☑️ Used LangChain for chain construction
+
+☑️ Used `PromptTemplate` for prompt construction
+
+☑️ Used `ChatOllama` for local LLM inference
+
+☑️ Used `StrOutputParser` for output parsing
+
+☑️ Used conversation history for multi-turn interaction
+
+☑️ Used LangChain tools for agent functionality
+
+☑️ Used a web-search stub instead of an external web API
+
+☑️ Used a calculator tool for arithmetic operations
+
+☑️ Used `llama3.2:3b` for local LLM inference
+
+☑️ Verified the implementation using the project `.venv`
+
+☑️ Verified all W6D5 Python programs execute successfully
+
+☑️ Verified the complete chain, memory, and agent workflow
+
+## CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode review before Commit #1
+
+☑️ Completed second CIA Full Stack Mentor Mode review after Commit #1
+
+☑️ Incorporated/verified CIA review feedback
+
+☑️ Verified W6D5 implementation is ready for final submission
+
+☑️ Completed the minimum 2 required CIA interactions
+
+## Git & Version Control
+
+☑️ Verified the active branch is `feat/aiml-W6-Ramya`
+
+☑️ Kept unrelated W3/W4 folders out of the W6D5 commit
+
+☑️ Staged only W6D5 implementation files for Commit #1
+
+☑️ Completed the first W6D5 implementation commit
+
+☑️ Used descriptive Git commit message
+
+☑️ Verified W6D5 files are tracked separately from unrelated folders
+
+☑️ Completed second W6D5 documentation/self-review commit
+
+☑️ Maintained the required minimum of 2 commits for W6D5
+
+☑️ Verified the W6 branch history contains both W6D5 commits
+
+☐ Final push to remote W6 branch
+
+☐ Pull Request updated/created
+
+## Final Status
+
+☑️ W6D5 LangChain chain implementation completed successfully
+
+☑️ Five chain inputs tested successfully
+
+☑️ PromptTemplate → ChatOllama → StrOutputParser workflow verified
+
+☑️ Five-turn conversation history demonstrated successfully
+
+☑️ Conversation context successfully used in later turns
+
+☑️ Two-tool LangChain agent implemented successfully
+
+☑️ Web-search stub implemented successfully
+
+☑️ Calculator tool implemented successfully
+
+☑️ Three agent tasks completed successfully
+
+☑️ Calculator result `125 * 24 = 3000` verified
+
+☑️ Calculator result `48 / 6 = 8` verified
+
+☑️ Output evidence generated successfully
+
+☑️ CIA Full Stack Mentor interactions completed
+
+☑️ W6D5 implementation commit completed
+
+☑️ W6D5 self-review documentation prepared
+
+☑️ Second W6D5 documentation commit completed
+
+☐ Remote branch updated
+
+☐ Pull Request created/updated
+
+# W6D5 Status: COMPLETED — PENDING FINAL PUSH & PR
