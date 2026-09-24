@@ -1448,3 +1448,221 @@ Final Review
 ☐ Pull Request created/updated
 
 # W6D5 Status: COMPLETED — PENDING FINAL PUSH & PR
+
+# Self-Review Checklist — W7D1 Haystack Pipeline Architecture
+
+## Haystack Setup
+
+☑️ Created `W7D1_Haystack_Pipeline_Architecture`
+
+☑️ Created `documents` directory
+
+☑️ Created `outputs` directory
+
+☑️ Installed `haystack-ai`
+
+☑️ Installed `pypdf`
+
+☑️ Installed `sentence-transformers-haystack`
+
+☑️ Verified Haystack imports successfully
+
+☑️ Verified `PyPDFToDocument` import successfully
+
+☑️ Verified `InMemoryDocumentStore` import successfully
+
+☑️ Verified `InMemoryBM25Retriever` import successfully
+
+☑️ Verified `InMemoryEmbeddingRetriever` import successfully
+
+☑️ Verified Sentence Transformers integration successfully
+
+## PDF Documents & Indexing
+
+☑️ Added exactly 5 PDF documents
+
+☑️ Verified all 5 PDF documents are available in the `documents` directory
+
+☑️ Used `PyPDFToDocument` for PDF document conversion
+
+☑️ Created an in-memory Haystack document store
+
+☑️ Converted PDF content into Haystack documents
+
+☑️ Indexed the 5 PDF documents into the document store
+
+☑️ Verified the document indexing pipeline executes successfully
+
+## BM25 Retrieval
+
+☑️ Implemented BM25 retrieval using `InMemoryBM25Retriever`
+
+☑️ Configured the Haystack document store for BM25 retrieval
+
+☑️ Created 10 fixed evaluation questions
+
+☑️ Executed all 10 questions using BM25 retrieval
+
+☑️ Verified BM25 returned retrieval results for all 10 questions
+
+☑️ Saved BM25 retrieval results for evaluation
+
+## Dense Retrieval
+
+☑️ Configured Sentence Transformers document embeddings
+
+☑️ Used `sentence-transformers/all-MiniLM-L6-v2`
+
+☑️ Generated dense embeddings for indexed documents
+
+☑️ Configured Sentence Transformers text embeddings for queries
+
+☑️ Implemented dense retrieval using `InMemoryEmbeddingRetriever`
+
+☑️ Used the same 10 questions for dense retrieval
+
+☑️ Verified dense retrieval returned results for all 10 questions
+
+☑️ Saved dense retrieval results for comparison
+
+## BM25 vs Dense Evaluation
+
+☑️ Evaluated BM25 retrieval manually
+
+☑️ Evaluated dense retrieval manually
+
+☑️ Compared BM25 and dense retrieval using the same 10 questions
+
+☑️ Recorded retrieval rankings for all 10 questions
+
+☑️ Identified questions where BM25 and dense retrieval produced different top-ranked documents
+
+☑️ Identified questions where both retrieval methods returned the same top-ranked document
+
+☑️ Documented observations from the retrieval comparison
+
+☑️ Created `outputs/W7D1_EVALUATION.md`
+
+☑️ Created `outputs/retrieval_results.json`
+
+☑️ Verified retrieval evidence is readable and available for evaluation
+
+## Code & Reproducibility
+
+☑️ Created `haystack_pipeline.py`
+
+☑️ Used Haystack pipeline components for PDF processing and retrieval
+
+☑️ Used `InMemoryDocumentStore`
+
+☑️ Used BM25 retrieval
+
+☑️ Used dense retrieval
+
+☑️ Used Sentence Transformers embeddings
+
+☑️ Used the same evaluation questions for both retrieval approaches
+
+☑️ Saved experiment results in JSON format
+
+☑️ Verified the complete Python program executes successfully
+
+☑️ Verified implementation using the project `.venv`
+
+☑️ Confirmed successful execution without application errors
+
+## Output Evidence
+
+☑️ Created `outputs/retrieval_results.json`
+
+☑️ Saved BM25 retrieval results
+
+☑️ Saved dense retrieval results
+
+☑️ Saved results for all 10 questions
+
+☑️ Created `outputs/W7D1_EVALUATION.md`
+
+☑️ Documented manual retrieval observations
+
+☑️ Created `outputs/EXPERIMENT_SUMMARY.md`
+
+☑️ Documented W7D1 setup and experiment methodology
+
+☑️ Documented BM25 versus dense retrieval observations
+
+☑️ Verified output evidence files are readable and available for evaluation
+
+## CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode review before Commit #1
+
+☑️ Completed second CIA Full Stack Mentor Mode review after Commit #1
+
+☑️ Incorporated/verified CIA review feedback
+
+☑️ Verified W7D1 implementation is ready for submission
+
+☑️ Completed the minimum 2 required CIA interactions
+
+## Git & Version Control
+
+☑️ Verified the active branch is `feat/aiml-W7-Ramya`
+
+☑️ Kept unrelated W3/W4 folders out of the W7D1 commits
+
+☑️ Staged only W7D1 implementation and documentation files
+
+☑️ Completed the first W7D1 implementation commit
+
+☑️ Used descriptive Git commit message
+
+☑️ Completed the second W7D1 documentation commit
+
+☑️ Maintained the required minimum of 2 commits for W7D1
+
+☑️ Verified W7D1 branch history contains both W7D1 commits
+
+☑️ Pushed `feat/aiml-W7-Ramya` to the remote repository
+
+☑️ Verified the remote branch was created successfully
+
+☑️ Created Pull Request from `feat/aiml-W7-Ramya` to `master`
+
+## W7D1 Commits
+
+☑️ `3bb4769 feat: add Haystack BM25 and dense retrieval pipeline`
+
+☑️ `9ca7514 docs: add W7D1 retrieval experiment summary`
+
+## Final Status
+
+☑️ W7D1 Haystack pipeline implementation completed successfully
+
+☑️ Five PDF documents indexed successfully
+
+☑️ Ten retrieval questions tested successfully
+
+☑️ BM25 retrieval tested successfully
+
+☑️ Dense retrieval tested successfully
+
+☑️ BM25 versus dense retrieval comparison completed
+
+☑️ Retrieval evidence generated successfully
+
+☑️ Manual evaluation documented successfully
+
+☑️ Experiment summary documented successfully
+
+☑️ CIA Full Stack Mentor interactions completed
+
+☑️ Minimum 2 Git commits completed
+
+☑️ W7D1 branch pushed to GitHub
+
+☑️ Pull Request created to `master`
+
+☑️ Unrelated W3/W4 folders kept out of W7D1 commits
+
+# W7D1 Status: COMPLETED — PUSHED & PULL REQUEST CREATED
