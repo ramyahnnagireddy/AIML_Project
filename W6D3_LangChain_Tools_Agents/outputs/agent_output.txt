@@ -1,0 +1,27 @@
+W6D3 TASK 3 - LANGCHAIN AGENT
+============================================================
+Model: llama3.2:3b
+Tools: web_search_stub, calculator
+Tasks tested: 3
+
+TASK 1
+USER: Search for information about LangChain tools.
+AGENT:
+Agent selected web search stub.
+Query: LangChain tools and agents
+Result: Web search stub result for 'LangChain tools and agents': LangChain is a framework for building applications powered by language models.
+------------------------------------------------------------
+TASK 2
+USER: Calculate 125 multiplied by 24.
+AGENT:
+Agent selected calculator tool.
+Expression: 125 * 24
+Result: 3000
+------------------------------------------------------------
+TASK 3
+USER: Calculate 48 divided by 6.
+AGENT:
+Agent selected calculator tool.
+Expression: 48 / 6
+Result: 8.0
+------------------------------------------------------------

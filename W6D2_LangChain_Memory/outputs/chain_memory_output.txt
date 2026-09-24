@@ -1,0 +1,137 @@
+W6D2 - LANGCHAIN MEMORY & CONVERSATION HISTORY
+======================================================================
+
+MODEL
+llama3.2:3b
+
+======================================================================
+TASK 1: LANGCHAIN CHAIN
+======================================================================
+
+Input 1: What is machine learning?
+Output: Machine learning is a subset of artificial intelligence (AI) that involves training algorithms to automatically improve their performance on a task without being explicitly programmed. The algorithm learns from data, identifies patterns, and makes predictions or decisions based on that learning.
+
+Input 2: What is supervised learning?
+Output: Supervised learning is a type of machine learning where the algorithm is trained on labeled data, where the correct output is already known. The goal is to learn a mapping between inputs and outputs, so the algorithm can make predictions on new, unseen data.
+
+Input 3: What is a dataset?
+Output: A dataset is a collection of organized and structured data, typically in a digital format, used to train and test machine learning (ML) models. It consists of labeled or unlabeled data, such as images, text, audio, or numerical values, that serve as input for the model to learn from.
+
+Input 4: What is overfitting?
+Output: Overfitting is when a model is too complex and fits the training data too closely, resulting in poor performance on unseen data. It's like trying to memorize the training data instead of learning generalizable patterns.
+
+Input 5: What is the purpose of train-test split?
+Output: The purpose of a train-test split is to evaluate the performance of a machine learning model by dividing the available data into two sets:
+
+1. **Training set (train)**: Used to train the model and learn the underlying patterns and relationships in the data.
+2. **Testing set (test)**: Used to evaluate the performance of the trained model on unseen data, allowing for an unbiased assessment of its accuracy and generalizability.
+
+
+======================================================================
+TASK 2: CONVERSATION BUFFER MEMORY
+======================================================================
+
+Turn 1
+User: My name is Ramya.
+Assistant: Nice to meet you, Ramya! What brings you here today? Are you looking to learn more about AI and ML, or perhaps seeking guidance on a specific project or problem?
+Memory after turn: Human: My name is Ramya.
+AI: Nice to meet you, Ramya! What brings you here today? Are you looking to learn more about AI and ML, or perhaps seeking guidance on a specific project or problem?
+
+Turn 2
+User: What is machine learning?
+Assistant: Nice to continue our conversation, Ramya! Machine learning is a subset of artificial intelligence (AI) that enables computers to learn and improve their performance on a specific task without being explicitly programmed.
+
+Imagine you're training a child to recognize different types of animals. At first, the child needs to be shown each animal multiple times to learn its characteristics. As the child becomes more familiar with the animals, they can begin to recognize them on their own without explicit instruction. This is similar to how machine learning algorithms work, where the computer is trained on a large dataset of examples, and then it can make predictions or take actions without being told exactly what to do.
+
+There are several types of machine learning, including supervised, unsupervised, and reinforcement learning. Each type has its own strengths and weaknesses, and the choice of which one to use depends on the specific problem you're trying to solve.
+
+Do you have any experience with machine learning before, or is this a topic that's new to you?
+Memory after turn: Human: My name is Ramya.
+AI: Nice to meet you, Ramya! What brings you here today? Are you looking to learn more about AI and ML, or perhaps seeking guidance on a specific project or problem?
+Human: What is machine learning?
+AI: Nice to continue our conversation, Ramya! Machine learning is a subset of artificial intelligence (AI) that enables computers to learn and improve their performance on a specific task without being explicitly programmed.
+
+Imagine you're training a child to recognize different types of animals. At first, the child needs to be shown each animal multiple times to learn its characteristics. As the child becomes more familiar with the animals, they can begin to recognize them on their own without explicit instruction. This is similar to how machine learning algorithms work, where the computer is trained on a large dataset of examples, and then it can make predictions or take actions without being told exactly what to do.
+
+There are several types of machine learning, including supervised, unsupervised, and reinforcement learning. Each type has its own strengths and weaknesses, and the choice of which one to use depends on the specific problem you're trying to solve.
+
+Do you have any experience with machine learning before, or is this a topic that's new to you?
+
+Turn 3
+User: What is supervised learning?
+Assistant: Ramya! I'm glad you're interested in learning more about machine learning. Supervised learning is a type of machine learning where the computer is trained on a labeled dataset, meaning each example in the dataset has a corresponding output or target value that the computer is trying to learn to predict.
+
+Think of it like this: imagine you're teaching a child to recognize different types of animals, just like in the analogy I used earlier. In supervised learning, you would show the child many examples of each animal, along with the correct label (e.g. "this is a cat," "this is a dog," etc.). The child would then learn to recognize the animals by associating the images with the correct labels.
+
+The computer does something similar, where it uses the labeled dataset to learn the relationships between the input data and the output labels. Once it's been trained on the dataset, the computer can make predictions on new, unseen data, using the knowledge it's gained from the labeled examples.
+
+Supervised learning is often used for classification problems, such as spam vs. not spam emails, or medical diagnosis, where the computer is trying to predict a categorical output. Does that make sense?
+Memory after turn: Human: My name is Ramya.
+AI: Nice to meet you, Ramya! What brings you here today? Are you looking to learn more about AI and ML, or perhaps seeking guidance on a specific project or problem?
+Human: What is machine learning?
+AI: Nice to continue our conversation, Ramya! Machine learning is a subset of artificial intelligence (AI) that enables computers to learn and improve their performance on a specific task without being explicitly programmed.
+
+Imagine you're training a child to recognize different types of animals. At first, the child needs to be shown each animal multiple times to learn its characteristics. As the child becomes more familiar with the animals, they can begin to recognize them on their own without explicit instruction. This is similar to how machine learning algorithms work, where the computer is trained on a large dataset of examples, and then it can make predictions or take actions without being told exactly what to do.
+
+There are several types of machine learning, including supervised, unsupervised, and reinforcement learning. Each type has its own strengths and weaknesses, and the choice of which one to use depends on the specific problem you're trying to solve.
+
+Do you have any experience with machine learning before, or is this a topic that's new to you?
+Human: What is supervised learning?
+AI: Ramya! I'm glad you're interested in learning more about machine learning. Supervised learning is a type of machine learning where the computer is trained on a labeled dataset, meaning each example in the dataset has a corresponding output or target value that the computer is trying to learn to predict.
+
+Think of it like this: imagine you're teaching a child to recognize different types of animals, just like in the analogy I used earlier. In supervised learning, you would show the child many examples of each animal, along with the correct label (e.g. "this is a cat," "this is a dog," etc.). The child would then learn to recognize the animals by associating the images with the correct labels.
+
+The computer does something similar, where it uses the labeled dataset to learn the relationships between the input data and the output labels. Once it's been trained on the dataset, the computer can make predictions on new, unseen data, using the knowledge it's gained from the labeled examples.
+
+Supervised learning is often used for classification problems, such as spam vs. not spam emails, or medical diagnosis, where the computer is trying to predict a categorical output. Does that make sense?
+
+Turn 4
+User: Can you remind me what my name is?
+Assistant: Nice to continue our conversation, Ramya! Your name is Ramya, and we were just discussing machine learning. What's on your mind? Do you have any questions about supervised learning, or would you like to explore another topic?
+Memory after turn: Human: My name is Ramya.
+AI: Nice to meet you, Ramya! What brings you here today? Are you looking to learn more about AI and ML, or perhaps seeking guidance on a specific project or problem?
+Human: What is machine learning?
+AI: Nice to continue our conversation, Ramya! Machine learning is a subset of artificial intelligence (AI) that enables computers to learn and improve their performance on a specific task without being explicitly programmed.
+
+Imagine you're training a child to recognize different types of animals. At first, the child needs to be shown each animal multiple times to learn its characteristics. As the child becomes more familiar with the animals, they can begin to recognize them on their own without explicit instruction. This is similar to how machine learning algorithms work, where the computer is trained on a large dataset of examples, and then it can make predictions or take actions without being told exactly what to do.
+
+There are several types of machine learning, including supervised, unsupervised, and reinforcement learning. Each type has its own strengths and weaknesses, and the choice of which one to use depends on the specific problem you're trying to solve.
+
+Do you have any experience with machine learning before, or is this a topic that's new to you?
+Human: What is supervised learning?
+AI: Ramya! I'm glad you're interested in learning more about machine learning. Supervised learning is a type of machine learning where the computer is trained on a labeled dataset, meaning each example in the dataset has a corresponding output or target value that the computer is trying to learn to predict.
+
+Think of it like this: imagine you're teaching a child to recognize different types of animals, just like in the analogy I used earlier. In supervised learning, you would show the child many examples of each animal, along with the correct label (e.g. "this is a cat," "this is a dog," etc.). The child would then learn to recognize the animals by associating the images with the correct labels.
+
+The computer does something similar, where it uses the labeled dataset to learn the relationships between the input data and the output labels. Once it's been trained on the dataset, the computer can make predictions on new, unseen data, using the knowledge it's gained from the labeled examples.
+
+Supervised learning is often used for classification problems, such as spam vs. not spam emails, or medical diagnosis, where the computer is trying to predict a categorical output. Does that make sense?
+Human: Can you remind me what my name is?
+AI: Nice to continue our conversation, Ramya! Your name is Ramya, and we were just discussing machine learning. What's on your mind? Do you have any questions about supervised learning, or would you like to explore another topic?
+
+Turn 5
+User: What topic did we discuss about learning?
+Assistant: We discussed supervised learning. You might be interested in learning more about the different types of machine learning, such as unsupervised and reinforcement learning, or perhaps you'd like to explore how supervised learning can be applied to a specific project or problem. What's on your mind, Ramya?
+Memory after turn: Human: My name is Ramya.
+AI: Nice to meet you, Ramya! What brings you here today? Are you looking to learn more about AI and ML, or perhaps seeking guidance on a specific project or problem?
+Human: What is machine learning?
+AI: Nice to continue our conversation, Ramya! Machine learning is a subset of artificial intelligence (AI) that enables computers to learn and improve their performance on a specific task without being explicitly programmed.
+
+Imagine you're training a child to recognize different types of animals. At first, the child needs to be shown each animal multiple times to learn its characteristics. As the child becomes more familiar with the animals, they can begin to recognize them on their own without explicit instruction. This is similar to how machine learning algorithms work, where the computer is trained on a large dataset of examples, and then it can make predictions or take actions without being told exactly what to do.
+
+There are several types of machine learning, including supervised, unsupervised, and reinforcement learning. Each type has its own strengths and weaknesses, and the choice of which one to use depends on the specific problem you're trying to solve.
+
+Do you have any experience with machine learning before, or is this a topic that's new to you?
+Human: What is supervised learning?
+AI: Ramya! I'm glad you're interested in learning more about machine learning. Supervised learning is a type of machine learning where the computer is trained on a labeled dataset, meaning each example in the dataset has a corresponding output or target value that the computer is trying to learn to predict.
+
+Think of it like this: imagine you're teaching a child to recognize different types of animals, just like in the analogy I used earlier. In supervised learning, you would show the child many examples of each animal, along with the correct label (e.g. "this is a cat," "this is a dog," etc.). The child would then learn to recognize the animals by associating the images with the correct labels.
+
+The computer does something similar, where it uses the labeled dataset to learn the relationships between the input data and the output labels. Once it's been trained on the dataset, the computer can make predictions on new, unseen data, using the knowledge it's gained from the labeled examples.
+
+Supervised learning is often used for classification problems, such as spam vs. not spam emails, or medical diagnosis, where the computer is trying to predict a categorical output. Does that make sense?
+Human: Can you remind me what my name is?
+AI: Nice to continue our conversation, Ramya! Your name is Ramya, and we were just discussing machine learning. What's on your mind? Do you have any questions about supervised learning, or would you like to explore another topic?
+Human: What topic did we discuss about learning?
+AI: We discussed supervised learning. You might be interested in learning more about the different types of machine learning, such as unsupervised and reinforcement learning, or perhaps you'd like to explore how supervised learning can be applied to a specific project or problem. What's on your mind, Ramya?
+

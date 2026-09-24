@@ -1,0 +1,33 @@
+W6D4 - LangChain + ChromaDB RAG Pipeline
+=========================================
+
+Embedding Model:
+nomic-embed-text:latest
+
+LLM Model:
+llama3.2:3b
+
+ChromaDB Collection:
+w6d4_rag_documents
+
+Documents in Collection:
+5
+
+Query:
+What is retrieval augmented generation?
+
+Retrieved Context:
+1. Distance: 0.3290
+   Retrieval Augmented Generation combines document retrieval with language generation to provide answers grounded in external information.
+
+2. Distance: 0.9042
+   Natural language processing allows computers to understand and generate human language.
+
+3. Distance: 0.9717
+   Vector databases store numerical representations called embeddings and support similarity search between related pieces of information.
+
+Generated Answer:
+Retrieval Augmented Generation is a method that combines document retrieval with language generation to provide answers grounded in external information.
+
+Result:
+RAG pipeline completed successfully.
