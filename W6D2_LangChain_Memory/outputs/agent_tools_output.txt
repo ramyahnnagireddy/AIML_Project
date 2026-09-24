@@ -1,0 +1,30 @@
+W6D2 - TWO-TOOL AGENT
+======================================================================
+
+Model: llama3.2:3b
+
+TOOLS
+----------------------------------------------------------------------
+1. web_search_stub - simulated web search tool
+2. calculator - basic arithmetic calculator tool
+
+======================================================================
+THREE AGENT TASKS
+======================================================================
+
+Task 1: Web search
+Request: Search for the latest information about LangChain.
+Tool output: [Web Search Stub] Search results for 'latest information about LangChain': This is a simulated result because no external search API is connected in this practical.
+Agent response: The tool result indicates that no external search API is connected and a simulated result was provided for the search query "latest information about LangChain", suggesting that LangChain is a relatively unknown or new concept.
+
+Task 2: Calculator
+Request: Calculate 125 * 8 + 50.
+Tool output: Calculation result: 1050
+Agent response: This means that the output of the calculation or computation you performed is 1050, which can be a result of a mathematical equation, formula, or algorithm.
+
+Task 3: Combined
+Request: Search for the purpose of LangChain memory and calculate 250 / 5.
+Tool output: [Web Search Stub] Search results for 'purpose of LangChain memory': This is a simulated result because no external search API is connected in this practical.
+Calculation result: 50.0
+Agent response: This tool result indicates that there is no specific information available on the "purpose of LangChain memory" through an external search API, and the result is a simulated response. Alternatively, the calculation result of 50.0 is likely an error or a placeholder value, as it does not seem to be related to the original search query.
+
