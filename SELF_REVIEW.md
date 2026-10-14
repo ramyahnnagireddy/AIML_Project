@@ -2200,3 +2200,219 @@ _Note: These measurements reflect the recorded runs and can vary across executio
 # Final Status: W7D3 COMPLETED
 
 LlamaIndex document indexing, query engine implementation, ChromaDB integration, latency comparison, output evidence, CIA review, and Git delivery.
+
+# Self-Review Checklist — W7D4 Ollama Local LLM Inference & Model Comparison
+
+## 1. Ollama Setup & Configuration
+
+☑️ Created `W7D4_Ollama_Local_RAG`
+
+☑️ Verified Ollama installation
+
+☑️ Verified the local Ollama API endpoint
+
+☑️ Verified `llama3.2:3b` model availability
+
+☑️ Verified `qwen2.5:3b` model availability
+
+☑️ Configured `http://localhost:11434/api/chat`
+
+☑️ Configured `llama3.2:3b` for local inference
+
+☑️ Configured `qwen2.5:3b` for model comparison
+
+☑️ Used locally running language models
+
+## 2. Local LLM Inference
+
+☑️ Created `ollama_inference.py`
+
+☑️ Configured a custom system prompt
+
+☑️ Implemented API requests to Ollama
+
+☑️ Created five test prompts
+
+☑️ Tested basic artificial intelligence concepts
+
+☑️ Tested supervised machine learning
+
+☑️ Tested classification and regression
+
+☑️ Tested Python code generation
+
+☑️ Tested the train-test split concept
+
+☑️ Recorded generated responses
+
+☑️ Recorded response latency
+
+☑️ Recorded request success or failure
+
+☑️ Saved results to `outputs/inference_results.json`
+
+☑️ Verified all five inference requests completed successfully
+
+## 3. Model Comparison
+
+☑️ Created `model_comparison.py`
+
+☑️ Compared `llama3.2:3b` and `qwen2.5:3b`
+
+☑️ Used the same three questions for both models
+
+☑️ Used a consistent system prompt
+
+☑️ Configured temperature to `0.2`
+
+☑️ Recorded model-generated answers
+
+☑️ Recorded response latency
+
+☑️ Recorded token usage when available
+
+☑️ Recorded errors when applicable
+
+☑️ Saved results to `outputs/model_comparison.json`
+
+☑️ Verified all three questions completed successfully for each model
+
+## 4. Performance Evaluation
+
+☑️ Compared response latency between both models
+
+☑️ Compared answer length and level of detail
+
+☑️ Observed differences in response structure
+
+☑️ Recorded the average response latency for each model
+
+☑️ Documented experimental observations
+
+### Recorded Experimental Results
+
+☑️ `llama3.2:3b`: 3/3 successful comparison responses
+
+☑️ `qwen2.5:3b`: 3/3 successful comparison responses
+
+☑️ Llama 3.2 average latency: approximately 86.364 seconds
+
+☑️ Qwen 2.5 average latency: approximately 122.769 seconds
+
+☑️ Observed average latency difference: approximately 36.405 seconds per question
+
+☑️ Observed that Llama 3.2 responses were generally more concise
+
+☑️ Observed that Qwen 2.5 responses were generally more detailed and stepwise
+
+☑️ Recorded that results reflect the measured run and may vary between executions
+
+☐ Completed a formal factual-accuracy evaluation using a consistent scoring rubric
+
+## 5. Code Quality & Output Evidence
+
+☑️ Created `ollama_inference.py`
+
+☑️ Created `model_comparison.py`
+
+☑️ Used the Python `requests` library to communicate with the local API
+
+☑️ Used structured JSON output for inference results
+
+☑️ Used structured JSON output for comparison results
+
+☑️ Recorded execution results for five inference prompts
+
+☑️ Recorded execution results for three comparison questions per model
+
+☑️ Created `outputs/inference_results.json`
+
+☑️ Created `outputs/model_comparison.json`
+
+☑️ Verified successful execution of the inference script
+
+☑️ Verified successful execution of the comparison script
+
+☐ Captured and saved execution screenshots, if required
+
+## 6. CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode interactions
+
+☑️ Completed the required minimum of two CIA interactions
+
+☑️ Reviewed the implementation with the mentor
+
+☑️ Completed the mentor code review
+
+☑️ Reviewed the local inference implementation
+
+☑️ Reviewed the model comparison implementation
+
+☑️ Reviewed the recorded experimental results
+
+## 7. Git & Version Control
+
+☑️ Verified the active branch: `feat/aiml-W7-Ramya`
+
+☑️ Kept unrelated W3/W4 folders out of W7D4 commits
+
+☑️ Staged only the W7D4 implementation and output files
+
+☑️ Completed the first descriptive implementation commit
+
+☑️ First commit: `feat: add Ollama local LLM inference and model comparison`
+
+☑️ Verified commit `92fa1a1`
+
+☑️ Pushed the first W7D4 commit to GitHub
+
+☐ Created and committed the W7D4 self-review documentation
+
+☐ Completed the second descriptive documentation commit
+
+☐ Pushed the latest documentation commit to GitHub
+
+☐ Verified the final Git status
+
+☐ Verified the Pull Request targets `master`
+
+## 8. W7D4 Commits
+
+☑️ Implementation commit completed
+
+☑️ `feat: add Ollama local LLM inference and model comparison`
+
+☑️ Implementation commit pushed to `feat/aiml-W7-Ramya`
+
+☐ Documentation/self-review commit completed
+
+☐ Verified both descriptive commits are present on the remote branch
+
+## 9. Final Delivery Checklist
+
+☑️ Configured local Ollama inference
+
+☑️ Tested five prompts using `llama3.2:3b`
+
+☑️ Compared two local language models using three common questions
+
+☑️ Recorded inference and comparison results
+
+☑️ Recorded response latency measurements
+
+☑️ Generated JSON output evidence
+
+☑️ Completed the required CIA interactions
+
+☑️ Completed mentor code review
+
+☑️ Completed the first implementation commit
+
+☑️ Pushed the implementation to GitHub
+
+☐ Completed and committed the self-review
+
+☐ Completed at least two descriptive Git commits
+
+☐ Verified the final Pull Request and submission deliverables
