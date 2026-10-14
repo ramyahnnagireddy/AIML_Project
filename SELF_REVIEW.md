@@ -2416,3 +2416,263 @@ LlamaIndex document indexing, query engine implementation, ChromaDB integration,
 ☐ Completed at least two descriptive Git commits
 
 ☐ Verified the final Pull Request and submission deliverables
+
+# Self-Review Checklist — W7D5 Multi-Document RAG
+
+## 1. Project Setup & Configuration
+
+☑️ Created `W7D5_Multi_Document_RAG`
+
+☑️ Created the `documents` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Created the `tests` directory
+
+☑️ Created `config.py`
+
+☑️ Configured the local Ollama API endpoint
+
+☑️ Configured `llama3.2:3b` for local answer generation
+
+☑️ Configured `nomic-embed-text:latest` in the project configuration
+
+☑️ Created `requirements.txt`
+
+☑️ Verified required project imports
+
+## 2. Multi-Document RAG Pipeline
+
+☑️ Created `rag_pipeline.py`
+
+☑️ Added five source text documents
+
+☑️ Implemented document loading
+
+☑️ Implemented sentence-based text chunking
+
+☑️ Implemented TF-IDF vectorization
+
+☑️ Implemented cosine-similarity retrieval
+
+☑️ Configured retrieval to return up to three relevant chunks
+
+☑️ Integrated retrieval and generation using LangGraph
+
+☑️ Integrated local Ollama answer generation
+
+☑️ Implemented empty-question handling
+
+☑️ Recorded questions and generated answers
+
+☑️ Recorded retrieved source documents
+
+☑️ Recorded retrieval scores and response latency
+
+☑️ Saved pipeline results to `outputs/rag_results.json`
+
+☑️ Successfully executed sample RAG queries
+
+## 3. CrewAI Integration
+
+☑️ Created `crew_tasks.py`
+
+☑️ Configured a document research analyst agent
+
+☑️ Configured a document analysis task
+
+☑️ Configured sequential CrewAI task execution
+
+☑️ Verified the CrewAI module imports successfully
+
+☐ Verified successful end-to-end CrewAI task execution
+
+☐ Verified the CrewAI workflow is integrated into the main RAG pipeline, if required by the task specification
+
+## 4. MLflow Experiment Tracking
+
+☑️ Created `mlflow_tracking.py`
+
+☑️ Configured the `W7D5_Multi_Document_RAG` experiment name
+
+☑️ Implemented RAG run tracking
+
+☑️ Recorded question and answer information
+
+☑️ Recorded response latency
+
+☑️ Recorded retrieval-related metrics
+
+☑️ Recorded retrieved chunk counts
+
+☑️ Saved MLflow run evidence to `outputs/latest_mlflow_result.json`
+
+☑️ Configured local tracking artifacts to remain outside Git
+
+☑️ Preserved JSON output evidence in the repository
+
+## 5. RAG Evaluation
+
+☑️ Created `evaluate_rag.py`
+
+☑️ Loaded RAG pipeline results for evaluation
+
+☑️ Implemented context-support lexical indicators
+
+☑️ Implemented question-term overlap indicators
+
+☑️ Calculated evaluation indicators for the available samples
+
+☑️ Saved evaluation results to `outputs/ragas_evaluation.json`
+
+☑️ Created `outputs/RAGAS_EVALUATION.md`
+
+☑️ Documented the limitations of lexical evaluation
+
+☑️ Recorded that the current evaluation is not genuine Ragas metric scoring
+
+☐ Successfully evaluated genuine Ragas Faithfulness metrics
+
+☐ Successfully evaluated genuine Ragas AnswerRelevancy metrics
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_rag_pipeline.py`
+
+☑️ Tested document loading and text chunks
+
+☑️ Tested relevant-chunk retrieval
+
+☑️ Tested empty-question handling
+
+☑️ Tested evaluation indicator ranges
+
+☑️ Tested evaluation evidence existence and structure
+
+☑️ Executed the automated test suite
+
+☑️ Verified all five tests passed
+
+**Recorded test result:** 5 passed in approximately 5.31 seconds.
+
+## 7. Code Quality & Output Evidence
+
+☑️ Separated configuration from implementation
+
+☑️ Separated MLflow tracking from the RAG pipeline
+
+☑️ Separated evaluation logic from pipeline execution
+
+☑️ Used structured JSON output files
+
+☑️ Preserved RAG execution results
+
+☑️ Preserved MLflow run evidence
+
+☑️ Preserved evaluation reports
+
+☑️ Removed generated `__pycache__` and `.pytest_cache` folders before committing
+
+☑️ Added ignore rules for Python caches
+
+☑️ Added ignore rules for local MLflow databases and tracking artifacts
+
+☑️ Excluded local `mlflow.db` from the implementation commit
+
+☐ Completed a final review of all implementation files
+
+☐ Verified all required task specifications against the final implementation
+
+## 8. CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode interactions
+
+☑️ Completed the required minimum of two CIA interactions
+
+☑️ Completed the mentor review process, as confirmed
+
+☑️ Completed the implementation review process, as confirmed
+
+## 9. Git & Version Control
+
+☑️ Verified the active branch: `feat/aiml-W7-Ramya`
+
+☑️ Kept unrelated W3/W4 folders out of the W7D5 commit
+
+☑️ Updated the root `.gitignore`
+
+☑️ Staged W7D5 implementation and output evidence files
+
+☑️ Excluded `SELF_REVIEW.md` from the implementation commit
+
+☑️ Excluded local MLflow databases and generated tracking artifacts
+
+☑️ Completed the implementation commit
+
+☑️ Implementation commit: `feat: implement W7D5 multi-document RAG pipeline`
+
+☑️ Verified implementation commit `51d59a3`
+
+☑️ Pushed the implementation commit to GitHub
+
+☑️ Verified the push completed successfully
+
+☐ Created the separate W7D5 self-review documentation commit
+
+☐ Pushed the self-review commit to GitHub
+
+☐ Verified both descriptive commits are present on the remote branch
+
+☐ Verified the final Git status
+
+☐ Verified the Pull Request targets `master`
+
+## 10. W7D5 Commits
+
+☑️ Implementation commit completed
+
+☑️ `feat: implement W7D5 multi-document RAG pipeline`
+
+☑️ Implementation commit: `51d59a3`
+
+☑️ Implementation pushed to `feat/aiml-W7-Ramya`
+
+☐ Documentation/self-review commit completed
+
+☐ Verified both commits are available on the remote branch
+
+## 11. Final Delivery Checklist
+
+☑️ Created a multi-document RAG pipeline
+
+☑️ Added five source text documents
+
+☑️ Implemented TF-IDF retrieval and cosine similarity
+
+☑️ Integrated LangGraph workflow
+
+☑️ Integrated local Ollama answer generation
+
+☑️ Created the CrewAI task module
+
+☑️ Added MLflow experiment tracking
+
+☑️ Generated RAG output evidence
+
+☑️ Generated evaluation JSON and Markdown reports
+
+☑️ Executed five automated tests successfully
+
+☑️ Completed CIA interactions
+
+☑️ Completed the implementation commit
+
+☑️ Pushed the implementation commit to GitHub
+
+☐ Verified end-to-end CrewAI execution
+
+☐ Completed genuine Ragas metric evaluation, if required
+
+☐ Completed and committed the self-review separately
+
+☐ Verified the final Pull Request and submission deliverables
