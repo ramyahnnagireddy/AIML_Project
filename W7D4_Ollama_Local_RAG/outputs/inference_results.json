@@ -1,0 +1,60 @@
+{
+  "experiment": "W7D4 Ollama Local LLM Inference",
+  "model": "llama3.2:3b",
+  "system_prompt": "You are a helpful AI/ML learning assistant.\nProvide accurate, beginner-friendly explanations.\nUse clear steps for technical questions.\nFor coding questions, provide simple examples.\nIf uncertain, say so instead of inventing facts.\nKeep answers focused and easy to understand.",
+  "created_at_utc": "2026-10-14T13:27:47.950840+00:00",
+  "total_prompts": 5,
+  "successful_prompts": 5,
+  "results": [
+    {
+      "status": "success",
+      "model": "llama3.2:3b",
+      "prompt": "What is artificial intelligence? Explain with two examples.",
+      "response": "Artificial intelligence (AI) refers to the development of computer systems that can perform tasks that typically require human intelligence, such as:\n\n* Learning\n* Problem-solving\n* Reasoning\n* Perception\n* Language understanding\n\nAI systems use algorithms and data to make decisions, classify patterns, and generate insights. Here are two examples of AI in action:\n\n**Example 1: Virtual Assistants**\n\nVirtual assistants like Siri, Alexa, and Google Assistant use AI to understand voice commands and respond accordingly. For instance, if you say \"Hey Siri, what's the weather like today?\", Siri uses natural language processing (NLP) to:\n\n1. Identify the keywords \"weather\" and \"today\"\n2. Look up the current weather conditions for your location\n3. Provide the response to you\n\nThis is an example of AI-powered NLP, which enables virtual assistants to understand human language and respond accordingly.\n\n**Example 2: Image Recognition**\n\nImage recognition is a type of AI that enables computers to identify and classify objects in images. For instance, Google Photos uses AI-powered image recognition to:\n\n1. Identify people in photos\n2. Tag locations and objects in the image\n3. Create albums and suggestions for sharing\n\nThis is an example of AI-powered computer vision, which enables computers to analyze and understand visual data.\n\nThese examples illustrate how AI can be applied to various tasks, making our lives easier and more convenient.",
+      "latency_seconds": 73.376,
+      "prompt_tokens": 86,
+      "response_tokens": 286,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "llama3.2:3b",
+      "prompt": "Explain supervised learning in simple words.",
+      "response": "Supervised learning is a type of machine learning where a computer is trained to make predictions or decisions based on labeled data.\n\nHere's a simple example:\n\nImagine you're trying to teach a child to recognize different types of animals. You show them many pictures of dogs, cats, and birds, and you tell them which one is which (e.g. \"this is a dog\"). The child learns to recognize the patterns and features of each animal, so they can make predictions on their own.\n\nIn supervised learning, the computer is trained on a similar dataset, where the data is labeled with the correct answers (e.g. \"this is a dog\"). The computer uses this labeled data to learn the patterns and features of the data, so it can make predictions on new, unseen data.\n\nThe key idea is that the computer is learning from the labeled data, so it can make accurate predictions or decisions. The more data it sees, the better it becomes at making predictions.\n\nSome common types of supervised learning include:\n\n* Classification (e.g. predicting whether a picture is a dog or not)\n* Regression (e.g. predicting a continuous value, like the price of a house)\n* Time series forecasting (e.g. predicting future values in a time series dataset)\n\nSupervised learning is a powerful tool for making predictions and decisions, and it's widely used in many applications, such as image recognition, natural language processing, and more.",
+      "latency_seconds": 41.305,
+      "prompt_tokens": 84,
+      "response_tokens": 288,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "llama3.2:3b",
+      "prompt": "What is the difference between classification and regression?",
+      "response": "Classification and regression are two fundamental concepts in machine learning (ML) and statistics.\n\n**Classification:**\n\nClassification is a type of supervised learning where the goal is to predict a categorical label or class that an instance belongs to. In other words, you're trying to assign a category or class to a new, unseen instance based on its features.\n\nExample: Spam vs. Not Spam emails\n\n* Input: Email features (e.g., text, sender, recipient)\n* Output: Class label (e.g., Spam or Not Spam)\n\n**Regression:**\n\nRegression is a type of supervised learning where the goal is to predict a continuous value or output that is a numerical representation of a quantity. In other words, you're trying to predict a numerical value that is a measure of some quantity.\n\nExample: Predicting House Prices\n\n* Input: House features (e.g., number of bedrooms, square footage)\n* Output: House price (a continuous numerical value)\n\nKey differences:\n\n1. **Output type**: Classification outputs a categorical label, while regression outputs a continuous numerical value.\n2. **Prediction goal**: Classification aims to assign a class, while regression aims to predict a continuous value.\n3. **Error measure**: Classification errors are typically measured using accuracy, precision, and recall, while regression errors are measured using mean squared error (MSE) or mean absolute error (MAE).\n\nIn summary, classification is about assigning a category, while regression is about predicting a continuous value.",
+      "latency_seconds": 43.247,
+      "prompt_tokens": 85,
+      "response_tokens": 296,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "llama3.2:3b",
+      "prompt": "Write a short Python function to calculate a factorial.",
+      "response": "**Calculating Factorial in Python**\n=====================================\n\nHere's a simple function to calculate the factorial of a given number:\n\n```python\ndef calculate_factorial(n):\n    \"\"\"\n    Calculate the factorial of a given number.\n\n    Args:\n        n (int): The number to calculate the factorial of.\n\n    Returns:\n        int: The factorial of n.\n\n    Raises:\n        ValueError: If n is a negative number.\n    \"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial is not defined for negative numbers.\")\n    elif n == 0 or n == 1:\n        return 1\n    else:\n        return n * calculate_factorial(n-1)\n```\n\n**Example Usage**\n-----------------\n\n```python\nprint(calculate_factorial(5))  # Output: 120\n```\n\nThis function uses recursion to calculate the factorial. However, please note that this approach can lead to a `RecursionError` for large values of `n` due to Python's maximum recursion depth limit.\n\nFor large values of `n`, it's recommended to use an iterative approach:\n\n```python\ndef calculate_factorial_iterative(n):\n    \"\"\"\n    Calculate the factorial of a given number using iteration.\n\n    Args:\n        n (int): The number to calculate the factorial of.\n\n    Returns:\n        int: The factorial of n.\n    \"\"\"\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n```\n\nThis iterative version is more efficient and can handle larger values of `n`.",
+      "latency_seconds": 45.832,
+      "prompt_tokens": 86,
+      "response_tokens": 322,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "llama3.2:3b",
+      "prompt": "Why is train-test splitting important in machine learning?",
+      "response": "Train-test splitting is a crucial step in machine learning that helps ensure the accuracy and reliability of your models. Here's why:\n\n**Why Split Data?**\n\nImagine you're training a model on a large dataset, and you want to evaluate its performance. If you use the same data for both training and testing, you'll get an optimistic estimate of the model's performance. This is because the model is essentially \"cheating\" by using the same data to both learn and evaluate itself.\n\n**What's the Problem?**\n\nWhen you use the same data for both training and testing, you're introducing two types of errors:\n\n1. **Overfitting**: The model becomes too specialized to the training data and fails to generalize well to new, unseen data.\n2. **Underestimating performance**: The model's performance is artificially inflated, making it seem better than it actually is.\n\n**Benefits of Train-Test Splitting**\n\nBy splitting your data into training and testing sets, you can:\n\n1. **Evaluate model performance**: Use the testing set to evaluate the model's performance on unseen data, giving you a more accurate estimate of its abilities.\n2. **Prevent overfitting**: Ensure that the model is not too specialized to the training data and can generalize well to new data.\n3. **Improve model selection**: Compare the performance of different models on the testing set to choose the best one.\n\n**How to Split Data?**\n\nThe ideal split ratio depends on the problem and dataset. Common ratios are:\n\n* 80% for training and 20% for testing (e.g., 80% of 1000 samples for training, and 20% for testing)\n* 70% for training and 30% for testing\n\nYou can use techniques like stratified sampling or random splitting to divide your data into training and testing sets.\n\nIn summary, train-test splitting is essential in machine learning to ensure that your models are evaluated fairly, don't overfit to the training data, and can generalize well to new data.",
+      "latency_seconds": 62.851,
+      "prompt_tokens": 86,
+      "response_tokens": 410,
+      "error": null
+    }
+  ]
+}
