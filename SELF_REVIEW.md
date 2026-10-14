@@ -2676,3 +2676,265 @@ LlamaIndex document indexing, query engine implementation, ChromaDB integration,
 ☐ Completed and committed the self-review separately
 
 ☐ Verified the final Pull Request and submission deliverables
+
+# Self-Review Checklist — W8D1 Production RAG MLOps
+
+## 1. Project Setup & Configuration
+
+☑️ Created `W8D1_Production_RAG_MLOps`
+
+☑️ Created the `app` directory
+
+☑️ Created the `tests` directory
+
+☑️ Created the `monitoring` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Created `config.py`
+
+☑️ Configured environment-based application settings
+
+☑️ Configured the Ollama API endpoint and model settings
+
+☑️ Created `requirements.txt`
+
+☑️ Verified required project imports through testing
+
+## 2. Production RAG API
+
+☑️ Created `app/main.py`
+
+☑️ Integrated the existing W7D5 multi-document RAG pipeline
+
+☑️ Implemented the root API endpoint
+
+☑️ Implemented the `/health` endpoint
+
+☑️ Implemented the `/metrics` endpoint
+
+☑️ Implemented the `/query` endpoint
+
+☑️ Added request validation
+
+☑️ Added exception handling for pipeline errors
+
+☑️ Added request, error, and latency tracking
+
+☑️ Implemented structured API responses
+
+☑️ Created `app/__init__.py`
+
+☑️ Added automated API tests
+
+☑️ Verified the API test suite successfully
+
+## 3. Docker Containerization
+
+☑️ Created `Dockerfile`
+
+☑️ Configured a Python 3.12 slim base image
+
+☑️ Installed project dependencies inside the container image
+
+☑️ Copied the production API application into the image
+
+☑️ Included the existing W7D5 RAG pipeline
+
+☑️ Exposed port `8000`
+
+☑️ Configured the Uvicorn application startup command
+
+☑️ Configured the Ollama service URL for container use
+
+☑️ Created repository-root `.dockerignore`
+
+☑️ Added rules to exclude virtual environments, caches, environment files, and local tracking artifacts
+
+☑️ Built the Docker image locally
+
+## 4. GitHub Actions CI/CD
+
+☑️ Created `.github/workflows/w8d1-ci.yml`
+
+☑️ Configured workflow triggers for the feature branch and `master`
+
+☑️ Configured pull-request validation targeting `master`
+
+☑️ Added repository checkout
+
+☑️ Configured Python setup
+
+☑️ Added dependency installation
+
+☑️ Added Ruff lint validation
+
+☑️ Added automated pytest execution
+
+☑️ Added Docker Buildx setup
+
+☑️ Configured GitHub Container Registry authentication for push events
+
+☑️ Configured Docker image metadata and tags
+
+☑️ Configured Docker image build and conditional publishing
+
+☐ Verified the GitHub Actions workflow passes after pushing
+
+☐ Verified the Docker image was successfully published to GitHub Container Registry
+
+## 5. Monitoring Strategy
+
+☑️ Created `monitoring/monitoring_strategy.md`
+
+☑️ Documented request monitoring
+
+☑️ Documented error-rate monitoring
+
+☑️ Documented response-latency monitoring
+
+☑️ Documented RAG quality monitoring considerations
+
+☑️ Documented alert thresholds and monitoring recommendations
+
+☑️ Documented logging and operational considerations
+
+☑️ Identified limitations of in-process metrics
+
+☑️ Documented the need for production monitoring and persistent metrics
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_api.py`
+
+☑️ Tested the API root endpoint
+
+☑️ Tested the health endpoint
+
+☑️ Tested the metrics endpoint
+
+☑️ Tested query request handling
+
+☑️ Tested request validation
+
+☑️ Tested pipeline error handling
+
+☑️ Executed the automated test suite
+
+☑️ Verified all seven tests passed
+
+**Recorded test result:** 7 passed in approximately 10.12 seconds.
+
+## 7. Code Quality & Output Evidence
+
+☑️ Separated configuration from API implementation
+
+☑️ Separated monitoring documentation from application code
+
+☑️ Added automated API tests
+
+☑️ Saved test evidence to `outputs/test_results.txt`
+
+☑️ Saved lint evidence to `outputs/lint_results.txt`
+
+☑️ Ran Ruff against the application and test files
+
+☑️ Verified Ruff reported `All checks passed!`
+
+☑️ Removed generated `__pycache__` directories before committing
+
+☑️ Added ignore rules for Python caches and local artifacts
+
+☑️ Excluded local output evidence from the Docker build context
+
+☐ Completed a final review of all implementation files
+
+☐ Verified all required task specifications against the final implementation
+
+## 8. CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode interactions
+
+☑️ Completed the required minimum of two CIA interactions
+
+☑️ Completed the mentor review process, as confirmed
+
+☑️ Completed the implementation review process, as confirmed
+
+## 9. Git & Version Control
+
+☑️ Created the W8D1 implementation files
+
+☑️ Created the GitHub Actions workflow
+
+☑️ Created the repository-root `.dockerignore`
+
+☑️ Staged the W8D1 implementation and evidence files
+
+☑️ Excluded generated cache directories
+
+☑️ Completed the implementation commit
+
+☑️ Implementation commit: `feat: add production RAG API and Docker support`
+
+☑️ Implementation commit hash: `bbb3ed7`
+
+☐ Created the separate W8D1 self-review documentation commit
+
+☐ Pushed the latest commits to GitHub
+
+☐ Verified both descriptive commits are present on the remote branch
+
+☐ Verified the final Git status is clean
+
+☐ Verified the Pull Request targets `master`
+
+## 10. W8D1 Commits
+
+☑️ Implementation commit completed
+
+☑️ `feat: add production RAG API and Docker support`
+
+☑️ Implementation commit: `bbb3ed7`
+
+☐ Documentation/self-review commit completed
+
+☐ Verified both commits are available on the remote branch
+
+## 11. Final Delivery Checklist
+
+☑️ Created a production-oriented FastAPI wrapper for the existing RAG pipeline
+
+☑️ Added health, metrics, and query endpoints
+
+☑️ Added request/error/latency tracking
+
+☑️ Created automated API tests
+
+☑️ Verified seven automated tests passed
+
+☑️ Verified Ruff linting passed
+
+☑️ Created a Dockerfile
+
+☑️ Built the Docker image locally
+
+☑️ Created a GitHub Actions CI/CD workflow
+
+☑️ Documented the monitoring strategy
+
+☑️ Saved test and lint output evidence
+
+☑️ Completed CIA interactions
+
+☑️ Completed the implementation commit
+
+☐ Created and committed the self-review separately
+
+☐ Pushed the final commits to GitHub
+
+☐ Verified GitHub Actions checks pass
+
+☐ Verified Docker image publishing, if required by the task
+
+☐ Verified the final Pull Request and submission deliverables
