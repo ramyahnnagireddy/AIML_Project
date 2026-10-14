@@ -1,0 +1,252 @@
+{
+  "experiment": "LlamaIndex with persistent ChromaDB",
+  "embedding_model": "nomic-embed-text",
+  "llm_model": "qwen2.5:3b",
+  "document_count": 5,
+  "query_count": 10,
+  "indexing_seconds": 10.4163,
+  "chroma_collection": "w7d3_llamaindex_documents",
+  "chroma_directory": "C:\\Users\\ramya\\OneDrive\\Documents\\CynarisInternship\\AIML_Project\\W7D3_LlamaIndex_Document_Querying\\chroma_db",
+  "results": [
+    {
+      "query_number": 1,
+      "question": "What is artificial intelligence?",
+      "answer": "Artificial Intelligence (AI) is the field of computer science that focuses on developing systems capable of performing tasks that typically require human-like intelligence, such as reasoning, planning, problem-solving, perception, and language understanding.",
+      "latency_seconds": 39.9236,
+      "source_nodes": [
+        {
+          "file_name": "ai_basics.txt",
+          "score": 0.6590513071003878,
+          "text": "﻿Artificial Intelligence (AI) is the field of computer science focused on creating systems that perform tasks requiring human-like intelligence. These tasks include reasoning, planning, problem solving, perception, and language understanding. Machine learning is a subset of AI that enables systems to learn patterns from data. Deep learning is a subset of machine learning based on multilayer neural networks. AI applications include virtual assistants, recommendation systems, fraud detection, and medical image analysis."
+        },
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.4442095423411968,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        },
+        {
+          "file_name": "machine_learning.txt",
+          "score": 0.39717159128454566,
+          "text": "﻿Machine learning enables computers to learn patterns from examples instead of relying only on explicitly programmed rules. Supervised learning uses labelled data and includes classification and regression. Classification predicts categories, such as spam or not spam. Regression predicts continuous values, such as house prices. Unsupervised learning finds patterns in unlabelled data and includes clustering. Data is commonly divided into training and testing sets. Accuracy, precision, recall, F1-score, and mean squared error are examples of evaluation metrics."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 2,
+      "question": "What is machine learning?",
+      "answer": "Machine learning is a part of computer science that enables systems to learn from and make predictions on data without being explicitly programmed. It focuses on developing algorithms that can improve automatically through experience, using methods such as supervised, unsupervised, and reinforcement learning. In supervised learning, the algorithm learns from labeled data, which includes classification (predicting categories) and regression (predicting continuous values). Unsupervised learning, on the other hand, deals with unlabelled data and aims to find patterns or groupings within it. Machine learning is a subset of artificial intelligence (AI), which encompasses a wide range of tasks requiring human-like intelligence, including reasoning, planning, problem-solving, perception, and language understanding.",
+      "latency_seconds": 39.9718,
+      "source_nodes": [
+        {
+          "file_name": "machine_learning.txt",
+          "score": 0.5664773800659705,
+          "text": "﻿Machine learning enables computers to learn patterns from examples instead of relying only on explicitly programmed rules. Supervised learning uses labelled data and includes classification and regression. Classification predicts categories, such as spam or not spam. Regression predicts continuous values, such as house prices. Unsupervised learning finds patterns in unlabelled data and includes clustering. Data is commonly divided into training and testing sets. Accuracy, precision, recall, F1-score, and mean squared error are examples of evaluation metrics."
+        },
+        {
+          "file_name": "ai_basics.txt",
+          "score": 0.5435421680765751,
+          "text": "﻿Artificial Intelligence (AI) is the field of computer science focused on creating systems that perform tasks requiring human-like intelligence. These tasks include reasoning, planning, problem solving, perception, and language understanding. Machine learning is a subset of AI that enables systems to learn patterns from data. Deep learning is a subset of machine learning based on multilayer neural networks. AI applications include virtual assistants, recommendation systems, fraud detection, and medical image analysis."
+        },
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.535178867160785,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 3,
+      "question": "What is the difference between classification and regression?",
+      "answer": "Classification predicts categories, such as spam or not spam, while regression predicts continuous values, such as house prices.",
+      "latency_seconds": 16.4745,
+      "source_nodes": [
+        {
+          "file_name": "machine_learning.txt",
+          "score": 0.4972347170623511,
+          "text": "﻿Machine learning enables computers to learn patterns from examples instead of relying only on explicitly programmed rules. Supervised learning uses labelled data and includes classification and regression. Classification predicts categories, such as spam or not spam. Regression predicts continuous values, such as house prices. Unsupervised learning finds patterns in unlabelled data and includes clustering. Data is commonly divided into training and testing sets. Accuracy, precision, recall, F1-score, and mean squared error are examples of evaluation metrics."
+        },
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.4178358872597314,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        },
+        {
+          "file_name": "nlp_basics.txt",
+          "score": 0.3948416399821244,
+          "text": "﻿Natural Language Processing (NLP) enables computers to process and understand human language. Common NLP tasks include text classification, sentiment analysis, named entity recognition, translation, and summarization. Tokenization divides text into smaller units such as words or subwords. Embeddings represent words or text as numerical vectors. Semantic similarity compares the meaning of text using vector representations. Large language models use neural networks trained on large text collections to generate and understand language."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 4,
+      "question": "What is unsupervised learning?",
+      "answer": "Unsupervised learning is a type of machine learning that finds patterns in unlabelled data and includes techniques such as clustering. It does not use labelled data like supervised learning does; instead, it organizes the data into different groups or clusters based on similarities and differences within the data itself.",
+      "latency_seconds": 16.0469,
+      "source_nodes": [
+        {
+          "file_name": "machine_learning.txt",
+          "score": 0.49046969110151817,
+          "text": "﻿Machine learning enables computers to learn patterns from examples instead of relying only on explicitly programmed rules. Supervised learning uses labelled data and includes classification and regression. Classification predicts categories, such as spam or not spam. Regression predicts continuous values, such as house prices. Unsupervised learning finds patterns in unlabelled data and includes clustering. Data is commonly divided into training and testing sets. Accuracy, precision, recall, F1-score, and mean squared error are examples of evaluation metrics."
+        },
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.45433857711324316,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        },
+        {
+          "file_name": "ai_basics.txt",
+          "score": 0.4383532626929975,
+          "text": "﻿Artificial Intelligence (AI) is the field of computer science focused on creating systems that perform tasks requiring human-like intelligence. These tasks include reasoning, planning, problem solving, perception, and language understanding. Machine learning is a subset of AI that enables systems to learn patterns from data. Deep learning is a subset of machine learning based on multilayer neural networks. AI applications include virtual assistants, recommendation systems, fraud detection, and medical image analysis."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 5,
+      "question": "What are convolutional neural networks used for?",
+      "answer": "Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision tasks.",
+      "latency_seconds": 21.3072,
+      "source_nodes": [
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.5540982769359999,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        },
+        {
+          "file_name": "ai_basics.txt",
+          "score": 0.4454915759335273,
+          "text": "﻿Artificial Intelligence (AI) is the field of computer science focused on creating systems that perform tasks requiring human-like intelligence. These tasks include reasoning, planning, problem solving, perception, and language understanding. Machine learning is a subset of AI that enables systems to learn patterns from data. Deep learning is a subset of machine learning based on multilayer neural networks. AI applications include virtual assistants, recommendation systems, fraud detection, and medical image analysis."
+        },
+        {
+          "file_name": "machine_learning.txt",
+          "score": 0.424104702951804,
+          "text": "﻿Machine learning enables computers to learn patterns from examples instead of relying only on explicitly programmed rules. Supervised learning uses labelled data and includes classification and regression. Classification predicts categories, such as spam or not spam. Regression predicts continuous values, such as house prices. Unsupervised learning finds patterns in unlabelled data and includes clustering. Data is commonly divided into training and testing sets. Accuracy, precision, recall, F1-score, and mean squared error are examples of evaluation metrics."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 6,
+      "question": "What is overfitting?",
+      "answer": "Overfitting is when a machine learning model learns the training data too closely and performs poorly on unseen data.",
+      "latency_seconds": 16.5577,
+      "source_nodes": [
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.38850335828215155,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        },
+        {
+          "file_name": "machine_learning.txt",
+          "score": 0.3583379960294744,
+          "text": "﻿Machine learning enables computers to learn patterns from examples instead of relying only on explicitly programmed rules. Supervised learning uses labelled data and includes classification and regression. Classification predicts categories, such as spam or not spam. Regression predicts continuous values, such as house prices. Unsupervised learning finds patterns in unlabelled data and includes clustering. Data is commonly divided into training and testing sets. Accuracy, precision, recall, F1-score, and mean squared error are examples of evaluation metrics."
+        },
+        {
+          "file_name": "ai_basics.txt",
+          "score": 0.35196042425650165,
+          "text": "﻿Artificial Intelligence (AI) is the field of computer science focused on creating systems that perform tasks requiring human-like intelligence. These tasks include reasoning, planning, problem solving, perception, and language understanding. Machine learning is a subset of AI that enables systems to learn patterns from data. Deep learning is a subset of machine learning based on multilayer neural networks. AI applications include virtual assistants, recommendation systems, fraud detection, and medical image analysis."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 7,
+      "question": "What is tokenization in NLP?",
+      "answer": "Tokenization in NLP is the process of dividing text into smaller units such as words or subwords.",
+      "latency_seconds": 21.4874,
+      "source_nodes": [
+        {
+          "file_name": "nlp_basics.txt",
+          "score": 0.5504685800612253,
+          "text": "﻿Natural Language Processing (NLP) enables computers to process and understand human language. Common NLP tasks include text classification, sentiment analysis, named entity recognition, translation, and summarization. Tokenization divides text into smaller units such as words or subwords. Embeddings represent words or text as numerical vectors. Semantic similarity compares the meaning of text using vector representations. Large language models use neural networks trained on large text collections to generate and understand language."
+        },
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.4343461918131678,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        },
+        {
+          "file_name": "machine_learning.txt",
+          "score": 0.42554425486197844,
+          "text": "﻿Machine learning enables computers to learn patterns from examples instead of relying only on explicitly programmed rules. Supervised learning uses labelled data and includes classification and regression. Classification predicts categories, such as spam or not spam. Regression predicts continuous values, such as house prices. Unsupervised learning finds patterns in unlabelled data and includes clustering. Data is commonly divided into training and testing sets. Accuracy, precision, recall, F1-score, and mean squared error are examples of evaluation metrics."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 8,
+      "question": "What are text embeddings?",
+      "answer": "Text embeddings are representations of text as numerical vectors, which are used to convert textual information into a format that can be processed by machine learning algorithms. These embeddings capture the semantic meaning of the text, allowing for operations like similarity comparisons between different texts.",
+      "latency_seconds": 21.8309,
+      "source_nodes": [
+        {
+          "file_name": "nlp_basics.txt",
+          "score": 0.46371873633107147,
+          "text": "﻿Natural Language Processing (NLP) enables computers to process and understand human language. Common NLP tasks include text classification, sentiment analysis, named entity recognition, translation, and summarization. Tokenization divides text into smaller units such as words or subwords. Embeddings represent words or text as numerical vectors. Semantic similarity compares the meaning of text using vector representations. Large language models use neural networks trained on large text collections to generate and understand language."
+        },
+        {
+          "file_name": "rag_basics.txt",
+          "score": 0.4566499511197355,
+          "text": "﻿Retrieval-Augmented Generation (RAG) combines document retrieval with language generation. A typical RAG system splits documents into chunks, converts chunks into embeddings, and stores the vectors in a vector database. When a user asks a question, the system retrieves relevant chunks and provides them as context to a language model. ChromaDB is a vector database that can store embeddings and associated document metadata. LlamaIndex provides tools for connecting data sources, creating indexes, and querying retrieved information. RAG can improve grounding in supplied documents, but retrieved content and generated answers still require evaluation."
+        },
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.4392842722340778,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 9,
+      "question": "What is retrieval-augmented generation?",
+      "answer": "Retrieval-Augmented Generation (RAG) is a method that combines document retrieval with language generation. It involves splitting documents into chunks, converting these chunks into embeddings, and storing them in a vector database like ChromaDB. When a user asks a question, RAG retrieves relevant chunks from the vector database as context for a language model, enhancing the system's ability to understand and generate answers grounded in the supplied documents.",
+      "latency_seconds": 31.6864,
+      "source_nodes": [
+        {
+          "file_name": "rag_basics.txt",
+          "score": 0.5540851324131869,
+          "text": "﻿Retrieval-Augmented Generation (RAG) combines document retrieval with language generation. A typical RAG system splits documents into chunks, converts chunks into embeddings, and stores the vectors in a vector database. When a user asks a question, the system retrieves relevant chunks and provides them as context to a language model. ChromaDB is a vector database that can store embeddings and associated document metadata. LlamaIndex provides tools for connecting data sources, creating indexes, and querying retrieved information. RAG can improve grounding in supplied documents, but retrieved content and generated answers still require evaluation."
+        },
+        {
+          "file_name": "ai_basics.txt",
+          "score": 0.46317413790327727,
+          "text": "﻿Artificial Intelligence (AI) is the field of computer science focused on creating systems that perform tasks requiring human-like intelligence. These tasks include reasoning, planning, problem solving, perception, and language understanding. Machine learning is a subset of AI that enables systems to learn patterns from data. Deep learning is a subset of machine learning based on multilayer neural networks. AI applications include virtual assistants, recommendation systems, fraud detection, and medical image analysis."
+        },
+        {
+          "file_name": "deep_learning.txt",
+          "score": 0.41212821096471314,
+          "text": "﻿Deep learning is a branch of machine learning that uses neural networks with multiple layers. Artificial neural networks contain interconnected units called neurons. Convolutional Neural Networks (CNNs) are commonly used for image classification and computer vision. Recurrent Neural Networks (RNNs) were designed to process sequences. Transformers use attention mechanisms and are widely used in language tasks. Deep learning often requires substantial data and computational resources. Overfitting occurs when a model learns training data too closely and performs poorly on unseen data."
+        }
+      ],
+      "status": "success"
+    },
+    {
+      "query_number": 10,
+      "question": "How does ChromaDB help a RAG system?",
+      "answer": "ChromaDB helps a RAG system by storing the embeddings of document chunks and associated metadata, allowing the system to efficiently retrieve relevant embeddings when a user asks a question. This enables the system to provide context to a language model in the form of relevant chunks from the stored documents.",
+      "latency_seconds": 21.7506,
+      "source_nodes": [
+        {
+          "file_name": "rag_basics.txt",
+          "score": 0.555461349759396,
+          "text": "﻿Retrieval-Augmented Generation (RAG) combines document retrieval with language generation. A typical RAG system splits documents into chunks, converts chunks into embeddings, and stores the vectors in a vector database. When a user asks a question, the system retrieves relevant chunks and provides them as context to a language model. ChromaDB is a vector database that can store embeddings and associated document metadata. LlamaIndex provides tools for connecting data sources, creating indexes, and querying retrieved information. RAG can improve grounding in supplied documents, but retrieved content and generated answers still require evaluation."
+        },
+        {
+          "file_name": "machine_learning.txt",
+          "score": 0.3759733883803867,
+          "text": "﻿Machine learning enables computers to learn patterns from examples instead of relying only on explicitly programmed rules. Supervised learning uses labelled data and includes classification and regression. Classification predicts categories, such as spam or not spam. Regression predicts continuous values, such as house prices. Unsupervised learning finds patterns in unlabelled data and includes clustering. Data is commonly divided into training and testing sets. Accuracy, precision, recall, F1-score, and mean squared error are examples of evaluation metrics."
+        },
+        {
+          "file_name": "nlp_basics.txt",
+          "score": 0.3664138516152746,
+          "text": "﻿Natural Language Processing (NLP) enables computers to process and understand human language. Common NLP tasks include text classification, sentiment analysis, named entity recognition, translation, and summarization. Tokenization divides text into smaller units such as words or subwords. Embeddings represent words or text as numerical vectors. Semantic similarity compares the meaning of text using vector representations. Large language models use neural networks trained on large text collections to generate and understand language."
+        }
+      ],
+      "status": "success"
+    }
+  ]
+}
