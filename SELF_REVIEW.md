@@ -1914,3 +1914,289 @@ Final Review
 ☐ Pull Request updated/created to `master`
 
 # W7D2 Status: IMPLEMENTATION COMPLETED — SELF-REVIEW & FINAL PUSH PENDING
+
+## CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode code review for W7D3
+
+☑️ Completed the required second CIA interaction for W7D3
+
+☑️ Reviewed implementation and code quality with CIA
+
+☑️ Reviewed the evaluation methodology and latency comparison with CIA
+
+☑️ Verified W7D3 implementation readiness with CIA
+
+☑️ Completed the minimum two CIA interactions for W7D3
+
+# Self-Review Checklist — W7D3 LlamaIndex Document Indexing & Querying
+
+**Date:** 14 October 2026
+
+## 1. LlamaIndex Setup
+
+☑️ Created `W7D3_LlamaIndex_Document_Querying`
+
+☑️ Created the `documents` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Installed and verified required LlamaIndex packages
+
+☑️ Verified `llama-index-core` installation
+
+☑️ Verified Ollama embeddings integration
+
+☑️ Verified Ollama language model integration
+
+☑️ Installed and verified ChromaDB integration
+
+☑️ Verified the required imports
+
+☑️ Verified Ollama models are available locally
+
+☑️ Configured `nomic-embed-text:latest` for embeddings
+
+☑️ Configured `qwen2.5:3b` for local answer generation
+
+## 2. Text Documents & Indexing
+
+☑️ Created five source documents
+
+☑️ Added `ai_basics.txt`
+
+☑️ Added `machine_learning.txt`
+
+☑️ Added `deep_learning.txt`
+
+☑️ Added `nlp_basics.txt`
+
+☑️ Added `rag_basics.txt`
+
+☑️ Loaded documents using `SimpleDirectoryReader`
+
+☑️ Configured text chunking
+
+☑️ Built the in-memory `VectorStoreIndex`
+
+☑️ Verified that all five documents loaded successfully
+
+## 3. In-Memory Query Engine
+
+☑️ Created `llamaindex_basic.py`
+
+☑️ Built the LlamaIndex query engine
+
+☑️ Configured `similarity_top_k=3`
+
+☑️ Created ten evaluation questions
+
+☑️ Executed all ten queries successfully
+
+☑️ Generated answers for all ten questions
+
+☑️ Recorded query latency
+
+☑️ Recorded source-node information
+
+☑️ Saved results to `outputs/basic_query_results.json`
+
+☑️ Recorded indexing time
+
+☑️ Verified successful execution of the basic query script
+
+## 4. ChromaDB Integration
+
+☑️ Created `llamaindex_chroma.py`
+
+☑️ Integrated LlamaIndex with ChromaDB
+
+☑️ Created persistent vector storage
+
+☑️ Configured the `w7d3_llamaindex_documents` collection
+
+☑️ Connected the collection using `ChromaVectorStore`
+
+☑️ Configured `StorageContext`
+
+☑️ Built the ChromaDB-backed vector index
+
+☑️ Reused the same five source documents
+
+☑️ Reused the same ten evaluation questions
+
+☑️ Used the same embedding and language models
+
+☑️ Executed all ten queries successfully
+
+☑️ Recorded answers and query latency
+
+☑️ Recorded source-node information
+
+☑️ Saved results to `outputs/chroma_query_results.json`
+
+☑️ Verified successful ChromaDB integration
+
+## 5. Performance Evaluation
+
+☑️ Compared in-memory indexing with ChromaDB-backed indexing
+
+☑️ Used the same source documents for both experiments
+
+☑️ Used the same ten evaluation questions
+
+☑️ Used the same embedding model
+
+☑️ Used the same language model
+
+☑️ Recorded indexing time for both approaches
+
+☑️ Recorded individual query latency
+
+☑️ Calculated average query latency
+
+☑️ Recorded 10/10 successful in-memory queries
+
+☑️ Recorded 10/10 successful ChromaDB queries
+
+☑️ Documented performance observations
+
+☑️ Documented the benefits of persistent vector storage
+
+☑️ Created `W7D3_EXPERIMENT_SUMMARY.md`
+
+### Recorded Experimental Results
+
+☑️ In-memory indexing time: 7.4446 seconds
+
+☑️ ChromaDB indexing time: 10.4163 seconds
+
+☑️ In-memory average query latency: approximately 23.53 seconds
+
+☑️ ChromaDB average query latency: approximately 24.70 seconds
+
+☑️ Documented the latency comparison and experiment conclusion
+
+_Note: These measurements reflect the recorded runs and can vary across executions._
+
+## 6. Code Quality & Output Evidence
+
+☑️ Created `llamaindex_basic.py`
+
+☑️ Created `llamaindex_chroma.py`
+
+☑️ Used `SimpleDirectoryReader` for document loading
+
+☑️ Used `VectorStoreIndex` for vector indexing
+
+☑️ Used Ollama embeddings
+
+☑️ Used a local Ollama language model
+
+☑️ Used ChromaDB for persistent vector storage
+
+☑️ Used query engines for question answering
+
+☑️ Saved results in JSON format
+
+☑️ Saved query latency measurements
+
+☑️ Saved indexing time measurements
+
+☑️ Saved source-node information
+
+☑️ Created `outputs/basic_query_results.json`
+
+☑️ Created `outputs/chroma_query_results.json`
+
+☑️ Created `W7D3_EXPERIMENT_SUMMARY.md`
+
+☑️ Verified that both experiment scripts executed successfully
+
+☑️ Excluded generated ChromaDB database files from the implementation commit
+
+☑️ Completed manual answer verification against the source documents
+
+☑️ Captured required execution screenshots, if applicable
+
+## 7. CIA Review
+
+☑️ Completed CIA Full Stack Mentor Mode code review
+
+☑️ Completed the required second CIA interaction
+
+☑️ Reviewed implementation and code quality with CIA
+
+☑️ Reviewed the evaluation methodology and latency comparison
+
+☑️ Completed the minimum two CIA interactions for W7D3
+
+☑️ Reviewed implementation readiness for submission
+
+## 8. Git & Version Control
+
+☑️ Verified the active branch: `feat/aiml-W7-Ramya`
+
+☑️ Kept unrelated W3/W4 folders out of the W7D3 commits
+
+☑️ Staged the W7D3 implementation and evidence files
+
+☑️ Excluded generated ChromaDB database files from version control
+
+☑️ Completed the first descriptive implementation commit
+
+☑️ Completed the second descriptive documentation commit
+
+☑️ Created and committed `SELF_REVIEW.md`
+
+☑️ Pushed the latest branch to GitHub
+
+☑️ Verified the remote branch contains the latest W7D3 commits
+
+☑️ Created or updated the Pull Request
+
+☑️ Verified the Pull Request targets `master`
+
+## 9. W7D3 Commits
+
+☑️ Implementation commit completed
+
+☑️ `feat: add LlamaIndex document indexing and querying`
+
+☑️ Documentation/self-review commit completed
+
+☑️ Verified both descriptive commits are present on the remote branch
+
+## 10. Final Delivery Checklist
+
+☑️ Completed LlamaIndex document indexing and querying
+
+☑️ Loaded five text documents successfully
+
+☑️ Executed ten in-memory queries successfully
+
+☑️ Integrated ChromaDB successfully
+
+☑️ Executed ten ChromaDB-backed queries successfully
+
+☑️ Recorded and compared indexing time and query latency
+
+☑️ Generated JSON output evidence
+
+☑️ Created the experiment summary
+
+☑️ Completed manual answer verification
+
+☑️ Completed the required CIA interactions
+
+☑️ Completed at least two descriptive Git commits
+
+☑️ Committed the self-review documentation
+
+☑️ Pushed the latest changes to GitHub
+
+☑️ Verified the Pull Request targets `master`
+
+# Final Status: W7D3 COMPLETED
+
+LlamaIndex document indexing, query engine implementation, ChromaDB integration, latency comparison, output evidence, CIA review, and Git delivery.
