@@ -1,0 +1,11 @@
+
+fastapi
+uvicorn[standard]
+pydantic
+requests
+langgraph
+scikit-learn
+mlflow
+pytest
+httpx
+ruff
