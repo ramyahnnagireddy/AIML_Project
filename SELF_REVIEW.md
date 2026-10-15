@@ -3260,3 +3260,207 @@ LlamaIndex document indexing, query engine implementation, ChromaDB integration,
 ☐ Created and pushed the separate W8D3 self-review commit
 
 ☐ Verified the final Pull Request and submission deliverables
+
+Self-Review Checklist — W8D4 Exploratory Data Analysis and Visualizations
+
+1. Project Setup & Configuration
+
+☑️ Created the W8D4_EDA_Data_Analysis directory
+
+☑️ Created the outputs directory
+
+☑️ Created the plots directory
+
+☑️ Created the tests directory
+
+☑️ Created eda_analysis.py
+
+☑️ Configured the EDA workflow using Python
+
+☑️ Used pandas for data loading and analysis
+
+☑️ Used Matplotlib and Seaborn for visualizations
+
+☑️ Used the built-in scikit-learn Wisconsin diagnostic dataset
+
+2. Dataset Loading & Inspection
+
+☑️ Loaded the dataset successfully
+
+☑️ Verified the dataset contains 569 rows and 31 columns
+
+☑️ Identified 30 numeric measurement features
+
+☑️ Identified the diagnosis categorical column
+
+☑️ Inspected the dataset using df.info()
+
+☑️ Generated descriptive statistics using df.describe()
+
+☑️ Checked missing values using df.isnull().sum()
+
+☑️ Verified that the dataset contains no missing values
+
+☑️ Identified 357 benign records
+
+☑️ Identified 212 malignant records
+
+3. Exploratory Data Analysis & Observations
+
+☑️ Generated five observations from the actual dataset
+
+☑️ Identified the numeric feature with the largest mean
+
+☑️ Identified the numeric feature with the largest standard deviation
+
+☑️ Recorded the dataset dimensions
+
+☑️ Recorded the missing-value count
+
+☑️ Recorded the diagnosis category distribution
+
+☑️ Saved the observations to outputs/observations.md
+
+☑️ Documented the findings in outputs/eda_narrative.md
+
+☑️ Verified the narrative contains 203 words
+
+4. Data Visualization
+
+☑️ Generated the mean radius distribution plot
+
+☑️ Generated the mean texture distribution plot
+
+☑️ Generated the mean perimeter distribution plot
+
+☑️ Used diagnosis categories to distinguish distributions
+
+☑️ Generated a correlation heatmap for the ten highest-variance numeric features
+
+☑️ Generated a diagnosis category-count chart
+
+☑️ Saved plots as PNG files in the plots directory
+
+☑️ Verified all five expected plot files were generated
+
+5. Output Evidence & Reports
+
+☑️ Saved the dataset to outputs/dataset.csv
+
+☑️ Saved descriptive statistics to outputs/descriptive_statistics.csv
+
+☑️ Saved missing-value counts to outputs/missing_values.csv
+
+☑️ Saved dataset information to outputs/dataset_info.txt
+
+☑️ Saved five observations to outputs/observations.md
+
+☑️ Saved the EDA narrative to outputs/eda_narrative.md
+
+☑️ Verified that all six evidence files exist
+
+☑️ Verified the generated plot files are present
+
+☑️ Retained output evidence in the implementation commit
+
+6. Automated Testing
+
+☑️ Created tests/test_eda_analysis.py
+
+☑️ Tested dataset dimensions and required columns
+
+☑️ Tested missing-value counts
+
+☑️ Tested diagnosis categories and their counts
+
+☑️ Tested the five-observation generator
+
+☑️ Tested the numeric feature dimensions
+
+☑️ Executed the automated test suite successfully
+
+☑️ Verified all five tests passed
+
+Recorded test results: 5 passed in 5.68 seconds during the initial run and 5 passed in 6.02 seconds during final verification.
+
+7. Code Quality
+
+☑️ Ran Ruff against W8D4_EDA_Data_Analysis
+
+☑️ Verified Ruff reported All checks passed!
+
+☑️ Ran the final automated test suite successfully
+
+☑️ Verified the EDA script executes successfully
+
+☑️ Verified evidence and visualizations were generated
+
+☑️ Excluded SELF_REVIEW.md as requested
+
+8. CIA Review
+
+☑️ Completed the required CIA interactions, as confirmed
+
+☑️ Completed the applicable mentor interactions
+
+☑️ Confirmed all required W8D4 work was completed
+
+9. Git & Version Control
+
+☑️ Worked on the feat/aiml-W8-Ramya feature branch
+
+☑️ Staged the intended W8D4 implementation files
+
+☑️ Included the EDA script, output evidence, and plots in the implementation commit
+
+☑️ Created the implementation commit
+
+☑️ Implementation commit message: feat: add W8D4 exploratory data analysis and visualizations
+
+☑️ Implementation commit hash: 6580fd1
+
+☑️ Created a separate automated testing commit
+
+☑️ Test commit message: test: add W8D4 EDA validation tests
+
+☑️ Test commit hash: 7977efb
+
+☑️ Pushed both commits to GitHub
+
+☑️ Verified that the push completed successfully
+
+☐ Verified the final Pull Request includes both commits
+
+☐ Verified the Pull Request targets master
+
+10. Final Delivery Checklist
+
+☑️ Implemented the complete EDA workflow
+
+☑️ Inspected dataset structure and descriptive statistics
+
+☑️ Checked dataset completeness
+
+☑️ Generated five data-driven observations
+
+☑️ Created five visualizations
+
+☑️ Produced six output evidence files
+
+☑️ Wrote a narrative exceeding 200 words
+
+☑️ Created five automated tests
+
+☑️ Verified all five tests passed
+
+☑️ Verified Ruff checks passed
+
+☑️ Completed CIA interactions
+
+☑️ Created two descriptive commits
+
+☑️ Pushed both commits to the remote W8 branch
+
+☑️ Kept SELF_REVIEW.md out of the repository, as requested
+
+☐ Verified the final Pull Request and submission requirements
