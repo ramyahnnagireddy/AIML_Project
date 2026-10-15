@@ -3261,7 +3261,7 @@ LlamaIndex document indexing, query engine implementation, ChromaDB integration,
 
 ☐ Verified the final Pull Request and submission deliverables
 
-Self-Review Checklist — W8D4 Exploratory Data Analysis and Visualizations
+## Self-Review Checklist — W8D4 Exploratory Data Analysis and Visualizations
 
 1. Project Setup & Configuration
 
@@ -3464,3 +3464,219 @@ Recorded test results: 5 passed in 5.68 seconds during the initial run and 5 pas
 ☑️ Kept SELF_REVIEW.md out of the repository, as requested
 
 ☐ Verified the final Pull Request and submission requirements
+
+# Self-Review Checklist — W8D5 Local AI Research Assistant
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W8D5_Local_AI_Research_Assistant` directory
+
+☑️ Created the `app` directory
+
+☑️ Created the `data` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Created the `tests` directory
+
+☑️ Created `app/__init__.py`
+
+☑️ Created `app/research_assistant.py`
+
+☑️ Created `app/workflow.py`
+
+☑️ Created `app/main.py`
+
+☑️ Created `data/research_notes.txt`
+
+☑️ Configured the local research assistant using Python
+
+☑️ Configured FastAPI for the research API
+
+☑️ Configured SQLite-backed MLflow tracking
+
+## 2. Research Document Loading & Retrieval
+
+☑️ Created local research notes covering Retrieval-Augmented Generation (RAG)
+
+☑️ Documented local language models and Ollama
+
+☑️ Documented evaluation, monitoring, and workflow orchestration
+
+☑️ Included responsible research and evidence-grounding guidance
+
+☑️ Implemented local document loading
+
+☑️ Split the research document into non-empty passages
+
+☑️ Implemented TF-IDF text vectorization
+
+☑️ Implemented cosine-similarity-based retrieval
+
+☑️ Ranked retrieved passages by relevance score
+
+☑️ Included source names, passages, and similarity scores in retrieval results
+
+☑️ Added validation for empty questions and invalid `top_k` values
+
+☑️ Implemented a response for questions without relevant evidence
+
+## 3. Research Workflow & API
+
+☑️ Implemented a LangGraph research workflow
+
+☑️ Created a research state using `TypedDict`
+
+☑️ Connected the research node between the workflow start and end
+
+☑️ Implemented the FastAPI application
+
+☑️ Created the `/health` endpoint
+
+☑️ Created the `/research` endpoint
+
+☑️ Added Pydantic request validation
+
+☑️ Configured question length and `top_k` constraints
+
+☑️ Rejected whitespace-only questions
+
+☑️ Added optional Ollama-based answer generation
+
+☑️ Configured the default local model as `qwen2.5:3b`
+
+☑️ Added error handling for failed research requests
+
+☑️ Kept deterministic retrieval-only mode available for testing
+
+## 4. MLflow Experiment Tracking
+
+☑️ Configured the `W8D5_Local_AI_Research_Assistant` experiment
+
+☑️ Configured SQLite-backed MLflow tracking
+
+☑️ Logged the selected model as an experiment parameter
+
+☑️ Logged `top_k` as an experiment parameter
+
+☑️ Logged the number of retrieved sources as a metric
+
+☑️ Recorded research queries as MLflow runs
+
+## 5. Output Evidence & Reports
+
+☑️ Created the `outputs` directory
+
+☑️ Created `outputs/test_evidence.txt`
+
+☑️ Recorded the successful test count
+
+☑️ Recorded the successful Ruff check
+
+☑️ Recorded completion of the required CIA interactions
+
+☐ Verify that the evidence file is staged and committed
+
+☐ Verify that generated databases and cache files are excluded from Git
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_research_assistant.py`
+
+☑️ Tested successful research document loading
+
+☑️ Tested retrieval of relevant evidence
+
+☑️ Tested rejection of empty retrieval questions
+
+☑️ Tested the health endpoint
+
+☑️ Tested the research endpoint response and source results
+
+☑️ Tested rejection of whitespace-only API questions
+
+☑️ Executed the automated test suite successfully
+
+☑️ Verified all six tests passed
+
+Recorded final test results: **6 passed in 12.39 seconds**.
+
+## 7. Code Quality
+
+☑️ Ran Ruff against the W8D5 application and tests
+
+☑️ Fixed import-ordering and formatting issues
+
+☑️ Removed unnecessary `noqa` directives
+
+☑️ Verified Ruff reported `All checks passed!`
+
+☑️ Re-ran the automated test suite after the fixes
+
+☑️ Verified all six tests passed after the fixes
+
+## 8. CIA Review
+
+☑️ Completed the required CIA Full Stack Mentor Mode interactions, as confirmed
+
+☑️ Confirmed completion of the required W8D5 CIA interactions
+
+☐ Verify that the required CIA interaction records are retained, if required for submission
+
+## 9. Git & Version Control
+
+☑️ Worked on the `feat/aiml-W8-Ramya` feature branch
+
+☑️ Staged the intended W8D5 implementation files
+
+☑️ Created the implementation commit
+
+☑️ Implementation commit message: `feat: implement W8D5 local AI research assistant`
+
+☑️ Implementation commit hash: `e2f0bdf`
+
+☑️ Committed six implementation files
+
+☐ Create the separate evidence and self-review commit
+
+☐ Verify that only intended files are staged for the second commit
+
+☐ Push all W8D5 commits to GitHub
+
+☐ Verify that the remote branch contains the new commits
+
+☐ Create or update the Pull Request
+
+☐ Verify that the Pull Request targets `master`
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented the local AI research assistant prototype
+
+☑️ Implemented TF-IDF-based evidence retrieval
+
+☑️ Integrated a LangGraph workflow
+
+☑️ Implemented FastAPI endpoints
+
+☑️ Configured MLflow experiment tracking
+
+☑️ Added optional Ollama-based generation
+
+☑️ Created six automated tests
+
+☑️ Verified all six tests passed
+
+☑️ Verified Ruff checks passed
+
+☑️ Completed the required CIA interactions
+
+☑️ Created the first descriptive implementation commit
+
+☐ Commit output evidence and self-review separately
+
+☐ Complete the required second descriptive commit
+
+☐ Push the completed W8D5 work to GitHub
+
+☐ Verify the final Pull Request and submission requirements
