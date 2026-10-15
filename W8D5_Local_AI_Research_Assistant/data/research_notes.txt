@@ -1,0 +1,21 @@
+# Local AI Research Notes
+
+## Retrieval-Augmented Generation
+
+Retrieval-Augmented Generation (RAG) combines document retrieval with language generation. A retrieval component selects relevant passages from a knowledge collection, and a language model uses those passages to formulate an answer. RAG can improve traceability by grounding answers in retrieved information, although retrieval errors and unsupported generation remain possible.
+
+## Local Language Models
+
+Local language models run on a user's own computer through software such as Ollama. Local inference can reduce dependence on hosted APIs and help keep prompts on the local machine. Performance depends on the model size, available memory, hardware, and prompt complexity.
+
+## Evaluation and Monitoring
+
+A research assistant should be evaluated for retrieval relevance, answer quality, factual grounding, and response latency. Automated tests can verify document loading, retrieval, input validation, and API behavior. MLflow can record experiment parameters and evaluation metrics to support repeatable comparisons.
+
+## Workflow Orchestration
+
+LangGraph can represent a research assistant as a sequence of stateful steps, such as retrieving evidence, generating an answer, and recording evaluation information. Separating these steps improves testability and makes the workflow easier to extend.
+
+## Responsible Research
+
+A research assistant should clearly identify its evidence, acknowledge when the available documents do not answer a question, and avoid presenting unsupported claims as facts. Users should verify important conclusions against original sources.
