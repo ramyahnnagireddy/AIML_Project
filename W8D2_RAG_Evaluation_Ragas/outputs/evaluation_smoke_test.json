@@ -1,0 +1,48 @@
+{
+  "mode": "before",
+  "smoke_test": true,
+  "ragas_version": "0.4.3",
+  "sample_count": 1,
+  "full_dataset_size": 10,
+  "configuration": {
+    "chunk_size": 700,
+    "chunk_overlap": 100,
+    "top_k": 2,
+    "rag_generation_model": "qwen2.5:3b",
+    "ragas_evaluator_model": "qwen2.5:3b",
+    "embedding_model": "nomic-embed-text:latest",
+    "indexed_chunks": 8
+  },
+  "metric_averages": {
+    "faithfulness": 1.0,
+    "answer_relevancy": 0.7192,
+    "context_precision": 1.0,
+    "context_recall": 0.2
+  },
+  "successful_metric_scores": {
+    "faithfulness": 1,
+    "answer_relevancy": 1,
+    "context_precision": 1,
+    "context_recall": 1
+  },
+  "completed": true,
+  "results": [
+    {
+      "id": "Q01",
+      "user_input": "What is Retrieval-Augmented Generation (RAG)?",
+      "reference": "RAG combines document retrieval with a language model to answer questions using external information.",
+      "response": "RETRIEVAL-AUGMENTED GENERATION (RAG) is a method that combines document retrieval with a language model to answer questions using external information. It involves three main stages: document indexing, retrieval of relevant information, and answer generation. RAG aims to reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate all errors or hallucinations.",
+      "retrieved_contexts": [
+        "RETRIEVAL-AUGMENTED GENERATION (RAG)\n\nRAG combines document retrieval with a language model to answer questions using external information. Its main stages are document indexing, retrieval of relevant information, and answer generation. RAG can reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate every hallucination.\n\nDOCUMENT CHUNKING\n\nChunking divides long documents into smaller text segments before they are embedded and indexed. Small chunks can improve retrieval precision but may omit surrounding information needed to answer a question. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP",
+        "on focuses on retrieval relevance, while recall focuses on information coverage.\n\nRAG OPTIMISATION\n\nRAG optimisation involves changing a configuration such as chunk size or retrieval top-k and evaluating the result. The baseline and optimised runs should use the same evaluation questions. Metric scores should be compared to determine whether the configuration change improved the weakest area without hiding regressions in other metrics.\n\nGROUNDING AND MISSING INFORMATION"
+      ],
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7191821190170521,
+        "context_precision": 0.9999999999,
+        "context_recall": 0.2
+      },
+      "metric_errors": {}
+    }
+  ]
+}

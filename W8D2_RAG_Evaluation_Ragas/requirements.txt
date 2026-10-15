@@ -1,0 +1,18 @@
+
+# W8D2 RAG evaluation dependencies
+# Python 3.13
+# Ollama must also be installed and running locally.
+
+ragas==0.4.3
+langchain==1.4.0
+langchain-community==0.4.1
+langchain-core==1.6.10
+langchain-chroma==1.1.0
+chromadb==1.5.9
+langchain-ollama==1.1.0
+openai==2.54.0
+instructor==1.15.4
+
+# Development and quality checks
+pytest==9.1.1
+ruff==0.17.0
