@@ -2938,3 +2938,325 @@ LlamaIndex document indexing, query engine implementation, ChromaDB integration,
 ☐ Verified Docker image publishing, if required by the task
 
 ☐ Verified the final Pull Request and submission deliverables
+
+# Self-Review Checklist — W8D2 RAGAS Evaluation & Optimisation
+
+## 1. Project Setup & Configuration
+
+☑️ Created the W8D2 project implementation for RAGAS evaluation and optimisation
+
+☑️ Continued working on the `feat/aiml-W8-Ramya` feature branch
+
+☑️ Used the existing RAG project context for evaluation
+
+☑️ Configured the required project dependencies
+
+☑️ Verified the implementation using the available project environment
+
+## 2. RAG Evaluation with RAGAS
+
+☑️ Implemented the W8D2 RAGAS evaluation and optimisation task
+
+☑️ Added evaluation-related implementation changes
+
+☑️ Recorded the implementation in Git
+
+☐ Verified all required evaluation metrics against the task specification
+
+☐ Verified all evaluation results and saved evidence files
+
+☐ Completed a final review of the evaluation implementation
+
+## 3. Optimisation & Evaluation Evidence
+
+☑️ Completed the RAGAS evaluation and optimisation implementation
+
+☐ Documented the baseline and optimised results
+
+☐ Compared evaluation results before and after optimisation
+
+☐ Verified that all required evaluation outputs are retained
+
+☐ Confirmed that the results satisfy the W8D2 task requirements
+
+## 4. Code Quality & Testing
+
+☐ Ran Ruff against all W8D2 implementation files
+
+☐ Verified Ruff reported `All checks passed!`
+
+☐ Executed all required W8D2 automated tests
+
+☐ Verified the final test results
+
+☐ Removed generated `__pycache__` and `.pytest_cache` directories from Git staging
+
+## 5. CIA Review
+
+☑️ Completed the required CIA interactions for the applicable internship work, as confirmed
+
+☐ Verified W8D2-specific CIA completion against the task requirements
+
+## 6. Git & Version Control
+
+☑️ Worked on branch `feat/aiml-W8-Ramya`
+
+☑️ Created the W8D2 implementation commit
+
+☑️ Commit message: `feat: ragas — rag evaluation and optimisation`
+
+☑️ Commit hash: `4babd45`
+
+☐ Verified that the W8D2 implementation meets every task requirement
+
+☐ Created a separate W8D2 self-review documentation commit
+
+☐ Verified that the required descriptive commits are present on the remote branch
+
+☐ Verified the final Git status is clean
+
+☐ Verified the Pull Request targets `master`
+
+## 7. Final Delivery Checklist
+
+☑️ Implemented the W8D2 RAGAS evaluation and optimisation task
+
+☑️ Created the implementation commit
+
+☐ Verified the complete evaluation evidence
+
+☐ Confirmed the required tests and lint checks pass
+
+☐ Completed the W8D2 self-review documentation commit
+
+☐ Verified the final GitHub Pull Request and submission deliverables
+
+---
+
+# Self-Review Checklist — W8D3 Haystack Retrieval API Deployment
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W8D3_Haystack_Railway_Deployment` directory
+
+☑️ Created the `app` directory
+
+☑️ Created the `data` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Created the `tests` directory
+
+☑️ Created `app/main.py`
+
+☑️ Created `app/haystack_pipeline.py`
+
+☑️ Created `app/dense_retrieval.py`
+
+☑️ Created `requirements.txt`
+
+☑️ Created `railway.json`
+
+☑️ Configured the application for Uvicorn startup
+
+☑️ Configured the Railway health-check endpoint
+
+## 2. PDF Documents & Retrieval Pipeline
+
+☑️ Added `computer_vision.pdf`
+
+☑️ Added `deep_learning.pdf`
+
+☑️ Added `machine_learning.pdf`
+
+☑️ Added `mlops.pdf`
+
+☑️ Added `natural_language_processing.pdf`
+
+☑️ Implemented BM25 retrieval using Haystack
+
+☑️ Implemented dense retrieval using Haystack
+
+☑️ Configured dense retrieval using a sentence-transformers embedding model
+
+☑️ Implemented retrieval result handling
+
+☑️ Tested the retrieval API with both BM25 and dense retrieval
+
+## 3. Evaluation & Comparison
+
+☑️ Created `app/evaluate_retrieval.py`
+
+☑️ Created `app/evaluate_dense.py`
+
+☑️ Created `app/compare_retrieval.py`
+
+☑️ Evaluated BM25 retrieval using 10 questions
+
+☑️ Evaluated dense retrieval using 10 questions
+
+☑️ Saved BM25 evaluation results to `outputs/bm25_evaluation.json`
+
+☑️ Saved dense evaluation results to `outputs/dense_evaluation.json`
+
+☑️ Saved the comparison to `outputs/retrieval_comparison.json`
+
+☑️ Recorded the evaluation results
+
+☑️ Compared BM25 and dense retrieval performance
+
+## 4. FastAPI Implementation
+
+☑️ Created the FastAPI application
+
+☑️ Configured application lifespan initialization for the retrieval pipelines
+
+☑️ Implemented the root endpoint `/`
+
+☑️ Implemented the health endpoint `/health`
+
+☑️ Implemented the query endpoint `/query`
+
+☑️ Added Pydantic request validation
+
+☑️ Added support for selecting BM25 or dense retrieval
+
+☑️ Added configurable `top_k` result selection
+
+☑️ Added validation for unsupported retriever names
+
+☑️ Implemented appropriate HTTP 400 handling for invalid retriever selection
+
+☑️ Implemented HTTP 503 handling when a requested pipeline is not initialized
+
+☑️ Verified the API locally
+
+## 5. Automated API Testing
+
+☑️ Created `tests/test_api.py`
+
+☑️ Tested the root endpoint
+
+☑️ Tested the health endpoint
+
+☑️ Tested dense retrieval queries
+
+☑️ Tested BM25 retrieval queries
+
+☑️ Tested invalid retriever handling
+
+☑️ Configured a shared module-scoped test client to avoid repeated pipeline initialization
+
+☑️ Executed the automated API test suite successfully
+
+☑️ Verified all five tests passed
+
+**Recorded test result:** 5 passed in approximately 42.78 seconds.
+
+## 6. Code Quality & Output Evidence
+
+☑️ Ran Ruff against the application and test files
+
+☑️ Fixed the reported lint issues
+
+☑️ Verified Ruff reported `All checks passed!`
+
+☑️ Retained the evaluation JSON output files
+
+☑️ Excluded generated Python cache directories from the implementation commit
+
+☑️ Verified the intended W8D3 implementation files were staged
+
+☑️ Completed a final successful API test run
+
+☐ Completed a final review against every W8D3 task specification
+
+## 7. Railway Deployment Configuration
+
+☑️ Created the repository's W8D3 `requirements.txt`
+
+☑️ Added the Railway deployment configuration in `railway.json`
+
+☑️ Configured the Uvicorn startup command
+
+☑️ Configured the `/health` health-check path
+
+☑️ Configured the deployment restart policy
+
+☑️ Verified that the API works locally
+
+☐ Created or linked the Railway project
+
+☐ Verified that Railway successfully built the application
+
+☐ Verified the deployed service health endpoint
+
+☐ Tested the deployed `/query` endpoint
+
+☐ Recorded the live deployment URL and deployment evidence
+
+## 8. CIA Review
+
+☑️ Completed the required CIA interactions, as confirmed
+
+☑️ Completed the applicable mentor review interactions
+
+☑️ Confirmed the remaining required internship tasks were completed
+
+## 9. Git & Version Control
+
+☑️ Created the `feat/aiml-W8-Ramya` feature branch
+
+☑️ Staged only the W8D3 implementation directory
+
+☑️ Excluded unrelated root folders from staging
+
+☑️ Created the implementation commit
+
+☑️ Implementation commit message: `feat: deploy Haystack retrieval API with Railway configuration`
+
+☑️ Implementation commit hash: `5d86203`
+
+☑️ Pushed the implementation commit to GitHub
+
+☑️ Verified the local branch and remote branch are synchronized
+
+☑️ Verified the latest commit is available on `origin/feat/aiml-W8-Ramya`
+
+☐ Created a separate W8D3 self-review documentation commit
+
+☐ Pushed the final self-review commit
+
+☐ Verified the required descriptive commits are available on the remote branch
+
+☐ Verified the Pull Request targets `master`
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented the Haystack BM25 retrieval pipeline
+
+☑️ Implemented the dense retrieval pipeline
+
+☑️ Evaluated both retrievers using 10 questions each
+
+☑️ Saved the evaluation and comparison evidence
+
+☑️ Implemented the FastAPI retrieval service
+
+☑️ Added automated API tests
+
+☑️ Verified five tests passed
+
+☑️ Verified Ruff checks passed
+
+☑️ Created the Railway deployment configuration
+
+☑️ Completed the required CIA interactions
+
+☑️ Created and pushed the W8D3 implementation commit
+
+☐ Verified a successful Railway deployment, if required by the task
+
+☐ Created and pushed the separate W8D3 self-review commit
+
+☐ Verified the final Pull Request and submission deliverables
