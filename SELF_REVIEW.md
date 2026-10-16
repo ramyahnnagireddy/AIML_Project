@@ -4146,3 +4146,259 @@ Recorded final test results: **5 passed**.
 **Implementation status:** Implementation commit created
 
 **Remaining delivery work:** Final validation, review of experiment evidence, separate self-review commit, push, and Pull Request verification.
+
+# Self-Review Checklist — W9D3 CrewAI Research Crew & Multi-Agent Pipeline
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W9D3_CrewAI_Research_Crew_Multi_Agent_Pipeline` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Created the `tests` directory
+
+☑️ Created `main.py` for research experiment execution
+
+☑️ Created `web_search.py` for web-search retrieval functionality
+
+☑️ Created `tests/test_web_search.py`
+
+☑️ Configured the local Ollama model `qwen2.5:3b`
+
+☑️ Organized baseline and web-enhanced research evidence
+
+☑️ Saved retrieved source metadata in JSON format
+
+☑️ Kept W9D3 work on the `feat/aiml-W9-Ramya` feature branch
+
+## 2. CrewAI Multi-Agent Pipeline
+
+☑️ Implemented the researcher agent
+
+☑️ Implemented the writer agent
+
+☑️ Implemented the reviewer agent
+
+☑️ Configured sequential task execution using CrewAI
+
+☑️ Used the local Ollama model for the research workflow
+
+☑️ Structured the pipeline to research, write, and review the report
+
+☑️ Implemented baseline and web-enhanced execution modes
+
+☑️ Reviewed the generated research reports
+
+☐ Verify the final agent roles, task descriptions, and execution flow against the task specification
+
+☐ Confirm whether any additional agent execution evidence is required by the task specification
+
+## 3. Baseline Research Experiment
+
+☑️ Generated the baseline research report
+
+☑️ Saved `outputs/baseline_report.md`
+
+☑️ Used the topic of applications, benefits, risks, and limitations of AI in healthcare
+
+☑️ Kept the baseline report separate from the web-enhanced report
+
+☑️ Preserved the baseline report as comparison evidence
+
+☑️ Reviewed the baseline report for structure, strengths, weaknesses, and recommendations
+
+☑️ Identified limitations involving supporting evidence and verifiable source links
+
+## 4. Web Search & Enhanced Research
+
+☑️ Created `web_search.py` for Wikipedia search integration
+
+☑️ Implemented healthcare-related search queries
+
+☑️ Added relevance filtering for retrieved results
+
+☑️ Added duplicate-result handling and result limits
+
+☑️ Added handling to clean retrieved HTML text
+
+☑️ Retrieved five healthcare-related source leads
+
+☑️ Saved source metadata in `outputs/retrieved_sources.json`
+
+☑️ Generated the web-enhanced research report
+
+☑️ Saved `outputs/web_enhanced_report.md`
+
+☑️ Kept the enhanced report separate from the baseline report
+
+☑️ Reviewed the enhanced report for applications, benefits, risks, limitations, and recommendations
+
+☑️ Disclosed that retrieved search-result snippets are discovery aids rather than independently verified full-text evidence
+
+☐ Verify important factual claims against authoritative source material
+
+☐ Improve claim-level citations where required by the task specification
+
+## 5. Quality Assessment & Experiment Comparison
+
+☑️ Created `outputs/quality_comparison.md`
+
+☑️ Compared the baseline and web-enhanced reports
+
+☑️ Reviewed differences in topic specificity and application examples
+
+☑️ Compared discussion of risks, limitations, research gaps, and recommendations
+
+☑️ Identified strengths and weaknesses in both reports
+
+☑️ Documented the qualitative comparison methodology
+
+☑️ Avoided claiming numerical quality improvement without a standardized evaluation
+
+☑️ Recorded limitations involving source verification and claim-level citations
+
+☐ Confirm that the final comparison accurately reflects both saved reports
+
+☐ Apply a standardized scoring rubric if quantitative quality evaluation is required
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_web_search.py`
+
+☑️ Added a test for HTML text cleaning
+
+☑️ Added a test for accepting relevant search results
+
+☑️ Added a test for rejecting unrelated results
+
+☑️ Added a test for ranking and deduplicating relevant results using mocked API responses
+
+☑️ Added a test for handling a zero-result limit
+
+☑️ Ran the W9D3 test suite successfully
+
+☑️ Confirmed the result: **5 tests passed**
+
+☐ Reconfirm the final test results before submission if any files change
+
+☐ Add tests for additional API failure and timeout scenarios if required
+
+## 7. Code Quality & Compilation
+
+☑️ Ran Ruff against the W9D3 project
+
+☑️ Confirmed Ruff passed: `All checks passed!`
+
+☑️ Reviewed the generated output files
+
+☑️ Removed project `__pycache__` and `.pytest_cache` directories before staging the implementation
+
+☑️ Confirmed the implementation commit contains the intended seven files
+
+☐ Run Python compilation checks on the final source files
+
+☐ Reconfirm Ruff and test results if the source code changes
+
+☐ Retain final validation output for submission evidence
+
+## 8. CIA Review
+
+☑️ Completed the W9D3 CIA interaction as reported
+
+☑️ Completed the main implementation and evidence-generation workflow
+
+☑️ Generated baseline and web-enhanced reports
+
+☑️ Completed the initial automated testing and code-quality checks
+
+☐ Verify that the required CIA interaction records are retained if required for submission
+
+## 9. Git & Version Control
+
+☑️ Worked on the `feat/aiml-W9-Ramya` feature branch
+
+☑️ Created the W9D3 project files
+
+☑️ Staged the seven intended implementation and evidence files
+
+☑️ Ran `git diff --cached --check`
+
+☑️ Created the implementation commit
+
+☑️ Implementation commit message: `feat: implement W9D3 CrewAI multi-agent research pipeline`
+
+☑️ Implementation commit hash: `1ce5be9`
+
+☑️ Committed seven implementation and evidence files
+
+☑️ Confirmed the working tree was clean after the implementation commit
+
+☑️ Kept the W9D3 self-review outside the implementation commit
+
+☐ Create `W9D3_CrewAI_Research_Crew_Multi_Agent_Pipeline/SELF_REVIEW.md`
+
+☐ Verify that only the W9D3 self-review file is staged for the documentation commit
+
+☐ Create the separate self-review commit
+
+☐ Push the completed W9D3 work to GitHub
+
+☐ Verify that the remote branch contains both commits
+
+☐ Create or update the Pull Request
+
+☐ Verify that the Pull Request targets `master`
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented the CrewAI multi-agent research workflow
+
+☑️ Implemented healthcare-related Wikipedia search functionality
+
+☑️ Generated the baseline research report
+
+☑️ Generated the web-enhanced research report
+
+☑️ Saved retrieved source metadata
+
+☑️ Created the qualitative comparison report
+
+☑️ Added automated tests for web-search functionality
+
+☑️ Confirmed five tests passed
+
+☑️ Confirmed Ruff passed
+
+☑️ Created the descriptive implementation commit
+
+☑️ Confirmed the implementation working tree was clean
+
+☑️ Completed the reported CIA interaction
+
+☐ Complete and save the W9D3 self-review checklist
+
+☐ Commit the self-review separately
+
+☐ Push the completed W9D3 branch to GitHub
+
+☐ Verify the remote branch and Pull Request target `master`
+
+☐ Complete remaining review and submission requirements
+
+## Final Assessment
+
+**Implementation commit:** `1ce5be9`
+
+**Implementation commit message:** `feat: implement W9D3 CrewAI multi-agent research pipeline`
+
+**Branch:** `feat/aiml-W9-Ramya`
+
+**CIA interaction:** Reported completed
+
+**Automated tests:** 5 passed
+
+**Ruff:** Passed
+
+**Implementation status:** Implementation and evidence committed
+
+**Remaining delivery work:** Complete the self-review, commit it separately, push the branch, and verify the Pull Request targets `master`.
