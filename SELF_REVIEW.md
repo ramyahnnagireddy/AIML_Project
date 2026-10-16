@@ -3680,3 +3680,469 @@ Recorded final test results: **6 passed in 12.39 seconds**.
 ☐ Push the completed W8D5 work to GitHub
 
 ☐ Verify the final Pull Request and submission requirements
+
+# Self-Review Checklist — W9D1 CrewAI Multi-Agent Research
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W9D1_CrewAI_Multi_Agent_Research` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Created the `tests` directory
+
+☑️ Created `main.py` for experiment execution
+
+☑️ Created `web_search.py` for Wikipedia search integration
+
+☑️ Created `quality_review.py` for report metrics and comparison
+
+☑️ Created `tests/test_quality_review.py`
+
+☑️ Configured CrewAI for multi-agent research
+
+☑️ Configured the local Ollama model `qwen2.5:3b`
+
+☑️ Configured sequential task execution
+
+☑️ Configured project dependencies in `requirements.txt`
+
+## 2. Multi-Agent Research Workflow
+
+☑️ Implemented the AI Research Analyst agent
+
+☑️ Implemented the Technical Research Writer agent
+
+☑️ Implemented the Research Quality Reviewer agent
+
+☑️ Configured the Researcher to gather relevant information
+
+☑️ Configured the Writer to produce a structured Markdown report
+
+☑️ Configured the Reviewer to assess clarity, coverage, risks, and evidence limitations
+
+☑️ Connected the agents through sequential CrewAI tasks
+
+☑️ Added task-completion checkpoints
+
+☑️ Saved intermediate research, report, and review outputs
+
+☑️ Completed the baseline crew execution successfully
+
+☑️ Completed the web-enhanced crew execution successfully
+
+## 3. Baseline Experiment
+
+☑️ Ran the research workflow without enabling live web search
+
+☑️ Generated baseline research notes
+
+☑️ Generated the baseline research report
+
+☑️ Generated the baseline quality review
+
+☑️ Saved `outputs/baseline_research_notes.md`
+
+☑️ Saved `outputs/baseline_report.md`
+
+☑️ Saved `outputs/baseline_review.md`
+
+☑️ Saved task checkpoint files
+
+☑️ Disclosed that baseline claims were not verified against live sources
+
+☑️ Avoided claiming live source URLs for the baseline experiment
+
+## 4. Web-Enhanced Research Experiment
+
+☑️ Implemented Wikipedia search integration
+
+☑️ Enabled the search tool for the web-enhanced Researcher
+
+☑️ Captured five search results from the configured tool
+
+☑️ Recorded the retrieved titles, URLs, and snippets
+
+☑️ Generated web-enhanced research notes
+
+☑️ Generated the web-enhanced research report
+
+☑️ Generated the web-enhanced quality review
+
+☑️ Saved `outputs/web_enhanced_research_notes.md`
+
+☑️ Saved `outputs/web_enhanced_report.md`
+
+☑️ Saved `outputs/web_enhanced_review.md`
+
+☑️ Saved task checkpoint files
+
+☑️ Saved `outputs/retrieved_sources.md`
+
+☑️ Confirmed the five report URLs match the five recorded search-result URLs
+
+☑️ Disclosed that retrieved sources do not independently verify every generated claim
+
+## 5. Quality Assessment & Experiment Comparison
+
+☑️ Implemented report word-count measurement
+
+☑️ Implemented Markdown heading-count measurement
+
+☑️ Implemented distinct source URL counting
+
+☑️ Implemented baseline and web-enhanced report comparison
+
+☑️ Saved `outputs/quality_comparison.md`
+
+☑️ Recorded baseline report word count: 433
+
+☑️ Recorded web-enhanced report word count: 818
+
+☑️ Recorded the word-count difference: +385
+
+☑️ Recorded baseline Markdown heading count: 8
+
+☑️ Recorded web-enhanced Markdown heading count: 14
+
+☑️ Recorded the heading-count difference: +6
+
+☑️ Recorded baseline distinct source URL count: 0
+
+☑️ Recorded web-enhanced distinct source URL count: 5
+
+☑️ Documented the limitations of word count, heading count, and source URL count as quality indicators
+
+☑️ Explained that model variability prevents treating the comparison as controlled proof of improved quality
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_quality_review.py`
+
+☑️ Tested report word, heading, and URL metrics
+
+☑️ Tested duplicate URL counting
+
+☑️ Tested metrics for an empty report
+
+☑️ Tested that the comparison includes both report versions
+
+☑️ Tested that the comparison explains evaluation limitations
+
+☑️ Executed the automated test suite successfully
+
+☑️ Verified all five tests passed
+
+Recorded final test results: **5 passed**.
+
+## 7. Code Quality & Compilation
+
+☑️ Ran Ruff against the W9D1 project
+
+☑️ Identified the unused `result` assignment in `main.py`
+
+☑️ Removed the unused assignment
+
+☑️ Ran Python compilation checks
+
+☑️ Confirmed `compileall` completed without errors
+
+☐ Reconfirm the final Ruff result after the latest fix
+
+☐ Retain the final validation results for submission evidence
+
+## 8. CIA Review
+
+☑️ Completed the required CIA Full Stack Mentor Mode interactions
+
+☑️ Confirmed completion of the required W9D1 CIA interactions
+
+☑️ Completed the implementation and experiment workflow
+
+☑️ Prepared the project for final version-control delivery
+
+☐ Verify that CIA interaction records are retained if required for submission
+
+## 9. Git & Version Control
+
+☑️ Worked on the `feat/aiml-W9-Ramya` feature branch
+
+☑️ Staged the intended W9D1 implementation files
+
+☑️ Removed Python cache directories inside the W9D1 project before committing
+
+☑️ Created the implementation commit
+
+☑️ Implementation commit message: `feat: crewai - multi-agent research crew`
+
+☑️ Implementation commit hash: `e1a1ff2`
+
+☑️ Committed 18 implementation and evidence files
+
+☑️ Kept the implementation commit separate from the self-review
+
+☐ Create the separate self-review commit
+
+☐ Verify that only intended files are staged for the self-review commit
+
+☐ Push all W9D1 commits to GitHub
+
+☐ Verify that the remote branch contains the new commits
+
+☐ Create or update the Pull Request
+
+☐ Verify that the Pull Request targets `master`
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented the CrewAI multi-agent research prototype
+
+☑️ Integrated the local Ollama model
+
+☑️ Implemented baseline and web-enhanced experiments
+
+☑️ Implemented Wikipedia search integration
+
+☑️ Generated research reports and quality reviews
+
+☑️ Created source-traceability evidence
+
+☑️ Generated the quality comparison report
+
+☑️ Verified all five automated tests passed
+
+☑️ Completed Python compilation checks
+
+☑️ Completed the required CIA interactions
+
+☑️ Created the descriptive implementation commit
+
+☐ Reconfirm Ruff passes after the final fix
+
+☐ Commit the self-review separately
+
+☐ Push the completed W9D1 work to GitHub
+
+☐ Verify the final Pull Request targets `master`
+
+☐ Complete the remaining submission and review requirements
+
+## Final Assessment
+
+**Implementation commit:** `e1a1ff2`
+
+**Branch:** `feat/aiml-W9-Ramya`
+
+**CIA interactions:** Completed
+
+**Remaining delivery work:** Final Ruff confirmation, separate self-review commit, push, and Pull Request verification.
+
+# Self-Review Checklist — W9D2 CrewAI Tools, Web Search & Code Execution
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W9D2_CrewAI_Tools_Web_Search_Code_Execution` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Created the `tests` directory
+
+☑️ Created `main.py` for experiment execution and evidence generation
+
+☑️ Created `tools.py` for custom CrewAI tools
+
+☑️ Created `quality_review.py` for report metrics and comparison
+
+☑️ Created `tests/test_tools.py`
+
+☑️ Created `tests/test_quality_review.py`
+
+☑️ Configured safe arithmetic calculator functionality
+
+☑️ Implemented Wikipedia search integration
+
+☑️ Configured the local Ollama model for the research workflow
+
+☑️ Organized generated reports and experiment evidence
+
+## 2. CrewAI Tools & Code Execution
+
+☑️ Implemented the safe arithmetic calculator tool
+
+☑️ Used restricted AST-based expression evaluation for arithmetic operations
+
+☑️ Added support for permitted arithmetic operators
+
+☑️ Implemented the Wikipedia search tool
+
+☑️ Integrated Wikipedia search results into the research workflow
+
+☑️ Added tests for tool functionality
+
+☑️ Included calculator demonstration evidence in `outputs/calculator_demo.txt`
+
+☑️ Reviewed the tool implementation for code quality and safety
+
+## 3. Baseline Research Experiment
+
+☑️ Preserved the existing baseline research report
+
+☑️ Saved `outputs/baseline_report.md`
+
+☑️ Used the baseline report as the reference for comparison
+
+☑️ Preserved the baseline evidence rather than overwriting it during the subsequent run
+
+☑️ Documented the baseline report in the experiment outputs
+
+## 4. Wikipedia Search & Web-Enhanced Research
+
+☑️ Retrieved and reused five saved Wikipedia search results
+
+☑️ Recorded search-result evidence in `outputs/web_search_results.txt`
+
+☑️ Generated the web-enhanced research report
+
+☑️ Saved `outputs/web_enhanced_report.md`
+
+☑️ Included retrieved source information in the research evidence
+
+☑️ Kept the web-enhanced report separate from the baseline report
+
+☑️ Recorded the experiment execution details in `outputs/run_summary.md`
+
+☑️ Disclosed the approach used to generate the web-enhanced evidence
+
+☐ Complete a successful, separate CrewAI web-enhanced agent execution if required by the task specification
+
+## 5. Quality Assessment & Experiment Comparison
+
+☑️ Implemented report quality-review functionality
+
+☑️ Generated the quality comparison report
+
+☑️ Saved `outputs/quality_comparison.md`
+
+☑️ Compared the baseline and web-enhanced reports
+
+☑️ Organized the generated outputs for review
+
+☑️ Recorded the experiment's execution approach in the run summary
+
+☑️ Distinguished saved search evidence from claims that have not been independently verified
+
+☐ Review the final comparison metrics against the actual generated reports
+
+☐ Confirm that all source URLs and research claims are accurately represented
+
+☐ Confirm that the comparison reflects the intended evaluation criteria
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_tools.py`
+
+☑️ Created `tests/test_quality_review.py`
+
+☑️ Added automated tests for calculator and research-tool functionality
+
+☑️ Added automated tests for quality-review functionality
+
+☑️ Ran the test suite successfully before the latest `main.py` replacement
+
+☐ Rerun the complete W9D2 test suite after the latest changes
+
+☐ Confirm and record the final test count and results
+
+## 7. Code Quality & Compilation
+
+☑️ Ran Ruff against the W9D2 project
+
+☑️ Fixed reported Ruff issues in `main.py`
+
+☑️ Confirmed Ruff passed after those fixes
+
+☐ Reconfirm the final Ruff result after the latest changes
+
+☐ Run Python compilation checks
+
+☐ Retain the final validation results for submission evidence
+
+## 8. CIA Review
+
+☑️ Completed the required CIA Full Stack Mentor Mode interactions
+
+☑️ Confirmed completion of the required W9D2 CIA interactions
+
+☑️ Completed the main implementation and evidence-generation workflow
+
+☑️ Created the implementation commit
+
+☐ Verify that CIA interaction records are retained if required for submission
+
+## 9. Git & Version Control
+
+☑️ Worked on the `feat/aiml-W9-Ramya` feature branch
+
+☑️ Created the W9D2 project files
+
+☑️ Created the implementation commit
+
+☑️ Implementation commit message: `feat: implement W9D2 CrewAI tools and research comparison`
+
+☑️ Implementation commit hash: `8221239`
+
+☑️ Committed 12 implementation and evidence files
+
+☑️ Kept the root `SELF_REVIEW.md` outside the W9D2 implementation commit
+
+☐ Verify that only intended files are staged for the self-review commit
+
+☐ Create the separate self-review commit
+
+☐ Push the completed W9D2 work to GitHub
+
+☐ Verify that the remote branch contains the new commits
+
+☐ Create or update the Pull Request
+
+☐ Verify that the Pull Request targets `master`
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented custom calculator and Wikipedia search tools
+
+☑️ Generated baseline and web-enhanced research reports
+
+☑️ Generated the quality comparison report
+
+☑️ Saved calculator and search-result evidence
+
+☑️ Created the descriptive implementation commit
+
+☑️ Completed the required CIA interactions
+
+☐ Reconfirm Ruff passes after the final changes
+
+☐ Rerun automated tests and Python compilation checks
+
+☐ Review the experiment methodology and comparison evidence
+
+☐ Commit the self-review separately
+
+☐ Push the completed W9D2 work to GitHub
+
+☐ Verify the final Pull Request targets `master`
+
+☐ Complete the remaining submission and review requirements
+
+## Final Assessment
+
+**Implementation commit:** `8221239`
+
+**Branch:** `feat/aiml-W9-Ramya`
+
+**CIA interactions:** Completed
+
+**Implementation status:** Implementation commit created
+
+**Remaining delivery work:** Final validation, review of experiment evidence, separate self-review commit, push, and Pull Request verification.
