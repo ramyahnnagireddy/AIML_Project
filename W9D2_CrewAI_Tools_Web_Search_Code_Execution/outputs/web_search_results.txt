@@ -1,0 +1,19 @@
+Title: Ethics of artificial intelligence
+Snippet: The ethics of artificial intelligence covers a broad range of topics within AI that are considered to have particular ethical stakes. This includes algorithmic
+URL: https://en.wikipedia.org/?curid=13659583
+
+Title: Artificial intelligence in healthcare
+Snippet: Artificial intelligence in healthcare refers to the application of artificial intelligence (AI) to medical and healthcare data in areas including disease
+URL: https://en.wikipedia.org/?curid=52588198
+
+Title: Applications of artificial intelligence
+Snippet: Artificial intelligence (AI) and its subfields have been used in applications throughout industry and academia. Machine learning has been used for various
+URL: https://en.wikipedia.org/?curid=15893057
+
+Title: Friendly artificial intelligence
+Snippet: of the ethics of artificial intelligence and is closely related to machine ethics. While machine ethics is concerned with how an artificially intelligent
+URL: https://en.wikipedia.org/?curid=351887
+
+Title: Artificial general intelligence
+Snippet: Artificial general intelligence (AGI) is a hypothetical type of artificial intelligence that matches or surpasses human capabilities across virtually
+URL: https://en.wikipedia.org/?curid=586357

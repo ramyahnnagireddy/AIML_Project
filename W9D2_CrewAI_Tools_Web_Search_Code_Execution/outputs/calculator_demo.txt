@@ -1,0 +1,5 @@
+# Safe Calculator Demonstration
+
+- Expression: `(25 + 15) / 4`
+- Result: `10.0`
+- Method: restricted arithmetic through CalculatorTool.
