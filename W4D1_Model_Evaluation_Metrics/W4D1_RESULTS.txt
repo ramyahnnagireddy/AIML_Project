@@ -1,0 +1,42 @@
+W4D1: MODEL EVALUATION METRICS - RESULTS
+
+Dataset:
+Breast Cancer Wisconsin dataset
+
+Dataset Shape:
+569 samples, 30 features
+
+Model:
+Logistic Regression
+
+Test Set Metrics:
+Accuracy: 0.9825
+Precision: 0.9861
+Recall: 0.9861
+F1-Score: 0.9861
+ROC-AUC: 0.9954
+
+Confusion Matrix:
+[[41  1]
+ [ 1 71]]
+
+Stratified 5-Fold Cross-Validation:
+Accuracy Mean: 0.9737
+Precision Mean: 0.9683
+Recall Mean: 0.9916
+ROC-AUC Mean: 0.9953
+
+Learning Curve:
+Final Training Accuracy: 0.9881
+Final Validation Accuracy: 0.9737
+
+Conclusion:
+The model shows strong classification performance.
+Training and validation accuracy are close, indicating good
+generalization with no major signs of overfitting.
+
+Testing:
+Pytest: 4 tests passed
+
+CIA:
+2 Full Stack Mentor Mode interactions completed.
