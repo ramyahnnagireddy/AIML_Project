@@ -1,0 +1,180 @@
+QUESTION 1
+What is Machine Learning?
+
+RETRIEVED CONTEXT
+
+Artificial Intelligence (AI) is the field of creating systems that can
+perform tasks that normally require human intelligence.
+
+Machine Learning (ML) is a subset of AI in which computer systems learn
+patterns from data and use those patterns to make predictions or decisions.
+
+Deep Learning is a subset of machine learning that uses neural networks
+with multiple layers. It is commonly used for image classification,
+natural language processing, speech recognition, and other complex tasks.
+
+Large Language Models (LLMs) are deep learning models trained on large
+amounts of text. They can generate and understand natural language.
+
+Retrieval-Augmented Generation (RAG) combines information retrieval with
+language generation. A user's question is first used to retrieve relevant
+documents or passages. The retrieved context is then provided to a language
+model so that it can generate a grounded answer.
+
+ChromaDB is a vector database that can store documents and embeddings and
+perform similarity search. It is useful for retrieving relevant information
+for RAG applications.
+
+Ollama allows large language models such as Llama to run locally on a
+computer. Local inference can provide a simple way to experiment with LLMs
+without sending prompts to a remote model service.
+
+
+OLLAMA ANSWER
+Machine Learning is a subset of Artificial Intelligence (AI) in which computer systems learn patterns from data and use those patterns to make predictions or decisions.
+
+----------------------------------------------------------------------
+QUESTION 2
+What is Retrieval-Augmented Generation?
+
+RETRIEVED CONTEXT
+
+Artificial Intelligence (AI) is the field of creating systems that can
+perform tasks that normally require human intelligence.
+
+Machine Learning (ML) is a subset of AI in which computer systems learn
+patterns from data and use those patterns to make predictions or decisions.
+
+Deep Learning is a subset of machine learning that uses neural networks
+with multiple layers. It is commonly used for image classification,
+natural language processing, speech recognition, and other complex tasks.
+
+Large Language Models (LLMs) are deep learning models trained on large
+amounts of text. They can generate and understand natural language.
+
+Retrieval-Augmented Generation (RAG) combines information retrieval with
+language generation. A user's question is first used to retrieve relevant
+documents or passages. The retrieved context is then provided to a language
+model so that it can generate a grounded answer.
+
+ChromaDB is a vector database that can store documents and embeddings and
+perform similarity search. It is useful for retrieving relevant information
+for RAG applications.
+
+Ollama allows large language models such as Llama to run locally on a
+computer. Local inference can provide a simple way to experiment with LLMs
+without sending prompts to a remote model service.
+
+
+OLLAMA ANSWER
+Retrieval-Augmented Generation (RAG) is a method that combines information retrieval with language generation. A user's question is first used to retrieve relevant documents or passages from a vector database like ChromaDB. The retrieved context is then provided to a language model, allowing it to generate a grounded answer.
+
+----------------------------------------------------------------------
+QUESTION 3
+What is ChromaDB?
+
+RETRIEVED CONTEXT
+
+Artificial Intelligence (AI) is the field of creating systems that can
+perform tasks that normally require human intelligence.
+
+Machine Learning (ML) is a subset of AI in which computer systems learn
+patterns from data and use those patterns to make predictions or decisions.
+
+Deep Learning is a subset of machine learning that uses neural networks
+with multiple layers. It is commonly used for image classification,
+natural language processing, speech recognition, and other complex tasks.
+
+Large Language Models (LLMs) are deep learning models trained on large
+amounts of text. They can generate and understand natural language.
+
+Retrieval-Augmented Generation (RAG) combines information retrieval with
+language generation. A user's question is first used to retrieve relevant
+documents or passages. The retrieved context is then provided to a language
+model so that it can generate a grounded answer.
+
+ChromaDB is a vector database that can store documents and embeddings and
+perform similarity search. It is useful for retrieving relevant information
+for RAG applications.
+
+Ollama allows large language models such as Llama to run locally on a
+computer. Local inference can provide a simple way to experiment with LLMs
+without sending prompts to a remote model service.
+
+
+OLLAMA ANSWER
+ChromaDB is a vector database that can store documents and embeddings and perform similarity search, specifically designed to be useful for Retrieval-Augmented Generation (RAG) applications.
+
+----------------------------------------------------------------------
+QUESTION 4
+What is Ollama used for?
+
+RETRIEVED CONTEXT
+
+Artificial Intelligence (AI) is the field of creating systems that can
+perform tasks that normally require human intelligence.
+
+Machine Learning (ML) is a subset of AI in which computer systems learn
+patterns from data and use those patterns to make predictions or decisions.
+
+Deep Learning is a subset of machine learning that uses neural networks
+with multiple layers. It is commonly used for image classification,
+natural language processing, speech recognition, and other complex tasks.
+
+Large Language Models (LLMs) are deep learning models trained on large
+amounts of text. They can generate and understand natural language.
+
+Retrieval-Augmented Generation (RAG) combines information retrieval with
+language generation. A user's question is first used to retrieve relevant
+documents or passages. The retrieved context is then provided to a language
+model so that it can generate a grounded answer.
+
+ChromaDB is a vector database that can store documents and embeddings and
+perform similarity search. It is useful for retrieving relevant information
+for RAG applications.
+
+Ollama allows large language models such as Llama to run locally on a
+computer. Local inference can provide a simple way to experiment with LLMs
+without sending prompts to a remote model service.
+
+
+OLLAMA ANSWER
+Based on the context, Ollama is used to allow large language models, such as Llama, to run locally on a computer. This enables local inference, which provides a simple way to experiment with LLMs without sending prompts to a remote model service.
+
+----------------------------------------------------------------------
+QUESTION 5
+What is the difference between AI and Machine Learning?
+
+RETRIEVED CONTEXT
+
+Artificial Intelligence (AI) is the field of creating systems that can
+perform tasks that normally require human intelligence.
+
+Machine Learning (ML) is a subset of AI in which computer systems learn
+patterns from data and use those patterns to make predictions or decisions.
+
+Deep Learning is a subset of machine learning that uses neural networks
+with multiple layers. It is commonly used for image classification,
+natural language processing, speech recognition, and other complex tasks.
+
+Large Language Models (LLMs) are deep learning models trained on large
+amounts of text. They can generate and understand natural language.
+
+Retrieval-Augmented Generation (RAG) combines information retrieval with
+language generation. A user's question is first used to retrieve relevant
+documents or passages. The retrieved context is then provided to a language
+model so that it can generate a grounded answer.
+
+ChromaDB is a vector database that can store documents and embeddings and
+perform similarity search. It is useful for retrieving relevant information
+for RAG applications.
+
+Ollama allows large language models such as Llama to run locally on a
+computer. Local inference can provide a simple way to experiment with LLMs
+without sending prompts to a remote model service.
+
+
+OLLAMA ANSWER
+According to the context, Machine Learning is a subset of AI. In simpler terms, AI is the broad field that encompasses a wide range of capabilities, including Machine Learning. Machine Learning is a specific approach within AI that involves computer systems learning patterns from data to make predictions or decisions.
+
+----------------------------------------------------------------------

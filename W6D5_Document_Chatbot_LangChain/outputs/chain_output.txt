@@ -1,0 +1,17 @@
+W6D5 - LANGCHAIN CHAIN TEST
+
+Input 1: What is machine learning?
+Output: Machine learning (ML) is a subset of artificial intelligence (AI) that enables computers to learn from data, improve their performance, and make predictions or decisions without being explicitly programmed.
+
+Input 2: What is supervised learning?
+Output: Supervised learning is a type of machine learning where the algorithm is trained on labeled data, meaning the data is already classified or categorized. The algorithm learns to map inputs to outputs based on the labeled data, allowing it to make predictions on new, unseen data.
+
+Input 3: What is a neural network?
+Output: A neural network is a computer system inspired by the structure and function of the human brain. It's composed of interconnected nodes (neurons) that process and transmit information, allowing it to learn and make predictions from data.
+
+Input 4: What is overfitting?
+Output: Overfitting is when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data. This occurs when the model is too specialized to the training data and fails to generalize well to other situations.
+
+Input 5: What is a vector database?
+Output: A vector database is a type of database that stores and manages vectors, which are mathematical representations of objects or data points in a high-dimensional space. Unlike traditional relational databases, vector databases are optimized for efficient similarity search, clustering, and other vector-based operations. They are commonly used in applications such as image and text search, recommendation systems, and natural language processing.
+
