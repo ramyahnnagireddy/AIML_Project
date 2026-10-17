@@ -1,0 +1,181 @@
+W5D1 - Llama 3.2 Local Inference Evidence
+Model: llama3.2:3b
+Inference method: Ollama Python API
+System prompt: AI/ML mentor for beginners
+Number of prompts tested: 5
+
+----------------------------------------------------------------------
+PROMPT 1
+----------------------------------------------------------------------
+Question: What is machine learning?
+
+Response:
+Machine learning (ML) is a type of artificial intelligence (AI) that allows computers to learn and improve on their own, without being explicitly programmed.
+
+Imagine you're trying to teach a child to recognize different animals. You show them pictures of cats, dogs, and birds, and explain what each one is. At first, the child might not be very good at identifying the animals, but as you show them more and more pictures, they start to recognize patterns and similarities between the animals.
+
+Machine learning works in a similar way. It uses algorithms (sets of instructions) to analyze data, identify patterns, and make predictions or decisions. The algorithm is "trained" on a large dataset, which is a collection of examples or inputs.
+
+As the algorithm analyzes the data, it starts to recognize patterns and relationships between the inputs. Over time, it improves its performance and can make predictions or decisions on new, unseen data.
+
+There are three main types of machine learning:
+
+1. **Supervised learning**: The algorithm is trained on labeled data, where each example has a corresponding output or answer. The goal is to learn the mapping between inputs and outputs.
+2. **Unsupervised learning**: The algorithm is trained on unlabeled data, and it must find patterns or structure on its own. This type of learning is often used for data exploration and discovery.
+3. **Reinforcement learning**: The algorithm learns by interacting with an environment and receiving feedback in the form of rewards or penalties.
+
+Machine learning has many applications, including:
+
+* Image and speech recognition
+* Natural language processing
+* Predictive modeling
+* Recommendation systems
+* Autonomous vehicles
+
+In simple terms, machine learning is a way for computers to learn from data and improve their performance over time, without being explicitly programmed.
+
+----------------------------------------------------------------------
+PROMPT 2
+----------------------------------------------------------------------
+Question: Explain supervised learning with a simple example.
+
+Response:
+Supervised learning is a fundamental concept in machine learning. I'd be happy to explain it in simple terms.
+
+**What is Supervised Learning?**
+
+Supervised learning is a type of machine learning where the algorithm is trained on labeled data. This means that the data is already classified or categorized, and the goal is to learn a pattern or relationship between the input data and the corresponding output labels.
+
+**Example: Handwritten Digit Recognition**
+
+Let's say we want to build a system that can recognize handwritten digits (0-9). We have a dataset of images of handwritten digits, where each image is labeled with the corresponding digit (e.g., image 1 is labeled as "0", image 2 is labeled as "1", and so on).
+
+Our goal is to train a model that can take an input image and predict the correct digit label. The model will learn from the labeled data and improve its accuracy over time.
+
+**How Supervised Learning Works**
+
+Here's a step-by-step overview of the supervised learning process:
+
+1. **Data Preparation**: We collect and preprocess the labeled dataset. For example, we might crop the images to a fixed size, normalize the pixel values, and split the data into training and testing sets.
+2. **Model Training**: We train a machine learning model on the labeled training data. The model learns to recognize patterns in the data and make predictions based on those patterns.
+3. **Model Evaluation**: We evaluate the performance of the trained model on the testing data. This helps us determine how well the model generalizes to new, unseen data.
+4. **Model Tuning**: We fine-tune the model's hyperparameters to optimize its performance on the testing data.
+
+**Types of Supervised Learning**
+
+There are several types of supervised learning, including:
+
+* **Linear Regression**: Predicting a continuous output variable, such as predicting house prices based on features like square footage and location.
+* **Logistic Regression**: Predicting a binary output variable, such as predicting whether a person will buy a car based on features like credit score and income.
+* **Decision Trees**: Predicting a categorical output variable, such as predicting whether a person is likely to churn based on features like customer behavior and demographics.
+
+Supervised learning is a powerful technique for building predictive models, and it's widely used in many applications, including image classification, natural language processing, and recommender systems.
+
+----------------------------------------------------------------------
+PROMPT 3
+----------------------------------------------------------------------
+Question: What is the difference between classification and regression?
+
+Response:
+Classification and regression are two fundamental concepts in machine learning (ML).
+
+**Classification:**
+
+Classification is a type of supervised learning where the goal is to predict a categorical label or class that an instance belongs to. Think of it like a " categorizer".
+
+Example: You're a customer service representative, and you receive an email from a customer complaining about a product. You need to classify the complaint as either:
+
+* "Support Required" (e.g., product not working as expected)
+* "No Issue" (e.g., product works fine)
+* "Other" (e.g., complaint about pricing)
+
+In this case, you're trying to classify the email as one of these three categories.
+
+**Regression:**
+
+Regression, on the other hand, is a type of supervised learning where the goal is to predict a continuous value or a numerical outcome. Think of it like a "predictor".
+
+Example: You're a sales analyst, and you want to predict the price of a new product based on its features, such as its weight, size, and material. You can use regression to predict a continuous value, like the price of the product.
+
+In this case, you're trying to predict a numerical outcome (price) based on input features.
+
+**Key differences:**
+
+1. **Output type:** Classification outputs a categorical label, while regression outputs a continuous value.
+2. **Goal:** Classification aims to assign an instance to a category, while regression aims to predict a continuous value.
+3. **Example use cases:** Classification is often used in image classification, sentiment analysis, and customer segmentation, while regression is used in predicting continuous values, like prices, energy consumption, or stock prices.
+
+In summary, classification is about assigning labels to instances, while regression is about predicting continuous values. Both are essential techniques in machine learning, and understanding the differences between them will help you choose the right approach for your project!
+
+----------------------------------------------------------------------
+PROMPT 4
+----------------------------------------------------------------------
+Question: Why do we split data into training and testing sets?
+
+Response:
+Splitting data into training and testing sets is a crucial step in machine learning (ML) and is called **data splitting** or **splitting the data**.
+
+**Why do we split data?**
+
+Imagine you're building a new car, and you want to test its features and performance. You can't test the entire car at once, as it's too complex. Instead, you need to:
+
+1. Build a prototype (like a small model) using some parts.
+2. Test it with a limited set of features (like a small test drive).
+3. Refine the design based on the test results.
+4. Repeat steps 2-3 until the car is fully functional.
+
+Similarly, when training a machine learning model, we want to:
+
+1. Use a large, representative sample of data to train the model (training set).
+2. Test the model on a separate, smaller sample of data to evaluate its performance (testing set).
+
+**Why a separate testing set?**
+
+A testing set serves two purposes:
+
+1. **Evaluates model performance**: By testing the model on a separate, unseen data, we can assess its accuracy, precision, recall, and other performance metrics.
+2. **Reduces overfitting**: If we used the entire dataset for training and testing, the model might become too specialized to the training data and not generalize well to new, unseen data. The testing set helps prevent overfitting by providing an independent measure of the model's performance.
+
+**How do we split the data?**
+
+The general rule of thumb is to use:
+
+* 80-20% of the data for the training set (80% of the data is used to train the model)
+* 20-20% of the data for both the validation set (used to monitor the model's performance during training) and testing set (used to evaluate the final model's performance)
+
+This ratio may vary depending on the specific problem, dataset, and model.
+
+----------------------------------------------------------------------
+PROMPT 5
+----------------------------------------------------------------------
+Question: What is overfitting in machine learning?
+
+Response:
+Overfitting is a common problem in machine learning that can make a model perform well on the training data but poorly on new, unseen data.
+
+**What happens during overfitting?**
+
+Imagine you're trying to draw a picture of a cat. You have a lot of training data with many pictures of cats, which you use to train a model to recognize cats. At first, the model is great at recognizing cats - it's like you're an expert artist who can draw a purr-fect cat.
+
+However, as you keep adding more and more training data, the model starts to become too good at recognizing cats. It begins to pick up on the tiny imperfections and nuances in the training data that aren't even relevant to real cats. It starts to "fit" the noise in the data, rather than just learning the general patterns.
+
+**Example:**
+
+Suppose you're training a model to recognize numbers 0-9. If your training data consists of only a few images of each number, the model might become too good at recognizing the specific features of those images, like the shape of the digits. When you show the model new, unseen images of numbers, it might not be able to generalize and recognize the digits correctly.
+
+**Symptoms of overfitting:**
+
+* Model performs well on training data, but poorly on testing data
+* Model is too complex, with many features or parameters
+* Model has high variance, meaning it performs differently on different subsets of data
+
+**How to prevent overfitting:**
+
+1. **Regularization**: Add a penalty term to the loss function to discourage large weights.
+2. **Cross-validation**: Split data into training and validation sets to evaluate model performance on unseen data.
+3. **Data augmentation**: Increase the size of the training data by adding new images or variations of existing images.
+4. **Early stopping**: Stop training when the model's performance on validation data starts to degrade.
+
+By understanding and addressing overfitting, you can create more robust and generalizable machine learning models that perform well on new data.
+
+Do you have any other questions about overfitting or machine learning?
