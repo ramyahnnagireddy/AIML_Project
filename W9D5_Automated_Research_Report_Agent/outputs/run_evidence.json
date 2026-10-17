@@ -1,0 +1,18 @@
+{
+  "timestamp_utc": "2026-10-17T12:07:54.346493+00:00",
+  "topic": "Applications, benefits, risks, and limitations of AI in healthcare",
+  "model": "ollama/qwen2.5:3b",
+  "source_count": 2,
+  "report_path": "C:\\Users\\ramya\\OneDrive\\Documents\\CynarisInternship\\AIML_Project\\W9D5_Automated_Research_Report_Agent\\outputs\\automated_research_report.md",
+  "mlflow_run_id": "7d33deff0fb34ba1960e713115c3912e",
+  "evaluation": {
+    "evaluation_status": "failed",
+    "metric": "faithfulness",
+    "scores": {},
+    "contexts_used": 2,
+    "answer_truncated": true,
+    "note": "Ragas did not produce a valid faithfulness score. Inspect the error and local model availability.",
+    "error": "RuntimeError: Ragas returned an invalid faithfulness score."
+  },
+  "errors": []
+}
