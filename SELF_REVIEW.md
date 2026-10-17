@@ -4402,3 +4402,307 @@ Recorded final test results: **5 passed**.
 **Implementation status:** Implementation and evidence committed
 
 **Remaining delivery work:** Complete the self-review, commit it separately, push the branch, and verify the Pull Request targets `master`.
+
+# Self-Review Checklist — W9D4 LangChain Hybrid Agent Systems
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W9D4_LangChain_Hybrid_Agent_Systems` directory
+
+☑️ Created the `app` directory
+
+☑️ Created the `tests` directory
+
+☑️ Created the `outputs` directory
+
+☑️ Created `app/main.py` for chain, memory, and agent demonstrations
+
+☑️ Created `app/tools.py` for tool implementations
+
+☑️ Created `app/__init__.py`
+
+☑️ Created `tests/test_w9d4.py`
+
+☑️ Created `requirements.txt` with the required LangChain dependencies
+
+☑️ Configured the local Ollama model `qwen2.5:3b`
+
+☑️ Kept W9D4 work on the `feat/aiml-W9-Ramya` feature branch
+
+☑️ Saved demonstration evidence in `outputs/w9d4_evidence.md`
+
+☐ Verify the final directory structure and evidence files before submission
+
+## 2. LangChain Chain Implementation
+
+☑️ Implemented a `PromptTemplate` for technical question answering
+
+☑️ Integrated `OllamaLLM` with the local `qwen2.5:3b` model
+
+☑️ Integrated `StrOutputParser` to return parsed text output
+
+☑️ Connected the components using the LangChain expression pipeline
+
+☑️ Implemented the chain as `PromptTemplate → OllamaLLM → StrOutputParser`
+
+☑️ Defined five different chain input questions
+
+☑️ Executed the chain against five inputs
+
+☑️ Captured the generated responses in the terminal
+
+☑️ Saved chain results in the evidence file
+
+☐ Review the quality and factual accuracy of the generated responses
+
+☐ Verify the chain behavior after any future model or dependency changes
+
+## 3. Conversation Memory
+
+☑️ Implemented `ConversationBufferMemory`
+
+☑️ Configured the memory to retain user and assistant messages
+
+☑️ Defined five conversation turns
+
+☑️ Saved each user message and assistant response to memory
+
+☑️ Retrieved the conversation history after each turn
+
+☑️ Recorded the history length after each turn
+
+☑️ Verified that all five user messages remained in the final conversation buffer
+
+☑️ Verified that all five assistant responses remained in the final conversation buffer
+
+☑️ Saved the final memory buffer in the evidence file
+
+☐ Review the LangChain deprecation warnings for `ConversationBufferMemory` and `InMemoryChatMessageHistory`
+
+☐ Consider the recommended memory APIs when updating the implementation
+
+## 4. Tools & Agent Workflow
+
+☑️ Created the `web_search_stub` LangChain tool
+
+☑️ Implemented a predefined offline knowledge base for selected technical topics
+
+☑️ Added topic matching for RAG, MLflow, cybersecurity, healthcare, and LangChain
+
+☑️ Clearly disclosed that the search tool does not perform live web searches
+
+☑️ Created the `calculator` LangChain tool
+
+☑️ Implemented arithmetic evaluation using an allowlist of supported Python AST operations
+
+☑️ Supported basic arithmetic operations and parentheses
+
+☑️ Added checks for oversized expressions, excessive exponent values, and oversized results
+
+☑️ Added error handling for invalid or unsupported calculations
+
+☑️ Registered both tools in `AGENT_TOOLS`
+
+☑️ Implemented explicit routing logic to select the appropriate tool
+
+☑️ Executed three agent demonstration tasks
+
+☑️ Verified that the search tasks use `web_search_stub`
+
+☑️ Verified that the arithmetic task uses `calculator`
+
+☑️ Confirmed that `18 * 24` returns `432`
+
+☑️ Saved the selected tool and result for each task in the evidence file
+
+☐ Confirm whether explicit tool routing satisfies the task specification's interpretation of an agent
+
+☐ Consider an autonomous LangChain agent implementation if explicitly required
+
+☐ Consider additional edge-case tests for calculator input and tool selection
+
+## 5. Demonstration Evidence
+
+☑️ Created `outputs/w9d4_evidence.md`
+
+☑️ Recorded the model name and chain configuration
+
+☑️ Recorded the five chain questions and responses
+
+☑️ Recorded the five conversation turns
+
+☑️ Recorded conversation history lengths
+
+☑️ Recorded the verification that all five turns were retained
+
+☑️ Recorded all three tool-using agent tasks
+
+☑️ Recorded the selected tool and output for each task
+
+☑️ Included the final conversation memory buffer
+
+☑️ Documented that the search tool is an offline stub
+
+☑️ Saved the evidence using UTF-8 encoding
+
+☐ Review the saved evidence for completeness before final submission
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_w9d4.py`
+
+☑️ Added a test for the chain configuration and five inputs
+
+☑️ Added a test verifying retention of all five conversation turns
+
+☑️ Added a test confirming the three agent demonstration tasks
+
+☑️ Added a test verifying search-task routing
+
+☑️ Added a test verifying calculator-task routing
+
+☑️ Added a test for basic calculator arithmetic
+
+☑️ Added a test rejecting unsupported calculator expressions
+
+☑️ Added a test confirming that the search stub is offline
+
+☑️ Ran the W9D4 test suite successfully
+
+☑️ Confirmed the result: **8 tests passed**
+
+☑️ Recorded two non-fatal LangChain deprecation warnings
+
+☐ Re-run the test suite if any implementation or test files change
+
+☐ Add further tests if required by the final task specification
+
+## 7. Code Quality & Compilation
+
+☑️ Ran Ruff against the W9D4 application and test files
+
+☑️ Confirmed Ruff passed: `All checks passed!`
+
+☑️ Ran Python compilation checks against `app` and `tests`
+
+☑️ Confirmed compilation passed
+
+☑️ Ran `git diff --cached --check` before the implementation commit
+
+☑️ Confirmed there were no staged whitespace errors
+
+☑️ Reviewed the staged implementation file list
+
+☑️ Confirmed that only the six intended implementation and evidence files were staged
+
+☐ Reconfirm the final validation results if the source files change
+
+☐ Retain the test and quality-check output as submission evidence if required
+
+## 8. CIA Review
+
+☑️ Completed the required W9D4 CIA interactions, as reported
+
+☑️ Reviewed the chain, memory, tools, and agent workflow
+
+☑️ Completed the implementation and evidence-generation workflow
+
+☑️ Completed automated tests and code-quality checks
+
+☐ Verify that CIA interaction records are retained if required for submission
+
+## 9. Git & Version Control
+
+☑️ Worked on the `feat/aiml-W9-Ramya` feature branch
+
+☑️ Created the W9D4 application, test, configuration, and evidence files
+
+☑️ Staged the six intended implementation and evidence files
+
+☑️ Ran `git diff --cached --check`
+
+☑️ Created the implementation commit
+
+☑️ Implementation commit message: `feat: langchain — chain, memory, agent`
+
+☑️ Implementation commit hash: `e5a8851`
+
+☑️ Committed six implementation and evidence files
+
+☑️ Confirmed the working tree was clean after the implementation commit
+
+☑️ Kept the self-review outside the implementation commit
+
+☐ Create `W9D4_LangChain_Hybrid_Agent_Systems/SELF_REVIEW.md`
+
+☐ Verify that only the W9D4 self-review file is staged for the documentation commit
+
+☐ Create the separate self-review commit
+
+☐ Push the completed W9 branch to GitHub
+
+☐ Verify that the remote branch contains both W9D4 commits
+
+☐ Create or update the Pull Request
+
+☐ Verify that the Pull Request targets `master`
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented the LangChain prompt-to-model-to-parser chain
+
+☑️ Executed five chain inputs
+
+☑️ Implemented and tested five conversation memory turns
+
+☑️ Implemented the offline search stub and calculator tools
+
+☑️ Executed three tool-routing tasks
+
+☑️ Saved demonstration evidence
+
+☑️ Added automated tests
+
+☑️ Confirmed eight tests passed
+
+☑️ Confirmed Ruff passed
+
+☑️ Confirmed Python compilation passed
+
+☑️ Created the descriptive implementation commit
+
+☑️ Confirmed the implementation working tree was clean after committing
+
+☑️ Completed the reported CIA interactions
+
+☐ Complete and commit the W9D4 self-review separately
+
+☐ Push the completed W9 branch to GitHub
+
+☐ Verify the remote branch and Pull Request target `master`
+
+☐ Complete remaining review and submission requirements
+
+## Final Assessment
+
+**Implementation commit:** `e5a8851`
+
+**Implementation commit message:** `feat: langchain — chain, memory, agent`
+
+**Branch:** `feat/aiml-W9-Ramya`
+
+**CIA interactions:** completed
+
+**Automated tests:** 8 passed
+
+**Ruff:** Passed
+
+**Python compilation:** Passed
+
+**Evidence:** `outputs/w9d4_evidence.md`
+
+**Implementation status:** Implementation and evidence committed
+
+**Known limitations:** The search tool uses an offline knowledge base; tool selection uses explicit routing; LangChain memory components emit deprecation warnings.
+
+**Remaining delivery work:** Save the self-review in a separate commit, push the branch, and verify the Pull Request targets `master`.
