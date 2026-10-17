@@ -4706,3 +4706,259 @@ Recorded final test results: **5 passed**.
 **Known limitations:** The search tool uses an offline knowledge base; tool selection uses explicit routing; LangChain memory components emit deprecation warnings.
 
 **Remaining delivery work:** Save the self-review in a separate commit, push the branch, and verify the Pull Request targets `master`.
+
+# Self-Review Checklist — W9D5 Automated Research Report Agent
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W9D5_Automated_Research_Report_Agent` project directory
+
+☑️ Organized the application code under `app/`
+
+☑️ Created the required project structure for the research agent
+
+☑️ Implemented the automated research report agent workflow
+
+☑️ Integrated CrewAI into the research workflow
+
+☑️ Integrated evaluation and experiment-tracking functionality
+
+☑️ Configured the local Ollama endpoint for model-based evaluation
+
+☑️ Configured the evaluator model as `qwen2.5:3b`
+
+☑️ Created the `outputs/` directory
+
+☑️ Generated and saved `outputs/automated_research_report.md`
+
+☑️ Saved execution evidence in `outputs/run_evidence.json`
+
+☑️ Kept W9D5 work on the `feat/aiml-W9-Ramya` feature branch
+
+☑️ Reviewed the project structure and required files
+
+☑️ Reviewed the dependency configuration
+
+## 2. Automated Research Report Generation
+
+☑️ Implemented the automated research report agent workflow
+
+☑️ Integrated CrewAI into the research workflow
+
+☑️ Generated the research report
+
+☑️ Saved the generated report to `outputs/automated_research_report.md`
+
+☑️ Preserved the generated report during evaluation diagnostics
+
+☑️ Preserved the original execution evidence in `outputs/run_evidence.json`
+
+☑️ Reviewed the report-generation workflow
+
+☑️ Identified report quality and reproducibility as final review considerations
+
+## 3. Evaluation & Ragas Integration
+
+☑️ Integrated Ragas Faithfulness evaluation into the project
+
+☑️ Configured the local Ollama model for evaluation
+
+☑️ Implemented evaluation configuration in `app/tracking.py`
+
+☑️ Configured evaluation timeouts and retry behavior
+
+☑️ Investigated the Ragas Faithfulness evaluation failure
+
+☑️ Tested evaluation using a shorter answer and a single context
+
+☑️ Obtained a diagnostic Faithfulness score of approximately `0.3333` for one reduced-input test
+
+☑️ Investigated statement generation and verdict generation separately
+
+☑️ Tested the smaller local model `qwen2.5:0.5b` for structured evaluation output
+
+☑️ Identified unreliable structured-output parsing with the smaller model
+
+☑️ Identified memory and timeout constraints affecting the larger local model
+
+☑️ Restored `app/tracking.py` to its committed version after diagnostic experiments
+
+☑️ Documented the unresolved Ragas evaluation reliability issue
+
+☑️ Identified final evaluation and metric verification as remaining technical considerations
+
+**Evaluation note:** The reduced-input diagnostic produced a score of approximately `0.3333`, but the complete evaluation did not finish reliably. This diagnostic score is not the final project evaluation result.
+
+## 4. MLflow Experiment Tracking
+
+☑️ Included experiment-tracking functionality in `app/tracking.py`
+
+☑️ Configured the experiment name as `W9D5_Automated_Research_Report_Agent`
+
+☑️ Investigated the evaluation workflow and its failure handling
+
+☑️ Identified experiment records and metric consistency as validation considerations
+
+☑️ Documented the need to distinguish successful evaluations from failed evaluations
+
+## 5. Diagnostic Investigation & Evidence Preservation
+
+☑️ Created temporary diagnostic scripts to isolate Ragas failures
+
+☑️ Tested Faithfulness statement generation independently
+
+☑️ Tested Faithfulness verdict generation independently
+
+☑️ Tested the complete Faithfulness scoring path with reduced input
+
+☑️ Investigated JSON output parsing errors
+
+☑️ Identified that the smaller model could produce incomplete structured verdicts
+
+☑️ Avoided rerunning the full research agent during the later diagnostic tests
+
+☑️ Removed temporary diagnostic scripts from the repository working tree
+
+☑️ Preserved `outputs/automated_research_report.md`
+
+☑️ Preserved `outputs/run_evidence.json`
+
+☑️ Restored the tracked source-file modification
+
+☑️ Confirmed that `git status --short` returned no changes
+
+☑️ Documented the diagnostic findings and limitations
+
+## 6. Automated Testing
+
+☑️ Identified automated testing as part of the project validation process
+
+☑️ Identified research workflow and report generation as testing areas
+
+☑️ Identified evaluation success and failure handling as testing areas
+
+☑️ Identified experiment tracking and saved outputs as testing areas
+
+☑️ Identified the need to rerun relevant tests after implementation changes
+
+☑️ Identified test results as potential submission evidence
+
+## 7. Code Quality & Compilation
+
+☑️ Identified Ruff validation as part of code quality review
+
+☑️ Identified Python compilation checks as part of validation
+
+☑️ Identified imports, exception handling, and evaluation configuration for review
+
+☑️ Identified source changes as requiring review before additional commits
+
+☑️ Identified `git diff --check` as a whitespace validation step
+
+☑️ Identified validation output as potential submission evidence
+
+## 8. CIA Review
+
+☑️ Completed the required W9D5 CIA interactions
+
+☑️ Completed the CIA interaction workflow before finalizing the self-review
+
+☑️ Reviewed the research workflow and evaluation limitations
+
+☑️ Completed the implementation and evidence-generation workflow
+
+☑️ Investigated the Ragas evaluation issues
+
+☑️ Preserved the generated report and execution evidence
+
+☑️ Identified CIA interaction records as submission evidence if required
+
+## 9. Git & Version Control
+
+☑️ Worked on the `feat/aiml-W9-Ramya` feature branch
+
+☑️ Created the W9D5 Automated Research Report Agent implementation
+
+☑️ Created the implementation commit with the message `feat: implement W9D5 automated research report agent`
+
+☑️ Implementation commit hash: `6f753eb`
+
+☑️ Pushed the implementation commit to the remote W9 branch
+
+☑️ Investigated and removed temporary diagnostic scripts
+
+☑️ Restored the local modification to `app/tracking.py`
+
+☑️ Confirmed the working tree was clean before creating the self-review
+
+☑️ Kept the self-review separate from the implementation commit
+
+☑️ Prepared the W9D5 self-review content
+
+☑️ Identified the separate documentation commit as the next Git step
+
+☑️ Identified remote branch and Pull Request verification as delivery checks
+
+☑️ Identified `master` as the intended Pull Request target
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented the automated research report agent workflow
+
+☑️ Integrated CrewAI into the research workflow
+
+☑️ Generated and saved the research report
+
+☑️ Saved execution evidence
+
+☑️ Integrated Ragas Faithfulness evaluation
+
+☑️ Investigated evaluation failures using isolated diagnostic scripts
+
+☑️ Identified local model memory, timeout, and structured-output limitations
+
+☑️ Preserved the original report and execution evidence
+
+☑️ Cleaned up temporary diagnostic scripts
+
+☑️ Restored the tracked source file to its committed version
+
+☑️ Confirmed that the working tree was clean before creating the self-review
+
+☑️ Committed and pushed the implementation
+
+☑️ Completed the required W9D5 CIA interactions
+
+☑️ Prepared the separate self-review document
+
+☑️ Identified the remaining test, quality, evaluation, and submission checks
+
+☑️ Identified remote branch and Pull Request verification as final delivery considerations
+
+## Final Assessment
+
+**Implementation commit:** `6f753eb`
+
+**Implementation commit message:** `feat: implement W9D5 automated research report agent`
+
+**Branch:** `feat/aiml-W9-Ramya`
+
+**CIA interactions:** Completed
+
+**Research workflow:** Implemented
+
+**Research report:** `outputs/automated_research_report.md`
+
+**Execution evidence:** `outputs/run_evidence.json`
+
+**Ragas Faithfulness evaluation:** Integrated; full evaluation remains unresolved
+
+**Diagnostic findings:** Reduced-input scoring succeeded, but structured-output parsing and full evaluation reliability remain issues
+
+**Git status:** Clean before creating the self-review
+
+**Implementation status:** Implementation committed and pushed
+
+**Known limitations:** Local model memory constraints, evaluation timeouts, and unreliable structured output from the smaller model
+
+**Remaining delivery work:** Finalize the self-review commit, verify test and code-quality results, address or document the evaluation limitation, and confirm the remote branch and Pull Request configuration.
