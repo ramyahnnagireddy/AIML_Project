@@ -1,0 +1,15 @@
+{
+  "questions_evaluated": 10,
+  "documents_indexed": 5,
+  "metrics": {
+    "top_1_accuracy": {
+      "bm25": 0.8,
+      "dense": 1.0
+    },
+    "mean_precision_at_3": {
+      "bm25": 0.3333333333333333,
+      "dense": 0.3333
+    }
+  },
+  "conclusion": "Dense retrieval performed better on top-1 accuracy for this 10-question evaluation. Both methods had the same mean Precision@3."
+}

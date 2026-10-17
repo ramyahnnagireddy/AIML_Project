@@ -1,0 +1,31 @@
+W5D4 - ChromaDB Semantic Search
+============================================================
+
+Embedding model: nomic-embed-text:latest
+Embedding dimensions: 768
+Documents added: 20
+Distance metric: cosine
+
+SIMILARITY SEARCH
+------------------------------------------------------------
+Query: How can computers find documents based on meaning?
+Top 5 results:
+1. doc_17 | distance=0.2869 | {'topic': 'retrieval', 'category': 'semantic_search'} | Semantic search retrieves information based on meaning rather than exact keywords.
+2. doc_13 | distance=0.3896 | {'category': 'nlp', 'topic': 'language'} | Natural Language Processing allows computers to process human language.
+3. doc_15 | distance=0.4049 | {'topic': 'vectors', 'category': 'embeddings'} | Embeddings represent text as numerical vectors capturing semantic meaning.
+4. doc_16 | distance=0.4618 | {'topic': 'retrieval', 'category': 'vector_database'} | Vector databases store embeddings and support similarity search.
+5. doc_18 | distance=0.4744 | {'topic': 'retrieval', 'category': 'rag'} | Retrieval Augmented Generation combines retrieved context with an LLM.
+
+METADATA FILTERING
+------------------------------------------------------------
+Filter: category='embeddings'
+Query: How are text vectors used for retrieving information?
+Filtered results:
+1. doc_15 | distance=0.3423 | {'topic': 'vectors', 'category': 'embeddings'} | Embeddings represent text as numerical vectors capturing semantic meaning.
+
+MANUAL VERIFICATION
+------------------------------------------------------------
+Similarity search returned documents related to semantic meaning and retrieval.
+Metadata filtering returned only documents with category='embeddings'.
+
+STATUS: SUCCESS

@@ -1,0 +1,98 @@
+W6D3 TASK 1 - LANGCHAIN CHAIN
+==================================================
+Pipeline: PromptTemplate -> Ollama LLM -> StrOutputParser
+Model: llama3.2:3b
+
+INPUT 1: What is machine learning?
+RESPONSE:
+Welcome! I'm excited to introduce you to the world of machine learning.
+
+Machine learning is a way to train computers to make decisions or predictions based on data. Yes, you read that right - computers!
+
+Imagine you're trying to teach a child to recognize pictures of cats and dogs. You show them many pictures and say "this is a cat" or "this is a dog." Over time, the child becomes really good at recognizing cats and dogs just by looking at the pictures.
+
+Machine learning works in a similar way. We show computers many examples of data (like pictures of cats and dogs) and teach them to recognize patterns and make decisions based on that data. The computer becomes really good at recognizing patterns and making predictions on its own!
+
+Here's a simple example:
+
+Suppose you want a computer to guess whether a new picture is of a cat or a dog. You show it 100 pictures of cats and 100 pictures of dogs, and say "these are all cats" and "these are all dogs." The computer looks for patterns in the pictures and learns to recognize the features that make a picture a cat or a dog. After a while, the computer is so good at recognizing cats and dogs that it can guess correctly even if you show it a new picture it's never seen before!
+
+That's machine learning in a nutshell!
+--------------------------------------------------
+INPUT 2: What is a neural network?
+RESPONSE:
+Welcome to the world of Artificial Intelligence (AI) and Machine Learning (ML)! I'm excited to help you understand the basics.
+
+**What is a Neural Network?**
+
+A neural network is a computer system inspired by the human brain. It's a collection of interconnected nodes (or "neurons") that process and transmit information. Just like how our brain processes information, a neural network tries to mimic this process to make decisions or predictions.
+
+**How does it work?**
+
+Imagine a network of interconnected "neurons" that take in input data, process it, and then send the output to other nodes. Each node applies a simple transformation to the input data, like multiplying or adding, and then sends the result to the next node.
+
+**Example:**
+
+Let's say we want to build a neural network to recognize images of dogs and cats. We collect a dataset of images and label them as either "dog" or "cat".
+
+1. We start with a simple node that takes in the image pixels as input.
+2. The node applies a transformation, like subtracting the average pixel value, to the input data.
+3. The transformed data is then sent to another node, which applies another transformation, like scaling the data.
+4. The output of the second node is sent to the final node, which makes a prediction (e.g., "dog" or "cat").
+
+Voilà! The neural network has processed the input image and made a prediction.
+
+That's a basic overview of neural networks! I hope this example helped you understand the concept. Do you have any questions or would you like to explore further?
+--------------------------------------------------
+INPUT 3: What is overfitting?
+RESPONSE:
+I'd be happy to explain overfitting in simple terms!
+
+**What is Overfitting?**
+
+Overfitting is when a model (like a machine learning algorithm) becomes too good at fitting the training data, but not well enough at predicting new, unseen data. In other words, it's when a model becomes too specialized to the training data and loses its ability to generalize to other situations.
+
+**Example:**
+
+Imagine you're trying to predict the price of houses in a neighborhood based on features like the number of bedrooms and square footage. You train a model on a dataset of actual house prices and feature values.
+
+The model is so good at predicting prices for houses in the training neighborhood that it starts to make wild guesses for prices of houses that don't even exist in the training neighborhood! For example, it might predict a price of $1 million for a tiny studio apartment with no backyard.
+
+This is overfitting, because the model is too specialized to the training data and can't generalize well to new, unseen data.
+
+Does that make sense?
+--------------------------------------------------
+INPUT 4: What is an API?
+RESPONSE:
+Welcome to the world of AI and ML!
+
+So, you want to know about APIs?
+
+**What is an API?**
+
+An API (Application Programming Interface) is like a messenger between two different systems. Imagine you're at a restaurant, and you want to order food. You can't just walk into the kitchen and make your own food (because that's not how it works!). Instead, you give your order to the waiter, who takes it to the kitchen staff. They then prepare your food and give it back to the waiter, who hands it to you.
+
+In the same way, an API acts as a "waiter" between two systems. One system (called the "client") needs data or services from another system (called the "server"). The API receives the request from the client, sends it to the server, and then brings the response back to the client.
+
+**Example:**
+
+Let's say you're building an app that allows users to book flights. You want to retrieve flight information from a database that stores flight data. Instead of copying the entire database into your app, you can use an API to connect to the database and fetch the required information. The API acts as a messenger, allowing your app to request flight data from the database without having to store the entire database in your app.
+
+In simple terms, APIs enable different systems to communicate with each other, making it easier to build and use applications.
+
+Now, go forth and build some awesome apps!
+--------------------------------------------------
+INPUT 5: What is LangChain?
+RESPONSE:
+Welcome to our AI/ML mentorship series!
+
+Today, we're going to explore LangChain, a popular open-source library that makes it easy to build web applications that integrate with artificial intelligence (AI) and machine learning (ML) models.
+
+In simple terms, LangChain is a toolkit that helps you create web applications that can communicate with AI/ML models, allowing you to build more intelligent and interactive applications.
+
+Here's a simple example to illustrate this:
+
+Imagine you're building a chatbot website that uses a pre-trained language model to respond to user queries. With LangChain, you can easily integrate the chatbot's language model into your website, allowing it to understand and respond to user input. LangChain provides a simple and efficient way to connect your web application to AI/ML models, making it easier to build intelligent and interactive applications.
+
+That's a basic overview of LangChain! Do you have any questions or would you like to learn more about its features and applications?
+--------------------------------------------------

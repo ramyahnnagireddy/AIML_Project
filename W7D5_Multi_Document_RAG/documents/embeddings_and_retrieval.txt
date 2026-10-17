@@ -1,0 +1,1 @@
+Vector databases store vector representations of data and support similarity search. Text embedding models convert text into numerical vectors. A retrieval system can compare a question embedding with document embeddings to find semantically related passages. Retrieval quality depends on chunking, embedding quality, and the relevance of the stored documents.

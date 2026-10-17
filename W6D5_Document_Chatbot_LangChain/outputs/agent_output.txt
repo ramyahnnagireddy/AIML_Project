@@ -1,0 +1,21 @@
+W6D5 - TWO-TOOL AGENT TEST
+
+Task 1: Use the web search tool to search for LangChain agents.
+Agent: LangChain agents are a type of agent that uses the LangChain framework to interact with various data sources and perform tasks. LangChain agents are designed to be flexible and customizable, allowing users to create agents that can perform a wide range of tasks, such as data processing, machine learning, and more.
+
+LangChain agents typically consist of a combination of different components, including:
+
+1. Data sources: These are the sources of data that the agent will use to perform its tasks. This can include databases, APIs, files, and more.
+2. Agents: These are the individual components that make up the agent. Agents can be thought of as "tasks" that the agent will perform.
+3. Pipelines: These are the sequences of agents that the agent will use to perform its tasks. Pipelines can be thought of as "workflows" that the agent will follow.
+
+LangChain agents are often used in applications such as data processing, machine learning, and automation. They are particularly useful in situations where multiple tasks need to be performed in a specific order, or where data needs to be processed in a specific way.
+
+Overall, LangChain agents are a powerful tool for building flexible and customizable agents that can perform a wide range of tasks.
+
+Task 2: Calculate 125 * 24.
+Agent: 125 * 24 = 3000
+
+Task 3: Use the calculator to calculate 48 / 6.
+Agent: The result of 48 divided by 6 is 8.
+
