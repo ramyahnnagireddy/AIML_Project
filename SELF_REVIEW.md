@@ -4962,3 +4962,581 @@ Recorded final test results: **5 passed**.
 **Known limitations:** Local model memory constraints, evaluation timeouts, and unreliable structured output from the smaller model
 
 **Remaining delivery work:** Finalize the self-review commit, verify test and code-quality results, address or document the evaluation limitation, and confirm the remote branch and Pull Request configuration.
+
+# Self-Review Checklist — W10D1 LangGraph Stateful Agent Graphs
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W10D1_LangGraph_Stateful_Agent_Graphs` project directory
+
+☑️ Created the `app/` directory for application code
+
+☑️ Created `app/__init__.py`
+
+☑️ Created the `tests/` directory
+
+☑️ Created the `outputs/` directory
+
+☑️ Implemented the LangGraph stateful agent workflow
+
+☑️ Configured the three-node graph: `classify`, `route`, and `respond`
+
+☑️ Used typed state to share information between graph nodes
+
+☑️ Configured in-memory checkpointing with `InMemorySaver`
+
+☑️ Created the project README
+
+☑️ Kept W10D1 work on the `feat/aiml-W10-Ramya` feature branch
+
+☑️ Reviewed the project structure and required files
+
+## 2. LangGraph Stateful Agent Graph
+
+☑️ Implemented the `classify` node
+
+☑️ Implemented the `route` node
+
+☑️ Implemented the `respond` node
+
+☑️ Configured the graph entry point using `START`
+
+☑️ Configured the graph completion point using `END`
+
+☑️ Added conditional edges based on the classification result
+
+☑️ Routed general requests directly to the response node
+
+☑️ Routed review-required requests through the human-review workflow
+
+☑️ Used graph state to preserve classification and response information
+
+☑️ Compiled the graph with checkpoint support
+
+☑️ Implemented deterministic responses for the demonstration
+
+## 3. Conditional Routing
+
+☑️ Implemented classification into `general` and `needs_review`
+
+☑️ Added keyword-based classification for review-required requests
+
+☑️ Implemented the `choose_route` routing function
+
+☑️ Verified that review-required requests select the review route
+
+☑️ Verified that general requests select the response route
+
+☑️ Added automated tests for conditional routing
+
+☑️ Confirmed both routing tests passed
+
+## 4. Human-in-the-Loop Interrupts
+
+☑️ Imported LangGraph's `interrupt` functionality
+
+☑️ Implemented a human-review interrupt in the `route` node
+
+☑️ Included the input, classification, and available decisions in the interrupt payload
+
+☑️ Configured checkpointing to preserve graph execution state
+
+☑️ Implemented resumption using `Command(resume=...)`
+
+☑️ Tested the pause behavior for a review-required request
+
+☑️ Verified that the graph returns an interrupt before human input is provided
+
+☑️ Tested resumption with the human decision `approve`
+
+☑️ Verified that the final response reflects the human decision
+
+☑️ Tested both approval and rejection scenarios
+
+☑️ Confirmed the interrupt/resume automated test passed
+
+## 5. Five-Input Demonstration & Evidence
+
+☑️ Created five demonstration inputs
+
+☑️ Tested a general LangGraph question
+
+☑️ Tested a Python lists question
+
+☑️ Tested an urgent customer-record deletion request
+
+☑️ Tested an MLflow question
+
+☑️ Tested a password-sharing question
+
+☑️ Verified the expected classification for all five inputs
+
+☑️ Verified the approval response for the review-required scenario
+
+☑️ Verified the rejection response for the review-required scenario
+
+☑️ Generated the JSON execution evidence
+
+☑️ Saved the evidence to `outputs/run_evidence.json`
+
+☑️ Recorded the graph node names in the evidence
+
+☑️ Recorded the inputs, expected classifications, actual classifications, decisions, and responses
+
+☑️ Confirmed all five demonstration scenarios passed
+
+**Evidence result:** 5/5 scenarios passed.
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_graph.py`
+
+☑️ Added parameterized tests for the five demonstration scenarios
+
+☑️ Added a test for conditional routing
+
+☑️ Added a test for human interrupt and resume
+
+☑️ Verified classification and response for each scenario
+
+☑️ Verified human decisions for review-required inputs
+
+☑️ Executed the test suite using pytest
+
+☑️ Confirmed all seven tests passed
+
+**Test result:** 7 passed.
+
+## 7. Code Quality & Validation
+
+☑️ Ran Ruff validation
+
+☑️ Identified import-ordering and formatting issues
+
+☑️ Applied automatic fixes using `python -m ruff check . --fix`
+
+☑️ Fixed the reported Ruff issues
+
+☑️ Reran Ruff validation successfully
+
+☑️ Confirmed the final Ruff output was `All checks passed!`
+
+☑️ Ran `git diff --check`
+
+☑️ Identified trailing whitespace and extra blank-line issues before the implementation commit
+
+☑️ Cleaned the affected Python files
+
+☑️ Staged the whitespace corrections
+
+☑️ Confirmed the staged whitespace check produced no errors
+
+☑️ Identified Windows LF-to-CRLF messages as line-ending warnings rather than whitespace errors
+
+## 8. CIA Review
+
+☑️ Completed all required CIA interactions for W10D1
+
+☑️ Completed the CIA review workflow for the implementation
+
+☑️ Completed the required minimum of two CIA interactions
+
+☑️ Completed the CIA review activities for today's task
+
+☑️ Marked CIA interactions as completed in the self-review checklist
+
+## 9. Git & Version Control
+
+☑️ Created and switched to the `feat/aiml-W10-Ramya` branch
+
+☑️ Confirmed the branch was correct before implementation
+
+☑️ Staged the W10D1 implementation files
+
+☑️ Created the implementation commit
+
+☑️ Used the required implementation commit message: `feat: langgraph — stateful agent graph with routing`
+
+☑️ Recorded the initial implementation commit hash: `6102e3e`
+
+☑️ Identified and corrected trailing whitespace after the initial commit
+
+☐ Amended the implementation commit to include the whitespace corrections
+
+☐ Created the separate `SELF_REVIEW.md` documentation commit
+
+☐ Verified the final implementation and self-review commit hashes
+
+☐ Confirmed the working tree is clean after both commits
+
+☐ Pushed `feat/aiml-W10-Ramya` to the remote repository
+
+☐ Verified the remote branch
+
+☐ Opened a pull request targeting `master`
+
+☐ Verified the pull request URL and status
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented the three-node LangGraph
+
+☑️ Implemented conditional routing
+
+☑️ Implemented human-in-the-loop interrupt and resume
+
+☑️ Tested five sample inputs
+
+☑️ Verified approval and rejection paths
+
+☑️ Added automated tests
+
+☑️ Generated JSON execution evidence
+
+☑️ Confirmed 5/5 demonstration scenarios passed
+
+☑️ Confirmed seven pytest tests passed
+
+☑️ Confirmed Ruff validation passed after automatic fixes
+
+☑️ Completed all required CIA interactions
+
+☐ Finalized the amended implementation commit
+
+☐ Created the separate self-review commit
+
+☐ Pushed the branch to the remote repository
+
+☐ Created the pull request to `master`
+
+## Final Assessment
+
+**Implementation commit message:** `feat: langgraph — stateful agent graph with routing`
+
+**Initial implementation commit hash:** `6102e3e`
+
+**Branch:** `feat/aiml-W10-Ramya`
+
+**Graph nodes:** `classify`, `route`, `respond`
+
+**Conditional routing:** Implemented and tested
+
+**Human-in-the-loop:** Interrupt, checkpoint, approval, rejection, and resume tested
+
+**Demonstration scenarios:** 5/5 passed
+
+**Automated tests:** 7 passed
+
+**Ruff:** All checks passed after automatic fixes
+
+**Execution evidence:** `outputs/run_evidence.json`
+
+**CIA interactions:** All required interactions completed
+
+**Implementation status:** Initial implementation commit created; whitespace corrections staged and awaiting amendment verification
+
+**Self-review status:** Checklist prepared; separate documentation commit pending
+
+**Remote delivery status:** Push and pull request remain pending verification
+
+**Known limitations:** The demonstration uses keyword-based classification and deterministic responses. It does not call an external LLM or execute real-world actions. The human-review workflow is a learning example and is not a production authorization system.
+
+# Self-Review Checklist — W10D2 LangGraph State Machines & Conditional Edges
+
+## 1. Project Setup & Configuration
+
+☑️ Created the `W10D2_LangGraph_State_Machines_Conditional_Edges` project directory
+
+☑️ Created the `app/` directory for application code
+
+☑️ Created `app/__init__.py`
+
+☑️ Created the `tests/` directory
+
+☑️ Created `tests/__init__.py`
+
+☑️ Created the `outputs/` directory
+
+☑️ Implemented the LangGraph state machine
+
+☑️ Configured the three-node graph: `classify`, `route`, and `respond`
+
+☑️ Used typed state to share information between graph nodes
+
+☑️ Configured in-memory checkpointing using `MemorySaver`
+
+☑️ Kept W10D2 work on the `feat/aiml-W10-Ramya` feature branch
+
+☑️ Kept W10D2 implementation files separate from the W10D1 project
+
+☑️ Inspected the project structure
+
+☐ Created and verified the W10D2 README
+
+## 2. LangGraph State Machine Implementation
+
+☑️ Implemented the `classify` node
+
+☑️ Implemented the `route` node
+
+☑️ Implemented the `respond` node
+
+☑️ Configured the graph entry point using `START`
+
+☑️ Configured the graph completion point using `END`
+
+☑️ Added conditional edges based on classification output
+
+☑️ Routed general requests directly to the response node
+
+☑️ Routed urgent, billing, and technical requests through the routing node
+
+☑️ Preserved classification and routing information in the graph state
+
+☑️ Compiled the graph with checkpoint support
+
+☑️ Implemented deterministic responses for the demonstration
+
+☑️ Used separate thread IDs for the five routing demonstration inputs
+
+## 3. Conditional Routing
+
+☑️ Implemented keyword-based classification
+
+☑️ Classified urgent requests as `urgent`
+
+☑️ Classified payment and invoice requests as `billing`
+
+☑️ Classified code-related requests as `technical`
+
+☑️ Classified other requests as `general`
+
+☑️ Implemented the `choose_next` conditional routing function
+
+☑️ Verified technical requests route to `technical_support`
+
+☑️ Verified billing requests route to `billing_support`
+
+☑️ Verified urgent requests route to `urgent_support`
+
+☑️ Verified general requests bypass the routing node
+
+☑️ Added an automated test covering all five sample inputs
+
+☑️ Confirmed the routing test passed
+
+**Routing result:** All five sample inputs produced their expected classifications and routes.
+
+## 4. Human-in-the-Loop Interrupts
+
+☑️ Imported LangGraph's `interrupt` functionality
+
+☑️ Implemented an interrupt in the `respond` node for urgent requests
+
+☑️ Included the request, category, route, and review instructions in the interrupt payload
+
+☑️ Configured checkpointing to preserve graph execution state
+
+☑️ Implemented resumption using `Command(resume=...)`
+
+☑️ Verified that an urgent request pauses for human review
+
+☑️ Verified that the paused invocation returns an interrupt payload
+
+☑️ Tested resumption with the decision `approve`
+
+☑️ Verified that the approved response reflects the decision
+
+☑️ Tested resumption with the decision `reject`
+
+☑️ Verified that the rejection response requests further review
+
+☑️ Confirmed the interrupt/resume automated tests passed
+
+**Human-in-the-loop result:** Both approval and rejection paths passed automated tests. The demo uses a simulated approval decision rather than waiting for interactive user input.
+
+## 5. Five-Input Demonstration & Evidence
+
+☑️ Created five demonstration inputs
+
+☑️ Tested a Python code error
+
+☑️ Tested a payment refund request
+
+☑️ Tested an urgent emergency request
+
+☑️ Tested a general AI question
+
+☑️ Tested an invoice issue
+
+☑️ Verified the expected classification for all five inputs
+
+☑️ Verified the expected route for all five inputs
+
+☑️ Added a separate human-review demonstration
+
+☑️ Observed the human-review interrupt payload
+
+☑️ Verified that the graph resumed and returned an approved response
+
+☑️ Saved demonstration output to `outputs/demo_output.txt`
+
+☑️ Saved pytest output to `outputs/test_results.txt`
+
+☐ Generated JSON execution evidence with per-input results and graph-node metadata
+
+☐ Captured and verified a screenshot of the final execution
+
+**Evidence result:** 5/5 demonstration inputs were classified and routed as expected. The separate human-review demonstration paused and resumed successfully.
+
+## 6. Automated Testing
+
+☑️ Created `tests/test_graph.py`
+
+☑️ Added a test for the five sample classifications and routes
+
+☑️ Added a test for a general request response
+
+☑️ Added a test for a billing request response
+
+☑️ Added a test for human interrupt and approval-based resumption
+
+☑️ Added a test for human rejection and resumption
+
+☑️ Executed the test suite using pytest
+
+☑️ Verified the classification and route for all five sample inputs
+
+☑️ Verified that the general request produces a response
+
+☑️ Verified that the billing request produces a response
+
+☑️ Verified that an urgent request interrupts before completing
+
+☑️ Verified that approval and rejection produce different responses
+
+**Test result:** 5 passed.
+
+## 7. Code Quality & Validation
+
+☑️ Ran Ruff validation
+
+☑️ Identified import-ordering issues in three Python files
+
+☑️ Applied automatic import fixes using `python -m ruff check "$Project" --fix`
+
+☑️ Reran Ruff validation successfully
+
+☑️ Confirmed the final Ruff output was `All checks passed!`
+
+☑️ Ran `git diff --check`
+
+☑️ Confirmed that the whitespace check produced no errors before the implementation commit
+
+☑️ Ran Python compile validation using `python -m compileall -q "$Project"`
+
+☑️ Confirmed that compilation completed without errors
+
+☑️ Reran pytest after the import fixes
+
+**Validation result:** Ruff passed, all five tests passed, and compile validation completed without errors.
+
+## 8. CIA Review
+
+☐ Completed the first required W10D2 CIA Full Stack Mentor Mode interaction
+
+☐ Completed the second required W10D2 CIA Full Stack Mentor Mode interaction
+
+☐ Recorded the questions asked during the CIA interactions
+
+☐ Recorded the feedback received and changes made
+
+☐ Completed the required minimum of two CIA interactions for W10D2
+
+☐ Updated this checklist with verified CIA completion evidence
+
+**CIA status:** Pending confirmation. Do not mark these items complete until the W10D2 mentor interactions have actually been completed and recorded.
+
+## 9. Git & Version Control
+
+☑️ Confirmed the active branch was `feat/aiml-W10-Ramya`
+
+☑️ Kept the root `SELF_REVIEW.md` separate from the W10D2 implementation commit
+
+☑️ Staged the W10D2 project files
+
+☑️ Checked the staged changes before committing
+
+☑️ Created the W10D2 implementation commit
+
+☑️ Used the implementation commit message `feat: langgraph — stateful agent graph with routing`
+
+☑️ Recorded the W10D2 implementation commit hash: `35e15b9`
+
+☐ Created the separate W10D2 documentation commit
+
+☐ Updated and verified the root `SELF_REVIEW.md` for W10D2
+
+☐ Created a separate self-review documentation commit
+
+☐ Verified the final implementation, documentation, and self-review commit hashes
+
+☐ Confirmed the working tree is clean after all commits
+
+☐ Pushed the latest W10D2 commits to `origin/feat/aiml-W10-Ramya`
+
+☐ Verified that the remote branch contains the latest commits
+
+☐ Opened or updated a pull request targeting `master`
+
+☐ Verified the pull request URL and status
+
+**Implementation commit:** `35e15b9`
+
+**Implementation commit message:** `feat: langgraph — stateful agent graph with routing`
+
+**Branch:** `feat/aiml-W10-Ramya`
+
+**Remote delivery:** Pending verification.
+
+## 10. Final Delivery Checklist
+
+☑️ Implemented the three-node LangGraph
+
+☑️ Implemented conditional routing
+
+☑️ Implemented human-in-the-loop interruption and resumption
+
+☑️ Tested five sample inputs
+
+☑️ Verified the approval path
+
+☑️ Verified the rejection path
+
+☑️ Added automated tests
+
+☑️ Saved demonstration output
+
+☑️ Saved pytest output
+
+☑️ Confirmed five pytest tests passed
+
+☑️ Confirmed Ruff validation passed
+
+☑️ Confirmed Python compilation passed
+
+☐ Generated structured JSON execution evidence
+
+☐ Captured a final execution screenshot
+
+☐ Created and committed the W10D2 README
+
+☐ Completed and documented both required CIA interactions
+
+☐ Created the separate documentation commit
+
+☐ Updated and separately committed the root self-review
+
+☐ Pushed all W10D2 commits to the remote branch
+
+☐ Created or updated the pul
