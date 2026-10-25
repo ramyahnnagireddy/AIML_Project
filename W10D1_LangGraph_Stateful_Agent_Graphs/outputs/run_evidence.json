@@ -1,0 +1,58 @@
+{
+  "task": "W10D1 LangGraph Stateful Agent Graphs",
+  "created_at_utc": "2026-10-25T09:21:56.729452+00:00",
+  "node_names": [
+    "classify",
+    "route",
+    "respond"
+  ],
+  "scenarios": [
+    {
+      "scenario": 1,
+      "input": "What is LangGraph?",
+      "expected_classification": "general",
+      "actual_classification": "general",
+      "human_decision": null,
+      "response": "General request received: What is LangGraph?",
+      "passed": true
+    },
+    {
+      "scenario": 2,
+      "input": "Explain Python lists.",
+      "expected_classification": "general",
+      "actual_classification": "general",
+      "human_decision": null,
+      "response": "General request received: Explain Python lists.",
+      "passed": true
+    },
+    {
+      "scenario": 3,
+      "input": "urgent: delete customer records",
+      "expected_classification": "needs_review",
+      "actual_classification": "needs_review",
+      "human_decision": "approve",
+      "response": "Human review approved. Proceed only with the authorized next steps.",
+      "passed": true
+    },
+    {
+      "scenario": 4,
+      "input": "How does MLflow track experiments?",
+      "expected_classification": "general",
+      "actual_classification": "general",
+      "human_decision": null,
+      "response": "General request received: How does MLflow track experiments?",
+      "passed": true
+    },
+    {
+      "scenario": 5,
+      "input": "Should I share my password?",
+      "expected_classification": "needs_review",
+      "actual_classification": "needs_review",
+      "human_decision": "reject",
+      "response": "Human review decision: reject. Do not proceed without appropriate authorization.",
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "total": 5
+}

@@ -1,0 +1,1 @@
+Retrieval-Augmented Generation, commonly called RAG, combines document retrieval with a language model. A RAG pipeline retrieves relevant passages from a knowledge collection and provides them as context to a language model. This can improve factual grounding and help answer questions using a private document collection.

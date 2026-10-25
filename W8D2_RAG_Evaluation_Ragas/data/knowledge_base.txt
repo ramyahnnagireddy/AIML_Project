@@ -1,0 +1,52 @@
+
+RETRIEVAL-AUGMENTED GENERATION (RAG)
+
+RAG combines document retrieval with a language model to answer questions using external information. Its main stages are document indexing, retrieval of relevant information, and answer generation. RAG can reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate every hallucination.
+
+DOCUMENT CHUNKING
+
+Chunking divides long documents into smaller text segments before they are embedded and indexed. Small chunks can improve retrieval precision but may omit surrounding information needed to answer a question. Larger chunks preserve more context but may contain unrelated information.
+
+CHUNK OVERLAP
+
+Chunk overlap repeats a portion of text between adjacent chunks. It helps preserve facts that might otherwise be divided across chunk boundaries. Excessive overlap can create redundant content and increase storage and retrieval costs.
+
+EMBEDDINGS AND SEMANTIC SEARCH
+
+Embeddings represent text as numerical vectors. Texts with related meanings can have similar vector representations even when they use different words. Semantic search uses vector similarity to find information relevant to a user's question.
+
+CHROMADB VECTOR DATABASE
+
+ChromaDB stores text embeddings and can associate them with documents and metadata. It supports similarity-based retrieval from an indexed collection. A RAG pipeline can use ChromaDB to retrieve candidate text chunks for a question.
+
+TOP-K RETRIEVAL
+
+The top-k retrieval setting controls how many document chunks are returned for each question. A small k can omit relevant evidence. A larger k may improve information coverage but can also introduce irrelevant chunks that distract the language model.
+
+LANGCHAIN PIPELINE
+
+LangChain provides components for connecting document processing, retrievers, prompts, and language models. A RAG application can retrieve text from a vector store, place that text into a prompt, and generate an answer grounded in the supplied evidence.
+
+LOCAL LANGUAGE MODELS
+
+Ollama can run supported language models locally. A local chat model can generate answers from retrieved context, while a compatible local embedding model can convert document chunks and questions into vectors. The required models must be installed and available to the application.
+
+RAG EVALUATION DATASET
+
+A RAG evaluation dataset contains questions and reference answers. During evaluation, the application also records its generated responses and retrieved contexts. Using the same questions and reference answers before and after an optimisation makes the comparison more consistent.
+
+FAITHFULNESS AND ANSWER RELEVANCY
+
+Faithfulness measures whether claims in a generated answer are supported by the retrieved context. Answer relevancy measures whether the generated response appropriately addresses the question. A response can be relevant while still containing unsupported claims.
+
+CONTEXT PRECISION AND CONTEXT RECALL
+
+Context precision measures whether relevant retrieved chunks are ranked ahead of irrelevant chunks. Context recall measures how much of the information needed to support the reference answer is present in the retrieved context. Precision focuses on retrieval relevance, while recall focuses on information coverage.
+
+RAG OPTIMISATION
+
+RAG optimisation involves changing a configuration such as chunk size or retrieval top-k and evaluating the result. The baseline and optimised runs should use the same evaluation questions. Metric scores should be compared to determine whether the configuration change improved the weakest area without hiding regressions in other metrics.
+
+GROUNDING AND MISSING INFORMATION
+
+A RAG system should base its response on the information provided in the retrieved context. If the context does not contain enough evidence to answer a question, the system should clearly acknowledge that limitation rather than inventing a fact.

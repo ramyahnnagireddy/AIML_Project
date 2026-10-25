@@ -1,0 +1,140 @@
+{
+  "retriever": "BM25",
+  "created_at_utc": "2026-10-15T14:08:52.406441+00:00",
+  "document_count": 5,
+  "question_count": 10,
+  "mean_precision_at_3": 0.3333333333333333,
+  "top_1_accuracy": 0.8,
+  "results": [
+    {
+      "id": 1,
+      "question": "What is computer vision?",
+      "expected_source": "computer_vision.pdf",
+      "retrieved_sources": [
+        "computer_vision.pdf",
+        "natural_language_processing.pdf",
+        "mlops.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": true,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 2,
+      "question": "What are common applications of computer vision?",
+      "expected_source": "computer_vision.pdf",
+      "retrieved_sources": [
+        "deep_learning.pdf",
+        "computer_vision.pdf",
+        "natural_language_processing.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": false,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 3,
+      "question": "What is deep learning?",
+      "expected_source": "deep_learning.pdf",
+      "retrieved_sources": [
+        "deep_learning.pdf",
+        "mlops.pdf",
+        "machine_learning.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": true,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 4,
+      "question": "What are neural networks used for?",
+      "expected_source": "deep_learning.pdf",
+      "retrieved_sources": [
+        "deep_learning.pdf",
+        "natural_language_processing.pdf",
+        "computer_vision.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": true,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 5,
+      "question": "What is machine learning?",
+      "expected_source": "machine_learning.pdf",
+      "retrieved_sources": [
+        "mlops.pdf",
+        "machine_learning.pdf",
+        "natural_language_processing.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": false,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between supervised and unsupervised learning?",
+      "expected_source": "machine_learning.pdf",
+      "retrieved_sources": [
+        "machine_learning.pdf",
+        "deep_learning.pdf",
+        "mlops.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": true,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 7,
+      "question": "What is MLOps?",
+      "expected_source": "mlops.pdf",
+      "retrieved_sources": [
+        "mlops.pdf",
+        "natural_language_processing.pdf",
+        "computer_vision.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": true,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 8,
+      "question": "Why is model monitoring important in production?",
+      "expected_source": "mlops.pdf",
+      "retrieved_sources": [
+        "mlops.pdf",
+        "natural_language_processing.pdf",
+        "computer_vision.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": true,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 9,
+      "question": "What is natural language processing?",
+      "expected_source": "natural_language_processing.pdf",
+      "retrieved_sources": [
+        "natural_language_processing.pdf",
+        "mlops.pdf",
+        "computer_vision.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": true,
+      "manual_review": "Pending"
+    },
+    {
+      "id": 10,
+      "question": "What are common natural language processing tasks?",
+      "expected_source": "natural_language_processing.pdf",
+      "retrieved_sources": [
+        "natural_language_processing.pdf",
+        "deep_learning.pdf",
+        "machine_learning.pdf"
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "top_1_correct": true,
+      "manual_review": "Pending"
+    }
+  ]
+}

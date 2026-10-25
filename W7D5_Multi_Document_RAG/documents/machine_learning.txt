@@ -1,0 +1,1 @@
+Machine learning enables computers to learn patterns from data. Supervised learning uses labeled examples, unsupervised learning discovers structure in unlabeled data, and reinforcement learning learns through rewards and interactions. Model evaluation should use appropriate metrics and data that was not used for training.

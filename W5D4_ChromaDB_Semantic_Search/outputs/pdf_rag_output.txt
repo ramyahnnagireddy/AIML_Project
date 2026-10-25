@@ -1,0 +1,76 @@
+W5D4 - PDF Retrieval Augmented Generation
+============================================================
+
+PDF: sample_document.pdf
+Pages extracted: 1
+Chunks created: 5
+Embedding model: nomic-embed-text:latest
+LLM model: llama3.2:3b
+Distance metric: cosine
+
+QUERY
+------------------------------------------------------------
+How does Retrieval Augmented Generation work?
+
+TOP-3 RETRIEVED CHUNKS
+------------------------------------------------------------
+
+Rank 1
+Chunk ID: page_1_chunk_4
+Page: 1
+Distance: 0.2894
+Text: n be used to store documents,
+embeddings, and metadata.
+Retrieval Augmented Generation
+Retrieval Augmented Generation (RAG) combines information retrieval with a large language
+model. Relevant document chunks are retrieved from a vector database and provided to the
+language model as context. The model then generates an answer based on the retrieved
+information.
+Ollama
+Ollama allows large language models to run locally. In this project, Ollama is used both for
+generating text embeddings and for g
+
+Rank 2
+Chunk ID: page_1_chunk_3
+Page: 1
+Distance: 0.3860
+Text: eddings
+Text embeddings convert text into numerical vectors. Similar pieces of text tend to have vectors that
+are close together in the embedding space. Embeddings are useful for semantic search and
+retrieval systems.
+Vector Databases
+Vector databases store numerical embeddings and make it possible to efficiently search for vectors
+that are similar to a query. ChromaDB is a vector database that can be used to store documents,
+embeddings, and metadata.
+Retrieval Augmented Generation
+Retrieval Aug
+
+Rank 3
+Chunk ID: page_1_chunk_1
+Page: 1
+Distance: 0.4320
+Text: Introduction to Artificial Intelligence and Machine
+ Learning
+Artificial Intelligence
+Artificial Intelligence (AI) is a field of computer science focused on creating systems that can
+perform tasks that normally require human intelligence. AI systems can process information,
+recognize patterns, understand language, and support decision making.
+Machine Learning
+Machine Learning (ML) is a branch of AI in which algorithms learn patterns from data. Instead of
+explicitly programming every rule, a mach
+
+LLM ANSWER
+------------------------------------------------------------
+The information on how Retrieval Augmented Generation (RAG) works is available in the provided PDF context.
+
+According to Context Chunk 1 (page 1), Retrieval Augmented Generation combines information retrieval with a large language model. Relevant document chunks are retrieved from a vector database and provided to the language model as context. The model then generates an answer based on the retrieved information.
+
+VERIFICATION
+------------------------------------------------------------
+PDF text extraction: PASS
+PDF chunking: PASS
+ChromaDB storage: PASS
+Top-3 retrieval: PASS
+Ollama LLM generation: PASS
+
+STATUS: SUCCESS

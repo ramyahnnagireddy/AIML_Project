@@ -1,0 +1,92 @@
+{
+  "experiment": "W7D4 Ollama Model Comparison",
+  "created_at_utc": "2026-10-14T14:03:41.607490+00:00",
+  "api_endpoint": "http://localhost:11434/api/chat",
+  "system_prompt": "You are a helpful AI/ML learning assistant.\nProvide accurate, beginner-friendly explanations.\nKeep answers clear, focused, and technically correct.\nUse examples when they help explain a concept.\nIf uncertain, acknowledge the uncertainty.",
+  "temperature": 0.2,
+  "models": [
+    "llama3.2:3b",
+    "qwen2.5:3b"
+  ],
+  "questions": [
+    "Explain supervised learning with one simple example.",
+    "What is the difference between classification and regression?",
+    "Explain three important steps in a machine learning project."
+  ],
+  "model_summary": {
+    "llama3.2:3b": {
+      "total_questions": 3,
+      "successful_responses": 3,
+      "failed_responses": 0,
+      "average_latency_seconds": 86.364
+    },
+    "qwen2.5:3b": {
+      "total_questions": 3,
+      "successful_responses": 3,
+      "failed_responses": 0,
+      "average_latency_seconds": 122.769
+    }
+  },
+  "results": [
+    {
+      "status": "success",
+      "model": "llama3.2:3b",
+      "question": "Explain supervised learning with one simple example.",
+      "response": "Supervised learning is a type of machine learning where the algorithm learns from labeled data. In other words, the algorithm is trained on data that already has the correct output or target value associated with it.\n\nHere's a simple example:\n\n**Example: Handwritten Digit Recognition**\n\nImagine you have a dataset of images of handwritten digits (0-9). Each image is labeled with the correct digit it represents (e.g., an image of the number 5 is labeled as 5).\n\nThe goal of supervised learning in this case is to train an algorithm to recognize handwritten digits. The algorithm will learn from the labeled data and try to predict the correct digit for a new, unseen image.\n\n**How it works:**\n\n1. The algorithm is trained on the labeled dataset of images and their corresponding digits.\n2. During training, the algorithm uses the labeled data to learn the patterns and features of the digits.\n3. Once trained, the algorithm is tested on a new, unseen image.\n4. The algorithm uses its learned patterns and features to predict the correct digit for the new image.\n\n**Key aspects:**\n\n* **Labeled data**: The algorithm learns from data that already has the correct output or target value associated with it.\n* **Training and testing**: The algorithm is trained on labeled data and then tested on new, unseen data to evaluate its performance.\n\nSupervised learning is a powerful technique for tasks like image classification, speech recognition, and natural language processing, where the goal is to predict a specific output or target value based on input data.",
+      "latency_seconds": 74.907,
+      "prompt_tokens": 77,
+      "response_tokens": 310,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "qwen2.5:3b",
+      "question": "Explain supervised learning with one simple example.",
+      "response": "Sure! Let's use a simple example to understand supervised learning.\n\n### Example: Predicting Plant Growth\n\nImagine you are a botanist and you want to predict how tall a plant will grow based on the amount of water it receives. You have data from previous experiments where you measured the amount of water given to plants and their corresponding heights.\n\nHere’s how supervised learning would work in this scenario:\n\n1. **Data Collection**: You collect data on the amount of water (in liters) given to plants and their heights (in centimeters). For example:\n   - 1 liter of water: 10 cm height\n   - 2 liters of water: 15 cm height\n   - 3 liters of water: 20 cm height\n   - 4 liters of water: 25 cm height\n\n2. **Training Phase**: You use this data to train a model. The model learns the relationship between the amount of water and the height of the plant. In this case, the model learns that as the amount of water increases, the height of the plant also increases.\n\n3. **Model Training**: You feed the model the data and let it learn the pattern. After training, the model should be able to predict the height of a plant based on the amount of water it receives.\n\n4. **Prediction Phase**: Now, you want to predict the height of a plant that was given 5 liters of water. The model, having learned from the training data, can estimate the height of the plant. For example, the model might predict that a plant given 5 liters of water will be around 27.5 cm tall.\n\n### Key Points in Supervised Learning\n\n- **Input Data**: In our example, the input data is the amount of water given to the plant.\n- **Output Data**: The output data is the height of the plant.\n- **Model**: The model learns the relationship between the input and output data.\n- **Training**: The model is trained using the data to learn the relationship.\n- **Prediction**: Once the model is trained, it can predict the output for new inputs.\n\n### Summary\n\nIn supervised learning, you use labeled data (input and output pairs) to train a model to make predictions. The model learns the relationship between the input and output, allowing it to make accurate predictions on new, unseen data. In our example, the model learned that more water leads to taller plants and can predict the height of a plant given a specific amount of water.",
+      "latency_seconds": 113.829,
+      "prompt_tokens": 65,
+      "response_tokens": 511,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "llama3.2:3b",
+      "question": "What is the difference between classification and regression?",
+      "response": "Classification and regression are two fundamental concepts in machine learning (ML) and statistics.\n\n**Classification**\n\nIn classification, the goal is to predict a categorical label or class that an instance belongs to. For example:\n\n* Spam vs. Not Spam emails\n* Cancer vs. Non-Cancer diagnosis\n* Product category (e.g., electronics, clothing, etc.)\n\nIn classification, the output is typically a binary label (0/1, yes/no, etc.) or a set of discrete categories. The model learns to predict the probability of an instance belonging to each class.\n\n**Regression**\n\nIn regression, the goal is to predict a continuous value that represents the outcome or target variable. For example:\n\n* Predicting house prices based on features like size, location, and number of bedrooms\n* Forecasting stock prices\n* Predicting energy consumption based on temperature and usage patterns\n\nIn regression, the output is a continuous value that can take any real number. The model learns to predict the value of the target variable based on the input features.\n\n**Key differences**\n\nHere are the main differences between classification and regression:\n\n1. **Output type**: Classification outputs a categorical label, while regression outputs a continuous value.\n2. **Prediction goal**: Classification aims to predict a class label, while regression aims to predict a continuous value.\n3. **Error metric**: Classification often uses accuracy, precision, and recall as metrics, while regression uses mean squared error (MSE) or mean absolute error (MAE).\n4. **Model complexity**: Classification models tend to be simpler and more interpretable, while regression models can be more complex and require more data.\n\nIn summary, classification is about predicting a categorical label, while regression is about predicting a continuous value. Both are essential in machine learning, and understanding the differences between them is crucial for choosing the right algorithm and approach for a particular problem.",
+      "latency_seconds": 80.482,
+      "prompt_tokens": 77,
+      "response_tokens": 376,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "qwen2.5:3b",
+      "question": "What is the difference between classification and regression?",
+      "response": "Classification and regression are both types of supervised learning in machine learning, but they are used for different purposes. Let's break down each concept with simple examples.\n\n### Classification\nClassification is used when you want to predict a discrete output. The output is a category or class label. For example, if you are trying to predict whether an email is spam (spam) or not spam (not spam), the output will be either \"spam\" or \"not spam\". Here are a few more examples:\n\n1. **Disease Diagnosis**: Predict whether a patient has a certain disease (e.g., diabetes) based on their medical test results.\n2. **Image Classification**: Determine whether an image contains a cat, dog, or bird.\n3. **Credit Risk Assessment**: Predict whether a loan applicant will default on their loan (default) or not (no default).\n\n### Regression\nRegression is used when you want to predict a continuous output. The output is a real number, not a category. For example, if you are trying to predict the price of a house based on features like the number of rooms, location, and age of the house, the output will be a continuous value (e.g., $200,000, $350,000, etc.). Here are a few more examples:\n\n1. **House Price Prediction**: Predict the price of a house based on its size, location, and number of rooms.\n2. **Temperature Forecast**: Predict the temperature for a specific day based on historical weather data.\n3. **Stock Price Prediction**: Predict the closing price of a stock on a given day based on previous days' prices and other financial indicators.\n\n### Key Differences\n- **Output Type**: Classification deals with discrete categories, while regression deals with continuous values.\n- **Example Outputs**:\n  - Classification: \"Yes\" or \"No\", \"Hot\" or \"Cold\"\n  - Regression: 20°C, 25°C, 30°C\n- **Model Output**: Classification models output probabilities or class labels, while regression models output continuous values.\n- **Error Metrics**: Classification uses metrics like accuracy, precision, recall, and F1 score. Regression uses metrics like mean squared error (MSE), mean absolute error (MAE), and R-squared.\n\nIn summary, classification is used for predicting categories or labels, while regression is used for predicting continuous values.",
+      "latency_seconds": 90.637,
+      "prompt_tokens": 65,
+      "response_tokens": 490,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "llama3.2:3b",
+      "question": "Explain three important steps in a machine learning project.",
+      "response": "Here are three important steps in a machine learning project:\n\n**Step 1: Data Preparation**\n\nData preparation is a crucial step in machine learning. It involves collecting, cleaning, and preprocessing the data to make it suitable for modeling. This step is essential to ensure that the data is accurate, consistent, and relevant to the problem you're trying to solve.\n\nSome common tasks involved in data preparation include:\n\n* Handling missing values\n* Data normalization or scaling\n* Feature engineering (e.g., creating new features from existing ones)\n* Data splitting (e.g., dividing data into training and testing sets)\n\nExample: Suppose you're building a model to predict house prices based on features like number of bedrooms, square footage, and location. You would need to collect and clean the data, handle missing values, and normalize the features to ensure that all features are on the same scale.\n\n**Step 2: Model Selection and Training**\n\nAfter preparing the data, you need to select a suitable machine learning algorithm and train it on the data. This step involves choosing the right model for your problem, tuning its hyperparameters, and training it on the data.\n\nSome common tasks involved in model selection and training include:\n\n* Choosing a suitable algorithm (e.g., linear regression, decision trees, neural networks)\n* Tuning hyperparameters (e.g., learning rate, regularization strength)\n* Training the model on the data\n* Evaluating the model's performance on a validation set\n\nExample: Suppose you've chosen a linear regression model to predict house prices. You would need to tune the learning rate and regularization strength to optimize the model's performance, and then train the model on the data.\n\n**Step 3: Model Evaluation and Deployment**\n\nAfter training the model, you need to evaluate its performance on a test set and deploy it in a production-ready environment. This step involves assessing the model's accuracy, reliability, and scalability, and ensuring that it can be used in real-world applications.\n\nSome common tasks involved in model evaluation and deployment include:\n\n* Evaluating the model's performance on a test set\n* Assessing the model's reliability and robustness\n* Deploying the model in a production-ready environment (e.g., web application, API)\n* Monitoring the model's performance in real-time\n\nExample: Suppose you've trained a linear regression model to predict house prices. You would need to evaluate its performance on a test set, assess its reliability and robustness, and deploy it in a web application that allows users to input features and get predictions.\n\nThese three steps are essential to building a successful machine learning project. Of course, there are many other tasks involved in machine learning, but these three steps provide a solid foundation for getting started.",
+      "latency_seconds": 103.702,
+      "prompt_tokens": 79,
+      "response_tokens": 548,
+      "error": null
+    },
+    {
+      "status": "success",
+      "model": "qwen2.5:3b",
+      "question": "Explain three important steps in a machine learning project.",
+      "response": "Certainly! Here are three important steps in a machine learning project, explained in a beginner-friendly manner:\n\n### 1. Data Collection and Preparation\nThe first step in a machine learning project is to gather and prepare the data. This involves several key tasks:\n\n- **Data Collection**: Collect the data that will be used to train the machine learning model. This could be in the form of text files, databases, APIs, or even sensor data. The data should be relevant to the problem you are trying to solve.\n\n- **Data Cleaning**: Once you have the data, it often needs to be cleaned. This involves removing or correcting errors, handling missing values, and removing or correcting outliers. For example, if you are working with a dataset of customer reviews, you might need to remove reviews that are clearly spam or irrelevant.\n\n- **Data Transformation**: Sometimes, the data needs to be transformed to make it suitable for the machine learning model. This could involve scaling numerical data, encoding categorical data (like converting 'yes' and 'no' to 1 and 0), or creating new features (like calculating the average order value from transaction data).\n\n- **Data Splitting**: The data is often split into training and testing sets. The training set is used to train the model, while the testing set is used to evaluate how well the model generalizes to new data. A common split is 80% for training and 20% for testing.\n\n### 2. Model Selection and Training\nThe second step is to choose a model and train it using the data you have prepared. This involves several key tasks:\n\n- **Model Selection**: Based on the problem you are trying to solve, you choose a model. For example, if you are trying to predict whether an email is spam or not, you might choose a classification model. If you are trying to predict the price of a house based on various features, you might choose a regression model.\n\n- **Training the Model**: Once you have chosen a model, you train it using the training data. This involves adjusting the model's parameters to minimize the difference between the model's predictions and the actual data. This process is called \"fitting\" the model.\n\n- **Model Evaluation**: After training, you evaluate the model using the testing set. This helps you understand how well the model performs on unseen data. Common evaluation metrics include accuracy, precision, recall, and F1 score, depending on the type of problem.\n\n### 3. Model Deployment and Monitoring\nThe final step is to deploy the model and monitor its performance. This involves several key tasks:\n\n- **Model Deployment**: Once you are satisfied with the model's performance, you deploy it. This means integrating the model into a system where it can make predictions on new data. For example, if you are deploying a model to classify emails, you might integrate it into an email filtering system.\n\n- **Monitoring and Maintenance**: After deployment, you need to monitor the model's performance over time. This involves checking if the model's performance is still good and if it continues to perform well on new data. You might also need to retrain the model periodically with new data to keep it up-to-date.\n\n### Example\nLet's say you are building a machine learning model to predict whether a customer will churn (cancel their subscription) based on their usage data. Here’s how you might go through these steps:\n\n1. **Data Collection and Preparation**:\n   - Collect customer usage data from your database.\n   - Clean the data by removing any irrelevant entries.\n   - Transform the data, for example, by scaling the usage data.\n   - Split the data into training and testing sets.\n\n2. **Model Selection and Training**:\n   - Choose a classification model (e.g., logistic regression, decision tree, or a more complex model like a neural network).\n   - Train the model using the training data.\n   - Evaluate the model using the testing data, checking metrics like accuracy and precision.\n\n3. **Model Deployment and Monitoring**:\n   - Deploy the model in your customer service system.\n   - Monitor the model's performance over time, making sure it continues to accurately predict churn.\n\nThese steps provide a structured approach to building and deploying a machine learning model, ensuring that the model is both effective and reliable.",
+      "latency_seconds": 163.841,
+      "prompt_tokens": 67,
+      "response_tokens": 871,
+      "error": null
+    }
+  ]
+}

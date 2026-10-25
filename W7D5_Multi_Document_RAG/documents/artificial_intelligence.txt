@@ -1,0 +1,1 @@
+Artificial Intelligence is a field of computer science that develops systems capable of performing tasks that typically require human intelligence. Common applications include natural language processing, computer vision, planning, and decision support. Machine learning is a major approach used to build AI systems from data.

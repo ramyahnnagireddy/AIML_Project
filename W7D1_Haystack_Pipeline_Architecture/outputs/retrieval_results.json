@@ -1,0 +1,508 @@
+{
+  "experiment": "W7D1 Haystack Pipeline Architecture",
+  "pdf_count": 5,
+  "question_count": 10,
+  "pdf_files": [
+    "ai_ml_reference.pdf",
+    "information_retrieval.pdf",
+    "machine_learning_basics.pdf",
+    "nlp_basics.pdf",
+    "sample_document.pdf"
+  ],
+  "questions": [
+    "What is machine learning?",
+    "What is supervised learning?",
+    "What is deep learning?",
+    "What is natural language processing?",
+    "What is a neural network?",
+    "What is retrieval augmented generation?",
+    "What is model training?",
+    "What is classification?",
+    "What is an embedding?",
+    "What is the purpose of evaluation in machine learning?"
+  ],
+  "bm25": [
+    {
+      "question_number": 1,
+      "question": "What is machine learning?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "sample_document.pdf",
+          "score": 2.6665143329010497,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 2,
+          "source": "machine_learning_basics.pdf",
+          "score": 2.562481111388709,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        },
+        {
+          "rank": 3,
+          "source": "ai_ml_reference.pdf",
+          "score": 2.4453683850130172,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        }
+      ]
+    },
+    {
+      "question_number": 2,
+      "question": "What is supervised learning?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "sample_document.pdf",
+          "score": 2.4967175529076524,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 2,
+          "source": "machine_learning_basics.pdf",
+          "score": 2.4005943103102485,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        },
+        {
+          "rank": 3,
+          "source": "ai_ml_reference.pdf",
+          "score": 2.274848139859388,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        }
+      ]
+    },
+    {
+      "question_number": 3,
+      "question": "What is deep learning?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "ai_ml_reference.pdf",
+          "score": 3.3639394625255536,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 2,
+          "source": "sample_document.pdf",
+          "score": 2.6776000880986377,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 3,
+          "source": "machine_learning_basics.pdf",
+          "score": 2.3774130127103614,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        }
+      ]
+    },
+    {
+      "question_number": 4,
+      "question": "What is natural language processing?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "nlp_basics.pdf",
+          "score": 4.868069492319561,
+          "preview": "Natural Language Processing\nNatural Language Processing enables computers to process and understand human language. Common tasks include text classification, sentiment analysis, question answering, an"
+        },
+        {
+          "rank": 2,
+          "source": "ai_ml_reference.pdf",
+          "score": 3.5943188260081773,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 3,
+          "source": "sample_document.pdf",
+          "score": 2.8050323626970615,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        }
+      ]
+    },
+    {
+      "question_number": 5,
+      "question": "What is a neural network?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "information_retrieval.pdf",
+          "score": 2.7931457671622337,
+          "preview": "Information Retrieval\nInformation retrieval finds relevant information from a collection of documents. BM25 is a lexical retrieval method, while dense retrieval uses vector representations and semanti"
+        },
+        {
+          "rank": 2,
+          "source": "ai_ml_reference.pdf",
+          "score": 2.765718708474452,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 3,
+          "source": "sample_document.pdf",
+          "score": 2.744003142885778,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        }
+      ]
+    },
+    {
+      "question_number": 6,
+      "question": "What is retrieval augmented generation?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "sample_document.pdf",
+          "score": 4.838343542910019,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 2,
+          "source": "information_retrieval.pdf",
+          "score": 3.2388992010620163,
+          "preview": "Information Retrieval\nInformation retrieval finds relevant information from a collection of documents. BM25 is a lexical retrieval method, while dense retrieval uses vector representations and semanti"
+        },
+        {
+          "rank": 3,
+          "source": "ai_ml_reference.pdf",
+          "score": 2.5808401122007476,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        }
+      ]
+    },
+    {
+      "question_number": 7,
+      "question": "What is model training?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "ai_ml_reference.pdf",
+          "score": 3.4480335144569887,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 2,
+          "source": "sample_document.pdf",
+          "score": 3.1340260700999214,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 3,
+          "source": "information_retrieval.pdf",
+          "score": 1.9761219816729039,
+          "preview": "Information Retrieval\nInformation retrieval finds relevant information from a collection of documents. BM25 is a lexical retrieval method, while dense retrieval uses vector representations and semanti"
+        }
+      ]
+    },
+    {
+      "question_number": 8,
+      "question": "What is classification?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "ai_ml_reference.pdf",
+          "score": 1.416210196217124,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 2,
+          "source": "sample_document.pdf",
+          "score": 1.4029049066245416,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 3,
+          "source": "nlp_basics.pdf",
+          "score": 1.222545558009946,
+          "preview": "Natural Language Processing\nNatural Language Processing enables computers to process and understand human language. Common tasks include text classification, sentiment analysis, question answering, an"
+        }
+      ]
+    },
+    {
+      "question_number": 9,
+      "question": "What is an embedding?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "sample_document.pdf",
+          "score": 4.0268917097014745,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 2,
+          "source": "information_retrieval.pdf",
+          "score": 2.614654011380392,
+          "preview": "Information Retrieval\nInformation retrieval finds relevant information from a collection of documents. BM25 is a lexical retrieval method, while dense retrieval uses vector representations and semanti"
+        },
+        {
+          "rank": 3,
+          "source": "ai_ml_reference.pdf",
+          "score": 2.285747924603697,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        }
+      ]
+    },
+    {
+      "question_number": 10,
+      "question": "What is the purpose of evaluation in machine learning?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "sample_document.pdf",
+          "score": 5.6941084046283965,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 2,
+          "source": "ai_ml_reference.pdf",
+          "score": 4.953398326185922,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 3,
+          "source": "machine_learning_basics.pdf",
+          "score": 4.336137158492645,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        }
+      ]
+    }
+  ],
+  "dense": [
+    {
+      "question_number": 1,
+      "question": "What is machine learning?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "machine_learning_basics.pdf",
+          "score": 0.6370876328031164,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        },
+        {
+          "rank": 2,
+          "source": "ai_ml_reference.pdf",
+          "score": 0.5536723814067126,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 3,
+          "source": "sample_document.pdf",
+          "score": 0.5248628440847948,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        }
+      ]
+    },
+    {
+      "question_number": 2,
+      "question": "What is supervised learning?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "machine_learning_basics.pdf",
+          "score": 0.6148828413610796,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        },
+        {
+          "rank": 2,
+          "source": "sample_document.pdf",
+          "score": 0.4349611778653122,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 3,
+          "source": "ai_ml_reference.pdf",
+          "score": 0.4277971307532722,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        }
+      ]
+    },
+    {
+      "question_number": 3,
+      "question": "What is deep learning?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "ai_ml_reference.pdf",
+          "score": 0.5712243853213428,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 2,
+          "source": "sample_document.pdf",
+          "score": 0.4527109194525014,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 3,
+          "source": "machine_learning_basics.pdf",
+          "score": 0.4251408105842573,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        }
+      ]
+    },
+    {
+      "question_number": 4,
+      "question": "What is natural language processing?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "nlp_basics.pdf",
+          "score": 0.8074492773593742,
+          "preview": "Natural Language Processing\nNatural Language Processing enables computers to process and understand human language. Common tasks include text classification, sentiment analysis, question answering, an"
+        },
+        {
+          "rank": 2,
+          "source": "sample_document.pdf",
+          "score": 0.4437948058271988,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 3,
+          "source": "ai_ml_reference.pdf",
+          "score": 0.3920273797490076,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        }
+      ]
+    },
+    {
+      "question_number": 5,
+      "question": "What is a neural network?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "ai_ml_reference.pdf",
+          "score": 0.40571196099220225,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 2,
+          "source": "sample_document.pdf",
+          "score": 0.35388131917415744,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 3,
+          "source": "machine_learning_basics.pdf",
+          "score": 0.2827451910498655,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        }
+      ]
+    },
+    {
+      "question_number": 6,
+      "question": "What is retrieval augmented generation?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "information_retrieval.pdf",
+          "score": 0.4474574085168246,
+          "preview": "Information Retrieval\nInformation retrieval finds relevant information from a collection of documents. BM25 is a lexical retrieval method, while dense retrieval uses vector representations and semanti"
+        },
+        {
+          "rank": 2,
+          "source": "sample_document.pdf",
+          "score": 0.2812886955282037,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 3,
+          "source": "nlp_basics.pdf",
+          "score": 0.24092029227548192,
+          "preview": "Natural Language Processing\nNatural Language Processing enables computers to process and understand human language. Common tasks include text classification, sentiment analysis, question answering, an"
+        }
+      ]
+    },
+    {
+      "question_number": 7,
+      "question": "What is model training?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "ai_ml_reference.pdf",
+          "score": 0.36879540459563065,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 2,
+          "source": "machine_learning_basics.pdf",
+          "score": 0.3021428983013316,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        },
+        {
+          "rank": 3,
+          "source": "sample_document.pdf",
+          "score": 0.2974969723139312,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        }
+      ]
+    },
+    {
+      "question_number": 8,
+      "question": "What is classification?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "machine_learning_basics.pdf",
+          "score": 0.4645480903915843,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        },
+        {
+          "rank": 2,
+          "source": "ai_ml_reference.pdf",
+          "score": 0.3455525601090542,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 3,
+          "source": "sample_document.pdf",
+          "score": 0.33890180773218714,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        }
+      ]
+    },
+    {
+      "question_number": 9,
+      "question": "What is an embedding?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "sample_document.pdf",
+          "score": 0.46619379023037455,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        },
+        {
+          "rank": 2,
+          "source": "information_retrieval.pdf",
+          "score": 0.23644150413251502,
+          "preview": "Information Retrieval\nInformation retrieval finds relevant information from a collection of documents. BM25 is a lexical retrieval method, while dense retrieval uses vector representations and semanti"
+        },
+        {
+          "rank": 3,
+          "source": "nlp_basics.pdf",
+          "score": 0.20198159343399325,
+          "preview": "Natural Language Processing\nNatural Language Processing enables computers to process and understand human language. Common tasks include text classification, sentiment analysis, question answering, an"
+        }
+      ]
+    },
+    {
+      "question_number": 10,
+      "question": "What is the purpose of evaluation in machine learning?",
+      "results": [
+        {
+          "rank": 1,
+          "source": "ai_ml_reference.pdf",
+          "score": 0.42928701885545806,
+          "preview": "AI and Machine Learning Reference\nIntroduction to Machine Learning\nMachine learning enables computers to learn patterns from data and use those patterns to make\npredictions or decisions.\nSupervised Le"
+        },
+        {
+          "rank": 2,
+          "source": "machine_learning_basics.pdf",
+          "score": 0.39531861531662377,
+          "preview": "Machine Learning Basics\nMachine learning enables computers to learn patterns from data. Supervised learning uses labeled data, while unsupervised learning discovers patterns in unlabeled data.\n"
+        },
+        {
+          "rank": 3,
+          "source": "sample_document.pdf",
+          "score": 0.3894627190483438,
+          "preview": "Introduction to Artificial Intelligence and Machine\n Learning\nArtificial Intelligence\nArtificial Intelligence (AI) is a field of computer science focused on creating systems that can\nperform tasks tha"
+        }
+      ]
+    }
+  ]
+}

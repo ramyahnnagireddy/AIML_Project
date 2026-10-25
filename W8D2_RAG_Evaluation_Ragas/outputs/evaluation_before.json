@@ -1,0 +1,201 @@
+{
+  "mode": "before",
+  "smoke_test": false,
+  "ragas_version": "0.4.3",
+  "sample_count": 10,
+  "full_dataset_size": 10,
+  "configuration": {
+    "chunk_size": 700,
+    "chunk_overlap": 100,
+    "top_k": 2,
+    "rag_generation_model": "qwen2.5:3b",
+    "ragas_evaluator_model": "qwen2.5:3b",
+    "embedding_model": "nomic-embed-text:latest",
+    "indexed_chunks": 8
+  },
+  "metric_averages": {
+    "faithfulness": 0.7125,
+    "answer_relevancy": 0.9153,
+    "context_precision": 0.9,
+    "context_recall": 0.6825
+  },
+  "successful_metric_scores": {
+    "faithfulness": 10,
+    "answer_relevancy": 10,
+    "context_precision": 10,
+    "context_recall": 10
+  },
+  "completed": true,
+  "results": [
+    {
+      "id": "Q01",
+      "user_input": "What is Retrieval-Augmented Generation (RAG)?",
+      "reference": "RAG combines document retrieval with a language model to answer questions using external information.",
+      "response": "RETRIEVAL-AUGMENTED GENERATION (RAG) is a method that combines document retrieval with a language model to answer questions using external information. It involves three main stages: document indexing, retrieval of relevant information, and answer generation. RAG aims to reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate all errors or hallucinations.",
+      "retrieved_contexts": [
+        "RETRIEVAL-AUGMENTED GENERATION (RAG)\n\nRAG combines document retrieval with a language model to answer questions using external information. Its main stages are document indexing, retrieval of relevant information, and answer generation. RAG can reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate every hallucination.\n\nDOCUMENT CHUNKING\n\nChunking divides long documents into smaller text segments before they are embedded and indexed. Small chunks can improve retrieval precision but may omit surrounding information needed to answer a question. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP",
+        "on focuses on retrieval relevance, while recall focuses on information coverage.\n\nRAG OPTIMISATION\n\nRAG optimisation involves changing a configuration such as chunk size or retrieval top-k and evaluating the result. The baseline and optimised runs should use the same evaluation questions. Metric scores should be compared to determine whether the configuration change improved the weakest area without hiding regressions in other metrics.\n\nGROUNDING AND MISSING INFORMATION"
+      ],
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7026099752081191,
+        "context_precision": 0.9999999999,
+        "context_recall": 0.2
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q02",
+      "user_input": "What are the main stages of a RAG pipeline?",
+      "reference": "The main stages are document indexing, retrieval of relevant information, and answer generation.",
+      "response": "A RAG (Retrieval-Augmented Generation) pipeline consists of the following main stages:\n\n1. **Retrieval**: In this stage, the system retrieves relevant documents from a vector store that are likely to contain the answer to the question. This is done using a retriever component.\n\n2. **Generation**: After retrieving the relevant documents, the system generates an answer using the retrieved documents as evidence. This involves constructing a prompt that includes the retrieved text and possibly other information, and then using a language model to generate a response.\n\n3. **Grounding**: The generated answer is grounded in the retrieved evidence, meaning that the answer is coherent and relevant to the question, and it is supported by the information found in the retrieved documents.\n\nThese stages work together to provide a coherent and relevant response to the question, leveraging the information from the retrieved documents.",
+      "retrieved_contexts": [
+        "age but can also introduce irrelevant chunks that distract the language model.\n\nLANGCHAIN PIPELINE\n\nLangChain provides components for connecting document processing, retrievers, prompts, and language models. A RAG application can retrieve text from a vector store, place that text into a prompt, and generate an answer grounded in the supplied evidence.\n\nLOCAL LANGUAGE MODELS\n\nOllama can run supported language models locally. A local chat model can generate answers from retrieved context, while a compatible local embedding model can convert document chunks and questions into vectors. The required models must be installed and available to the application.\n\nRAG EVALUATION DATASET",
+        "on focuses on retrieval relevance, while recall focuses on information coverage.\n\nRAG OPTIMISATION\n\nRAG optimisation involves changing a configuration such as chunk size or retrieval top-k and evaluating the result. The baseline and optimised runs should use the same evaluation questions. Metric scores should be compared to determine whether the configuration change improved the weakest area without hiding regressions in other metrics.\n\nGROUNDING AND MISSING INFORMATION"
+      ],
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9999999999999991,
+        "context_precision": 0.0,
+        "context_recall": 0.0
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q03",
+      "user_input": "What is document chunking, and why is it used in RAG?",
+      "reference": "Chunking divides long documents into smaller text segments before they are embedded and indexed.",
+      "response": "Document chunking is the process of dividing long documents into smaller text segments before they are embedded and indexed. This technique is used in RAG to improve retrieval precision. By breaking down documents into smaller chunks, RAG can more efficiently search through and retrieve relevant information. However, this process may omit surrounding information needed to answer a question, as each chunk focuses on a specific part of the document.",
+      "retrieved_contexts": [
+        "RETRIEVAL-AUGMENTED GENERATION (RAG)\n\nRAG combines document retrieval with a language model to answer questions using external information. Its main stages are document indexing, retrieval of relevant information, and answer generation. RAG can reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate every hallucination.\n\nDOCUMENT CHUNKING\n\nChunking divides long documents into smaller text segments before they are embedded and indexed. Small chunks can improve retrieval precision but may omit surrounding information needed to answer a question. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP",
+        "uestion. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP\n\nChunk overlap repeats a portion of text between adjacent chunks. It helps preserve facts that might otherwise be divided across chunk boundaries. Excessive overlap can create redundant content and increase storage and retrieval costs.\n\nEMBEDDINGS AND SEMANTIC SEARCH\n\nEmbeddings represent text as numerical vectors. Texts with related meanings can have similar vector representations even when they use different words. Semantic search uses vector similarity to find information relevant to a user's question.\n\nCHROMADB VECTOR DATABASE"
+      ],
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9354661952099615,
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q04",
+      "user_input": "What is the trade-off between small and large document chunks?",
+      "reference": "Small chunks can improve retrieval precision but may omit useful surrounding information. Larger chunks preserve more context but may include unrelated information.",
+      "response": "The trade-off between small and large document chunks involves balancing precision and context preservation. Smaller chunks can improve retrieval precision by reducing the amount of text that needs to be indexed and processed. However, they may omit surrounding information needed to answer a question accurately. On the other hand, larger chunks preserve more context, which is beneficial for understanding the full scope of a document. However, they may also contain unrelated information that does not contribute to the answer to the question at hand.",
+      "retrieved_contexts": [
+        "RETRIEVAL-AUGMENTED GENERATION (RAG)\n\nRAG combines document retrieval with a language model to answer questions using external information. Its main stages are document indexing, retrieval of relevant information, and answer generation. RAG can reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate every hallucination.\n\nDOCUMENT CHUNKING\n\nChunking divides long documents into smaller text segments before they are embedded and indexed. Small chunks can improve retrieval precision but may omit surrounding information needed to answer a question. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP",
+        "uestion. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP\n\nChunk overlap repeats a portion of text between adjacent chunks. It helps preserve facts that might otherwise be divided across chunk boundaries. Excessive overlap can create redundant content and increase storage and retrieval costs.\n\nEMBEDDINGS AND SEMANTIC SEARCH\n\nEmbeddings represent text as numerical vectors. Texts with related meanings can have similar vector representations even when they use different words. Semantic search uses vector similarity to find information relevant to a user's question.\n\nCHROMADB VECTOR DATABASE"
+      ],
+      "metrics": {
+        "faithfulness": 0.0,
+        "answer_relevancy": 0.9227871860785886,
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q05",
+      "user_input": "Why is chunk overlap used, and what is a disadvantage of excessive overlap?",
+      "reference": "Chunk overlap repeats some text between adjacent chunks and helps preserve facts across chunk boundaries. Excessive overlap can create redundancy and increase storage and retrieval costs.",
+      "response": "Chunk overlap is used to preserve facts that might otherwise be divided across chunk boundaries. It repeats a portion of text between adjacent chunks. However, excessive overlap can create redundant content, which can increase storage and retrieval costs.",
+      "retrieved_contexts": [
+        "uestion. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP\n\nChunk overlap repeats a portion of text between adjacent chunks. It helps preserve facts that might otherwise be divided across chunk boundaries. Excessive overlap can create redundant content and increase storage and retrieval costs.\n\nEMBEDDINGS AND SEMANTIC SEARCH\n\nEmbeddings represent text as numerical vectors. Texts with related meanings can have similar vector representations even when they use different words. Semantic search uses vector similarity to find information relevant to a user's question.\n\nCHROMADB VECTOR DATABASE",
+        "RETRIEVAL-AUGMENTED GENERATION (RAG)\n\nRAG combines document retrieval with a language model to answer questions using external information. Its main stages are document indexing, retrieval of relevant information, and answer generation. RAG can reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate every hallucination.\n\nDOCUMENT CHUNKING\n\nChunking divides long documents into smaller text segments before they are embedded and indexed. Small chunks can improve retrieval precision but may omit surrounding information needed to answer a question. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP"
+      ],
+      "metrics": {
+        "faithfulness": 0.75,
+        "answer_relevancy": 0.8778377957810304,
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q06",
+      "user_input": "What are embeddings, and how do they support semantic search?",
+      "reference": "Embeddings represent text as numerical vectors. Semantic search uses vector similarity to find information related to a question, even when the wording differs.",
+      "response": "Embeddings represent text as numerical vectors. These vectors capture the meaning of the text, allowing texts with related meanings to have similar vector representations, even when they use different words. Semantic search uses vector similarity to find information relevant to a user's question.",
+      "retrieved_contexts": [
+        "uestion. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP\n\nChunk overlap repeats a portion of text between adjacent chunks. It helps preserve facts that might otherwise be divided across chunk boundaries. Excessive overlap can create redundant content and increase storage and retrieval costs.\n\nEMBEDDINGS AND SEMANTIC SEARCH\n\nEmbeddings represent text as numerical vectors. Texts with related meanings can have similar vector representations even when they use different words. Semantic search uses vector similarity to find information relevant to a user's question.\n\nCHROMADB VECTOR DATABASE",
+        "ses vector similarity to find information relevant to a user's question.\n\nCHROMADB VECTOR DATABASE\n\nChromaDB stores text embeddings and can associate them with documents and metadata. It supports similarity-based retrieval from an indexed collection. A RAG pipeline can use ChromaDB to retrieve candidate text chunks for a question.\n\nTOP-K RETRIEVAL\n\nThe top-k retrieval setting controls how many document chunks are returned for each question. A small k can omit relevant evidence. A larger k may improve information coverage but can also introduce irrelevant chunks that distract the language model.\n\nLANGCHAIN PIPELINE"
+      ],
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.7563760252544632,
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q07",
+      "user_input": "What is the role of ChromaDB in a RAG system?",
+      "reference": "ChromaDB stores text embeddings and can associate them with documents and metadata. It supports similarity-based retrieval from an indexed collection.",
+      "response": "ChromaDB plays a crucial role in a RAG (Retrieval-Augmented Generation) system by storing text embeddings and associating them with documents and metadata. This allows ChromaDB to support similarity-based retrieval from an indexed collection, which is essential for a RAG system to retrieve relevant candidate text chunks for a question.",
+      "retrieved_contexts": [
+        "ses vector similarity to find information relevant to a user's question.\n\nCHROMADB VECTOR DATABASE\n\nChromaDB stores text embeddings and can associate them with documents and metadata. It supports similarity-based retrieval from an indexed collection. A RAG pipeline can use ChromaDB to retrieve candidate text chunks for a question.\n\nTOP-K RETRIEVAL\n\nThe top-k retrieval setting controls how many document chunks are returned for each question. A small k can omit relevant evidence. A larger k may improve information coverage but can also introduce irrelevant chunks that distract the language model.\n\nLANGCHAIN PIPELINE",
+        "RETRIEVAL-AUGMENTED GENERATION (RAG)\n\nRAG combines document retrieval with a language model to answer questions using external information. Its main stages are document indexing, retrieval of relevant information, and answer generation. RAG can reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate every hallucination.\n\nDOCUMENT CHUNKING\n\nChunking divides long documents into smaller text segments before they are embedded and indexed. Small chunks can improve retrieval precision but may omit surrounding information needed to answer a question. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP"
+      ],
+      "metrics": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9999999999999996,
+        "context_precision": 0.9999999999,
+        "context_recall": 1.0
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q08",
+      "user_input": "How does the top-k setting affect the documents retrieved by a RAG pipeline?",
+      "reference": "Top-k controls how many chunks are returned for a question. A small value may omit relevant evidence, while a larger value may improve coverage but introduce irrelevant chunks.",
+      "response": "The top-k setting in a RAG pipeline determines the number of documents to be retrieved from the index based on their relevance scores. A higher top-k value means more documents are retrieved, potentially including a wider range of relevant information but also increasing the likelihood of including less relevant or irrelevant documents. Conversely, a lower top-k value means fewer documents are retrieved, which could result in missing important information that is relevant to the question. Therefore, the top-k setting affects the diversity and relevance of the documents retrieved by influencing how many and which documents are considered for the answer generation stage.",
+      "retrieved_contexts": [
+        "on focuses on retrieval relevance, while recall focuses on information coverage.\n\nRAG OPTIMISATION\n\nRAG optimisation involves changing a configuration such as chunk size or retrieval top-k and evaluating the result. The baseline and optimised runs should use the same evaluation questions. Metric scores should be compared to determine whether the configuration change improved the weakest area without hiding regressions in other metrics.\n\nGROUNDING AND MISSING INFORMATION",
+        "RETRIEVAL-AUGMENTED GENERATION (RAG)\n\nRAG combines document retrieval with a language model to answer questions using external information. Its main stages are document indexing, retrieval of relevant information, and answer generation. RAG can reduce unsupported answers by grounding responses in retrieved evidence, but it does not eliminate every hallucination.\n\nDOCUMENT CHUNKING\n\nChunking divides long documents into smaller text segments before they are embedded and indexed. Small chunks can improve retrieval precision but may omit surrounding information needed to answer a question. Larger chunks preserve more context but may contain unrelated information.\n\nCHUNK OVERLAP"
+      ],
+      "metrics": {
+        "faithfulness": 0.375,
+        "answer_relevancy": 0.9966794314926483,
+        "context_precision": 0.99999999995,
+        "context_recall": 0.0
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q09",
+      "user_input": "What is faithfulness in RAG evaluation, and how does it differ from answer relevancy?",
+      "reference": "Faithfulness measures whether answer claims are supported by retrieved context. Answer relevancy measures whether the response appropriately addresses the user's question.",
+      "response": "Faithfulness in RAG evaluation measures whether the claims made in a generated answer are supported by the retrieved context. Answer relevancy, on the other hand, measures whether the generated response appropriately addresses the question. Faithfulness focuses on the accuracy of the information provided in the answer, while answer relevancy focuses on whether the answer is relevant to the question.",
+      "retrieved_contexts": [
+        "s. The required models must be installed and available to the application.\n\nRAG EVALUATION DATASET\n\nA RAG evaluation dataset contains questions and reference answers. During evaluation, the application also records its generated responses and retrieved contexts. Using the same questions and reference answers before and after an optimisation makes the comparison more consistent.\n\nFAITHFULNESS AND ANSWER RELEVANCY\n\nFaithfulness measures whether claims in a generated answer are supported by the retrieved context. Answer relevancy measures whether the generated response appropriately addresses the question. A response can be relevant while still containing unsupported claims.",
+        "on focuses on retrieval relevance, while recall focuses on information coverage.\n\nRAG OPTIMISATION\n\nRAG optimisation involves changing a configuration such as chunk size or retrieval top-k and evaluating the result. The baseline and optimised runs should use the same evaluation questions. Metric scores should be compared to determine whether the configuration change improved the weakest area without hiding regressions in other metrics.\n\nGROUNDING AND MISSING INFORMATION"
+      ],
+      "metrics": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.9772188277529557,
+        "context_precision": 0.9999999999,
+        "context_recall": 1.0
+      },
+      "metric_errors": {}
+    },
+    {
+      "id": "Q10",
+      "user_input": "How do context precision and context recall differ in RAG evaluation?",
+      "reference": "Context precision measures whether relevant retrieved chunks are ranked ahead of irrelevant chunks. Context recall measures how much of the information needed to support the reference answer is present in the retrieved context.",
+      "response": "Context precision and context recall differ in RAG evaluation in terms of their focus. Context precision measures whether relevant retrieved chunks are ranked ahead of irrelevant chunks, focusing on the relevance of the retrieved information. On the other hand, context recall measures how much of the information needed to support the reference answer is present in the retrieved context, focusing on the coverage of the information.",
+      "retrieved_contexts": [
+        "tely addresses the question. A response can be relevant while still containing unsupported claims.\n\nCONTEXT PRECISION AND CONTEXT RECALL\n\nContext precision measures whether relevant retrieved chunks are ranked ahead of irrelevant chunks. Context recall measures how much of the information needed to support the reference answer is present in the retrieved context. Precision focuses on retrieval relevance, while recall focuses on information coverage.\n\nRAG OPTIMISATION",
+        "on focuses on retrieval relevance, while recall focuses on information coverage.\n\nRAG OPTIMISATION\n\nRAG optimisation involves changing a configuration such as chunk size or retrieval top-k and evaluating the result. The baseline and optimised runs should use the same evaluation questions. Metric scores should be compared to determine whether the configuration change improved the weakest area without hiding regressions in other metrics.\n\nGROUNDING AND MISSING INFORMATION"
+      ],
+      "metrics": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.9836915025254972,
+        "context_precision": 0.99999999995,
+        "context_recall": 0.625
+      },
+      "metric_errors": {}
+    }
+  ]
+}

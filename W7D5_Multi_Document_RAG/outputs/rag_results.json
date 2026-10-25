@@ -1,0 +1,132 @@
+[
+  {
+    "timestamp": "2026-10-14T17:37:11.202718+00:00",
+    "question": "What is Retrieval-Augmented Generation?",
+    "retrieved_chunks": [
+      {
+        "source": "rag_fundamentals.txt",
+        "chunk_id": 0,
+        "text": "Retrieval-Augmented Generation, commonly called RAG, combines document retrieval with a language model. A RAG pipeline retrieves relevant passages from a knowledge collection and provides them as context to a language model.",
+        "score": 0.3721
+      },
+      {
+        "source": "embeddings_and_retrieval.txt",
+        "chunk_id": 1,
+        "text": "A retrieval system can compare a question embedding with document embeddings to find semantically related passages. Retrieval quality depends on chunking, embedding quality, and the relevance of the stored documents.",
+        "score": 0.1754
+      }
+    ],
+    "answer": "Retrieval-Augmented Generation (RAG) is a method that combines document retrieval with a language model.",
+    "error": null,
+    "latency_seconds": 30.876
+  },
+  {
+    "timestamp": "2026-10-14T17:37:44.459859+00:00",
+    "question": "How does MLflow support MLOps?",
+    "retrieved_chunks": [
+      {
+        "source": "mlops_and_mlflow.txt",
+        "chunk_id": 1,
+        "text": "MLflow can record parameters, metrics, and artifacts so that experiments can be compared and reproduced.",
+        "score": 0.1538
+      },
+      {
+        "source": "mlops_and_mlflow.txt",
+        "chunk_id": 0,
+        "text": "Machine learning operations, or MLOps, applies engineering practices to machine learning systems. Important practices include experiment tracking, version control, automated testing, reproducible environments, monitoring, and model evaluation.",
+        "score": 0.0843
+      },
+      {
+        "source": "embeddings_and_retrieval.txt",
+        "chunk_id": 0,
+        "text": "Vector databases store vector representations of data and support similarity search. Text embedding models convert text into numerical vectors.",
+        "score": 0.075
+      }
+    ],
+    "answer": "According to the context, MLflow supports MLOps by recording parameters, metrics, and artifacts, which allows for experiment tracking, reproducible environments, and other key MLOps practices. \n\nSource: mlops_and_mlflow.txt",
+    "error": null,
+    "latency_seconds": 13.056
+  },
+  {
+    "timestamp": "2026-10-14T17:37:57.615299+00:00",
+    "question": "What are text embeddings used for?",
+    "retrieved_chunks": [
+      {
+        "source": "embeddings_and_retrieval.txt",
+        "chunk_id": 0,
+        "text": "Vector databases store vector representations of data and support similarity search. Text embedding models convert text into numerical vectors.",
+        "score": 0.2431
+      },
+      {
+        "source": "machine_learning.txt",
+        "chunk_id": 1,
+        "text": "Model evaluation should use appropriate metrics and data that was not used for training.",
+        "score": 0.1615
+      },
+      {
+        "source": "artificial_intelligence.txt",
+        "chunk_id": 1,
+        "text": "Machine learning is a major approach used to build AI systems from data.",
+        "score": 0.1532
+      }
+    ],
+    "answer": "According to the context, text embeddings are used for converting text into numerical vectors, which is mentioned in the source file \"embeddings_and_retrieval.txt\".",
+    "error": null,
+    "latency_seconds": 8.513
+  },
+  {
+    "timestamp": "2026-10-14T17:46:33.782168+00:00",
+    "question": "How does MLflow support MLOps?",
+    "retrieved_chunks": [
+      {
+        "source": "mlops_and_mlflow.txt",
+        "chunk_id": 1,
+        "text": "MLflow can record parameters, metrics, and artifacts so that experiments can be compared and reproduced.",
+        "score": 0.1538
+      },
+      {
+        "source": "mlops_and_mlflow.txt",
+        "chunk_id": 0,
+        "text": "Machine learning operations, or MLOps, applies engineering practices to machine learning systems. Important practices include experiment tracking, version control, automated testing, reproducible environments, monitoring, and model evaluation.",
+        "score": 0.0843
+      },
+      {
+        "source": "embeddings_and_retrieval.txt",
+        "chunk_id": 0,
+        "text": "Vector databases store vector representations of data and support similarity search. Text embedding models convert text into numerical vectors.",
+        "score": 0.075
+      }
+    ],
+    "answer": "The answer can be inferred from the context provided. According to the context, MLOps includes practices such as experiment tracking, version control, automated testing, reproducible environments, monitoring, and model evaluation.\n\nSince MLflow is mentioned in the context as a tool that can record parameters, metrics, and artifacts, it is likely that it supports experiment tracking, which is one of the MLOps practices mentioned.",
+    "error": null,
+    "latency_seconds": 30.293
+  },
+  {
+    "timestamp": "2026-10-14T17:50:31.563741+00:00",
+    "question": "How does MLflow support MLOps?",
+    "retrieved_chunks": [
+      {
+        "source": "mlops_and_mlflow.txt",
+        "chunk_id": 1,
+        "text": "MLflow can record parameters, metrics, and artifacts so that experiments can be compared and reproduced.",
+        "score": 0.1538
+      },
+      {
+        "source": "mlops_and_mlflow.txt",
+        "chunk_id": 0,
+        "text": "Machine learning operations, or MLOps, applies engineering practices to machine learning systems. Important practices include experiment tracking, version control, automated testing, reproducible environments, monitoring, and model evaluation.",
+        "score": 0.0843
+      },
+      {
+        "source": "embeddings_and_retrieval.txt",
+        "chunk_id": 0,
+        "text": "Vector databases store vector representations of data and support similarity search. Text embedding models convert text into numerical vectors.",
+        "score": 0.075
+      }
+    ],
+    "answer": "According to the context provided, the answer can be inferred from the information about MLflow and MLOps.\n\nMLflow is mentioned as a tool that can record parameters, metrics, and artifacts, which are important aspects of MLOps (Source: mlops_and_mlflow.txt). Additionally, MLOps is described as applying engineering practices to machine learning systems, including experiment tracking, version control, automated testing, reproducible environments, monitoring, and model evaluation (Source: mlops_and_mlflow.txt).\n\nWhile there is no direct information on how MLflow specifically supports MLOps, the context suggests that MLflow's ability to track experiments and record artifacts aligns with the principles of MLOps.",
+    "error": null,
+    "latency_seconds": 42.855,
+    "mlflow_run_id": "6981910861a6412c8bf0113f7cd01f8d"
+  }
+]

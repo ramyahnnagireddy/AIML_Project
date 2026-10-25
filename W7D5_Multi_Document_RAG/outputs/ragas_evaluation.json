@@ -1,0 +1,55 @@
+{
+  "evaluated_at": "2026-10-14T18:18:45.262159+00:00",
+  "sample_count": 5,
+  "evaluation_method": "deterministic lexical indicators",
+  "metrics": {
+    "average_context_support_indicator": 0.5349,
+    "average_question_term_overlap_indicator": 0.5967
+  },
+  "scores": [
+    {
+      "question": "What is Retrieval-Augmented Generation?",
+      "answer": "Retrieval-Augmented Generation (RAG) is a method that combines document retrieval with a language model.",
+      "context_count": 2,
+      "context_support_indicator": 0.8182,
+      "question_term_overlap_indicator": 0.75,
+      "latency_seconds": 30.876
+    },
+    {
+      "question": "How does MLflow support MLOps?",
+      "answer": "According to the context, MLflow supports MLOps by recording parameters, metrics, and artifacts, which allows for experiment tracking, reproducible environments, and other key MLOps practices. \n\nSource: mlops_and_mlflow.txt",
+      "context_count": 3,
+      "context_support_indicator": 0.4783,
+      "question_term_overlap_indicator": 0.4,
+      "latency_seconds": 13.056
+    },
+    {
+      "question": "What are text embeddings used for?",
+      "answer": "According to the context, text embeddings are used for converting text into numerical vectors, which is mentioned in the source file \"embeddings_and_retrieval.txt\".",
+      "context_count": 3,
+      "context_support_indicator": 0.3529,
+      "question_term_overlap_indicator": 0.8333,
+      "latency_seconds": 8.513
+    },
+    {
+      "question": "How does MLflow support MLOps?",
+      "answer": "The answer can be inferred from the context provided. According to the context, MLOps includes practices such as experiment tracking, version control, automated testing, reproducible environments, monitoring, and model evaluation.\n\nSince MLflow is mentioned in the context as a tool that can record parameters, metrics, and artifacts, it is likely that it supports experiment tracking, which is one of the MLOps practices mentioned.",
+      "context_count": 3,
+      "context_support_indicator": 0.5676,
+      "question_term_overlap_indicator": 0.4,
+      "latency_seconds": 30.293
+    },
+    {
+      "question": "How does MLflow support MLOps?",
+      "answer": "According to the context provided, the answer can be inferred from the information about MLflow and MLOps.\n\nMLflow is mentioned as a tool that can record parameters, metrics, and artifacts, which are important aspects of MLOps (Source: mlops_and_mlflow.txt). Additionally, MLOps is described as applying engineering practices to machine learning systems, including experiment tracking, version control, automated testing, reproducible environments, monitoring, and model evaluation (Source: mlops_and_mlflow.txt).\n\nWhile there is no direct information on how MLflow specifically supports MLOps, the context suggests that MLflow's ability to track experiments and record artifacts aligns with the principles of MLOps.",
+      "context_count": 3,
+      "context_support_indicator": 0.4576,
+      "question_term_overlap_indicator": 0.6,
+      "latency_seconds": 42.855
+    }
+  ],
+  "limitations": [
+    "These lexical indicators are not Ragas Faithfulness or AnswerRelevancy scores.",
+    "Token overlap does not establish semantic correctness or factual entailment."
+  ]
+}

@@ -1,0 +1,1 @@
+Machine learning operations, or MLOps, applies engineering practices to machine learning systems. Important practices include experiment tracking, version control, automated testing, reproducible environments, monitoring, and model evaluation. MLflow can record parameters, metrics, and artifacts so that experiments can be compared and reproduced.

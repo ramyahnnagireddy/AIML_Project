@@ -1,0 +1,11 @@
+
+langgraph
+crewai
+mlflow
+ragas
+langchain
+langchain-core
+langchain-community==0.4.1
+langchain-ollama
+scikit-learn
+pytest

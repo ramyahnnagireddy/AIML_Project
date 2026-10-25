@@ -1,0 +1,36 @@
+PDF -> CHROMADB -> OLLAMA RAG PIPELINE
+======================================================================
+
+PDF: documents/ai_ml_reference.pdf
+Collection: pdf_ai_ml_documents
+Stored chunks: 3
+Query: How can machine learning models be improved and evaluated?
+
+TOP-3 RETRIEVED CHUNKS
+----------------------------------------------------------------------
+
+Chunk 1
+Cosine distance: 0.4341
+Metadata: {'source': 'ai_ml_reference.pdf', 'chunk_index': 1}
+Text: ranges. It can improve the performance of algorithms such as support vector machines, k-nearest neighbors, and logistic regression. Hyperparameter Tuning Hyperparameter tuning searches for model settings that improve performance. Grid search and randomized search are common approaches. Cross-Validation Cross-validation divides available training data into multiple folds. It helps estimate how well a model may generalize to unseen data. Classification Metrics Precision measures how many predicted positive cases are actually positive. Recall measures how many actual positive cases are correctly identified.
+
+Chunk 2
+Cosine distance: 0.5194
+Metadata: {'chunk_index': 0, 'source': 'ai_ml_reference.pdf'}
+Text: AI and Machine Learning Reference Introduction to Machine Learning Machine learning enables computers to learn patterns from data and use those patterns to make predictions or decisions. Supervised Learning Supervised learning uses labeled data. Classification predicts discrete categories, while regression predicts continuous numerical values. Model Training A machine learning model learns relationships from training data. The training process should be evaluated using data that was not used to train the model. Feature Scaling Feature scaling transforms numerical features to comparable
+
+Chunk 3
+Cosine distance: 0.7248
+Metadata: {'source': 'ai_ml_reference.pdf', 'chunk_index': 2}
+Text: The confusion matrix summarizes classification results. Deep Learning Deep learning uses neural networks with multiple layers. These models can learn complex patterns from large datasets. Natural Language Processing Natural language processing, or NLP, enables computers to process and understand human language. NLP is used in applications such as question answering, text classification, and information retrieval. Vector Databases Vector databases store numerical representations called embeddings. They can retrieve documents based on semantic similarity between a query and stored document embeddings.
+
+
+OLLAMA ANSWER
+----------------------------------------------------------------------
+To improve and evaluate machine learning models:
+
+1. **Hyperparameter Tuning**: Try different settings for the model's parameters to find the best combination that improves performance.
+2. **Cross-Validation**: Divide your training data into folds, use some for training and others for testing, to estimate how well the model will generalize to new data.
+3. **Use classification metrics**: Precision and recall can help you evaluate how well your model is doing, especially for classification tasks.
+
+By using these techniques, you can improve the performance of your machine learning models and gain a better understanding of how they work!

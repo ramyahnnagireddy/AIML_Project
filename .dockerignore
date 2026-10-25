@@ -1,0 +1,15 @@
+```text
+.git
+.venv
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+.env
+**/.env
+mlruns
+**/mlruns
+**/chroma_db
+**/mlflow.db
+W8D1_Production_RAG_MLOps/outputs
+```
